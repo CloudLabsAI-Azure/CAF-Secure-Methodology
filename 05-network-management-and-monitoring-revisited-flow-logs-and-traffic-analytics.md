@@ -35,15 +35,15 @@
 
 1. Navigate back on **Remote Desktop Connection**, click on **Connect** and you will see that you are able to connect to the VM.
 
-1. Now, enter the JUMPVM **username**, and **password** provided below and then click on the **Ok** button.
+1. Now, enter the JUMPVM **username**, and **password** provided below and then click on the **OK** button.
     - **Username**: **<inject key="JumpVM Admin Username" />**
     - **Password**: **<inject key="JumpVM Admin Password" />**
    
-   ![](images/a26.png)
+   ![](images/a30.png)
    
 1. Next, click on the **Yes** button to accept the certificate and add in trusted certificates.
 
-   ![](images/a29.png)
+   ![](images/a31.png)
 
 
 
