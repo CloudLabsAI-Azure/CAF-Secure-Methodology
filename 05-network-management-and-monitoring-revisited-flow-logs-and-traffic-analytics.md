@@ -12,7 +12,7 @@
 
    ![](images/a20.png "search gateway")
 
-1. Click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Deny (2)** from Action and click on **Save (3)**.
+1. On the Networking page, Click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Deny (2)** from Action and click on **Save (3)**.
 
    ![](images/a21.png "search gateway")
    
