@@ -1,5 +1,7 @@
 # Exercise 5- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
+## Task 1: NSG Validation - New
+
 1. Navigate to Azure portal. Using the search bar, search for **Virtual machines (1)** and **select (2)** it from the suggestions.
 
    ![](images/a18.png "search gateway")
@@ -44,6 +46,8 @@
 1. Next, click on the **Yes** button to accept the certificate and add in trusted certificates.
 
    ![](images/a31.png)
+
+## Task 2: Network Watcher Traffic Analytics to monitor the network - New
 
 
 
