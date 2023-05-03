@@ -49,7 +49,109 @@
 
 ## Task 2: Network Watcher Traffic Analytics to monitor the network - New
 
+In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
+ 
+1. Navigate back to the Azure **Home** page, from the search bar search for **Application gateways (1)**, and then select **Application gateways (2)**.
+ 
+     ![](images/searchgateway.png "search gateway")
+ 
+ 1. Select your **Application Gateway**.
+ 
+     ![](images/appgateway.png "select gateway")
+ 
+ 1. Copy the **Frontend public IP address** of the application gateway.
+ 
+      ![](images/image301.png "select gateway")
 
+ 1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab and generate some traffic by refreshing the browser.
+ 
+      > **Note**: You will see that your website is running.
+ 
+      ![](/images/image307.png)
+
+1. Navigate to the resource group **JumpVM-rg**, and from the **Overview (1)** tab select the Firewall.
+
+   ![loadbalancer](/images1/firewall.png)
+   
+1. Select **Firewall Public IP** from the Overview tab.
+
+    ![pip](/images1/firewallIP.png)
+    
+1. Copy the Public Ip and save it in a text editor.
+
+    ![ip](/images1/firewallip1.png)
+      
+1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
+
+   ![pip](/images1/webapp.png)
+
+1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Logs** from the options on the left side of the Network Watcher blade.
+
+   ![netwat](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/traffic.png?raw=true)
+      
+1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
+
+   ![time interval](/images1/timeinterval.png)
+   
+   > **Note**: If you observe the **Time interval** is greyed out, click on **Meanwhile, click here to see just resource data** and perform the above step.
+
+      ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/raw/main/media/timeinterval.png)
+      
+1. Now, you can observe the total number of network traffic flows from **Traffic Visualization**
+
+    > **Note**: The dashboard may take up to 30 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and can come back later and check on this
+      
+      ![traffic visualization](/images1/traffic%20visualisation.png)
+     
+1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
+
+    ![env](/images1/environment1.png)
+      
+1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating with it.
+
+    ![map](/images1/viewmap.png)
+     
+1. In the **Traffic Analytics Geo Map View** page, click on the **Green** icon which indicates the Azure region, and observe the resources deployed under the region, to explore more select **More details**.
+
+    ![md](/images1/moredetails.png)
+      
+1. Under the **More Insights** blade, scroll down and explore traffic distribution for deployments of the East US region.
+
+    ![comm](/images1/moreinsights.png)
+     
+1. To close the **Traffic Analytics Geo Map View**, click on the cross at the top right corner.
+
+     ![close](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/close.png?raw=true)
+      
+1. Close the **Ports receiving traffic from the Internet** page by clicking the **Cross (X) icon** from the top right corner.
+      
+1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across the host, subnet, VNet, and VMSS.
+
+    ![tr](/images1/totaltraffic.png)
+     
+1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
+
+    ![td](/images1/ipsee.png)
+    
+1. You can observe the graph of the **Time trending chart for the top 5 talking IPs** from the **Traffic distribution across the top IPs** page.
+
+    ![see more](/images1/trafficdistri.png)
+    
+1. Under **Details of top 5 talking IPs**, select VM IP to explore more about traffic distribution.
+
+     ![see more](/images1/top5.png)
+     
+1. Close the **Traffic distribution across top IPs** by clicking the **cross (X) icon** at the top-left corner of the page.
+    
+1. In the same way, you can explore more about **Malicious traffic**, and **Blocked traffic** 
+
+1. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
+
+    ![ap](/images1/applicationports.png)
+     
+1. From the **Most frequent L7 protocols** page, you can explore more about the ports and their ranging.
+
+    ![l7](/images1/l7proto.png)
 
 
 
