@@ -59,9 +59,13 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
      ![](images/appgateway.png "select gateway")
  
- 1. Copy the **Frontend public IP address** of the application gateway.
+ 1. Select the **Frontend public IP address** of the application gateway.
  
-      ![](images/image301.png "select gateway")
+     ![](images/image301.png "select gateway")
+  
+ 1. Copy the **Public Ip address** and save it to notepad for later use.
+
+     ![](images/editing12.png )
 
  1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab and generate some traffic by refreshing the browser.
  
