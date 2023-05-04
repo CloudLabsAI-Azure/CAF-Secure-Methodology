@@ -93,8 +93,24 @@ Azure DDoS Protection, combined with application design best practices, provides
 1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection (3)** you will see that your public ip address is protected by **IP protection** as shown below.
 
     ![](images/a38.png)
+    
+## Task 3: View metrics from Public IP address
+
+1. Navigate back to the **Firewalllp** page, Under Monitoring, select **Metrics**.
+
+    ![](images/a40.png)
+
+1. Select **Add metric** then select **Scope**.
+
+    ![](images/a41.png)
+
+1. Once you clicked on Scope, select **Public IP Address (1)** from **Resources type** then select the specific public IP address you want to log metrics for, and then select **Apply (3)**.
+
+     ![](images/a42.png)
+
+1. Under **Metric** select your chosen metric then under **Aggregation** select type as **Count**.
   
-  
+     ![](images/a43.png)
 
 
 
