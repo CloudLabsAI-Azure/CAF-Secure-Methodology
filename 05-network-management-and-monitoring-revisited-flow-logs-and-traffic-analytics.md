@@ -51,7 +51,7 @@
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
-1. Navigate back to the Azure **Home** page, from the search bar search for **Application gateways (1)**, and then select **Application gateways (2)**.
+1. Navigate to Azure portal. Using the search bar, search for **Application gateways (1)** and **select (2)** it from the suggestions..
  
      ![](images/searchgateway.png "search gateway")
  
