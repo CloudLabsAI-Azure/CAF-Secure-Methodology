@@ -83,7 +83,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
       
 1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
 
-   ![pip](/images1/webapp.png)
+   ![pip](/images/a32.png)
 
 1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Logs** from the options on the left side of the Network Watcher blade.
 
