@@ -27,7 +27,7 @@
 
    ![](images/a25.png)  
  
-1. you will see the error **Remote destop can't connected to the remote computer** because we are deny the inbound rule for diallow the RDP and click on **OK**.
+1. You will see the error **Remote destop can't connected to the remote computer** because we are deny the inbound rule for diallow the RDP and click on **OK**.
 
    ![](images/a27.png)
    
