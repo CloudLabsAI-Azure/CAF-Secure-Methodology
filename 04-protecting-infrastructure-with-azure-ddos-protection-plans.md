@@ -15,6 +15,8 @@ Azure DDoS Protection, combined with application design best practices, provides
 - **Protocol attacks**: These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic, by interacting with the client, and blocking malicious traffic.
 - **Resource (application) layer attacks**: These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layers 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection to provide defence against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
 
+## Task 1: Configure Azure DDoS Network Protection
+
 1. In the Azure portal, search **DDoS protection plans (1)** and then select **DDoS protection plans (2)**.
  
    ![](images/ddos1.png)
@@ -69,3 +71,53 @@ Azure DDoS Protection, combined with application design best practices, provides
 1. Under Deployments, click on **Virtual Networks**, and you will see that you are protected.
  
       ![](images/ddos12.png)
+      
+## Task 2: Configure Azure DDoS IP Protection
+
+1. In the Azure portal, search **Public IP Addresses (1)** and then select **Public IP Addresses (2)**.
+
+    ![](images/a33.png)
+
+1. Select the **Firewalllp** from the list.
+
+    ![](images/a34.png)
+
+1. In the **Overview** pane, you will see **Protect IP address** on the bottom right corner, click on **Protect**.
+
+    ![](images/a35.png)
+
+1. Once you click on **Protect**, under **Protection type**, select **IP** and click on **Save**.
+
+    ![](images/a36.png)
+
+1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection** you will see that your public ip address is protected by **IP protection** as shown below.
+
+    ![](images/a38.png)
+  
+  
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
