@@ -90,7 +90,7 @@ Azure DDoS Protection, combined with application design best practices, provides
 
     ![](images/a36.png)
 
-1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection** you will see that your public ip address is protected by **IP protection** as shown below.
+1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection (3)** you will see that your public ip address is protected by **IP protection** as shown below.
 
     ![](images/a38.png)
   
