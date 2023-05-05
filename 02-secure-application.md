@@ -388,13 +388,13 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 1. On the **Add a route** page, enter, or select the following information, select **Add (8)** to add the route to the endpoint configuration.
 
  
-   | **Setting**      | **Value**                                                    |
-   | ---------------- | ------------------------------------------------------------ |
-   | Name             | Enter **myRoute (1)**                                            |     
-   | Redirect         | Enable this setting to **redirect all HTTP traffic to the HTTPS endpoint (2)**|
-   | Origin group      | Select **Add a new origin group (3)**. For the origin group name, enter **myOriginGroup (4)**. Then select **+ Add an origin (5)**. For the first origin, enter **OWASP-Main** for the Name and then for the Origin Type select **App services**. In the Host name, select **owasp-main.azurewebsites.net**. Select **Add** to add the origin to the origin group. Repeat the steps to add the second Web App as an origin. For the origin Name, enter **OWASP-Stage**. The Host name is **owasp-stage.azurewebsites.net**. Once both Web App origins have been added, select **Add (6)** to save the origin group configuration.|
-   | Origin path      | Leave blank.                                                 |
-   | Forwarding protocol   | Select **match incoming requests (7)**                      |
+   | **Setting**           | **Value**                                                    |
+   | ----------------------| ------------------------------------------------------------ |
+   | Name                  | Enter **myRoute (1)**                                            |     
+   | Redirect              | Enable this setting to **redirect all HTTP traffic to the HTTPS endpoint (2)**.|
+   | Origin group          | Select **Add a new origin group (3)**. For the origin group name, enter **myOriginGroup (4)**. Then select **+ Add an origin (5)**. For the first origin, enter **OWASP-Main** for the Name and then for the Origin Type select **App services**. In the Host name, select **owasp-main.azurewebsites.net**. Select **Add** to add the origin to the origin group. Repeat the steps to add the second Web App as an origin. For the origin Name, enter **OWASP-Stage**. The Host name is **owasp-stage.azurewebsites.net**. Once both Web App origins have been added, select **Add (6)** to save the origin group configuration.|
+   | Origin path           | Leave blank.                                                 |
+   | Forwarding protocol   | Select **match incoming requests (7)** .                     |
   
     
     ![](images/a58.png)
@@ -408,7 +408,6 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
   
     ![](images/a60.png)
   
-
 1. Select **Review + Create**, and then  **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
   
     ![](images/a61.png)
