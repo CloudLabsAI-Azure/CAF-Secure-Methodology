@@ -65,23 +65,6 @@ This exercise includes the following tasks:
 
     ![](images1/associateappgateway.png)
     
-    
-1. Navigate back to the **Associated Application gateway** page, click on **+ Add association (1)**, and select **HTTP Listener (2)**
-
-    ![](images/image310.png)
- 
-1. Under, the **Associate listeners in an application gateway** page, follow the below instructions:
-
-    - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop-down.
-    - **Listeners**: Select **AGListener (2)**.
-    - Click on **Add (3)**
-
-     ![](images/image311.png)
-          
-1.  Monitor the deployment status by selecting the **Notifications Bell (1)** icon at the top of the portal. In a minute or so, you should see a confirmation stating that you **Updated the Application Gateway**.
-
-     ![](images/image312.png)
-    
  ## **Task 2: Publish your application to the internet with the application gateway**
  
 In this task, you'll publish an application via Application Gateway by configuring the DNAT rules from the firewall policy.
