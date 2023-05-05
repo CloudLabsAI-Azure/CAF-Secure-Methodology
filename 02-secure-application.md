@@ -141,10 +141,84 @@ In this task, you'll publish an application via Application Gateway by configuri
   > **Note**: This will confirm that you have published the Contoso web application via Application Gateway.
 
 
- ## **Task 3: Application Gateway WAF Custom Rule to block IP** 
+ ## **Task 3: Application Gateway WAF Custom Rule to block IP**
+ 
+  In this task, you will login into the Jump VM to configure the Custom rules for firewall policy and will publish the web application within the VM and from the Lab VM to check the application's reachability.
+ 
+ 1. In the Azure portal, search for **Virtual Machines (1)** and select it from the results **(2)**.
 
+     ![](images1/virtual%20machines.png)
+     
+ 1. On Virtual Machines page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />**.
 
+     ![](images1/jumpvm.png)
 
+1. Click on **Connect (1)** and then select **RDP (2)**.
+
+     ![](images1/conenctrdp.png)
+     
+1. Under **RDP** tab, click on **Downlaod RDP file**.
+
+     ![](images1/downlaod.png)
+     
+1. Open the downlaoded RDP file and click on **Connect**.
+
+    ![](images1/conect.png)
+   
+1. Enter the below given credentials and click on **Ok (3)**
+
+    - User name : Enter **.\demouser (1)**
+    - Password : Enter **<inject key="JumpVM Admin Password" enableCopy="true" /> (2)**
+ 
+    ![](images1/credentials.png)
+    
+1. Click on **Yes** on the pop-up.
+
+    
+ 1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
+ 
+      ![](/images1/cmd1.png)
+ 
+ 1. On the Command Prompt, type **ipconfig (1)** and then copy the **IPv4 Address (2)** and save it to notepad for later use.
+ 
+      ![](/images/image314.png)
+ 
+ 1. Now, navigate back to the **Lab VM**, search **WAF (1)** from the Azure Portal and then select **Web Application Firewall policies (WAF) (2)**.
+ 
+      ![](images/image302.png "select gateway")
+ 
+ 1. On the WAF page, select your **firewallpolicy (1)**, and under settings, click on **Custom rules (2)** and after that click on **+ Add custom rule (3)**.
+ 
+      ![](images/image303.png "select gateway")
+ 
+ 1. On the **Add custom rule** blade, enter the following details
+ 
+    - Custom rule name: **WAFcustomrule (1)**.
+    - Priority: Enter **1 (2)**.
+    - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2
+    - Click on **Add (4)**.
+ 
+      ![](images/image304.png "select gateway")
+ 
+ 1. Click on **Save**.
+ 
+      ![](images/image305.png "select gateway")
+
+  1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
+ 
+      ![](images/image306.png "select gateway")
+ 
+ 1.  Now, open the browser in the **Jump VM** and browse the **IPv4 Address**.
+ 
+     > **Note**: you will see that your website is Running.
+ 
+      ![ss](/images1/0.0.png)
+ 
+ 1. Now, you can paste the **IPv4 Address** into your **Lab VM**. You can  observe the **This site can’t be reached** error
+ 
+      > **Note**: You will see that your website is Blocked outside the Jump VM
+ 
+     ![ss](/images1/site.png)
 
  ## **Task 4: Attack simulation** 
      
