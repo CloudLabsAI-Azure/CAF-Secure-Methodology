@@ -253,17 +253,116 @@ In this task, you will be testing your application for security and performing s
     
     ![server error](/images1/403.png)
 
-## **Task 5: Rate Limiting using Azure Front Door**    
+## **Task 5: Rate Limiting using Azure Front Door**
+  
+In this task, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:  
+  
+  
+### Task 5.1: Create two instances of a web app
+ 
+This task requires two instances of a web application that run in different Azure regions. Both the web application instances run in Active/Active mode, so either one can take traffic. This configuration differs from an Active/Stand-By configuration, where one acts as a failover.
+ 
+  
+1. On the Azure home page, using the global search enter **WebApp** and select **App Services** under services.
+  
+  
+
+1. Select **+ Create** to create a Web App.
+  
+  
+
+1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
+
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Subscription     | Select your subscription.                                    |
+   | Resource group   | Select the resource group JumpVM-rg                          |
+   | Name             | Enter **OWASP**                                              |
+   | Publish          | Select **Docker Container**.                                 |
+   | Operating System | Select **Linux**.                                            |
+   | Region           | Select **EastUS**.                                           |
+   | Windows Plan     | Select **Create new** and enter myAppServicePlanCentralUS in the text box. |
+   | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
+ 
+  
+  
+1. Click on **Next : Docker >**.
+  
+1. On the **Docker** tab, enter or select the following information.
+  
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Opions           | Select Single Container                                      |
+   | Image Source     | Select Docker Hub                                            |
+   | Access Type      | Select Public                                                |
+   | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
+    
+  
+1. Select **Review + create**, review the Summary, and then select **Create**.   
+   ‎It might take several minutes for the deployment to complete.
+  
+  
+1. Create a Second web app. On the Azure Portal home page, search  **WebApp**.
+  
+
+  
+1. Select **+ Create** to create a Web App.
+  
+  
+
+1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
+    
+
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Subscription     | Select your subscription.                                    |
+   | Resource group   | Select the resource group JumpVM-rg                          |
+   | Name             | Enter **OWASP Stage**                                        |
+   | Publish          | Select **Docker Container**.                                 |
+   | Operating System | Select **Linux**.                                            |
+   | Region           | Select **EastUS 2**.                                         |
+   | Windows Plan     | Select **Create new** and enter myAppServicePlanCentralUS in the text box. |
+   | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
+
+
+1. Click on **Next : Docker >**.
+  
+1. On the **Docker** tab, enter or select the following information.
+  
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Opions           | Select Single Container                                      |
+   | Image Source     | Select Docker Hub                                            |
+   | Access Type      | Select Public                                                |
+   | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
+      
+  
+1. Select **Review + create**, review the Summary, and then select **Create**.   
+   ‎It might take several minutes for the deployment to complete.
+  
+  
+
+
  
      
-## **Summary**
- 
-In this exercise you have covered the following:
-  
-   - Configured WAF to Protect your web application 
-   - Published an application to the internet with the application gateway 
-   - Monitored attacks against your web application 
-   - Customized WAF rules
-   - Performed Attack simulation
 
-Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
