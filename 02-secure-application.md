@@ -172,8 +172,9 @@ In this task, you'll publish an application via Application Gateway by configuri
  
     ![](images1/credentials.png)
     
-1. Click on **Yes** on the pop-up.
+1. Click on the **Yes** button to accept the certificate and add in trusted certificates.
 
+   ![](images/a31.png)
     
  1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
  
@@ -198,7 +199,7 @@ In this task, you'll publish an application via Application Gateway by configuri
     - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2
     - Click on **Add (4)**.
  
-      ![](images/image304.png "select gateway")
+      ![](images/a44.png "select gateway")
  
  1. Click on **Save**.
  
