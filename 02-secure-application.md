@@ -345,11 +345,58 @@ This task requires two instances of a web application that run in different Azur
     ![](images/a52.png)
 
 ### Task 5.2: Create a Front Door for your application
-  
-1. 
- 
-     
 
+Configure Azure Front Door to direct user traffic based on lowest latency between the two Web Apps origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
+  
+1. From the home page or the Azure menu, select **+ Create a resource**.
+  
+  
+  
+1. Search for **Front Door and CDN profiles**. Then select **Create**.
+  
+  
+
+1. On the **Compare offerings** page, select **Custom create**. Then select **Continue to create a Front Door**.
+  
+  
+  
+1. On the **Basics** tab, enter or select the following information, and then select **Next: Secret**.
+  
+   | **Setting**                 | **Value**                                                     |
+   | ----------------------------| ------------------------------------------------------------  |
+   | Subscription                | Select your subscription.                                     |
+   | Resource group              | Select the resource group **JumpVM-rg**                       |
+   | Resource group location     | Select East US                                                |
+   | Name                        | Enter **Webapp-Contoso-AFD**                                  |
+   | Tier                        | Select **Preminium**                                          |
+ 
+1. On the **Secrets**, Leave it default as same and click on **Next: Endpoint >**.
+  
+
+  
+1. In the **Endpoint** tab, select **Add an endpoint** and give your endpoint a globally unique name. You can create more endpoints in your Azure Front Door profile after you complete the deployment. This example uses **contoso-frontend**. Select Add to add the endpoint.
+  
+  
+  
+1. Next, select **+ Add a route** to configure routing to your Web App origin.
+  
+  
+  
+1. On the **Add a route** page, enter, or select the following information, select **Add** to add the route to the endpoint configuration.
+
+ 
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Name             | Enter **myRoute**                                         |
+   | Domains          | A domain name has been auto-generated for you to use. If you want to add a custom domain, select Add a new domain. This example will use the default.                                 |
+   | Operating System | Select **Linux**.                                            |
+   | Region           | Select **EastUS**.                                           |
+   | Subscription     | Select your subscription.                                    |
+   | Resource group   | Select the resource group **JumpVM-rg**                      |
+   | Name             | Enter **OWASP-Main**                                         |
+   | Publish          | Select **Docker Container**.                                 |
+   | Operating System | Select **Linux**.                                            |
+   | Region           | Select **EastUS**.                                           |
 
   
   
