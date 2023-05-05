@@ -348,17 +348,17 @@ This task requires two instances of a web application that run in different Azur
 
 Configure Azure Front Door to direct user traffic based on lowest latency between the two Web Apps origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
   
-1. From the home page or the Azure menu, select **+ Create a resource**.
+1. In the Azure portal, search for **Front Door and CDN profiles (1)** and select it from the results **(2)**.
   
+    ![](images/a53.png)
   
+1. Select **+ Create** to create a Front Door and CDN profiles.
   
-1. Search for **Front Door and CDN profiles**. Then select **Create**.
-  
-  
+    ![](images/a54.png)
 
 1. On the **Compare offerings** page, select **Custom create**. Then select **Continue to create a Front Door**.
   
-  
+    ![](images/a55.png)
   
 1. On the **Basics** tab, enter or select the following information, and then select **Next: Secret**.
   
@@ -366,52 +366,79 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
    | ----------------------------| ------------------------------------------------------------  |
    | Subscription                | Select your subscription.                                     |
    | Resource group              | Select the resource group **JumpVM-rg**                       |
-   | Resource group location     | Select East US                                                |
+   | Resource group location     | Default same as resource group                                |
    | Name                        | Enter **Webapp-Contoso-AFD**                                  |
-   | Tier                        | Select **Preminium**                                          |
+   | Tier                        | Select **Premium**                                            |
  
+  
+    ![](images/a63.png)
+  
 1. On the **Secrets**, Leave it default as same and click on **Next: Endpoint >**.
   
-
+    ![](images/a56.png)
   
-1. In the **Endpoint** tab, select **Add an endpoint** and give your endpoint a globally unique name. You can create more endpoints in your Azure Front Door profile after you complete the deployment. This example uses **contoso-frontend**. Select Add to add the endpoint.
+1. In the **Endpoint** tab, select **Add an endpoint (1)** and give your endpoint name as **contoso-frontend (2)**. Select **Add** to add the endpoint.
   
-  
+    ![](images/a64.png)
   
 1. Next, select **+ Add a route** to configure routing to your Web App origin.
   
+    ![](images/a57.png)
   
-  
-1. On the **Add a route** page, enter, or select the following information, select **Add** to add the route to the endpoint configuration.
+1. On the **Add a route** page, enter, or select the following information, select **Add (8)** to add the route to the endpoint configuration.
 
  
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Name             | Enter **myRoute**                                         |
-   | Domains          | A domain name has been auto-generated for you to use. If you want to add a custom domain, select Add a new domain. This example will use the default.                                 |
-   | Operating System | Select **Linux**.                                            |
-   | Region           | Select **EastUS**.                                           |
-   | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group **JumpVM-rg**                      |
-   | Name             | Enter **OWASP-Main**                                         |
-   | Publish          | Select **Docker Container**.                                 |
-   | Operating System | Select **Linux**.                                            |
-   | Region           | Select **EastUS**.                                           |
+   | Name             | Enter **myRoute (1)**                                            |     
+   | Redirect         | Enable this setting to **redirect all HTTP traffic to the HTTPS endpoint (2)**|
+   | Origin group      | Select **Add a new origin group (3)**. For the origin group name, enter **myOriginGroup (4)**. Then select **+ Add an origin (5)**. For the first origin, enter **OWASP-Main** for the Name and then for the Origin Type select **App services**. In the Host name, select **owasp-main.azurewebsites.net**. Select **Add** to add the origin to the origin group. Repeat the steps to add the second Web App as an origin. For the origin Name, enter **OWASP-Stage**. The Host name is **owasp-stage.azurewebsites.net**. Once both Web App origins have been added, select **Add (6)** to save the origin group configuration.|
+   | Origin path      | Leave blank.                                                 |
+   | Forwarding protocol   | Select **match incoming requests (7)**                      |
+  
+    
+    ![](images/a58.png)
+  
+  
+1. Select **+ Add a policy** to apply a Web Application Firewall (WAF) policy to one or more domains in the Azure Front Door profile.
+  
+    ![](images/a59.png)
+  
+1. On the **Add security policy** page, enter a name **mySecurityPolicy (1)**. Then select domains you want to associate the policy with. For WAF Policy, select **Create New** to create a new policy. Enter name of policy is **myWAFPolicy (2)**. Select **Save (3)** to add the security policy to the endpoint configuration.
+  
+    ![](images/a60.png)
+  
 
+1. Select **Review + Create**, and then  **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
+  
+    ![](images/a61.png)
+    
+    ![](images/a65.png)
+  
+### Task 5.3: Verify Azure Front Door
+  
+When you create the Azure Front Door profile, it takes a few minutes for the configuration to be deployed globally. Once completed, you can access the frontend host you created. In a browser, enter the endpoint hostname. For example contoso-frontend.z01.azurefd.net. Your request will automatically get routed to the nearest server from the specified servers in the origin group.
+  
+1. Open a browser, as described above, and go to the frontend address: contoso-frontend.z01.azurefd.net.
+  
+  
+2. In the Azure portal, search and select App services. Scroll down to find one of your Web Apps, **OWASP-Main**.
   
   
   
+3. Select your web app, and then select **Stop**, and **Yes** to verify.
+  
+
+4. Refresh your browser. You should see the same information page. 
   
   
+5. Go to the second Web app, and stop that one as well.
   
   
+6. Refresh your browser. This time, you should see an error message.
   
-  
-  
-  
-  
-  
-  
+ 
+7. Navigate back to app services make sure both two web services are running.
   
   
   
