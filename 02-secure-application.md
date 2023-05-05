@@ -344,7 +344,9 @@ This task requires two instances of a web application that run in different Azur
   
     ![](images/a52.png)
 
-
+### Task 5.2: Create a Front Door for your application
+  
+1. 
  
      
 
