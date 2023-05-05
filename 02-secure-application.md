@@ -174,7 +174,7 @@ In this task, you'll publish an application via Application Gateway by configuri
     
 1. Click on the **Yes** button to accept the certificate and add in trusted certificates.
 
-   ![](images/a31.png)
+      ![](images/a31.png)
     
  1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
  
@@ -257,34 +257,33 @@ In this task, you will be testing your application for security and performing s
   
 In this task, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:  
   
+  ![](images/a45.png)
   
 ### Task 5.1: Create two instances of a web app
  
 This task requires two instances of a web application that run in different Azure regions. Both the web application instances run in Active/Active mode, so either one can take traffic. This configuration differs from an Active/Stand-By configuration, where one acts as a failover.
- 
   
-1. On the Azure home page, using the global search enter **WebApp** and select **App Services** under services.
+1. On the Azure home page, using the global search enter **WebApp (1)** and select **App Services (2)** under services.
   
-  
+    ![](images/a46.png)
 
 1. Select **+ Create** to create a Web App.
   
-  
+    ![](images/a47.png)
 
 1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
    | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group JumpVM-rg                          |
-   | Name             | Enter **OWASP**                                              |
+   | Resource group   | Select the resource group **JumpVM-rg**                      |
+   | Name             | Enter **OWASP-Main**                                         |
    | Publish          | Select **Docker Container**.                                 |
    | Operating System | Select **Linux**.                                            |
    | Region           | Select **EastUS**.                                           |
-   | Windows Plan     | Select **Create new** and enter myAppServicePlanCentralUS in the text box. |
-   | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
  
   
+    ![](images/a48.png)
   
 1. Click on **Next : Docker >**.
   
@@ -298,17 +297,20 @@ This task requires two instances of a web application that run in different Azur
    | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
     
   
+    ![](images/a49.png)
+  
 1. Select **Review + create**, review the Summary, and then select **Create**.   
    ‎It might take several minutes for the deployment to complete.
   
+    ![](images/a51.png)
   
-1. Create a Second web app. On the Azure Portal home page, search  **WebApp**.
+1. Create a Second web app. on the Azure home page, using the global search enter **WebApp (1)** and select **App Services (2)** under services.
   
-
+    ![](images/a46.png)
   
 1. Select **+ Create** to create a Web App.
   
-  
+    ![](images/a47.png)
 
 1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
     
@@ -316,15 +318,14 @@ This task requires two instances of a web application that run in different Azur
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
    | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group JumpVM-rg                          |
-   | Name             | Enter **OWASP Stage**                                        |
+   | Resource group   | Select the resource group **JumpVM-rg**                      |
+   | Name             | Enter **OWASP-Stage**                                        |
    | Publish          | Select **Docker Container**.                                 |
    | Operating System | Select **Linux**.                                            |
    | Region           | Select **EastUS 2**.                                         |
-   | Windows Plan     | Select **Create new** and enter myAppServicePlanCentralUS in the text box. |
-   | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
 
-
+    ![](images/a50.png)
+  
 1. Click on **Next : Docker >**.
   
 1. On the **Docker** tab, enter or select the following information.
@@ -336,11 +337,12 @@ This task requires two instances of a web application that run in different Azur
    | Access Type      | Select Public                                                |
    | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
       
+    ![](images/a49.png)
   
 1. Select **Review + create**, review the Summary, and then select **Create**.   
    ‎It might take several minutes for the deployment to complete.
   
-  
+    ![](images/a52.png)
 
 
  
