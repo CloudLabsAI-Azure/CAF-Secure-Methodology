@@ -35,11 +35,11 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 5. Under **Logs**, select **Azure Firewall Application Rule**, and **Azure Firewall Network Rule**.
 
-   ![](images/firewall5.png "search gateway")
+   ![](images/scafinfra17.jpg "search gateway")
 
-6. Under **Destination details**, select **Send to Log Analytics workspace** and then click on **Save**.
+6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
-   ![](images/firewall6.png "search gateway")
+   ![](images/scafinfra18.jpg "search gateway")
 
 
 ## **Task 2: Test IDPS for HTTP traffic**
