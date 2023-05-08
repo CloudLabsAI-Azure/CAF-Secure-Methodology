@@ -49,7 +49,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/firewall3.png "search gateway")
 
-5. Under **Logs**, select the follwing categories
+5. Under **Logs**, select the below mentioned categories.
    
    - Azure Firewall Application Rule
    - Azure Firewall Network Rule
@@ -99,9 +99,9 @@ In this task, you will test IDPS for HTTP traffic
  
  1. You'll be able to see resource specific logs for IDPS event
  
-   ![](images/scafinfra26.jpg "search gateway")
+    ![](images/scafinfra26.jpg "search gateway")
  
-   >**Note**: Logs generation can take upto 12 hours to show up. Please refer to the screenshot for reference and continue with the next steps.
+    >**Note**: Logs generation can take upto 12 hours to show up. Please refer to the screenshot for reference and continue with the next steps.
 
 1. Under the **Results** tab, expand the most recent result **(1)** and observe the **msg_s (2)** row.
  
