@@ -141,10 +141,85 @@ In this task, you'll publish an application via Application Gateway by configuri
   > **Note**: This will confirm that you have published the Contoso web application via Application Gateway.
 
 
- ## **Task 3: Application Gateway WAF Custom Rule to block IP** 
+ ## **Task 3: Application Gateway WAF Custom Rule to block IP**
+ 
+  In this task, you will login into the Jump VM to configure the Custom rules for firewall policy and will publish the web application within the VM and from the Lab VM to check the application's reachability.
+ 
+ 1. In the Azure portal, search for **Virtual Machines (1)** and select it from the results **(2)**.
 
+     ![](images1/virtual%20machines.png)
+     
+ 1. On Virtual Machines page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />**.
 
+     ![](images1/jumpvm.png)
 
+1. Click on **Connect (1)** and then select **RDP (2)**.
+
+     ![](images1/conenctrdp.png)
+     
+1. Under **RDP** tab, click on **Downlaod RDP file**.
+
+     ![](images1/downlaod.png)
+     
+1. Open the downlaoded RDP file and click on **Connect**.
+
+    ![](images1/conect.png)
+   
+1. Enter the below given credentials and click on **Ok (3)**
+
+    - User name : Enter **.\demouser (1)**
+    - Password : Enter **<inject key="JumpVM Admin Password" enableCopy="true" /> (2)**
+ 
+    ![](images1/credentials.png)
+    
+1. Click on the **Yes** button to accept the certificate and add in trusted certificates.
+
+      ![](images/a31.png)
+    
+ 1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
+ 
+      ![](/images1/cmd1.png)
+ 
+ 1. On the Command Prompt, type **ipconfig (1)** and then copy the **IPv4 Address (2)** and save it to notepad for later use.
+ 
+      ![](/images/image314.png)
+ 
+ 1. Now, navigate back to the **Lab VM**, search **WAF (1)** from the Azure Portal and then select **Web Application Firewall policies (WAF) (2)**.
+ 
+      ![](images/image302.png "select gateway")
+ 
+ 1. On the WAF page, select your **firewallpolicy (1)**, and under settings, click on **Custom rules (2)** and after that click on **+ Add custom rule (3)**.
+ 
+      ![](images/image303.png "select gateway")
+ 
+ 1. On the **Add custom rule** blade, enter the following details
+ 
+    - Custom rule name: **WAFcustomrule (1)**.
+    - Priority: Enter **1 (2)**.
+    - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2
+    - Click on **Add (4)**.
+ 
+      ![](images/a44.png "select gateway")
+ 
+ 1. Click on **Save**.
+ 
+      ![](images/image305.png "select gateway")
+
+  1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
+ 
+      ![](images/image306.png "select gateway")
+ 
+ 1.  Now, open the browser in the **Jump VM** and browse the **IPv4 Address**.
+ 
+     > **Note**: you will see that your website is Running.
+ 
+      ![ss](/images1/0.0.png)
+ 
+ 1. Now, you can paste the **IPv4 Address** into your **Lab VM**. You can  observe the **This site can’t be reached** error
+ 
+      > **Note**: You will see that your website is Blocked outside the Jump VM
+ 
+     ![ss](/images1/site.png)
 
  ## **Task 4: Attack simulation** 
      
@@ -178,17 +253,275 @@ In this task, you will be testing your application for security and performing s
     
     ![server error](/images1/403.png)
 
-## **Task 5: Rate Limiting using Azure Front Door**    
- 
-     
-## **Summary**
- 
-In this exercise you have covered the following:
+## **Task 5: Rate Limiting using Azure Front Door**
   
-   - Configured WAF to Protect your web application 
-   - Published an application to the internet with the application gateway 
-   - Monitored attacks against your web application 
-   - Customized WAF rules
-   - Performed Attack simulation
+In this task, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:  
+  
+  ![](images/a80.png)
+  
+### Task 5.1: Create two instances of a web app
+ 
+This task requires two instances of a web application that run in different Azure regions. Both the web application instances run in Active/Active mode, so either one can take traffic. This configuration differs from an Active/Stand-By configuration, where one acts as a failover.
+  
+1. On the Azure home page, using the global search enter **WebApp (1)** and select **App Services (2)** under services.
+  
+    ![](images/a46.png)
 
-Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
+1. Select **+ Create** to create a Web App.
+  
+    ![](images/a47.png)
+
+1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
+
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Subscription     | Select your subscription.                                    |
+   | Resource group   | Select the resource group **JumpVM-rg**                      |
+   | Name             | Enter **OWASP-Main**                                         |
+   | Publish          | Select **Docker Container**.                                 |
+   | Operating System | Select **Linux**.                                            |
+   | Region           | Select **EastUS**.                                           |
+ 
+  
+    ![](images/a48.png)
+  
+1. Click on **Next : Docker >**.
+  
+1. On the **Docker** tab, enter or select the following information.
+  
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Opions           | Select Single Container                                      |
+   | Image Source     | Select Docker Hub                                            |
+   | Access Type      | Select Public                                                |
+   | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
+    
+  
+    ![](images/a49.png)
+  
+1. Select **Review + create**, review the Summary, and then select **Create**.   
+   ‎It might take several minutes for the deployment to complete.
+  
+    ![](images/a51.png)
+  
+1. Create a Second web app. on the Azure home page, using the global search enter **WebApp (1)** and select **App Services (2)** under services.
+  
+    ![](images/a46.png)
+  
+1. Select **+ Create** to create a Web App.
+  
+    ![](images/a47.png)
+
+1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
+    
+
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Subscription     | Select your subscription.                                    |
+   | Resource group   | Select the resource group **JumpVM-rg**                      |
+   | Name             | Enter **OWASP-Stage**                                        |
+   | Publish          | Select **Docker Container**.                                 |
+   | Operating System | Select **Linux**.                                            |
+   | Region           | Select **EastUS 2**.                                         |
+
+    ![](images/a50.png)
+  
+1. Click on **Next : Docker >**.
+  
+1. On the **Docker** tab, enter or select the following information.
+  
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Opions           | Select Single Container                                      |
+   | Image Source     | Select Docker Hub                                            |
+   | Access Type      | Select Public                                                |
+   | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
+      
+    ![](images/a49.png)
+  
+1. Select **Review + create**, review the Summary, and then select **Create**.   
+   ‎It might take several minutes for the deployment to complete.
+  
+    ![](images/a52.png)
+
+### Task 5.2: Create a Front Door for your application
+
+Configure Azure Front Door to direct user traffic based on lowest latency between the two Web Apps origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
+  
+1. In the Azure portal, search for **Front Door and CDN profiles (1)** and select it from the results **(2)**.
+  
+    ![](images/a53.png)
+  
+1. Select **+ Create** to create a Front Door and CDN profiles.
+  
+    ![](images/a54.png)
+
+1. On the **Compare offerings** page, select **Custom create**. Then select **Continue to create a Front Door**.
+  
+    ![](images/a55.png)
+  
+1. On the **Basics** tab, enter or select the following information, and then select **Next: Secret**.
+  
+   | **Setting**                 | **Value**                                                     |
+   | ----------------------------| ------------------------------------------------------------  |
+   | Subscription                | Select your subscription.                                     |
+   | Resource group              | Select the resource group **JumpVM-rg**                       |
+   | Resource group location     | Default same as resource group                                |
+   | Name                        | Enter **Webapp-Contoso-AFD**                                  |
+   | Tier                        | Select **Premium**                                            |
+ 
+  
+    ![](images/a63.png)
+  
+1. On the **Secrets**, Leave it default as same and click on **Next: Endpoint >**.
+  
+    ![](images/a56.png)
+  
+1. In the **Endpoint** tab, select **Add an endpoint (1)** and give your endpoint name as **contoso-frontend (2)**. Select **Add** to add the endpoint.
+  
+    ![](images/a64.png)
+  
+1. Next, select **+ Add a route** to configure routing to your Web App origin.
+  
+    ![](images/a57.png)
+  
+1. On the **Add a route** page, enter, or select the following information, select **Add (8)** to add the route to the endpoint configuration.
+
+ 
+   | **Setting**           | **Value**                                                    |
+   | ----------------------| ------------------------------------------------------------ |
+   | Name                  | Enter **myRoute (1)**                                            |     
+   | Redirect              | Enable this setting to **redirect all HTTP traffic to the HTTPS endpoint (2)**.|
+   | Origin group          | Select **Add a new origin group (3)**. For the origin group name, enter **myOriginGroup (4)**. Then select **+ Add an origin (5)**. For the first origin, enter **OWASP-Main** for the Name and then for the Origin Type select **App services**. In the Host name, select **owasp-main.azurewebsites.net**. Select **Add** to add the origin to the origin group. Repeat the steps to add the second Web App as an origin. For the origin Name, enter **OWASP-Stage**. The Host name is **owasp-stage.azurewebsites.net**. Once both Web App origins have been added, select **Add (6)** to save the origin group configuration.|
+   | Origin path           | Leave blank.                                                 |
+   | Forwarding protocol   | Select **match incoming requests (7)** .                     |
+  
+    
+    ![](images/a58.png)
+  
+  
+1. Select **+ Add a policy** to apply a Web Application Firewall (WAF) policy to one or more domains in the Azure Front Door profile.
+  
+    ![](images/a59.png)
+  
+1. On the **Add security policy** page, enter a name **mySecurityPolicy (1)**. Then select domains you want to associate the policy with. For WAF Policy, select **Create New** to create a new policy. Enter name of policy is **myWAFPolicy (2)**. Select **Save (3)** to add the security policy to the endpoint configuration.
+  
+    ![](images/a60.png)
+  
+1. Select **Review + Create**, and then  **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
+  
+    ![](images/a61.png)
+    
+    ![](images/a65.png)
+  
+### Task 5.3: View Azure Front Door in action
+  
+Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
+  
+1. On the Front Door resource in the **Overview (1)** blade, locate the endpoint hostname that is created for your endpoint. For example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. **Copy (2)** this FQDN.
+  
+    ![](images/a66.png)
+    
+1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
+  
+    ![](images/a67.png)
+    
+1. To test instant global failover in action, try the following steps:
+
+1. Switch to the Azure portal, search for and select **App services**.
+  
+    ![](images/a46.png)
+
+1. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
+
+    ![](images/a68.png)
+
+1. Switch back to your browser and select Refresh. You should see the same information page.
+
+    ![](images/a67.png)
+    
+    >**Note: there may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
+
+  
+1. Switch back to the Azure Portal, locate the other web app, and stop it.
+  
+    ![](images/a69.png)
+
+1. Switch back to your browser and select Refresh. This time, you should see an error message.
+
+    ![](images/a70.png)
+
+
+### Task 5.4: Create a Rate Limit Rule
+  
+  
+1. Navigate to the **App services**, Select both of your web apps, then select **Start**, and then select **Yes** to verify.
+  
+    ![](images/a71.png)
+
+1. In a new browser tab paste the **endpoint** which you copied in previous task.
+  
+    ![](images/a67.png)
+  
+1. Click on **Magnifying glass** on top right corner of the website to search.
+  
+    ![](images/a72.png)
+  
+1. Type in any keyword **(e.g. apple)** and you will see a response from the website. As this site is using JSON, try **refresh** in browser to do the same search again and now you will not see any response message in the website as you saw previously.
+  
+    ![](images/a73.png)
+  
+    ![](images/a74.png)  
+  
+1. In the Azure portal, search for **myWAFPolicy (1)** and select it from the results **(2)**.
+  
+    ![](images/a79.png)
+  
+1. On the **myWAFPolicy** page, under settings, click on **Custom rules (1)** and after that click on **+ Add custom rule (2)**.
+  
+    ![](images/a75.png)
+  
+1. On the **Add custom rule** blade, enter the following details
+ 
+    - Custom rule name: Enter **rateLimitRule (1)**.
+    - Rule type: Select **Rate limit (2)**
+    - Priority: Enter **1 (3)**
+    - Rate limit duration: Select **1 minute (4)**
+    - Rate limit threshold (requests): Enter **1000 (5)**
+  
+      ![](images/a76.png)
+ 
+1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
+  
+    - Match type: Select **String**.
+    - Match variable: Select **RequestUri**
+    - Operation: Select **is**
+    - Operator: Select **Contains**
+    - Match values: Enter **/promo**
+    - Click on **Add**.
+      
+      ![](images/a78.png)
+  
+1. Select **Save**.
+  
+   ![](images/a77.png)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
