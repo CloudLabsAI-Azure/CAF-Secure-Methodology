@@ -418,48 +418,61 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
   
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
   
-1. On the Front Door resource in the Overview blade, locate the endpoint hostname that is created for your endpoint. This should be fdendpoint followed by a hyphen and a random string. For example, **fdendpoint-fxa8c8hddhhgcrb9.z01.azurefd.net**. **Copy** this FQDN.
+1. On the Front Door resource in the **Overview (1)** blade, locate the endpoint hostname that is created for your endpoint. For example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. **Copy (2)** this FQDN.
+  
+    ![](images/a66.png)
+  
   
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
-  
+    ![](images/a67.png)
+    
 1. To test instant global failover in action, try the following steps:
 
-1. Switch to the Azure portal, search for and select **App services**. 
+1. Switch to the Azure portal, search for and select **App services**.
+  
+    ![](images/a46.png)
 
 1. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
 
-   ![Azure Portal showing stopped Web App](../media/stop-web-app.png)
+    ![](images/a68.png)
 
 1. Switch back to your browser and select Refresh. You should see the same information page.
 
+    ![](images/a67.png)
+    
     >**Note: there may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
 
+  
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
+  
+    ![](images/a69.png)
 
 1. Switch back to your browser and select Refresh. This time, you should see an error message.
 
-   ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
+    ![](images/a70.png)
 
 
 ### Task 5.4: Create a Rate Limit Rule
   
   
-1. Navigate to the **App services**, make sure both the two app services are in running state.
+1. Navigate to the **App services**, Select both of your web apps, then select **Start**, and then select **Yes** to verify.
   
-  
+    ![](images/a71.png)
 
-1. Open a new tab or browser and paste the endpoint which you copiend in previous task.
+1. In a new browser tab paste the **endpoint** which you copied in previous task.
   
+    ![](images/a67.png)
   
+1. Click on **Magnifying glass** on top right corner of the website to search.
   
-1. Click on Magnifying glass on top right corner of the website to search.
+    ![](images/a72.png)
   
+1. Type in any keyword **(e.g. apple)** and you will see a response from the website. As this site is using JSON, try **refresh** in browser to do the same search again and now you will not see any response message in the website as you saw previously.
   
+    ![](images/a73.png)
   
-1. Type in any keyword (e.g. apple) and you will see a response from the website. As this site is using JSON, try refresh in browser to do the same search again and now you will not see any response message in the website as you saw previously.
-  
-  
+    ![](images/a74.png)
   
 1. Now for this we need to create WAF Policy **SOCNSFDPolicy** to Rate Limit only 1 request for search in 1 minute. Follow the Steps below:
   
