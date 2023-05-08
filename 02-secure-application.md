@@ -414,30 +414,53 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
     
     ![](images/a65.png)
   
-### Task 5.3: Verify Azure Front Door
+### Task 5.3: View Azure Front Door in action
   
-When you create the Azure Front Door profile, it takes a few minutes for the configuration to be deployed globally. Once completed, you can access the frontend host you created. In a browser, enter the endpoint hostname. For example contoso-frontend.z01.azurefd.net. Your request will automatically get routed to the nearest server from the specified servers in the origin group.
+Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
   
-1. Open a browser, as described above, and go to the frontend address: contoso-frontend.z01.azurefd.net.
+1. On the Front Door resource in the Overview blade, locate the endpoint hostname that is created for your endpoint. This should be fdendpoint followed by a hyphen and a random string. For example, **fdendpoint-fxa8c8hddhhgcrb9.z01.azurefd.net**. **Copy** this FQDN.
   
-  
-2. In the Azure portal, search and select App services. Scroll down to find one of your Web Apps, **OWASP-Main**.
-  
+1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
   
-3. Select your web app, and then select **Stop**, and **Yes** to verify.
-  
+1. To test instant global failover in action, try the following steps:
 
-4. Refresh your browser. You should see the same information page. 
+1. Switch to the Azure portal, search for and select **App services**. 
+
+1. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
+
+   ![Azure Portal showing stopped Web App](../media/stop-web-app.png)
+
+1. Switch back to your browser and select Refresh. You should see the same information page.
+
+    >**Note: there may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
+
+1. Switch back to the Azure Portal, locate the other web app, and stop it.
+
+1. Switch back to your browser and select Refresh. This time, you should see an error message.
+
+   ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
+
+   Congratulations! You have configured and tested an Azure Front Door.
   
   
-5. Go to the second Web app, and stop that one as well.
   
   
-6. Refresh your browser. This time, you should see an error message.
   
- 
-7. Navigate back to app services make sure both two web services are running.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
