@@ -441,7 +441,31 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
 
-   Congratulations! You have configured and tested an Azure Front Door.
+
+### Task 5.4: Create a Rate Limit Rule
+  
+  
+1. Navigate to the **App services**, make sure both the two app services are in running state.
+  
+  
+
+1. Open a new tab or browser and paste the endpoint which you copiend in previous task.
+  
+  
+  
+1. Click on Magnifying glass on top right corner of the website to search.
+  
+  
+  
+1. Type in any keyword (e.g. apple) and you will see a response from the website. As this site is using JSON, try refresh in browser to do the same search again and now you will not see any response message in the website as you saw previously.
+  
+  
+  
+1. Now for this we need to create WAF Policy **SOCNSFDPolicy** to Rate Limit only 1 request for search in 1 minute. Follow the Steps below:
+  
+  
+  
+1. 
   
   
   
