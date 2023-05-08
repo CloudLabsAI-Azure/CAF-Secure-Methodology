@@ -16,6 +16,7 @@ This exercise includes the following tasks:
   - Publish your application to the internet with the application gateway
   - Application Gateway WAF Custom Rule to block IP
   - Attack simulation
+  - Rate Limiting using Azure Front Door
 
  ## **Task 1: Configure WAF to protect your web application**
  
