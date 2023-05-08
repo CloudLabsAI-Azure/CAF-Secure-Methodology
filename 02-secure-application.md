@@ -421,8 +421,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. On the Front Door resource in the **Overview (1)** blade, locate the endpoint hostname that is created for your endpoint. For example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. **Copy (2)** this FQDN.
   
     ![](images/a66.png)
-  
-  
+    
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
     ![](images/a67.png)
@@ -472,15 +471,40 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
     ![](images/a73.png)
   
-    ![](images/a74.png)
+    ![](images/a74.png)  
   
-1. Now for this we need to create WAF Policy **SOCNSFDPolicy** to Rate Limit only 1 request for search in 1 minute. Follow the Steps below:
-  
-  
-  
-1. 
+1. In the Azure portal, search for **myWAFPolicy (1)** and select it from the results **(2)**.
   
   
+  
+1. On the **myWAFPolicy** page, under settings, click on **Custom rules** (1) and after that click on **+ Add custom rule** (3).
+  
+  
+  
+1. On the **Add custom rule** blade, enter the following details
+ 
+    - Custom rule name: **rateLimitRule (1)**.
+    - Rule type: **Rate limit (2)**
+    - Priority: Enter **1 (2)**
+    - Rate limit duration: **1 minute**
+    - Rate limit threshold (requests): **1000**
+  
+ 
+ 
+1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
+  
+    - Match type: **String**.
+    - Match variable: **RequestUri**
+    - Operation: **Is**
+    - Operator: **Contains**
+    - Match values: **/promo**
+  
+  
+1. Select **Add**.
+  
+  
+  
+1. Select **Save**.
   
   
   
