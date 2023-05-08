@@ -257,7 +257,7 @@ In this task, you will be testing your application for security and performing s
   
 In this task, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:  
   
-  ![](images/a45.png)
+  ![](images/a80.png)
   
 ### Task 5.1: Create two instances of a web app
  
