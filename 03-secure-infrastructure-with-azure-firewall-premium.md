@@ -17,6 +17,22 @@ In this exercise, you will explore Azure Firewall premium features and will add 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
+1. Navigate to home page in Azure portal, search for **Subscriptions (1)** and **select (2)** from suggestions.
+
+   ![](images/scafinfra19.jpg "search gateway")
+
+1. Select the **default subscription** available in the list.
+
+   ![](images/scafinfra20.jpg "search gateway")
+
+1. From the left-side blade, select **Preview features (1)** and select **Microsoft.Network (2)** in the types list.
+
+   ![](images/scafinfra21.jpg "search gateway")
+
+1. select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
+
+   ![](images/scafinfra22.jpg "search gateway")
+
 1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
 
    ![](images/firewall1.png "search gateway")
@@ -33,14 +49,23 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/firewall3.png "search gateway")
 
-5. Under **Logs**, select **Azure Firewall Application Rule**, and **Azure Firewall Network Rule**.
+5. Under **Logs**, select the follwing categories
+   
+   - Azure Firewall Application Rule
+   - Azure Firewall Network Rule
+   - Azure Firewall Nat Rule
+   - Azure Firewall Threat Intelligence
+   - Azure Firewall IDPS Signature
+   - Azure Firewall DNS query
+   - Azure Firewall FQDN Resolution Failure
+   - Azure Firewall Fat Flow Log
+   - Azure Firewall Flow Trace Log
 
-   ![](images/scafinfra17.jpg "search gateway")
+   ![](images/scafinfra23.jpg "search gateway")
 
 6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
-   ![](images/scafinfra18.jpg "search gateway")
-
+   ![](images/scafinfra23.jpg "search gateway")
 
 ## **Task 2: Test IDPS for HTTP traffic**
 
@@ -68,23 +93,16 @@ In this task, you will test IDPS for HTTP traffic
  
      ![](images1/firewall.png)
  
- 1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab and click on **Load to editor (2)** under the **Network rule log data** tab.
+ 1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **IDPS event logs**.
  
-    ![](images1/loadtoeditor1.png)
+   ![](images/scafinfra25.jpg "search gateway")
  
- 1. On the query editor workspace, replace the existing query and past the below-mentioned query **(1)** then click on **Run (2)**.
+ 1. You'll be able to see resource specific logs for IDPS event
  
-     ```bash
-     AzureDiagnostics
-     | where ResourceType == "AZUREFIREWALLS"
-     | where OperationName == "AzureFirewallIDSLog"
-     ```
+   ![](images/scafinfra26.jpg "search gateway")
  
-    ![](images1/run1.png)
- 
-    > [! NOTE]
-    > It can take some time for the data to begin showing in the logs. Give it at least a couple of minutes to allow for the logs to begin showing the data.
- 
+   >**Note**: Logs generation can take upto 12 hours to show up. Please refer to the screenshot for reference and continue with the next steps.
+
 1. Under the **Results** tab, expand the most recent result **(1)** and observe the **msg_s (2)** row.
  
    ![](images1/result1.png)
@@ -105,7 +123,7 @@ In this task, you will test IDPS for HTTP traffic
  
    ![](images/firewall13.png "search gateway")
 
-1. Navigate back to WorkerVM, and run the `curl` command again:
+1. Navigate back to JumpVM, and run the `curl` command again:
 
     `curl -A "HaxerMen" <your web server address>`
 
