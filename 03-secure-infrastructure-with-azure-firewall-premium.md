@@ -325,5 +325,30 @@ In this task, you will create an application rule to allow access to sports webs
 
 ## **Task 5: IP Groups - New**
 
+1. Navigate to home page in Azure portal, search for **IP groups (1)** and **select (2)** from suggestions.
+ 
+ 
+ 
+1. Click on **+ Create** to create a IP group.
+ 
+ 
+1. On the IP Group page, on the **Basics** tab, enter or select the following information and click on **Next : IP addresses > (4)**.
+ 
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Subscription     | Select your subscription.                                    |
+   | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
+   | Name             | Enter **IpGroup (2)**                                        |
+   | Region           | Select **East US (3)**
+ 
+
+1. On the **IP addresses** tab, enter `10.0.0.0/24` and `192.168.1.10` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
+ 
+ 
+1. Review the Summary, and then select **Create**.
+ 
+   
+ 
+ 
 
 ## **Task 6: Azure Firewall Policies with Firewall Manager – New**
