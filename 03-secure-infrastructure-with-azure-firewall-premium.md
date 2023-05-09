@@ -327,10 +327,11 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. Navigate to home page in Azure portal, search for **IP groups (1)** and **select (2)** from suggestions.
  
+    ![](images/a81.png)
  
- 
-1. Click on **+ Create** to create a IP group.
- 
+1. Click on **+ Create** to create a IP Group.
+  
+    ![](images/a82.png) 
  
 1. On the IP Group page, on the **Basics** tab, enter or select the following information and click on **Next : IP addresses > (4)**.
  
@@ -341,13 +342,15 @@ In this task, you will create an application rule to allow access to sports webs
    | Name             | Enter **IpGroup (2)**                                        |
    | Region           | Select **East US (3)**
  
+    ![](images/a83.png)
 
 1. On the **IP addresses** tab, enter `10.0.0.0/24` and `192.168.1.10` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
  
+    ![](images/a84.png)
  
 1. Review the Summary, and then select **Create**.
  
-   
+    ![](images/a85.png)
  
  
 
