@@ -2,11 +2,11 @@
 
 1. Once you launch the lab, a virtual machine (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.	
 
-   ![](images/lab-launched.jpg)	
+   ![](images/a87.png)	
 
 2. To get lab environment details, click on the **Environment Details** tab located next to the *Lab Guide* tab. 	
 
-   ![](images/env-details.jpg)	
+   ![](images/a86.png)	
 
 ## Log in to Azure Portal
 
@@ -22,9 +22,9 @@
 
    ![](images/password-signin.jpg)
    
-   >**Note:** If there's a popup entitled **More information required**, then click on **Skip for now (14 days until this is required)**.
+   >**Note:** If there's a popup entitled **Action Required**, then click on **Ask later**.
    
-   ![](images/skipfornow.png)
+   ![](images/a88.png)
 
    >**Note:** If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes**, Choose **No**.
    
