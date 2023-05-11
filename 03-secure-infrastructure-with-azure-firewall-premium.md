@@ -340,7 +340,7 @@ In this task, you will create an application rule to allow access to sports webs
    | Subscription     | Select your subscription.                                    |
    | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
    | Name             | Enter **IpGroup (2)**                                        |
-   | Region           | Select **East US (3)**
+   | Region           | Select **East US (3)**                                       |
  
     ![](images/a83.png)
 
@@ -355,3 +355,76 @@ In this task, you will create an application rule to allow access to sports webs
  
 
 ## **Task 6: Azure Firewall Policies with Firewall Manager – New**
+
+1. Navigate to home page in Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
+ 
+ 
+1. From **Firewall Manager**, from the Overview page, select **View Azure Firewall Policies**.
+ 
+ 
+ 
+1. Select **+ Create Azure Firewall Policy**. 
+ 
+ 
+1. On the Azure Firewall Policy page, on the **Basics** tab, enter or select the following information and click on **Next: DNS Settings > (5)**.
+ 
+   | **Setting**      | **Value**                                                    |
+   | ---------------- | ------------------------------------------------------------ |
+   | Subscription     | Select your subscription.                                    |
+   | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
+   | Name             | Enter **Policy-01 (2)**                                      |
+   | Region           | Select **East US (3)**                                       |
+   | Policy tier      | Select **Standard (4)**                                      |
+ 
+ 
+ 
+1. On the **DNS Settings** tab, leave it as default and click on **Next: TLS inspection >**.
+ 
+ 
+ 
+1. On the **TLS inspection** tab, leave it as default and click on **Next: Rules >**.
+ 
+ 
+
+1. On the **Rules** tab, select **+ Add a rule collection**.
+
+ 
+1. On the **Add a rule collection** page, enter or select the following information
+ 
+    - Name: **App-RC-01 (1)**
+    - Rule Collection type: **Network (2)**
+    - Priority: **100 (3)**
+    - Rule collection action: **Allow (4)**
+    - Under **Rules (5)** mention the below details:
+      - Name: Enter **AllowWeb**
+      - Source type: Select **IP Address** from the drop-down list
+      - Source: Enter **192.168.1.0/24**
+      - Protocol: Select **TCP**
+      - Destination Ports: **80**
+      - Destination Type: Select **IP Address**
+      - Destination: Enter **10.6.0.0/16**
+    - On the next rule row, enter the following information:
+      - Name: Enter **AllowRDP**
+      - Source type: Select **IP Address** from the drop-down list
+      - Source: Enter **192.168.1.0/24**
+      - Protocol: Select **TCP**
+      - Destination Ports: **3389**
+      - Destination Type: Select **IP Address**
+      - Destination: Enter **10.6.0.0/16**
+      - Click on **Add**
+ 
+ 
+ 
+1. Select **Review + Create**.
+ 
+ 
+ 
+1. Review the details and then select **Create**.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
