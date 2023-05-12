@@ -490,4 +490,6 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/a106.png)
  
-1. To open the firewall policy, click **Policy-01**, then under Settings, select **Secured virtual hubs**. You will see that your policy status is **Secured**.
+1. To open the firewall policy, click **Policy-01**, then under Settings, select **Secured virtual hubs (1)**. You will see that your policy status is **Secured (2)**.
+ 
+   ![](images/a108.png)
