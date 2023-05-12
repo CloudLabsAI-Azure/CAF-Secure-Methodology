@@ -359,11 +359,11 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. Navigate to home page in Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
+   ![](images/a89.png)
  
+1. From Firewall Manager, from the **Overview (1)** page, select **View Azure Firewall Policies (2)**.
  
-1. From **Firewall Manager**, from the Overview page, select **View Azure Firewall Policies**.
- 
- 
+   ![](images/a90.png)
  
 1. Select **+ Create Azure Firewall Policy**. 
  
@@ -378,18 +378,19 @@ In this task, you will create an application rule to allow access to sports webs
    | Region           | Select **East US (3)**                                       |
    | Policy tier      | Select **Standard (4)**                                      |
  
- 
+    ![](images/a91.png)
  
 1. On the **DNS Settings** tab, leave it as default and click on **Next: TLS inspection >**.
  
- 
+   ![](images/a92.png)
  
 1. On the **TLS inspection** tab, leave it as default and click on **Next: Rules >**.
  
- 
+   ![](images/a93.png)
 
 1. On the **Rules** tab, select **+ Add a rule collection**.
 
+   ![](images/a94.png)
  
 1. On the **Add a rule collection** page, enter or select the following information
  
@@ -415,14 +416,15 @@ In this task, you will create an application rule to allow access to sports webs
       - Destination: Enter **10.6.0.0/16**
     - Click on **Add (6)**
  
- 
+    ![](images/a95.png)
  
 1. Select **Review + Create**.
  
- 
+   ![](images/a96.png)
  
 1. Review the Summary page and then select **Create**.
  
+   ![](images/a97.png)
  
 ### **Task 6.2: Create the firewall hub virtual network**
  
