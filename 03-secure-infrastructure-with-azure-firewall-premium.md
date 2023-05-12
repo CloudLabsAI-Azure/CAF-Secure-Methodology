@@ -351,14 +351,14 @@ In this task, you will create an application rule to allow access to sports webs
 1. Review the Summary, and then select **Create**.
  
     ![](images/a85.png)
- 
- 
+  
 
 ## **Task 6: Azure Firewall Policies with Firewall Manager – New**
 
 ### **Task 6.1: Create a Firewall Policy**
 
 1. Navigate to home page in Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
+ 
  
  
 1. From **Firewall Manager**, from the Overview page, select **View Azure Firewall Policies**.
@@ -413,7 +413,7 @@ In this task, you will create an application rule to allow access to sports webs
       - Destination Ports: **3389**
       - Destination Type: Select **IP Address**
       - Destination: Enter **10.6.0.0/16**
-    - Click on **Add**
+    - Click on **Add (6)**
  
  
  
@@ -421,7 +421,7 @@ In this task, you will create an application rule to allow access to sports webs
  
  
  
-1. Review the details and then select **Create**.
+1. Review the Summary page and then select **Create**.
  
  
 ### **Task 6.2: Create the firewall hub virtual network**
