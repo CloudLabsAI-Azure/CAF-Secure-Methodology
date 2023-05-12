@@ -361,7 +361,7 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/a89.png)
  
-1. From Firewall Manager, from the **Overview (1)** page, select **View Azure Firewall Policies (2)**.
+1. On the Firewall Manager page, from the **Overview (1)** tab, select **View Azure Firewall Policies (2)**.
  
    ![](images/a90.png)
  
@@ -431,70 +431,42 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. Navigate to home page in Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
+   ![](images/a89.png)
  
+1. On the Firewall Manager, from the **Overview (1)** tab, select **View secured virtual hubs (2)**.
  
-1. On the **Firewall Manager** page, from the Overview page, select **View secured virtual hubs**.
- 
- 
+   ![](images/a98.png)
 
 1. On the **Virtual hubs** page, select Create **+ Create new secured virtual hub**.
  
  
  
-1. On the secured virtual hub page, on the **Basics** tab, enter or select the following information and click on **Next: Azure Firewall >**.
+1. On the secured virtual hub page, on the **Basics** tab, enter or select the following information and click on **Next: Azure Firewall > (8)**.
  
    
    | **Setting**                                   | **Value**                                                    |
    | ----------------------------------------------| ------------------------------------------------------------ |
    | Subscription                                  | Select your subscription.                                    |
    | Resource group                                | Select the resource group **JumpVM-rg (1)**                  |
-   | Region                                        | Select **East US (3)**                                       |
-   | Secured virtual hub name                      | Enter **Hub-01 (4)**                                         |
-   | Hub address space                             | Enter **10.2.0.0/16**                                        |
-   | Choose an existing vWAN or create a new one   | Choose **New vWAN**                                          |
-   | Virtual WAN Name                              | Enter **Vwan-01**                                            |
-   | Type                                          | Select **Standard**                                          |
+   | Region                                        | Select **East US (2)**                                       |
+   | Secured virtual hub name                      | Enter **Hub-01 (3)**                                         |
+   | Hub address space                             | Enter **10.2.0.0/16 (4)**                                        |
+   | Choose an existing vWAN or create a new one   | Choose **New vWAN (5)**                                          |
+   | Virtual WAN Name                              | Enter **Vwan-01 (6)**                                            |
+   | Type                                          | Select **Standard (7)**                                          |
 
-
+    ![](images/a99.png)
 
 1. On the **Azure Firewall** tab, Leave it as default and click on **Next: Security Partner Provider**.
  
- 
+   ![](images/a100.png)
  
 1. On the **Security Partner Provider** tab, Leave it as default and click on **Next: Review + create**.
  
- 
+   ![](images/a101.png)
 
 1. Review the **Summary** tab, and select **Create**.  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+   ![](images/a102.png)
  
  
