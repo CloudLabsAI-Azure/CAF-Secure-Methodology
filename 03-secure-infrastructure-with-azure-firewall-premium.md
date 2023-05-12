@@ -467,6 +467,27 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. Review the **Summary** tab, and select **Create**.  
  
+   >**Note**: Deployment may takes up to 30 minutes to complete.
+ 
    ![](images/a102.png)
  
+### **Task 6.3: Associate the firewall policy with the virtual hub**
  
+ 
+1. From the Azure portal home page, select **Firewall Manager**. On Firewall Manager page, under **Security**, select **Azure Firewall Policies**.
+  
+   ![](images/a103.png)
+ 
+1. Select the checkbox for **Policy-01 (1)**, select **Manage associations(2)** and then select **Associate hubs (3)**.
+ 
+   ![](images/a104.png)
+ 
+1. On the **Secure hubs with Azure Firewall Policy** page, Select the checkbox for **Hub-01 (1)** and Select **Add (2)**.
+  
+   ![](images/a105.png)
+ 
+1. When the policy has been attached, select **Refresh**. The association should be displayed.
+ 
+   ![](images/a106.png)
+ 
+1. To open the firewall policy, click **Policy-01**, then under Settings, select **Secured virtual hubs**. You will see that your policy status is **Secured**.
