@@ -356,6 +356,8 @@ In this task, you will create an application rule to allow access to sports webs
 
 ## **Task 6: Azure Firewall Policies with Firewall Manager – New**
 
+### **Task 6.1: Create a Firewall Policy**
+
 1. Navigate to home page in Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
  
@@ -411,7 +413,7 @@ In this task, you will create an application rule to allow access to sports webs
       - Destination Ports: **3389**
       - Destination Type: Select **IP Address**
       - Destination: Enter **10.6.0.0/16**
-      - Click on **Add**
+    - Click on **Add**
  
  
  
@@ -420,6 +422,72 @@ In this task, you will create an application rule to allow access to sports webs
  
  
 1. Review the details and then select **Create**.
+ 
+ 
+### **Task 6.2: Create the firewall hub virtual network**
+ 
+
+1. Navigate to home page in Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
+ 
+ 
+ 
+1. On the **Firewall Manager** page, from the Overview page, select **View secured virtual hubs**.
+ 
+ 
+
+1. On the **Virtual hubs** page, select Create **+ Create new secured virtual hub**.
+ 
+ 
+ 
+1. On the secured virtual hub page, on the **Basics** tab, enter or select the following information and click on **Next: Azure Firewall >**.
+ 
+   
+   | **Setting**                                   | **Value**                                                    |
+   | ----------------------------------------------| ------------------------------------------------------------ |
+   | Subscription                                  | Select your subscription.                                    |
+   | Resource group                                | Select the resource group **JumpVM-rg (1)**                  |
+   | Region                                        | Select **East US (3)**                                       |
+   | Secured virtual hub name                      | Enter **Hub-01 (4)**                                         |
+   | Hub address space                             | Enter **10.2.0.0/16**                                        |
+   | Choose an existing vWAN or create a new one   | Choose **New vWAN**                                          |
+   | Virtual WAN Name                              | Enter **Vwan-01**                                            |
+   | Type                                          | Select **Standard**                                          |
+
+
+
+1. On the **Azure Firewall** tab, Leave it as default and click on **Next: Security Partner Provider**.
+ 
+ 
+ 
+1. On the **Security Partner Provider** tab, Leave it as default and click on **Next: Review + create**.
+ 
+ 
+
+1. Review the **Summary** tab, and select **Create**.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
