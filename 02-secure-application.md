@@ -260,7 +260,7 @@ In this task, you will set up an Azure Front Door configuration that pools two i
   
   ![](images/a80.png)
   
-### Task 5.1: Create two instances of a web app
+### **Task 5.1: Create two instances of a web app**
  
 This task requires two instances of a web application that run in different Azure regions. Both the web application instances run in Active/Active mode, so either one can take traffic. This configuration differs from an Active/Stand-By configuration, where one acts as a failover.
   
@@ -345,7 +345,7 @@ This task requires two instances of a web application that run in different Azur
   
     ![](images/a52.png)
 
-### Task 5.2: Create a Front Door for your application
+### **Task 5.2: Create a Front Door for your application**
 
 Configure Azure Front Door to direct user traffic based on lowest latency between the two Web Apps origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
   
@@ -415,7 +415,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
     
     ![](images/a65.png)
   
-### Task 5.3: View Azure Front Door in action
+### **Task 5.3: View Azure Front Door in action**
   
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
   
@@ -453,8 +453,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
     ![](images/a70.png)
 
 
-### Task 5.4: Create a Rate Limit Rule
-  
+### **Task 5.4: Create a Rate Limit Rule**
   
 1. Navigate to the **App services**, Select both of your web apps, then select **Start**, and then select **Yes** to verify.
   
