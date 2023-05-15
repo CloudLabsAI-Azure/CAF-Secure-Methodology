@@ -1,6 +1,6 @@
 # Exercise 1- Secure administration and management
 
-## Task 1: Network Health - New
+## **Task 1: Network Health**
 
 Azure Monitor Network Insights provides a comprehensive and visual representation through topologies, of health and metrics for all deployed network resources, without requiring any configuration. It also provides access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), and Traffic Analytics.
 
@@ -28,7 +28,7 @@ Azure Monitor Network Insights provides a comprehensive and visual representatio
 
    ![](images/a13.png "search gateway")
 
-## Task 2: Network Topology - New 
+## **Task 2: Network Topology** 
 
 The topology capability of Azure Network Watcher enables you to view all of the resources in a virtual network, the resources associated to resources in a virtual network, and the relationships between the resources. In this task, you'll view resources in a Microsoft Azure virtual network, and the relationships between the resources.
 
@@ -48,7 +48,7 @@ The topology capability of Azure Network Watcher enables you to view all of the 
 
    ![](images/cafinfa4.jpg "search gateway")
 
-## Task 3: Secure Access via Bastion Host - New
+## **Task 3: Secure Access via Bastion Host**
 
 In this task, we are demonstrating how you are able to connect to VMs in an environment without configuring a public IP on the VMs.
 
@@ -93,7 +93,7 @@ In this task, we are demonstrating how you are able to connect to VMs in an envi
  
     ![](images1/allowpopup.png)
 
-## Task 4: Prepare the Network Watcher monitoring environment and NSG Flow – New
+## **Task 4: Prepare the Network Watcher monitoring environment and NSG Flow**
 
 Network Watcher provides several features to monitor and diagnose network performance issues. We will create NSG flow logs that will provide detailed information about the network traffic that passes through your NSG.They capture information such as source and destination IP addresses, source and destination ports, protocol, and action taken (allow or deny) by the NSG. This information can be used for troubleshooting network connectivity issues, monitoring and analyzing network traffic patterns, and detecting potential security threats.
 
