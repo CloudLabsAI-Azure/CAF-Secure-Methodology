@@ -1,4 +1,4 @@
-# Exercise 1- Secure administration and management
+# **Exercise 1- Secure administration and management**
 
 ## **Task 1: Network Health**
 
