@@ -15,7 +15,7 @@ Azure DDoS Protection, combined with application design best practices, provides
 - **Protocol attacks**: These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic, by interacting with the client, and blocking malicious traffic.
 - **Resource (application) layer attacks**: These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layers 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection to provide defence against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
 
-## Task 1: Configure Azure DDoS Network Protection
+## **Task 1: Configure Azure DDoS Network Protection**
 
 1. In the Azure portal, search **DDoS protection plans (1)** and then select **DDoS protection plans (2)**.
  
@@ -72,7 +72,7 @@ Azure DDoS Protection, combined with application design best practices, provides
  
       ![](images/ddos12.png)
       
-## Task 2: Configure Azure DDoS IP Protection
+## **Task 2: Configure Azure DDoS IP Protection**
 
 1. In the Azure portal, search **Public IP Addresses (1)** and then select **Public IP Addresses (2)**.
 
@@ -94,7 +94,7 @@ Azure DDoS Protection, combined with application design best practices, provides
 
     ![](images/a38.png)
     
-## Task 3: View metrics from Public IP address
+## **Task 3: View metrics from Public IP address**
 
 1. Navigate back to the **Firewalllp** page, Under Monitoring, select **Metrics**.
 
