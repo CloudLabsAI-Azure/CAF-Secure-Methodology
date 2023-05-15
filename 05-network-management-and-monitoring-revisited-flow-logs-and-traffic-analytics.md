@@ -1,6 +1,6 @@
 # Exercise 5- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
-## Task 1: NSG Validation - New
+## **Task 1: NSG Validation**
 
 1. Navigate to Azure portal. Using the search bar, search for **Virtual machines (1)** and **select (2)** it from the suggestions.
 
@@ -47,7 +47,7 @@
 
    ![](images/a31.png)
 
-## Task 2: Network Watcher Traffic Analytics to monitor the network - New
+## **Task 2: Network Watcher Traffic Analytics to monitor the network**
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
