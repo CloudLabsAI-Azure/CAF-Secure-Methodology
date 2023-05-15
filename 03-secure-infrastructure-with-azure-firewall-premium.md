@@ -323,7 +323,7 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images1/run.png)
 
 
-## **Task 5: IP Groups - New**
+## **Task 5: IP Groups*
 
 1. Navigate to home page in Azure portal, search for **IP groups (1)** and **select (2)** from suggestions.
  
@@ -353,7 +353,7 @@ In this task, you will create an application rule to allow access to sports webs
     ![](images/a85.png)
   
 
-## **Task 6: Azure Firewall Policies with Firewall Manager – New**
+## **Task 6: Azure Firewall Policies with Firewall Manager**
 
 ### **Task 6.1: Create a Firewall Policy**
 
@@ -428,7 +428,6 @@ In this task, you will create an application rule to allow access to sports webs
  
 ### **Task 6.2: Create the firewall hub virtual network**
  
-
 1. Navigate to home page in Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
    ![](images/a89.png)
@@ -472,8 +471,7 @@ In this task, you will create an application rule to allow access to sports webs
    ![](images/a102.png)
  
 ### **Task 6.3: Associate the firewall policy with the virtual hub**
- 
- 
+  
 1. From the Azure portal home page, select **Firewall Manager**. On Firewall Manager page, under **Security**, select **Azure Firewall Policies**.
   
    ![](images/a103.png)
