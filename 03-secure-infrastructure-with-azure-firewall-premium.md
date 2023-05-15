@@ -139,6 +139,35 @@ In this task, you will test IDPS for HTTP traffic
  
 In this task, you will create an application rule to allow access to sports websites.
  
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the Route Table **firewallroute**. 
+    
+    ![](images1/firewallroute.png)
+ 
+1. On the Route table page, select **Routes (1)** under **Settings** and click on **+ Add (2)**.
+ 
+    ![](images1/addroute.png)
+ 
+1. Under **Add Route** page, enter the below information:
+  
+    - Route Name: Enter **firewallroute (1)**
+    - Address prefix destination: Select **IP Address (2)** from the drop-down list
+    - Destination IP address/ CIDR ranges: Enter **0.0.0.0/0 (3)**
+    - Next hop type: Select **Virtual appliance (4)** from the drop-down list
+    - Next hop address: Enter the **private IP Address** of the Firewall **(5)**.
+    - Select **Add (6)**
+ 
+     ![](images1/addrouterule.png)
+ 
+ 1. Now select **Subnets (1)** and Click on **Associate (2)**.
+
+       - Under Associate subnets, enter the following details:
+  
+          - Virtual Network: Select **vnet (3)** from the drop-down list.
+          - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
+          - Click on **Ok (5)**.
+ 
+           ![](images1/addsubnet.png)
+ 
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
     ![](images1/selectvm.png)
