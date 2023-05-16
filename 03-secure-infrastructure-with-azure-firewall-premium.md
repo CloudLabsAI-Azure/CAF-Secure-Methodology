@@ -323,7 +323,7 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images1/run.png)
 
 
-## **Task 5: IP Groups*
+## **Task 5: IP Groups**
 
 1. Navigate to home page in Azure portal, search for **IP groups (1)** and **select (2)** from suggestions.
  
