@@ -146,52 +146,52 @@ In this task, you'll publish an application via Application Gateway by configuri
  
   In this task, you will login into the Jump VM to configure the Custom rules for firewall policy and will publish the web application within the VM and from the Lab VM to check the application's reachability.
  
- 1. In the Azure portal, search for **Virtual Machines (1)** and select it from the results **(2)**.
+1. In the Azure portal, search for **Virtual Machines (1)** and select it from the results **(2)**.
 
-     ![](images1/virtual%20machines.png)
+   ![](images1/virtual%20machines.png)
      
- 1. On Virtual Machines page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />**.
+1. On Virtual machines page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />**.
 
-     ![](images1/jumpvm.png)
+   ![](images1/jumpvm.png)
 
 1. Click on **Connect (1)** and then select **RDP (2)**.
 
-     ![](images1/conenctrdp.png)
+   ![](images1/conenctrdp.png)
      
 1. Under **RDP** tab, click on **Downlaod RDP file**.
 
-     ![](images1/downlaod.png)
+   ![](images1/downlaod.png)
      
 1. Open the downlaoded RDP file and click on **Connect**.
 
-    ![](images1/conect.png)
+   ![](images1/conect.png)
    
 1. Enter the below given credentials and click on **Ok (3)**
 
-    - User name : Enter **.\demouser (1)**
-    - Password : Enter **<inject key="JumpVM Admin Password" enableCopy="true" /> (2)**
+   - User name : Enter **.\demouser (1)**
+   - Password : Enter **<inject key="JumpVM Admin Password" enableCopy="true" /> (2)**
  
-    ![](images1/credentials.png)
+   ![](images1/credentials.png)
     
 1. Click on the **Yes** button to accept the certificate and add in trusted certificates.
 
-      ![](images/a31.png)
+   ![](images/a31.png)
     
- 1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
+1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
  
-      ![](/images1/cmd1.png)
+   ![](/images1/cmd1.png)
  
  1. On the Command Prompt, type **ipconfig (1)** and then copy the **IPv4 Address (2)** and save it to notepad for later use.
  
-      ![](/images/image314.png)
+    ![](/images/image314.png)
  
  1. Now, navigate back to the **Lab VM**, search **WAF (1)** from the Azure Portal and then select **Web Application Firewall policies (WAF) (2)**.
  
-      ![](images/image302.png "select gateway")
+    ![](images/image302.png "select gateway")
  
  1. On the WAF page, select your **firewallpolicy (1)**, and under settings, click on **Custom rules (2)** and after that click on **+ Add custom rule (3)**.
  
-      ![](images/image303.png "select gateway")
+    ![](images/image303.png "select gateway")
  
  1. On the **Add custom rule** blade, enter the following details
  
@@ -200,27 +200,27 @@ In this task, you'll publish an application via Application Gateway by configuri
     - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2
     - Click on **Add (4)**.
  
-      ![](images/a44.png "select gateway")
+    ![](images/a44.png "select gateway")
  
- 1. Click on **Save**.
+1. Click on **Save**.
  
-      ![](images/image305.png "select gateway")
+   ![](images/image305.png "select gateway")
 
-  1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
+1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
-      ![](images/image306.png "select gateway")
+   ![](images/image306.png "select gateway")
  
- 1.  Now, open the browser in the **Jump VM** and browse the **IPv4 Address**.
+1. Now, naivgate back to **JumpVM-<inject key="Deployment ID" enableCopy="false"/>** which you accessed using RDP and open the **Browser** from desktop
+
+   ![](images/scafinfra29.jpg "select gateway")
  
-     > **Note**: you will see that your website is Running.
+1. Open a new tab, browse the **IPv4 Address** for which you created the custom rule.You will see that your website is accessible.
+
+   ![ss](/images1/0.0.png)
+
+1. Close the RDP session, try accessing the **IPv4 Address** using a browser tab in **Lab VM**. You will observe that the IP address is not accessible and **This site can’t be reached** error shows up.
  
-      ![ss](/images1/0.0.png)
- 
- 1. Now, you can paste the **IPv4 Address** into your **Lab VM**. You can  observe the **This site can’t be reached** error
- 
-      > **Note**: You will see that your website is Blocked outside the Jump VM
- 
-     ![ss](/images1/site.png)
+   ![ss](/images1/site.png)
 
  ## **Task 4: Attack simulation** 
      
@@ -228,9 +228,9 @@ In this task, you will be testing your application for security and performing s
 
    > **Note**: You can perform this task only after finishing task 2 and task 3.
 
-1. You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
+You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
     
-1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it. You can observe the web application can be still accessible.
+1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
   
    > **Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
     
