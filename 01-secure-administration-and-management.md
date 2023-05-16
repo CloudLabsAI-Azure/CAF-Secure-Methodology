@@ -125,17 +125,17 @@ Network Watcher provides several features to monitor and diagnose network perfor
 
    ![](images/cafinfra11.jpg)
 
-1. For the Instance details, Provide the following details and click on **Next: Configuration> (4)**
+1. For the Instance details, Provide the following details and click on **Next: Analytics > (4)**
 
    - **Subscription**: select **default subscription (1)** from the drop down.
    - **Storage account**: select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
    - **Retention (days)**: **30 (3)**
 
-   ![](images/cafinfra12.jpg)  
+   ![](images/scafinfra27.jpg)  
    
-1. Under the **Configuration** tab, check the box to **Enable Traffic Analytics (1)** and select **Review + Create (2)**.
+1. Under the **Analytics** tab, check the box to **Enable Traffic Analytics (1)** and select **Review + Create (2)**.
 
-   ![create](images1/enabletraffic.png)
+   ![create](images/scafinfra28.jpg)
 
 1. In the Create page, click on the **Create** button and wait till the deployment completion.
 
