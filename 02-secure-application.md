@@ -232,7 +232,7 @@ You can perform a sample attack on your application by passing this `?q=<script>
     
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
   
-   > **Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
+   >**Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
     
    ![ss](/images1/attack.png)
   
