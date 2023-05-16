@@ -132,10 +132,10 @@ Network Watcher provides several features to monitor and diagnose network perfor
    - **Retention (days)**: **30 (3)**
 
    ![](images/cafinfra12.jpg)  
+   
+1. Under the **Configuration** tab, check the box to **Enable Traffic Analytics (1)** and select **Review + Create (2)**.
 
-1. In the Configuration page, leave everything as default and click on **Review + create (2)**.
-
-   ![](images/cafinfra13.jpg)  
+   ![create](images1/enabletraffic.png)
 
 1. In the Create page, click on the **Create** button and wait till the deployment completion.
 
