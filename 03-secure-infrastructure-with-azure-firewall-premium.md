@@ -65,7 +65,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
-   ![](images/scafinfra23.jpg "search gateway")
+   ![](images/scafinfra24.jpg "search gateway")
 
 ## **Task 2: Test IDPS for HTTP traffic**
 
