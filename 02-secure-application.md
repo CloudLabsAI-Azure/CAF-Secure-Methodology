@@ -258,7 +258,7 @@ You can perform a sample attack on your application by passing this `?q=<script>
   
 In this task, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:  
   
-  ![](images/a80.png)
+![](images/a80.png)
   
 ### **Task 5.1: Create two instances of a web app**
  
@@ -266,25 +266,26 @@ This task requires two instances of a web application that run in different Azur
   
 1. On the Azure home page, using the global search enter **WebApp (1)** and select **App Services (2)** under services.
   
-    ![](images/a46.png)
+   ![](images/a46.png)
 
 1. Select **+ Create** to create a Web App.
   
-    ![](images/a47.png)
+   ![](images/a47.png)
 
 1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group **JumpVM-rg**                      |
-   | Name             | Enter **OWASP-Main**                                         |
-   | Publish          | Select **Docker Container**.                                 |
-   | Operating System | Select **Linux**.                                            |
-   | Region           | Select **EastUS**.                                           |
+   | Subscription     | Select the **default subscription (1)**.                                    |
+   | Resource group   | Select the resource group **JumpVM-rg (2)**                  |
+   | Name             | Enter **OWASP-MainJump<inject key="Deployment ID" enableCopy="false"/> (3)**                                         |
+   | Publish          | Select **Docker Container (4)**.                             |
+   | Operating System | Select **Linux (5)**.                                        |
+   | Region           | Select **EastUS (6)**.   
+   | prcing plan | Select **Basic B1 (100 total ACU, 1.75 GB memory, 1 vCPU) (7)**.                                        |
  
   
-    ![](images/a48.png)
+   ![](images/scafinfra30.jpg)
   
 1. Click on **Next : Docker >**.
   
@@ -292,40 +293,39 @@ This task requires two instances of a web application that run in different Azur
   
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Opions           | Select Single Container                                      |
-   | Image Source     | Select Docker Hub                                            |
-   | Access Type      | Select Public                                                |
+   | Opions           | Select **Single Container**                                      |
+   | Image Source     | Select **Docker Hub**                                            |
+   | Access Type      | Select **Public**                                                |
    | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
     
   
-    ![](images/a49.png)
+   ![](images/a49.png)
   
-1. Select **Review + create**, review the Summary, and then select **Create**.   
-   ‎It might take several minutes for the deployment to complete.
+1. Select **Review + create**, review the Summary, and then select **Create**. It might take several minutes for the deployment to complete.
   
-    ![](images/a51.png)
+   ![](images/scafinfra30.jpg)
   
-1. Create a Second web app. on the Azure home page, using the global search enter **WebApp (1)** and select **App Services (2)** under services.
+1. Let us create a Second web app. Using the search box on the Azure home page, enter **WebApp (1)** and select **App Services (2)** under services.
   
-    ![](images/a46.png)
+   ![](images/a46.png)
   
 1. Select **+ Create** to create a Web App.
   
-    ![](images/a47.png)
+   ![](images/a47.png)
 
 1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
-    
 
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group **JumpVM-rg**                      |
-   | Name             | Enter **OWASP-Stage**                                        |
-   | Publish          | Select **Docker Container**.                                 |
-   | Operating System | Select **Linux**.                                            |
-   | Region           | Select **EastUS 2**.                                         |
+   | Subscription     | Select the **default subscription (1)**.                                    |
+   | Resource group   | Select the resource group **JumpVM-rg (2)**                  |
+   | Name             | Enter **OWASP-Stage<inject key="Deployment ID" enableCopy="false"/> (3)**                                         |
+   | Publish          | Select **Docker Container (4)**.                             |
+   | Operating System | Select **Linux (5)**.                                        |
+   | Region           | Select **EastUS (6)**.   
+   | prcing plan      | Select **Basic B1 (100 total ACU, 1.75 GB memory, 1 vCPU) (7)**.  |
 
-    ![](images/a50.png)
+   ![](images/scafinfra31.jpg)
   
 1. Click on **Next : Docker >**.
   
@@ -338,12 +338,11 @@ This task requires two instances of a web application that run in different Azur
    | Access Type      | Select Public                                                |
    | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
       
-    ![](images/a49.png)
+   ![](images/a49.png)
   
-1. Select **Review + create**, review the Summary, and then select **Create**.   
-   ‎It might take several minutes for the deployment to complete.
+1. Select **Review + create**, review the Summary, and then select **Create**. It might take several minutes for the deployment to complete.
   
-    ![](images/a52.png)
+   ![](images/scafinfra33.jpg)
 
 ### **Task 5.2: Create a Front Door for your application**
 
@@ -389,6 +388,8 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 1. On the **Add a route** page, enter, or select the following information, select **Add (8)** to add the route to the endpoint configuration.
 
  
+
+
    | **Setting**           | **Value**                                                    |
    | ----------------------| ------------------------------------------------------------ |
    | Name                  | Enter **myRoute (1)**                                            |     
@@ -398,22 +399,22 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
    | Forwarding protocol   | Select **match incoming requests (7)** .                     |
   
     
-    ![](images/a58.png)
+   ![](images/a58.png)
   
   
 1. Select **+ Add a policy** to apply a Web Application Firewall (WAF) policy to one or more domains in the Azure Front Door profile.
   
-    ![](images/a59.png)
+   ![](images/a59.png)
   
 1. On the **Add security policy** page, enter a name **mySecurityPolicy (1)**. Then select domains you want to associate the policy with. For WAF Policy, select **Create New** to create a new policy. Enter name of policy is **myWAFPolicy (2)**. Select **Save (3)** to add the security policy to the endpoint configuration.
   
-    ![](images/a60.png)
+   ![](images/a60.png)
   
 1. Select **Review + Create**, and then  **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
   
-    ![](images/a61.png)
+   ![](images/a61.png)
     
-    ![](images/a65.png)
+   ![](images/a65.png)
   
 ### **Task 5.3: View Azure Front Door in action**
   
@@ -421,86 +422,85 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. On the Front Door resource in the **Overview (1)** blade, locate the endpoint hostname that is created for your endpoint. For example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. **Copy (2)** this FQDN.
   
-    ![](images/a66.png)
+   ![](images/a66.png)
     
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
-    ![](images/a67.png)
+   ![](images/a67.png)
     
 1. To test instant global failover in action, try the following steps:
 
 1. Switch to the Azure portal, search for and select **App services**.
   
-    ![](images/a46.png)
+   ![](images/a46.png)
 
 1. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
 
-    ![](images/a68.png)
+   ![](images/a68.png)
 
 1. Switch back to your browser and select Refresh. You should see the same information page.
 
-    ![](images/a67.png)
+   ![](images/a67.png)
     
-    >**Note: there may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
+   >**Note: there may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
 
   
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
   
-    ![](images/a69.png)
+   ![](images/a69.png)
 
 1. Switch back to your browser and select Refresh. This time, you should see an error message.
 
-    ![](images/a70.png)
-
+   ![](images/a70.png)
 
 ### **Task 5.4: Create a Rate Limit Rule**
   
 1. Navigate to the **App services**, Select both of your web apps, then select **Start**, and then select **Yes** to verify.
   
-    ![](images/a71.png)
+   ![](images/a71.png)
 
 1. In a new browser tab paste the **endpoint** which you copied in previous task.
   
-    ![](images/a67.png)
+   ![](images/a67.png)
   
 1. Click on **Magnifying glass** on top right corner of the website to search.
   
-    ![](images/a72.png)
+   ![](images/a72.png)
   
 1. Type in any keyword **(e.g. apple)** and you will see a response from the website. As this site is using JSON, try **refresh** in browser to do the same search again and now you will not see any response message in the website as you saw previously.
   
-    ![](images/a73.png)
+   ![](images/a73.png)
   
-    ![](images/a74.png)  
+   ![](images/a74.png)  
   
 1. In the Azure portal, search for **myWAFPolicy (1)** and select it from the results **(2)**.
   
-    ![](images/a79.png)
+   ![](images/a79.png)
   
 1. On the **myWAFPolicy** page, under settings, click on **Custom rules (1)** and after that click on **+ Add custom rule (2)**.
   
-    ![](images/a75.png)
+   ![](images/a75.png)
   
 1. On the **Add custom rule** blade, enter the following details
  
-    - Custom rule name: Enter **rateLimitRule (1)**.
-    - Rule type: Select **Rate limit (2)**
-    - Priority: Enter **1 (3)**
-    - Rate limit duration: Select **1 minute (4)**
-    - Rate limit threshold (requests): Enter **1000 (5)**
+   - Custom rule name: Enter **rateLimitRule (1)**.
+   - Rule type: Select **Rate limit (2)**
+   - Priority: Enter **1 (3)**
+   - Rate limit duration: Select **1 minute (4)**
+   - Rate limit threshold (requests): Enter **1000 (5)**
   
-      ![](images/a76.png)
+   ![](images/a76.png)
  
 1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
   
-    - Match type: Select **String**.
-    - Match variable: Select **RequestUri**
-    - Operation: Select **is**
-    - Operator: Select **Contains**
-    - Match values: Enter **/promo**
-    - Click on **Add**.
+   - Match type: Select **String**.
+   - Match variable: Select **RequestUri**
+   - Operation: Select **is**
+   - Operator: Select **Contains**
+   - Match values: Enter **/promo**
+   - Click on **Add**.
       
-      ![](images/a78.png)
+   ![](images/a78.png)
   
 1. Select **Save**.
   
