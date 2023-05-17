@@ -496,7 +496,6 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    - Match type: Select **IP address**.
    - Match variable: Select **RemoteAddr**
    - Operation: Select **Does contain**
-   - Operator: Select **Contains**
    - Match values: Enter **0.0.0.0/0** and **::/0**
    - Click on **Add**.
       
