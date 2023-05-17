@@ -500,12 +500,18 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    - Match values: Enter **0.0.0.0/0** and **::/0**
    - Click on **Add**.
       
-   ![](images/a110.png)
+     ![](images/a110.png)
   
 1. Select **Save**.
   
    ![](images/a77.png)
   
+1. On the **myWAFPolicy** page, under settings, click on **Policy settings (1)** and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
+  
+   ![](images/a111.png)
+  
+
+    
   
   
   
