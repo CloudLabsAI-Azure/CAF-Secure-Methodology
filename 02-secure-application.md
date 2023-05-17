@@ -487,20 +487,20 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    - Rule type: Select **Rate limit (2)**
    - Priority: Enter **1 (3)**
    - Rate limit duration: Select **1 minute (4)**
-   - Rate limit threshold (requests): Enter **1000 (5)**
+   - Rate limit threshold (requests): Enter **100 (5)**
   
-   ![](images/a76.png)
+   ![](images/a109.png)
  
 1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
   
-   - Match type: Select **String**.
-   - Match variable: Select **RequestUri**
-   - Operation: Select **is**
+   - Match type: Select **IP address**.
+   - Match variable: Select **RemoteAddr**
+   - Operation: Select **Does contain**
    - Operator: Select **Contains**
-   - Match values: Enter **/promo**
+   - Match values: Enter **0.0.0.0/0** and **::/0**
    - Click on **Add**.
       
-   ![](images/a78.png)
+   ![](images/a110.png)
   
 1. Select **Save**.
   
