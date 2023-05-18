@@ -293,13 +293,13 @@ This task requires two instances of a web application that run in different Azur
   
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Opions           | Select **Single Container**                                      |
-   | Image Source     | Select **Docker Hub**                                            |
-   | Access Type      | Select **Public**                                                |
-   | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
+   | Opions           | Select **Single Container (1)**                              |
+   | Image Source     | Select **Docker Hub (2)**                                    |
+   | Access Type      | Select **Public (3)**                                        |
+   | Image and Tag    | Enter **bkimminich/juice-shop:latest (4)**                   |
     
   
-   ![](images/a49.png)
+   ![](images/a128.png)
   
 1. Select **Review + create**, review the Summary, and then select **Create**. It might take several minutes for the deployment to complete.
   
@@ -322,7 +322,7 @@ This task requires two instances of a web application that run in different Azur
    | Name             | Enter **OWASP-Stage<inject key="Deployment ID" enableCopy="false"/> (3)**                                         |
    | Publish          | Select **Docker Container (4)**.                             |
    | Operating System | Select **Linux (5)**.                                        |
-   | Region           | Select **EastUS (6)**.   
+   | Region           | Select **EastUS 2 (6)**.   
    | prcing plan      | Select **Basic B1 (100 total ACU, 1.75 GB memory, 1 vCPU) (7)**.  |
 
    ![](images/scafinfra30.jpg)
@@ -333,12 +333,12 @@ This task requires two instances of a web application that run in different Azur
   
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Opions           | Select Single Container                                      |
-   | Image Source     | Select Docker Hub                                            |
-   | Access Type      | Select Public                                                |
-   | Image and Tag    | Enter **bkimminich/juice-shop:latest**                       |
+   | Opions           | Select **Single Container (1)**                              |
+   | Image Source     | Select **Docker Hub (2)**                                    |
+   | Access Type      | Select **Public (3)**                                        |
+   | Image and Tag    | Enter **bkimminich/juice-shop:latest (4)**                   |
       
-   ![](images/a49.png)
+   ![](images/a128.png)
   
 1. Select **Review + create**, review the Summary, and then select **Create**. It might take several minutes for the deployment to complete.
   
@@ -360,18 +360,18 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
   
     ![](images/a55.png)
   
-1. On the **Basics** tab, enter or select the following information, and then select **Next: Secret**.
+1. On the **Basics** tab, enter or select the following information, and then select **Next: Secret (5)**.
   
    | **Setting**                 | **Value**                                                     |
    | ----------------------------| ------------------------------------------------------------  |
-   | Subscription                | Select your subscription.                                     |
-   | Resource group              | Select the resource group **JumpVM-rg**                       |
+   | Subscription                | Select your subscription (1).                                     |
+   | Resource group              | Select the resource group **JumpVM-rg (2)**                       |
    | Resource group location     | Default same as resource group                                |
-   | Name                        | Enter **Webapp-Contoso-AFD**                                  |
-   | Tier                        | Select **Premium**                                            |
+   | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
+   | Tier                        | Select **Standard (4)**                                            |
  
   
-    ![](images/a63.png)
+    ![](images/a125.png)
   
 1. On the **Secrets**, Leave it default as same and click on **Next: Endpoint >**.
   
@@ -385,22 +385,29 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
   
     ![](images/a57.png)
   
-1. On the **Add a route** page, enter, or select the following information, select **Add (8)** to add the route to the endpoint configuration.
-
- 
-
-
-   | **Setting**           | **Value**                                                    |
-   | ----------------------| ------------------------------------------------------------ |
-   | Name                  | Enter **myRoute (1)**                                            |     
-   | Redirect              | Enable this setting to **redirect all HTTP traffic to the HTTPS endpoint (2)**.|
-   | Origin group          | Select **Add a new origin group (3)**. For the origin group name, enter **myOriginGroup (4)**. Then select **+ Add an origin (5)**. For the first origin, enter **OWASP-Main** for the Name and then for the Origin Type select **App services**. In the Host name, select **owasp-main.azurewebsites.net**. Select **Add** to add the origin to the origin group. Repeat the steps to add the second Web App as an origin. For the origin Name, enter **OWASP-Stage**. The Host name is **owasp-stage.azurewebsites.net**. Once both Web App origins have been added, select **Add (6)** to save the origin group configuration.|
-   | Origin path           | Leave blank.                                                 |
-   | Forwarding protocol   | Select **match incoming requests (7)** .                     |
+1. On the **Add a route** page, enter name as **myRoute (1)** and click on **Add an origin group (2)**.
   
-    
-    ![](images/a58.png)
+    ![](images/a126.png)
   
+1. On the **Add an origin group** pane, enter name as **myOriginGroup (1)** and click on **+ Add an origin (2)**.
+  
+   ![](images/a127.png)
+  
+1. To add the first origin, enter **OWASP-Main (1)** as the name, **App services (2)** as the origin type, and **owasp-mainjump.azurewebsites.net (3)** as the host name then click **Add (4)**.
+  
+   ![](images/a130.png)
+
+1. To add the Second origin, enter **OWASP-Stage (1)** as the name, **App services (2)** as the origin type, and **owasp-stage.azurewebsites.net (3)** as the host name then click **Add (4)**.
+  
+   ![](images/a131.png)
+  
+1. Click on **Add**.
+  
+   ![](images/a132.png)
+  
+1. Again selct **Add** to add a route.
+  
+   ![](images/a133.png)
   
 1. Select **+ Add a policy** to apply a Web Application Firewall (WAF) policy to one or more domains in the Azure Front Door profile.
   
