@@ -545,7 +545,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    
    >**Note: Replace the Endpoint hostname that you copied in previous task and make sure your URL end with /#/search?q=apple &  done**.
 
-1. The output is seen below; they block the request 403.
+1. You can see the output below, where they block the request 403..
 
    ![](images/a121.png)
 
