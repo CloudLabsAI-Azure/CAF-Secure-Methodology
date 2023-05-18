@@ -2,9 +2,9 @@
 
 ## **Task 1: Network Health**
 
-Azure Monitor Network Insights provides a comprehensive and visual representation through topologies, of health and metrics for all deployed network resources, without requiring any configuration. It also provides access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), and Traffic Analytics.
+Azure Monitor Network Insights provides a comprehensive and visual representation through topologies of the health and metrics of all deployed network resources without requiring any configuration. It also provides access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), and traffic analytics.
 
-1. Navigate to Azure portal. Using the search bar, search for **Monitor (1)** and **select (2)** it from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Monitor (1)** and **select (2)** from the suggestions.
 
    ![](images/a3.png)
 
@@ -12,7 +12,7 @@ Azure Monitor Network Insights provides a comprehensive and visual representatio
 
    ![](images/a4.png "search gateway")
    
-1. On the **Network health** tab, you can customize the resource health and alerts view by using filters like **Subscription**, **Resource Group**, and **Type** and you can use the search box to search for resources and their associated resources. For example, a public IP is associated with an application gateway. A search for the public IP's DNS name will return both the public IP and the associated application gateway.
+1. On the **Network health** tab, you can customize the resource health and alerts view by using filters like **Subscription**, **Resource Group**, and **Type**, and you can use the search box to search for resources and their associated resources. For example, a public IP is associated with an application gateway. A search for the public IP's DNS name will return both the public IP and the associated application gateway.
 
    ![](images/a5.png "search gateway")
 
@@ -24,27 +24,27 @@ Azure Monitor Network Insights provides a comprehensive and visual representatio
 
    ![](images/a6.png "search gateway")
 
-1. Once you opened the resources, the **Metrics** look like this in the grid view.
+1. Once you opened the resources, the **Metrics** looked like this in the grid view.
 
    ![](images/a13.png "search gateway")
 
 ## **Task 2: Network Topology** 
 
-The topology capability of Azure Network Watcher enables you to view all of the resources in a virtual network, the resources associated to resources in a virtual network, and the relationships between the resources. In this task, you'll view resources in a Microsoft Azure virtual network, and the relationships between the resources.
+The topology capability of Azure Network Watcher enables you to view all of the resources in a virtual network, the resources associated with the resources in a virtual network and the relationships between the resources. In this task, you'll view resources in a Microsoft Azure virtual network, and the relationships between the resources.
 
-1. Navigate to Azure portal. Using the search bar, search for **Network Watcher (1)** and **select (2)** it from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Network Watcher (1)** and **select (2)** from the suggestions.
 
    ![](images/cafinfa1.jpg)
 
-1. From the sidebar, select **Topology** from monitoring.
+1. From the sidebar, select **Topology** from Monitoring.
 
    ![](images/cafinfa2.jpg "search gateway")
 
-1. Select the **default subscription (1)**, **JumpVM-RG (2)** for Resource group, and **vnet (3)** for virtual network in the Toplogy tab.  
+1. Select the **default subscription (1)**, **JumpVM-RG (2)** for Resource group, and **vnet (3)** for virtual network in the Topology tab.  
 
    ![](images/cafinfa3.jpg "search gateway")
 
-1. Now, you'll be able to **visualize (1)** the Virtual network topology and understand how different network resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also the download the toplogy by clicking on **Download topology (2)**.
+1. Now, you'll be able to **visualize (1)** the Virtual network topology and understand how different network resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
    ![](images/cafinfa4.jpg "search gateway")
 
@@ -52,7 +52,7 @@ The topology capability of Azure Network Watcher enables you to view all of the 
 
 In this task, we are demonstrating how you are able to connect to VMs in an environment without configuring a public IP on the VMs.
 
-1. Navigate to Azure portal. Using the search bar, search for **Virtual networks (1)** and **select (2)** it from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Virtual networks (1)** and **select (2)** from the suggestions.
 
    ![](images/a14.png "search gateway")
 
@@ -64,11 +64,11 @@ In this task, we are demonstrating how you are able to connect to VMs in an envi
    
    ![](images/a16.png "search gateway")
 
-1. You will see that **AzureBastionSubnet** is already present in the subnets, If you want to see the subnet configuration then you can click on the AzureBastionSubnet subnet and explore on this.
+1. You will see that **AzureBastionSubnet** is already present in the subnets, If you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore on this.
 
    ![](images/a17.png "search gateway")
 
-1. Now Using the search bar, search for **Virtual machines (1)** and **select (2)** it from the suggestions.
+1. Now Using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
 
    ![](images/a18.png "search gateway")
 
@@ -95,9 +95,9 @@ In this task, we are demonstrating how you are able to connect to VMs in an envi
 
 ## **Task 4: Prepare the Network Watcher monitoring environment and NSG Flow**
 
-Network Watcher provides several features to monitor and diagnose network performance issues. We will create NSG flow logs that will provide detailed information about the network traffic that passes through your NSG.They capture information such as source and destination IP addresses, source and destination ports, protocol, and action taken (allow or deny) by the NSG. This information can be used for troubleshooting network connectivity issues, monitoring and analyzing network traffic patterns, and detecting potential security threats.
+Network Watcher provides several features to monitor and diagnose network performance issues. We will create NSG flow logs that will provide detailed information about the network traffic that passes through your NSG. They capture information such as source and destination IP addresses, source and destination ports, protocol, and action taken (allow or deny) by the NSG. This information can be used for troubleshooting network connectivity issues, monitoring and analyzing network traffic patterns, and detecting potential security threats.
 
-1. Navigate to Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** it from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
 
    ![](images/cafinfra5.jpg)
 
@@ -117,7 +117,7 @@ Network Watcher provides several features to monitor and diagnose network perfor
 
    ![](images/cafinfra9.jpg)
 
-1. In the Create a flow log page, select the **default subscription (1)** in the drop down and click on **Select resource (2)**.
+1. In the Create a flow log page, select the **default subscription (1)** in the drop-down and click on **Select resource (2)**.
 
    ![](images/cafinfra10.jpg)
 
@@ -127,7 +127,7 @@ Network Watcher provides several features to monitor and diagnose network perfor
 
 1. For the Instance details, Provide the following details and click on **Next: Analytics > (4)**
 
-   - **Subscription**: select **default subscription (1)** from the drop down.
+   - **Subscription**: select **default subscription (1)** from the drop-down.
    - **Storage account**: select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
    - **Retention (days)**: **30 (3)**
 
@@ -141,7 +141,7 @@ Network Watcher provides several features to monitor and diagnose network perfor
 
    ![](images/cafinfra14.jpg)  
 
-1. Navigate to Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** it from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
 
    ![](images/cafinfra5.jpg)
 
@@ -161,7 +161,7 @@ Network Watcher provides several features to monitor and diagnose network perfor
 
    - **Diagnostic setting name**: **NSG_Flow_Logs (1)**
    - **Logs> Category groups**: check the **allLogs (2)** checkbox.
-   - **Destination details**: select the **Archeive to a storage account (3)** checkbox. Make sure the **default subscription (4)** is selected for subscription and **nsglogs<inject key="DeploymentID" enableCopy="false" /> (5)** for storage account.
+   - **Destination details**: select the **Archive to a storage account (3)** checkbox. Make sure the **default subscription (4)** is selected for subscription and **nsglogs<inject key="DeploymentID" enableCopy="false" /> (5)** for storage account.
 
    ![](images/cafinfra16.jpg)
 
