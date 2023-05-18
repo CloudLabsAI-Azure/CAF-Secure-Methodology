@@ -489,7 +489,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    - Rate limit duration: Select **1 minute (4)**
    - Rate limit threshold (requests): Enter **100 (5)**
   
-   ![](images/a109.png)
+      ![](images/a109.png)
  
 1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
   
@@ -499,7 +499,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    - Match values: Enter **0.0.0.0/0** and **::/0**
    - Click on **Add**.
       
-     ![](images/a110.png)
+      ![](images/a110.png)
   
 1. Select **Save**.
   
