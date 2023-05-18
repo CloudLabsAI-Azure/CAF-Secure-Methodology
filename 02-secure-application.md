@@ -393,11 +393,11 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
    ![](images/a127.png)
   
-1. To add the first origin, enter **OWASP-Main (1)** as the name, **App services (2)** as the origin type, and **owasp-mainjump<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
+1. To add the first origin, enter **OWASP-Main (1)** as the name, **App services (2)** as the origin type, and select **owasp-mainjump<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
   
    ![](images/a130.png)
 
-1. To add the Second origin, enter **OWASP-Stage (1)** as the name, **App services (2)** as the origin type, and **owasp-stage<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
+1. To add the Second origin, enter **OWASP-Stage (1)** as the name, **App services (2)** as the origin type, and select **owasp-stage<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
   
    ![](images/a131.png)
   
@@ -417,7 +417,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
    ![](images/a60.png)
   
-1. Select **Review + Create**, review the Summary, and then select **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
+1. Select **Review + Create**, review the Summary, and then select **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
   
    ![](images/a61.png)
     
