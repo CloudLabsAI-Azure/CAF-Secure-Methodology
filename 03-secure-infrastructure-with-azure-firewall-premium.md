@@ -344,14 +344,13 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a83.png)
 
-1. On the **IP addresses** tab, enter `10.0.0.0/24` and `192.168.1.10` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
+1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
  
-    ![](images/a84.png)
+    ![](images/a122.png)
  
 1. Review the Summary, and then select **Create**.
  
-    ![](images/a85.png)
-  
+    ![](images/a123.png)
 
 ## **Task 6: Azure Firewall Policies with Firewall Manager**
 
@@ -488,7 +487,8 @@ In this task, you will create an application rule to allow access to sports webs
  
  
 1. When the policy has been attached, select **Refresh**. The association should be displayed.
- 
+   
+   
    ![](images/a106.png)
  
  
