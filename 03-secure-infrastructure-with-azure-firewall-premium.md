@@ -61,7 +61,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
    - Azure Firewall Fat Flow Log
    - Azure Firewall Flow Trace Log
 
-   ![](images/scafinfra23.jpg "search gateway")
+     ![](images/scafinfra23.jpg "search gateway")
 
 6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
