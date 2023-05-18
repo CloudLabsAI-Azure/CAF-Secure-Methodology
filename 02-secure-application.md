@@ -491,13 +491,13 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
       ![](images/a109.png)
  
-1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
+ 1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
   
-   - Match type: Select **IP address**.
-   - Match variable: Select **RemoteAddr**
-   - Operation: Select **Does contain**
-   - Match values: Enter **0.0.0.0/0** and **::/0**
-   - Click on **Add**.
+    - Match type: Select **IP address**.
+    - Match variable: Select **RemoteAddr**
+    - Operation: Select **Does contain**
+    - Match values: Enter **0.0.0.0/0** and **::/0**
+    - Click on **Add**.
       
       ![](images/a110.png)
   
@@ -509,17 +509,52 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
    ![](images/a111.png)    
   
+
+1. From the **Start (1)** menu, search for **Windows Powershell ISE (2)** and open it **(3)**.
+
+   ![](images/a114.png)
+
+1. Run the command given below to enable the Windows Subsystem for Linux.
+
+
+   ```
+   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+   ```
   
+   ![](images/a113.png)
   
+1. Navigate to the Azure portal and select the Azure Cloud Shell icon from the top menu.
+
+   ![](images/a115.png)
+
+1. Cloud Shell window will open at the bottom of your browser window, select **Bash** to configure the Cloud Shell.
+
+   ![](images/a116.png)
+
+1. In the You have no storage mounted popup, click on **Create Storage**.
   
+   ![](images/a117.png)
   
-  
-  
-  
-  
-  
-  
-  
+
+1. Once the bash shell is opened, run the below command to check the **Block response status code 403**.
+
+   ```
+   for a in {1..300} ; do curl -LIkm2  --write-out "%{http_code},%{time_total},%{time_connect},%{time_appconnect},%{time_starttransfer}\n"  --silent --output nul  https://contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net/#/search?q=apple &  done
+   ```
+   ![](images/a120.png)
+   
+   >**Note: Replace the Endpoint hostname that you copied in previous task and make sure your URL end with /#/search?q=apple &  done**.
+
+1. The output is seen below; they block the request 403.
+
+   ![](images/a121.png)
+
+
+
+
+
+
+
   
   
   
