@@ -516,12 +516,11 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Run the command given below to enable the Windows Subsystem for Linux.
 
+    ```
+    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+    ```
 
-   ```
-   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-   ```
-  
-   ![](images/a113.png)
+    ![](images/a113.png)
   
 1. Navigate to the Azure portal and select the Azure Cloud Shell icon from the top menu.
 
