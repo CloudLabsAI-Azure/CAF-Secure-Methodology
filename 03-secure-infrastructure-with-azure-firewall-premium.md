@@ -102,10 +102,6 @@ In this task, you will test IDPS for HTTP traffic
     ![](images/scafinfra26.jpg "search gateway")
  
     >**Note**: Logs generation can take upto 12 hours to show up. Please refer to the screenshot for reference and continue with the next steps.
-
-1. Under the **Results** tab, expand the most recent result **(1)** and observe the **msg_s (2)** row.
- 
-   ![](images1/result1.png)
  
 1. Now navigate back to firewall policy and under **Settings** select **IDPS**.
  
@@ -257,9 +253,9 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images1/firewall.png)
  
- 1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab and click on **Run (2)** under the **Application rule log data** tab.
+ 1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule log**.
  
-     ![](images1/run.png)
+     ![](images/a124.png)
  
 
 ## **Task 4: Implement and Test URL filtering**
@@ -316,12 +312,11 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
  
-     ![](images1/firewall.png)
+    ![](images1/firewall.png)
  
-1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab and click on **Run (2)** under the **Application rule log data** tab.
+1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule log**.
  
-     ![](images1/run.png)
-
+    ![](images/a124.png)
 
 ## **Task 5: IP Groups**
 
