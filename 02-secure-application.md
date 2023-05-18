@@ -441,7 +441,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
    ![](images/a46.png)
 
-1. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
+1. Select one of your web apps, then click **Stop**, then click **Yes** to confirm..
 
    ![](images/a68.png)
 
@@ -450,7 +450,6 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    ![](images/a67.png)
     
    >**Note: there may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
-
   
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
   
@@ -462,7 +461,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 ### **Task 5.4: Create a Rate Limit Rule**
   
-1. Navigate to the **App services**, Select both of your web apps, then select **Start**, and then select **Yes** to verify.
+1. Navigate to the **App services** tab. Select both of your web apps, then click **Start**, then click **Yes** to confirm.
   
    ![](images/a71.png)
 
