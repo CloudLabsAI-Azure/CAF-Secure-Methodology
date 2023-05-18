@@ -37,8 +37,8 @@ This exercise includes the following tasks:
  1. On the **Edit backend pool** page, follow the below-mentioned instructions:
 
     - **Target type**: Select **Virtual Machine (1)** from the drop-down.
-    - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down
-    - Click on **Save (3)**
+    - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
+    - Click on **Save (3)**.
 
     ![](/images1/editbackendpool.png)
     
@@ -61,8 +61,8 @@ This exercise includes the following tasks:
  1. Under the **Associate an application gateway** page, follow the below instructions:
 
     - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop down. 
-    - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuration (2)**
-    - Click on **Add (3)**
+    - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuration (2)**.
+    - Click on **Add (3)**.
 
     ![](images1/associateappgateway.png)
     
@@ -131,7 +131,7 @@ In this task, you'll publish an application via Application Gateway by configuri
       - Translated address: Enter the Public IP address of the **Application gateway** which you copied in step 4.
       - Translated port: **80**
      
-     - Click on **Add (6)**
+     - Click on **Add (6)**.
 
        ![rule](/images1/rulecollection.png)
           
@@ -139,7 +139,7 @@ In this task, you'll publish an application via Application Gateway by configuri
 
    ![ss](/images/image307.png)
        
-  > **Note**: This will confirm that you have published the Contoso web application via Application Gateway.
+   > **Note: This will confirm that you have published the Contoso web application via Application Gateway**.
 
 
  ## **Task 3: Application Gateway WAF Custom Rule to block IP**
@@ -158,18 +158,18 @@ In this task, you'll publish an application via Application Gateway by configuri
 
    ![](images1/conenctrdp.png)
      
-1. Under **RDP** tab, click on **Downlaod RDP file**.
+1. Under **RDP** tab, click on **Download RDP file**.
 
    ![](images1/downlaod.png)
      
-1. Open the downlaoded RDP file and click on **Connect**.
+1. Open the downloaded RDP file and click on **Connect**.
 
    ![](images1/conect.png)
    
 1. Enter the below given credentials and click on **Ok (3)**
 
-   - User name : Enter **.\demouser (1)**
-   - Password : Enter **<inject key="JumpVM Admin Password" enableCopy="true" /> (2)**
+   - User name: Enter **.\demouser (1)**
+   - Password: Enter **<inject key="JumpVM Admin Password" enableCopy="true" /> (2)**
  
    ![](images1/credentials.png)
     
@@ -195,9 +195,9 @@ In this task, you'll publish an application via Application Gateway by configuri
  
  1. On the **Add custom rule** blade, enter the following details
  
-    - Custom rule name: **WAFcustomrule (1)**.
+    - Custom rule name: **WAFcustomrule (1)**
     - Priority: Enter **1 (2)**.
-    - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2
+    - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2.
     - Click on **Add (4)**.
  
     ![](images/a44.png "select gateway")
@@ -210,11 +210,11 @@ In this task, you'll publish an application via Application Gateway by configuri
  
    ![](images/image306.png "select gateway")
  
-1. Now, naivgate back to **JumpVM-<inject key="Deployment ID" enableCopy="false"/>** which you accessed using RDP and open the **Browser** from desktop
+1. Now, navigate back to **JumpVM-<inject key="Deployment ID" enableCopy="false"/>** which you accessed using RDP and open the **Browser** from desktop
 
    ![](images/scafinfra29.jpg "select gateway")
  
-1. Open a new tab, browse the **IPv4 Address** for which you created the custom rule.You will see that your website is accessible.
+1. Open a new tab and browse the **IPv4 Address** for which you created the custom rule. you will see that your website is accessible.
 
    ![ss](/images1/0.0.png)
 
@@ -241,8 +241,8 @@ You can perform a sample attack on your application by passing this `?q=<script>
    ![rp](/images1/rgappgateway.png)
     
 1. Under the **Application gateway** page, follow the below details:
-     - Select **Web application firewall (1)** under **Settings**    
-     - Click on **firewallpolicy** under **Associated web application firewall policy (2)**   
+     - Select **Web application firewall (1)** under **Settings**.    
+     - Click on **firewallpolicy** under **Associated web application firewall policy (2)**.  
   
      ![config](/images1/webappfirewall.png)
  
@@ -282,7 +282,7 @@ This task requires two instances of a web application that run in different Azur
    | Publish          | Select **Docker Container (4)**.                             |
    | Operating System | Select **Linux (5)**.                                        |
    | Region           | Select **EastUS (6)**.   
-   | prcing plan | Select **Basic B1 (100 total ACU, 1.75 GB memory, 1 vCPU) (7)**.                                        |
+   | pricing plan | Select **Basic B1 (100 total ACU, 1.75 GB memory, 1 vCPU) (7)**.                                        |
  
   
    ![](images/scafinfra30.jpg)
@@ -293,7 +293,7 @@ This task requires two instances of a web application that run in different Azur
   
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Opions           | Select **Single Container (1)**                              |
+   | Options           | Select **Single Container (1)**                              |
    | Image Source     | Select **Docker Hub (2)**                                    |
    | Access Type      | Select **Public (3)**                                        |
    | Image and Tag    | Enter **bkimminich/juice-shop:latest (4)**                   |
@@ -323,7 +323,7 @@ This task requires two instances of a web application that run in different Azur
    | Publish          | Select **Docker Container (4)**.                             |
    | Operating System | Select **Linux (5)**.                                        |
    | Region           | Select **EastUS 2 (6)**.   
-   | prcing plan      | Select **Basic B1 (100 total ACU, 1.75 GB memory, 1 vCPU) (7)**.  |
+   | pricing plan      | Select **Basic B1 (100 total ACU, 1.75 GB memory, 1 vCPU) (7)**.  |
 
    ![](images/scafinfra30.jpg)
   
@@ -333,7 +333,7 @@ This task requires two instances of a web application that run in different Azur
   
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
-   | Opions           | Select **Single Container (1)**                              |
+   | Options           | Select **Single Container (1)**                              |
    | Image Source     | Select **Docker Hub (2)**                                    |
    | Access Type      | Select **Public (3)**                                        |
    | Image and Tag    | Enter **bkimminich/juice-shop:latest (4)**                   |
@@ -346,13 +346,13 @@ This task requires two instances of a web application that run in different Azur
 
 ### **Task 5.2: Create a Front Door for your application**
 
-Configure Azure Front Door to direct user traffic based on lowest latency between the two Web Apps origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
+Configure Azure Front Door to direct user traffic based on the lowest latency between the two Web App's origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
   
 1. In the Azure portal, search for **Front Door and CDN profiles (1)** and select it from the results **(2)**.
   
     ![](images/a53.png)
   
-1. Select **+ Create** to create a Front Door and CDN profiles.
+1. Select **+ Create** to create a Front Door and CDN profile.
   
     ![](images/a54.png)
 
@@ -393,11 +393,11 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
   
    ![](images/a127.png)
   
-1. To add the first origin, enter **OWASP-Main (1)** as the name, **App services (2)** as the origin type, and **owasp-mainjump.azurewebsites.net (3)** as the host name then click **Add (4)**.
+1. To add the first origin, enter **OWASP-Main (1)** as the name, **App services (2)** as the origin type, and **owasp-mainjump<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
   
    ![](images/a130.png)
 
-1. To add the Second origin, enter **OWASP-Stage (1)** as the name, **App services (2)** as the origin type, and **owasp-stage.azurewebsites.net (3)** as the host name then click **Add (4)**.
+1. To add the Second origin, enter **OWASP-Stage (1)** as the name, **App services (2)** as the origin type, and **owasp-stage<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
   
    ![](images/a131.png)
   
@@ -405,7 +405,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
   
    ![](images/a132.png)
   
-1. Again selct **Add** to add a route.
+1. Again select **Add** to add a route.
   
    ![](images/a133.png)
   
@@ -417,7 +417,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
   
    ![](images/a60.png)
   
-1. Select **Review + Create**, and then  **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
+1. Select **Review + Create**, review the Summary, and then select **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
   
    ![](images/a61.png)
     
@@ -466,7 +466,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
    ![](images/a71.png)
 
-1. In a new browser tab paste the **endpoint** which you copied in previous task.
+1. In a new browser tab paste the **endpoint** which you copied in the previous task.
   
    ![](images/a67.png)
   
@@ -474,7 +474,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
    ![](images/a72.png)
   
-1. Type in any keyword **(e.g. apple)** and you will see a response from the website. As this site is using JSON, try **refresh** in browser to do the same search again and now you will not see any response message in the website as you saw previously.
+1. Type in any keyword **(e.g. apple)** and you will see a response from the website. As this site is using JSON, try **refresh** in the browser to do the same search again and now you will not see any response message in the website as you saw previously.
   
    ![](images/a73.png)
   
@@ -517,7 +517,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    ![](images/a111.png)    
   
 
-1. From the **Start (1)** menu, search for **Windows Powershell ISE (2)** and open it **(3)**.
+1. From the **Start (1)** menu, search for **Windows PowerShell ISE (2)** and open it **(3)**.
 
    ![](images/a114.png)
 
@@ -551,7 +551,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    
    >**Note: Replace the Endpoint hostname that you copied in previous task and make sure your URL end with /#/search?q=apple &  done**.
 
-1. You can see the output below, where they block the request 403..
+1. You can see the output below, where they block the request 403.
 
    ![](images/a121.png)
 
