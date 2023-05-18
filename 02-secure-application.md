@@ -399,7 +399,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
    | Forwarding protocol   | Select **match incoming requests (7)** .                     |
   
     
-   ![](images/a58.png)
+    ![](images/a58.png)
   
   
 1. Select **+ Add a policy** to apply a Web Application Firewall (WAF) policy to one or more domains in the Azure Front Door profile.
