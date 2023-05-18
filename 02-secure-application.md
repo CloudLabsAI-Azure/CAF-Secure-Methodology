@@ -303,7 +303,7 @@ This task requires two instances of a web application that run in different Azur
   
 1. Select **Review + create**, review the Summary, and then select **Create**. It might take several minutes for the deployment to complete.
   
-   ![](images/scafinfra30.jpg)
+   ![](images/scafinfra31.jpg)
   
 1. Let us create a Second web app. Using the search box on the Azure home page, enter **WebApp (1)** and select **App Services (2)** under services.
   
@@ -325,7 +325,7 @@ This task requires two instances of a web application that run in different Azur
    | Region           | Select **EastUS (6)**.   
    | prcing plan      | Select **Basic B1 (100 total ACU, 1.75 GB memory, 1 vCPU) (7)**.  |
 
-   ![](images/scafinfra31.jpg)
+   ![](images/scafinfra30.jpg)
   
 1. Click on **Next : Docker >**.
   
