@@ -325,7 +325,7 @@ This task requires two instances of a web application that run in different Azur
    | Region           | Select **EastUS 2 (6)**.   
    | pricing plan      | Select **Basic B1 (100 total ACU, 1.75 GB memory, 1 vCPU) (7)**.  |
 
-   ![](images/scafinfra30.jpg)
+   ![](images/a134.jpg)
   
 1. Click on **Next : Docker >**.
   
