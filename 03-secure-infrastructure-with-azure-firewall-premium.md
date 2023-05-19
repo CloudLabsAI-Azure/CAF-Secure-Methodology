@@ -17,7 +17,7 @@ In this exercise, you will explore Azure Firewall premium features and will add 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
-1. Navigate to home page in Azure portal, search for **Subscriptions (1)** and **select (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **Subscriptions (1)** and **select (2)** from suggestions.
 
    ![](images/scafinfra19.jpg "search gateway")
 
@@ -71,7 +71,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
-In this task, you will test IDPS for HTTP traffic
+In this task, you will test IDPS for HTTP traffic.
 
 1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open  **Command Prompt (2)** window.
 
@@ -97,7 +97,7 @@ In this task, you will test IDPS for HTTP traffic
  
     ![](images/scafinfra25.jpg "search gateway")
  
- 1. You'll be able to see resource specific logs for IDPS event
+ 1. You'll be able to see resource specific logs for IDPS event.
  
     ![](images/scafinfra26.jpg "search gateway")
  
@@ -204,7 +204,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Select **TLS inspection (1)** under the **Settings** tab and enter the below details under the **Key vault** tab:
  
-    - Parent policy : Choose **Enabled (2)**
+    - Parent policy: Choose **Enabled (2)**
     - Managed Identity: Select **(New) fw-cert-id-ZrNC4l8WLg97D  (3)** from the drop-down list
     - Key Vault: Select **(New) fw-cert-kv-ZrNC4l8WLg97D (4)** from the drop-down
     - Certificate: Select **(New) fw-cert-ZrNC4l8WLg97D (5)** from the drop-down
@@ -320,7 +320,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 ## **Task 5: IP Groups**
 
-1. Navigate to home page in Azure portal, search for **IP groups (1)** and **select (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **IP groups (1)** and **select (2)** from suggestions.
  
     ![](images/a81.png)
  
@@ -351,7 +351,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 ### **Task 6.1: Create a Firewall Policy**
 
-1. Navigate to home page in Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
    ![](images/a89.png)
  
@@ -422,7 +422,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 ### **Task 6.2: Create the firewall hub virtual network**
  
-1. Navigate to home page in Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
    ![](images/a89.png)
  
@@ -443,24 +443,24 @@ In this task, you will create an application rule to allow access to sports webs
    | Resource group                                | Select the resource group **JumpVM-rg (1)**                  |
    | Region                                        | Select **East US (2)**                                       |
    | Secured virtual hub name                      | Enter **Hub-01 (3)**                                         |
-   | Hub address space                             | Enter **10.2.0.0/16 (4)**                                        |
-   | Choose an existing vWAN or create a new one   | Choose **New vWAN (5)**                                          |
-   | Virtual WAN Name                              | Enter **Vwan-01 (6)**                                            |
-   | Type                                          | Select **Standard (7)**                                          |
+   | Hub address space                             | Enter **10.2.0.0/16 (4)**                                    |
+   | Choose an existing vWAN or create a new one   | Choose **New vWAN (5)**                                      |
+   | Virtual WAN Name                              | Enter **Vwan-01 (6)**                                        |
+   | Type                                          | Select **Standard (7)**                                      |
 
     ![](images/a99.png)
 
-1. On the **Azure Firewall** tab, Leave it as default and click on **Next: Security Partner Provider**.
+1. On the **Azure Firewall** tab, Leave it to default and click on **Next: Security Partner Provider**.
  
    ![](images/a100.png)
  
-1. On the **Security Partner Provider** tab, Leave it as default and click on **Next: Review + create**.
+1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create**.
  
    ![](images/a101.png)
 
-1. Review the **Summary** tab, and select **Create**.  
+1. Review the **Summary** page and select **Create**.  
  
-   >**Note**: Deployment may takes up to 30 minutes to complete.
+   >**Note**: Deployment may take up to 30 minutes to complete.
  
    ![](images/a102.png)
  
