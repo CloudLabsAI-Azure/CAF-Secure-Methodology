@@ -2,7 +2,7 @@
 
 ### What is DDoS protection?
 
-Distributed denial of service (DDoS) attacks is some of the largest availability and security concerns facing customers that are moving their applations to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
+Distributed denial of service (DDoS) attacks is some of the largest availability and security concerns facing customers that are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
 
 Azure DDoS Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. Protection is simple to enable on any new or existing virtual network, and it requires no application or resource changes.
 
@@ -13,7 +13,7 @@ Azure DDoS Protection, combined with application design best practices, provides
 
 - **Volumetric attacks**: These attacks flood the network layer with a substantial amount of seemingly legitimate traffic. They include UDP floods, amplification floods, and other spoofed-packet floods. DDoS Protection mitigates these potential multi-gigabyte attacks by absorbing and scrubbing them, with Azure's global network scale, automatically.
 - **Protocol attacks**: These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic, by interacting with the client, and blocking malicious traffic.
-- **Resource (application) layer attacks**: These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layers 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection to provide defence against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
+- **Resource (application) layer attacks**: These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layer 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection to provide defence against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
 
 ## **Task 1: Configure Azure DDoS Network Protection**
 
@@ -21,7 +21,7 @@ Azure DDoS Protection, combined with application design best practices, provides
  
    ![](images/ddos1.png)
  
-1. Click on create.
+1. Click on Create.
  
     ![](images/ddos2.png)
  
@@ -34,11 +34,11 @@ Azure DDoS Protection, combined with application design best practices, provides
  
      ![](images/ddos3.png)
  
-1. On the **Tags** tab, leave everything to default and then  click on **Review + create**.
+1. On the **Tags** tab, leave everything to default and then click on **Review + create**.
  
      ![](images/ddos4.png)
   
-1. If the validation is passed then  click on **Create**.
+1. If the validation is passed then click on **Create**.
 
     >**NOTE**: It may take a couple of minutes for the workspace to be created.
 
@@ -52,7 +52,7 @@ Azure DDoS Protection, combined with application design best practices, provides
  
       ![](images/ddos10.png)
 
-1. On the **Add virtual network  to DDoS plan** blade, provide the information as mentioned below,
+1. On the **Add virtual network to DDoS plan** blade, provide the information as mentioned below,
     - Subscription: **Leave it as default (1)**.
     - Resource Group: **JumpVM-rg (2)**.
     - Virtual network: Select **vnet (3)**.
@@ -104,7 +104,7 @@ Azure DDoS Protection, combined with application design best practices, provides
 
     ![](images/a41.png)
 
-1. Once you clicked on Scope, select **Public IP Address (1)** from **Resources type** then select the specific public IP address you want to log metrics for, and then select **Apply (3)**.
+1. Once you click on Scope, select **Public IP Address (1)** from **Resources type** then select the specific public IP address you want to log metrics for, and then select **Apply (3)**.
 
      ![](images/a42.png)
 
