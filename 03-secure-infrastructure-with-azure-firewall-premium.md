@@ -353,10 +353,10 @@ In this task, you will create an application rule to allow access to sports webs
 1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **can't reach this page**.
  
     ```
-    www.timesofindia.indiatimes.com
+    www.news18.com
     ```
  
-    ![](images/a135.jpg)
+    ![](images/a145.jpg)
  
  
 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
@@ -381,23 +381,23 @@ In this task, you will create an application rule to allow access to sports webs
       - Protocol: Enter **http,https**
       - TLS inspection: Check TLS inspection
       - Destination Type: Select **URL**
-      - Destination: Enter `www.timesofindia.indiatimes.com`
+      - Destination: Enter `www.news18.com`
      
      - Click on **Add (7)**
  
-     ![](images/a136.jpg "search gateway")
+     ![](images/a141.jpg "search gateway")
 
-1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.timesofindia.indiatimes.com`. On the Privacy error    connnection page, click on **Advanced**.
+1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.news18.com`. On the Privacy error    connnection page, click on **Advanced**.
  
-      ![](images/a140.jpg)
+      ![](images/a142.jpg)
  
-1. Click on **Continue to www.timesofindia.indiatimes.com (unsafe)**.
+1. Click on **Continue to www.news18.com (unsafe)**.
  
-    ![](images/a138.jpg)  
+    ![](images/a143.jpg)  
 
 1. Now you validate that the HTML response is displayed as expected in the browser.
  
-    ![](images/a139.jpg "search gateway") 
+    ![](images/a144.jpg "search gateway") 
  
 ## **Task 6: Azure Firewall Policies with Firewall Manager**
 
