@@ -41,7 +41,7 @@
     - **Username**: **<inject key="JumpVM Admin Username" />**
     - **Password**: **<inject key="JumpVM Admin Password" />**
    
-   ![](images/a30.png)
+        ![](images/a30.png)
    
 1. Next, click on the **Yes** button to accept the certificate and add in trusted certificates.
 
