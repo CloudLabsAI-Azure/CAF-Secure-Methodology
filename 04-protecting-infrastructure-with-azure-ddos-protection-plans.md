@@ -108,7 +108,7 @@ Azure DDoS Protection, combined with application design best practices, provides
 
      ![](images/a42.png)
 
-1. Under **Metric** select your chosen metric then under **Aggregation** select type as **Count**.
+1. Under **Metric** select **Under DDoS attack or not** then under **Aggregation** select type as **Count**.
   
      ![](images/a43.png)
 
