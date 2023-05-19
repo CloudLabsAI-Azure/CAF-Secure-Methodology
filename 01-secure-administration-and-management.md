@@ -50,7 +50,7 @@ The topology capability of Azure Network Watcher enables you to view all of the 
 
 ## **Task 3: Secure Access via Bastion Host**
 
-In this task, we are demonstrating how you are able to connect to VMs in an environment without configuring a public IP on the VMs.
+In this task, we are demonstrating how you can connect to VMs in an environment without configuring a public IP on the VMs.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Virtual networks (1)** and **select (2)** from the suggestions.
 
@@ -64,7 +64,7 @@ In this task, we are demonstrating how you are able to connect to VMs in an envi
    
    ![](images/a16.png "search gateway")
 
-1. You will see that **AzureBastionSubnet** is already present in the subnets, If you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore on this.
+1. You will see that **AzureBastionSubnet** is already present in the subnets, if you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore on this.
 
    ![](images/a17.png "search gateway")
 
@@ -137,7 +137,7 @@ Network Watcher provides several features to monitor and diagnose network perfor
 
    ![create](images/scafinfra28.jpg)
 
-1. In the Create page, click on the **Create** button and wait till the deployment completion.
+1. In the Create page, click on the **Create** button, and wait till the deployment completion.
 
    ![](images/cafinfra14.jpg)  
 
@@ -164,11 +164,3 @@ Network Watcher provides several features to monitor and diagnose network perfor
    - **Destination details**: select the **Archive to a storage account (3)** checkbox. Make sure the **default subscription (4)** is selected for subscription and **nsglogs<inject key="DeploymentID" enableCopy="false" /> (5)** for storage account.
 
    ![](images/cafinfra16.jpg)
-
-
-
-
-
-
-
- 
