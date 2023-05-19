@@ -350,6 +350,55 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a123.png)
 
+1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **can't reach this page**.
+ 
+    ```
+    www.timesofindia.indiatimes.com
+    ```
+ 
+    ![](images1/error1.png)
+ 
+ 
+1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
+ 
+    ![](images/firewall18.png "search gateway")
+ 
+1. Select **Application Rules (1)** from the **Settings** tab under Firewall Policy page and select **+ Add a rule collection (2)**.
+ 
+    ![](images/firewall17.png "search gateway")
+
+1. Under **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
+
+    - Name: **Ipgroup-rule (1)**
+    - Rule Collection type: **Application (2)**
+    - Priority: **104 (3)**
+	- Rule collection action: **Allow**
+    - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
+    - Under **Rules (5)** mention the below details:
+      - Name: **URL-Ipgroup**
+      - Source type: Select **IP Group** from the drop-down list
+      - Source: Enter **Ipgroup**
+      - Protocol: Enter **http,https**
+      - TLS inspection: Check TLS inspection
+      - Destination Type: Select **URL**
+      - Destination: Enter `www.timesofindia.indiatimes.com`
+     
+     - Click on **Add (6)**
+ 
+     ![](images/CAF2.png "search gateway")
+
+1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.timesofindia.indiatimes.com`. On the Privacy error    connnection page, click on **Advanced**.
+ 
+      ![](images1/Advanced1.png)
+ 
+1. Click on **Continue to www.timesofindia.indiatimes.com (unsafe)**.
+ 
+    ![](images1/unsafe1.png)  
+
+1. Now you validate that the HTML response is displayed as expected in the browser.
+ 
+    ![](images/CAF1.png "search gateway") 
+ 
 ## **Task 6: Azure Firewall Policies with Firewall Manager**
 
 ### **Task 6.1: Create a Firewall Policy**
