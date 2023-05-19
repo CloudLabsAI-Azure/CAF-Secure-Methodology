@@ -390,11 +390,11 @@ In this task, you will create a storage account, this storage account will be us
 
      ![](images1/conenctrdp.png)
      
-1. Under **RDP** tab, click on **Downlaod RDP file**.
+1. Under **RDP** tab, click on **Download RDP file**.
 
      ![](images1/downlaod.png)
      
-1. Open the downlaoded RDP file and click on **Connect**.
+1. Open the downloaded RDP file and click on **Connect**.
 
     ![](images1/conect.png)
    
@@ -448,7 +448,7 @@ In this task, you will create a storage account, this storage account will be us
  
       ![ss](/images1/0.0.png)
  
- 1. Now, you can paste the **IPv4 Address** into your **Lab VM**. You can  observe the **This site can’t be reached** error
+ 1. Now, you can paste the **IPv4 Address** into your **Lab VM**. You can observe the **This site can’t be reached** error
  
       > **Note**: You will see that your website is Blocked outside the Jump VM
  
