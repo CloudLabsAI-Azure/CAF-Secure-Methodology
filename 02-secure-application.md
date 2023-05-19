@@ -555,6 +555,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ![](images/a121.png)
 
+   >**Note: It might take up to 10 minutes to display the block request 403**.
 
 
 
