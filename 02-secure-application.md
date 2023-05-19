@@ -171,7 +171,7 @@ In this task, you'll publish an application via Application Gateway by configuri
    - User name: Enter **.\demouser (1)**
    - Password: Enter **<inject key="JumpVM Admin Password" enableCopy="true" /> (2)**
  
-   ![](images1/credentials.png)
+      ![](images1/credentials.png)
     
 1. Click on the **Yes** button to accept the certificate and add in trusted certificates.
 
