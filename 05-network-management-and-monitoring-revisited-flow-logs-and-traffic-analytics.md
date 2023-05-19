@@ -2,7 +2,7 @@
 
 ## **Task 1: NSG Validation**
 
-1. Navigate to Azure portal. Using the search bar, search for **Virtual machines (1)** and **select (2)** it from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
 
    ![](images/a18.png "search gateway")
    
@@ -27,7 +27,7 @@
 
    ![](images/a25.png)  
  
-1. You will see the error **Remote destop can't connected to the remote computer** because we are deny the inbound rule for diallow the RDP and click on **OK**.
+1. You will see the error **Remote desktop can't connected to the remote computer** because we are denied the inbound rule for disallowing the RDP and clicking on **OK**.
 
    ![](images/a27.png)
    
@@ -51,7 +51,7 @@
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
-1. Navigate to Azure portal. Using the search bar, search for **Application gateways (1)** and **select (2)** it from the suggestions..
+1. Navigate to the Azure portal. Using the search bar, search for **Application gateways (1)** and **select (2)** from the suggestions..
  
      ![](images/searchgateway.png "search gateway")
  
@@ -97,13 +97,13 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
    ![time interval](/images1/timeinterval.png)
    
-   > **Note**: If you observe the **Time interval** is greyed out, click on **Meanwhile, click here to see just resource data** and perform the above step.
+   > **Note: If you observe the **Time interval is greyed out, click on **Meanwhile, click here to see just resource data and perform the above step**.
 
       ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/raw/main/media/timeinterval.png)
       
 1. Now, you can observe the total number of network traffic flows from **Traffic Visualization**
 
-    > **Note**: The dashboard may take up to 30 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and can come back later and check on this
+    > **Note: The dashboard may take up to 30 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and can come back later and check on this**.
       
       ![traffic visualization](/images1/traffic%20visualisation.png)
      
