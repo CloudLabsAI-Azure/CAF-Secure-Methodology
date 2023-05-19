@@ -337,7 +337,8 @@ This task requires two instances of a web application that run in different Azur
    | Image Source     | Select **Docker Hub (2)**                                    |
    | Access Type      | Select **Public (3)**                                        |
    | Image and Tag    | Enter **bkimminich/juice-shop:latest (4)**                   |
-      
+    
+  
    ![](images/a128.png)
   
 1. Select **Review + create**, review the Summary, and then select **Create**. It might take several minutes for the deployment to complete.
