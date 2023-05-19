@@ -101,7 +101,7 @@ In this task, you will test IDPS for HTTP traffic.
  
     ![](images/scafinfra26.jpg "search gateway")
  
-    >**Note**: Logs generation can take upto 12 hours to show up. Please refer to the screenshot for reference and continue with the next steps.
+    >**Note: Logs generation can take upto 12 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
  
 1. Now navigate back to firewall policy and under **Settings** select **IDPS**.
  
@@ -257,6 +257,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/a124.png)
  
+     >**Note: Logs generation can take upto 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
 ## **Task 4: Implement and Test URL filtering**
  
@@ -317,6 +318,8 @@ In this task, you will create an application rule to allow access to sports webs
 1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule log**.
  
     ![](images/a124.png)
+
+    >**Note: Logs generation can take upto 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
 ## **Task 5: IP Groups**
 
