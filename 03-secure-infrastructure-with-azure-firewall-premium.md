@@ -83,7 +83,7 @@ In this task, you will test IDPS for HTTP traffic.
 
      `curl -A "HaxerMen" <your web server address>`
  
-    ![](images/firewall7.png "search gateway")
+   ![](images/firewall7.png "search gateway")
  
  1. In the custom prompt you will see your Web server response.
  
@@ -152,7 +152,7 @@ In this task, you will create an application rule to allow access to sports webs
     - Next hop address: Enter the **private IP Address** of the Firewall **(5)**.
     - Select **Add (6)**
  
-     ![](images1/addrouterule.png)
+      ![](images1/addrouterule.png)
  
  1. Now select **Subnets (1)** and Click on **Associate (2)**.
 
@@ -162,7 +162,7 @@ In this task, you will create an application rule to allow access to sports webs
           - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
           - Click on **Ok (5)**.
  
-           ![](images1/addsubnet.png)
+            ![](images1/addsubnet.png)
  
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
@@ -179,7 +179,7 @@ In this task, you will create an application rule to allow access to sports webs
     - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
-    ![](images1/bastionconnect.png)
+      ![](images1/bastionconnect.png)
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
@@ -210,7 +210,7 @@ In this task, you will create an application rule to allow access to sports webs
     - Certificate: Select **(New) fw-cert-ZrNC4l8WLg97D (5)** from the drop-down
     - Click on **Save (6)**
  
-    ![](images1/tlsinspection.png)
+      ![](images1/tlsinspection.png)
  
 1. Now, select **Application Rules (1)** from the **Settings** tab under the Firewall Policy page and select **+ Add a rule collection (2)**.
    
