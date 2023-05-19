@@ -21,7 +21,7 @@ This exercise includes the following tasks:
   
 ## **Task 1: Exploring Microsoft Defender for Cloud**
 
-In this task, you will explore the features of Microsoft Defender for cloud-like Security posture, Workload Protections, Environment settings 
+In this task, you will explore the features of Microsoft Defender for cloud-like Security posture, Workload Protections, Environment settings. 
 
 1. If you have not signed into the Azure portal already, follow the steps from page 1 of the lab guide to sign in.
 
@@ -48,7 +48,7 @@ In this task, you will explore the features of Microsoft Defender for cloud-like
       > ⭐ Good to know: <br>
       > The higher the score, the lower the identified risk level.
 
-7. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your secure score, unhealthy resources,    and recommendations.
+7. On Microsoft Defender for Cloud page, under cloud security click on **Security posture**. Here you can get an overview of your secure score, unhealthy resources,   and recommendations.
     
    ![](images/securityposture1.png "overview security posture")
 
@@ -174,7 +174,7 @@ In this task, you will explore Secure score which helps you understand your curr
     ![](images/secure6.png)
     
 1. The next important part is the **Remediation Steps** which contain the remediation logic where you can remediate the selected resources. 
-1. Under **Affected resources (1)**, **select a resource** (the single Virtual machine **JumpVM-<inject key="Deployment ID" enableCopy="false"/>(2)** on the Unhealthy resources) and click on **Fix (3)**. This will  automatically apply the remediation on the selected resource.
+1. Under **Affected resources (1)**, **select a resource** (the single Virtual machine **JumpVM-<inject key="Deployment ID" enableCopy="false"/>(2)** on the Unhealthy resources) and click on **Fix (3)**. This will automatically apply the remediation on the selected resource.
 
     ![](images/121.png)
     
@@ -212,7 +212,7 @@ In this task, you will explore and fix the security recommendations suggested by
 
     ![](images/123.png)
 
-1. On the **Choose a vulnerability assessment solution**, select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for            servers)**. Click on  **Proceed**.
+1. On the **Choose a vulnerability assessment solution**, select **Deploy integrated vulnerability scanner powered by Qualys (included in Microsoft Defender for            servers) **. Click on  **Proceed**.
 
     ![](images/posture4.png)
 
@@ -239,7 +239,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/securitycentre.png "security centre")
      
-1. On  Getting started blade, click **Install agents (1)** and then click **Install agents (2)**.
+1. On Getting started blade, click **Install agents (1)** and then click **Install agents (2)**.
 
     ![](images/agent.png "security agent")
 
@@ -255,7 +255,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/defender6.png)
 
-   > **Note**: In your environment, these numbers may not be the same, since it varies in time
+   > **Note**: In your environment, these numbers may not be the same, since it varies in time.
 
 1.  Notice the **total number of resources**, The total number of resources are the ones that are connected to the Microsoft Defender for Cloud and NOT the total           number of resources that you have in your subscriptions.
 
@@ -295,7 +295,7 @@ Azure Security Center by Microsoft is a solution that provides unified security 
 
     ![](images/defender13.png)
     
-1. Select the virtual machine **JumpVM-<inject key="Deployment ID" enableCopy="false"/>** From the top menu bar, click on **Download CSV report (3)**. You will get a      snapshot to work on it offline already filtered. You can also right-click on any of the    resources and upgrade to Microsoft Defender  for Cloud plan (when            applicable).
+1. Select the virtual machine **JumpVM-<inject key="Deployment ID" enableCopy="false"/>** From the top menu bar, click on **Download CSV report (3)**. You will get a      snapshot to work on it offline already filtered. You can also right-click on any of the    resources and upgrade to Microsoft Defender for Cloud plan (when            applicable).
 
     ![](images/editing9.png)
 
@@ -404,13 +404,3 @@ In this exercise you have covered the following:
    - Explored on Security Center and Security benchmark
 
  Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
-
-
-
-
-
-
-
-
-
-
