@@ -356,7 +356,7 @@ In this task, you will create an application rule to allow access to sports webs
     www.timesofindia.indiatimes.com
     ```
  
-    ![](images1/error1.png)
+    ![](images/a135.jpg)
  
  
 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
@@ -372,9 +372,9 @@ In this task, you will create an application rule to allow access to sports webs
     - Name: **Ipgroup-rule (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **104 (3)**
-	- Rule collection action: **Allow**
-    - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
-    - Under **Rules (5)** mention the below details:
+	- Rule collection action: **Allow (4)**
+    - Rule collection group: **DefaultApplicationRuleCollectionGroup (5)**
+    - Under **Rules (6)** mention the below details:
       - Name: **URL-Ipgroup**
       - Source type: Select **IP Group** from the drop-down list
       - Source: Enter **Ipgroup**
@@ -383,21 +383,21 @@ In this task, you will create an application rule to allow access to sports webs
       - Destination Type: Select **URL**
       - Destination: Enter `www.timesofindia.indiatimes.com`
      
-     - Click on **Add (6)**
+     - Click on **Add (7)**
  
-     ![](images/CAF2.png "search gateway")
+     ![](images/a136.jpg "search gateway")
 
 1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.timesofindia.indiatimes.com`. On the Privacy error    connnection page, click on **Advanced**.
  
-      ![](images1/Advanced1.png)
+      ![](images/a140.jpg)
  
 1. Click on **Continue to www.timesofindia.indiatimes.com (unsafe)**.
  
-    ![](images1/unsafe1.png)  
+    ![](images/a138.jpg)  
 
 1. Now you validate that the HTML response is displayed as expected in the browser.
  
-    ![](images/CAF1.png "search gateway") 
+    ![](images/a139.jpg "search gateway") 
  
 ## **Task 6: Azure Firewall Policies with Firewall Manager**
 
