@@ -87,7 +87,7 @@ In this task, we are demonstrating how you can connect to VMs in an environment 
     - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
-    ![](images1/bastionconnect.png)
+      ![](images1/bastionconnect.png)
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
@@ -131,7 +131,7 @@ Network Watcher provides several features to monitor and diagnose network perfor
    - **Storage account**: select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
    - **Retention (days)**: **30 (3)**
 
-   ![](images/scafinfra27.jpg)  
+      ![](images/scafinfra27.jpg)  
    
 1. Under the **Analytics** tab, check the box to **Enable Traffic Analytics (1)** and select **Review + Create (2)**.
 
@@ -163,4 +163,4 @@ Network Watcher provides several features to monitor and diagnose network perfor
    - **Logs> Category groups**: check the **allLogs (2)** checkbox.
    - **Destination details**: select the **Archive to a storage account (3)** checkbox. Make sure the **default subscription (4)** is selected for subscription and **nsglogs<inject key="DeploymentID" enableCopy="false" /> (5)** for storage account.
 
-   ![](images/cafinfra16.jpg)
+      ![](images/cafinfra16.jpg)
