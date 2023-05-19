@@ -40,7 +40,7 @@ This exercise includes the following tasks:
     - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
     - Click on **Save (3)**.
 
-    ![](/images1/editbackendpool.png)
+      ![](/images1/editbackendpool.png)
     
 1. Once the Backend pools are edited, you will see the notification that says **Successfully added rule collection**, as shown below.
 
@@ -64,7 +64,7 @@ This exercise includes the following tasks:
     - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuration (2)**.
     - Click on **Add (3)**.
 
-    ![](images1/associateappgateway.png)
+      ![](images1/associateappgateway.png)
     
  ## **Task 2: Publish your application to the internet with the application gateway**
  
@@ -200,7 +200,7 @@ In this task, you'll publish an application via Application Gateway by configuri
     - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2.
     - Click on **Add (4)**.
  
-    ![](images/a44.png "select gateway")
+      ![](images/a44.png "select gateway")
  
 1. Click on **Save**.
  
@@ -244,7 +244,7 @@ You can perform a sample attack on your application by passing this `?q=<script>
      - Select **Web application firewall (1)** under **Settings**.    
      - Click on **firewallpolicy** under **Associated web application firewall policy (2)**.  
   
-     ![config](/images1/webappfirewall.png)
+         ![config](/images1/webappfirewall.png)
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
  
