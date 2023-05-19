@@ -27,7 +27,7 @@ Microsoft Sentinel is your bird's-eye view across the enterprise alleviating the
     
 ## **Task 2: Onboard Azure Subscription to Azure sentinel**
 
-In this task, you will onboard the Azure subscription to Azure sentinel by comfiguring the new Log Analytics workspace from sentinel.
+In this task, you will onboard the Azure subscription to Azure sentinel by configuring the new Log Analytics workspace from sentinel.
 
 1. In the Azure portal, search **Microsoft sentinel (1)** and select **Microsoft sentinel (2)**.
 
@@ -85,11 +85,11 @@ In this task, you will onboard the Azure subscription to Azure sentinel by comfi
 
     ![](images/correct4.png "news-sentinel")
 
-    >**NOTE**: Azure sentinel will take around 30 minutes to load and display the data, meanwhile you can continue with the lab and  we will explore the data            collected by log analytics in task 4.    
+    >**NOTE**: Azure sentinel will take around 30 minutes to load and display the data, meanwhile you can continue with the lab and we will explore the data            collected by log analytics in task 4.    
      
 ## **Task 3: Onboard the Web App – IIS server to sentinel**
 
-In this task, you will onboard the web app -  IIS server to sentinel by configuring the log Analytics agent.
+In this task, you will onboard the web app - IIS server to sentinel by configuring the log Analytics agent.
 
 1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the Route Table **firewallroute**. 
     
@@ -128,13 +128,13 @@ In this task, you will onboard the web app -  IIS server to sentinel by configur
  
     ![](images1/selectedge.png)
     
-1. In the Microsoft Edge browser, open the Azure portal with  **portal.azure.com** and sign in with your login credentials. You can check your credentials in the                **Environment details**.
+1. In the Microsoft Edge browser, open the Azure portal with **portal.azure.com** and sign in with your login credentials. You can check your credentials in the                **Environment details**.
 
 1. Now, In the Azure portal, search **Log Analytics workspace (1)** and select **Log Analytics workspace (2)** from the search results.
 
      ![](images/analytics1.png)
 
-1. On the  log analytics workspace page, select **log-analytics (1)**, and under settings, click on **Agents (2)** after that expand **Log Analytics agent                instructions (3)**, and then click on **Download Windows Agent [64 bit] (4)**. Copy the **Workspace ID (5)** and **Primary key (6)**, then save it to notepad for later use.
+1. On the log analytics workspace page, select **log-analytics (1)**, and under settings, click on **Agents (2)** after that expand **Log Analytics agent                instructions (3)**, and then click on **Download Windows Agent [64 bit] (4)**. Copy the **Workspace ID (5)** and **Primary key (6)**, then save it to notepad for later use.
 
      ![](images1/Agents.png)
 
@@ -170,7 +170,7 @@ In this task, you will onboard the web app -  IIS server to sentinel by configur
 
       ![](images/analytics10.png)
 
-1. Once the  Microsoft Monitoring Agent configuration is completed successfully, click on **Finish**.
+1. Once the Microsoft Monitoring Agent configuration is completed successfully, click on **Finish**.
 
       ![](images/analytics11.png)
 
@@ -238,4 +238,3 @@ In this exercise you have covered the following:
    - Onboarded Azure Subscription to Azure sentinel 
    - Onboarded the Web App – IaaS server to sentinel 
    - Explored query logs
-
