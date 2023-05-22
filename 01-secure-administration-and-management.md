@@ -157,7 +157,7 @@ Network Watcher provides several features to monitor and diagnose network perfor
 
    ![](images/cafinfra15.jpg)
 
-1. In the Diagnostic settings page, provide the following details and click on **save (6)**.
+1. In the Diagnostic settings page, provide the following details and click on **Save (6)**.
 
    - **Diagnostic setting name**: **NSG_Flow_Logs (1)**
    - **Logs> Category groups**: check the **allLogs (2)** checkbox.
