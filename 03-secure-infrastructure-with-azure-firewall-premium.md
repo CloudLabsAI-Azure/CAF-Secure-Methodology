@@ -115,7 +115,7 @@ In this task, you will test IDPS for HTTP traffic.
  
    ![](images/firewall12.png "search gateway")
  
-1. Under edit rules, change **Signature Mode** to **Alert and Deny** and click on **Save**.  Wait for the deployment to complete before proceeding.
+1. Under edit rules, change **Signature Mode** to **Alert and Deny** and click on **Apply**.  Wait for the deployment to complete before proceeding.
  
    ![](images/firewall13.png "search gateway")
 
