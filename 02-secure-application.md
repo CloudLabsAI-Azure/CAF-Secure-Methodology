@@ -386,7 +386,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
     ![](images/a57.png)
   
-1. On the **Add a route** page, enter name as **myRoute (1)** and click on **Add an origin group (2)**.
+1. On the **Add a route** page, enter name as **myRoute (1)** and click on **Add a new origin group (2)**.
   
     ![](images/a126.png)
   
