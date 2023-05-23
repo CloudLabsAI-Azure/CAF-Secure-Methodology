@@ -74,15 +74,15 @@ In this task, we are demonstrating how you can connect to VMs in an environment 
 
 1. Now Using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
 
-   ![](images/a18.png "search gateway")
+    ![](images/a18.png "search gateway")
 
 1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
 
-   ![](images/a19.png "search gateway")
+    ![](images/a19.png "search gateway")
 
-1. On the Virtual Machine page, go to the **Overview (1)** tab and click on **Connect (2)** then click ** Use Bastion (3)**.
+1. On the Virtual Machine page, under **Settings**, click on **Connect (1)** then click on **Bastion (2)** and select **Use Bastion (3)**.
  
-    ![](images1/connect.png)
+    ![](images/148.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
  
