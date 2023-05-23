@@ -82,7 +82,7 @@ In this task, we are demonstrating how you can connect to VMs in an environment 
 
 1. On the Virtual Machine page, under **Settings**, click on **Connect (1)** then click on **Bastion (2)** and select **Use Bastion (3)**.
  
-    ![](images/148.png)
+    ![](images/a148.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
  
