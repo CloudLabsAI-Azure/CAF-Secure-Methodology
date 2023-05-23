@@ -24,7 +24,7 @@ Azure Monitor Network Insights provides a comprehensive and visual representatio
 
    ![](images/a6.png "search gateway")
 
-1. Once you opened the resources, the **Metrics** looked like this in the grid view.
+1. Click on the **Detailed Metrics** icon next to the resource name to bring up the Metrics.
 
    ![](images/a13.png "search gateway")
 
@@ -76,15 +76,15 @@ In this task, we are demonstrating how you can connect to VMs in an environment 
 
    ![](images/a19.png "search gateway")
 
-1. On the Virtual Machine page, go to the **Overview (1)** tab and click on **Connect (2)** then select **Bastion (3)**.
+1. On the Virtual Machine page, go to the **Overview (1)** tab and click on **Connect (2)** then click ** Use Bastion (3)**.
  
     ![](images1/connect.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
  
-    - **Username**: Enter **demouser (1)**
+    - **Username**: Enter **the jumpVM Admin Username from the email you received when registering (1)**
     - **Authentication Type**: Select **Password (2)** from the drop-down
-    - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
+    - **Password**: Enter **Enter the jumpVM Admin Password from the email you received when registering (3)**
     - Click on **Connect (4)**
  
       ![](images1/bastionconnect.png)
