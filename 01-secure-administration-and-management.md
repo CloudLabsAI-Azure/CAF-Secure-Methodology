@@ -22,11 +22,15 @@ Azure Monitor Network Insights provides a comprehensive and visual representatio
 
 1. You can click on any resource to select the resource view, The resource view helps you visualize how a resource is configured. The resource view is currently available for **Azure Application Gateway**, **Azure Virtual Network**, and **Route table**. For example, for Application Gateway, you can access the resource view by selecting the Application Gateway resource name in the metrics grid view. You can do the same thing for Azure Virtual Network, and route table.
 
-   ![](images/a6.png "search gateway")
+   ![](images/a146.png "search gateway")
 
-1. Click on the **Detailed Metrics** icon next to the resource name to bring up the Metrics.
+1. Click on the **Throughput** icon next to the location to bring up the Metrics.
+   
+    ![](images/a147.png "search gateway")
+     
+1. You will see the **Metrics** as given below:
 
-   ![](images/a13.png "search gateway")
+    ![](images/a13.png "search gateway")
 
 ## **Task 2: Network Topology** 
 
