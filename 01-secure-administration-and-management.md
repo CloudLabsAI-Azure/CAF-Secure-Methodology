@@ -137,13 +137,13 @@ Network Watcher provides several features to monitor and diagnose network perfor
 
       ![](images/scafinfra27.jpg)  
    
-1. Under the **Analytics** tab, check the box to **Enable Traffic Analytics (1)** and select **Review + Create (2)**.
+1. Under the **Analytics** tab, check the box to **Enable Traffic Analytics (1)**, select **Every 10 mins (2)** under the Traffic Analytics processing interval and click **Review + Create (3)**.
 
-   ![create](images/scafinfra28.jpg)
+   ![create](images/a149.png)
 
 1. In the Create page, click on the **Create** button, and wait till the deployment completion.
 
-   ![](images/cafinfra14.jpg)  
+   ![](images/a150.png)  
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
 
@@ -165,6 +165,6 @@ Network Watcher provides several features to monitor and diagnose network perfor
 
    - **Diagnostic setting name**: **NSG_Flow_Logs (1)**
    - **Logs> Category groups**: check the **allLogs (2)** checkbox.
-   - **Destination details**: select the **Archive to a storage account (3)** checkbox. Make sure the **default subscription (4)** is selected for subscription and **nsglogs<inject key="DeploymentID" enableCopy="false" /> (5)** for storage account.
+   - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
 
-      ![](images/cafinfra16.jpg)
+      ![](images/a151.png)
