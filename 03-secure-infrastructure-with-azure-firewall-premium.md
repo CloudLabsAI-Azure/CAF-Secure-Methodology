@@ -81,7 +81,7 @@ In this task, you will test IDPS for HTTP traffic.
 
    - Replace <your web server address> with Firewall IP.
 
-     `curl -A "HaxerMen" <your web server address>`
+     `curl -A "HaxerMen" <Firewall Public IP>`
  
    ![](images/firewall7.png "search gateway")
  
@@ -121,7 +121,7 @@ In this task, you will test IDPS for HTTP traffic.
 
 1. Navigate back to JumpVM, and run the `curl` command again:
 
-    `curl -A "HaxerMen" <your web server address>`
+    `curl -A "HaxerMen" <Firewall Public I>`
 
     Since the HTTP request is now blocked by the firewall, you'll see the following output after the connection timeout expires:
 
