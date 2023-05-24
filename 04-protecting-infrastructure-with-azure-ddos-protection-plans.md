@@ -23,7 +23,7 @@ This exercise includes the following tasks:
   
 ## **Task 1: Configure Azure DDoS Network Protection**
 
-In this task, we are creating a DDoS protection plan to protecting the virtual network.
+In this task, you will create a DDoS protection plan to protect the virtual network.
 
 1. In the Azure portal, search **DDoS protection plans (1)** and then select **DDoS protection plans (2)**.
  
@@ -82,7 +82,7 @@ In this task, we are creating a DDoS protection plan to protecting the virtual n
       
 ## **Task 2: Configure Azure DDoS IP Protection**
 
-In this task, we are protecting the Public Ip address with the DDoS protection.
+In this task, you will secure the Public Ip address by using DDoS protection.
 
 1. In the Azure portal, search **Public IP Addresses (1)** and then select **Public IP Addresses (2)**.
 
@@ -106,7 +106,7 @@ In this task, we are protecting the Public Ip address with the DDoS protection.
     
 ## **Task 3: View metrics from Public IP address**
 
-In this task, we are viewing the metrics with the various aggregation.
+In this task, you will explore and visualize the metrics using various kinds of aggregation.
 
 1. Navigate back to the **Firewalllp** page, Under Monitoring, select **Metrics**.
 
