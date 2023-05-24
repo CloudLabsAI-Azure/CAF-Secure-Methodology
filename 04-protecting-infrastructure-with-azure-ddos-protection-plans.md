@@ -20,6 +20,7 @@ This exercise includes the following tasks:
   - Configure Azure DDoS Network Protection
   - Configure Azure DDoS IP Protection
   - View metrics from Public IP address
+  
 ## **Task 1: Configure Azure DDoS Network Protection**
 
 In this task, we are creating a DDoS protection plan to protecting the virtual network.
