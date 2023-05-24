@@ -297,7 +297,7 @@ In this task, you will create an application rule to allow access to sports webs
      
      - Click on **Add (6)**
  
-     ![](images/CAF3.png "search gateway")
+         ![](images/CAF3.png "search gateway")
  
  1.  Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On the Privacy error connection page, click on **Advanced**.
  
@@ -359,7 +359,7 @@ In this task, you will create an application rule to allow access to sports webs
      
      - Click on **Add (6)**
  
-     ![](images/CAF2.png "search gateway")
+         ![](images/CAF2.png "search gateway")
 
 1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error    connnection page, click on **Advanced**.
  
@@ -449,7 +449,7 @@ In this task, you will create an application rule to allow access to sports webs
      
      - Click on **Add (7)**
  
-     ![](images/a141.jpg "search gateway")
+         ![](images/a141.jpg "search gateway")
 
 1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.news18.com`. On the Privacy error    connnection page, click on **Advanced**.
  
@@ -463,7 +463,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a144.jpg "search gateway") 
  
-## **Task 6: Azure Firewall Policies with Firewall Manager**
+## **Task 6: Azure Firewall Policies with Firewall Manager (Optional)**
 
 ### **Task 6.1: Create a Firewall Policy**
 
@@ -526,7 +526,7 @@ In this task, you will create an application rule to allow access to sports webs
       - Destination: Enter **10.6.0.0/16**
     - Click on **Add (6)**
  
-    ![](images/a95.png)
+      ![](images/a95.png)
  
 1. Select **Review + Create**.
  

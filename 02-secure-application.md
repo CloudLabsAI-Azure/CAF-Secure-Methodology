@@ -145,7 +145,7 @@ In this task, you'll publish an application via Application Gateway by configuri
  
     ![](/images1/switchtoprevention.png)
 
-1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the page.
+1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the website.
 
    ![](images/a160.png "select gateway")
 
