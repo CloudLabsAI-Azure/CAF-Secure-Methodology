@@ -16,7 +16,7 @@ Azure Monitor Network Insights provides a comprehensive and visual representatio
 
    ![](images/a5.png "search gateway")
 
-1. In this, each tile represents a resource type. The tile displays the number of instances of that resource type deployed across all selected subscriptions. It also displays the health status of the resource.
+1. In this, each tile represents a resource health. The tile displays the number of instances of that resource health deployed across all selected subscriptions. 
 
    ![](images/a12.png "search gateway")
 
@@ -44,7 +44,7 @@ The topology capability of Azure Network Watcher enables you to view all of the 
 
    ![](images/cafinfa2.jpg "search gateway")
 
-1. Click on the **click on navigate to the experience**.
+1. Select the **click on navigate to the experience** option.
 
    ![](images/scafinfra36.jpg "search gateway")
 
