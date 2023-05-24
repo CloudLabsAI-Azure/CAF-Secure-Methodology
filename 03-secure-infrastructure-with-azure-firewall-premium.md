@@ -73,6 +73,70 @@ Azure Firewall Premium provides signature-based IDPS to allow rapid detection of
 
 In this task, you will test IDPS for HTTP traffic.
 
+1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
+ 
+     ![](images/searchgateway.png "search gateway")
+ 
+1. Select your **Application Gateway**.
+ 
+     ![](images/appgateway.png "select gateway")
+ 
+1. Select the **Frontend public IP address** of the application gateway.
+ 
+      ![](images/image301.png "select gateway")
+
+1.  Copy the **Public Ip address** and save it to notepad for later use.
+
+     ![](images/editing12.png )
+    
+1. On the Azure Portal **Home** page, search **Azure Firewall (1)** and then select **Firewalls (2)**.
+
+   ![firewall](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/Azurefirewallnew.png?raw=true)
+    
+1. Click on the **AzureFirewall**.
+
+   ![firewall](/images1/azurefirewall.png)
+   
+1. Select **Firewall Public IP** from the Overview tab.
+
+    ![pip](/images1/firewallIP.png)
+    
+1. Copy the **Public Ip address** and save it to notepad for later use.
+
+    ![ip](/images1/firewallip1.png)  
+     
+1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
+
+   ![FM](/images1/firewallmanager.png)
+    
+1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
+
+   ![policy](/images1/selectfirewallpolicy.png)
+   
+1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
+
+   ![rule](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/dnat1.png?raw=true)
+    
+1. Under the **Add a rule collection** page, enter the below details:
+
+    - Name: **afw-contoso-prod-firewall-rulecolection (1)**
+    - Rule Collection type: **DNAT (2)**
+    - Priority: **100 (3)**
+    - Rule collection group: **DefaultDnatRuleCollectionGroup (4)**
+    - Under **Rules (5)** mention the below details:
+      - Name: **afw-dnat-http**
+      - Source type: Select **IP Address** from the drop-down list
+      - Source: Enter *
+      - Protocol: Select **TCP** from the drop-down list
+      - Destination Ports: **80**
+      - Destination type: Select **IP Address** from the drop-down list
+      - Destination: Enter the IP address of the **Firewall** which you copied in step 8.
+      - Translated address: Enter the Public IP address of the **Application gateway** which you copied in step 4.
+      - Translated port: **80**
+     
+     - Click on **Add (6)**.
+
+       ![rule](/images1/rulecollection.png)
 1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open  **Command Prompt (2)** window.
 
    ![](images/firewall9.png "search gateway")
