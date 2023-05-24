@@ -108,13 +108,13 @@ Azure DDoS Protection, combined with application design best practices, provides
 
      ![](images/a42.png)
 
-1. Under **Metric** select **Under DDoS attack or not** then under **Aggregation** select type as **Count**.
+1. Under **Metric** select **Inbound SYN packets to trigger DDoS mitigation** then under **Aggregation** select type as **Count**.
   
-     ![](images/a43.png)
+     ![](images/a153.png)
 
+1. Follow the above step to add **Inbound TCP packets to trigger DDoS mitigation** and **Inbound UDP packets to trigger DDoS mitigation**. 
 
-
-      
+      ![](images/a154.png)
       
       
       
