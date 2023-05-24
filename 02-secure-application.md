@@ -42,9 +42,7 @@ This exercise includes the following tasks:
 
       ![](/images1/editbackendpool.png)
     
-1. Once the Backend pools are edited, you will see the notification that says **Successfully added rule collection**, as shown below.
-
-     ![](/images/image309.png)
+1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
 
  1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (2)**.
 
@@ -384,8 +382,8 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
    ![](images/a67.png)
-    
-1. To test instant global failover in action, try the following steps:
+   
+1. To test instant global failover in action, try the following steps **(Step 3 to Step 8 are optional)**:
 
 1. Switch to the Azure portal, search for and select **App services**.
   
