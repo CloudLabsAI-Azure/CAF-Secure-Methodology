@@ -13,7 +13,7 @@ In this exercise, you will deploy an Azure Firewall and Application Gateway with
 This exercise includes the following tasks:
 
   - Configure WAF to protect your web application
-  - Publish your application to the internet with the application gateway
+  - Accessing your application using application gateway
   - Application Gateway WAF Custom Rule to block IP
   - Attack simulation
   - Rate Limiting using Azure Front Door
