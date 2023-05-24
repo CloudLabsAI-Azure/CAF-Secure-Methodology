@@ -1,4 +1,13 @@
 # Exercise 2- Secure administration and management
+
+Azure Monitor Network Insights provides a comprehensive and visual representation through topologies of the health and metrics of all deployed network resources without requiring any configuration. 
+
+The topology capability of Azure Network Watcher enables you to view all of the resources in a virtual network, the resources associated with the resources in a virtual network and the relationships between the resources.
+
+Azure Bastion is a fully managed service provided by Microsoft Azure that enables secure and seamless Remote Desktop Protocol (RDP) and Secure Shell (SSH) access to virtual machines (VMs) within a virtual network (VNet) without the need for a public IP address or a virtual private network (VPN) connection.
+
+Azure Monitor Network Insights provides a comprehensive and visual representation through topologies of the health and metrics of all deployed network resources without requiring any configuration. It also provides access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), and traffic analytics.
+
 This exercise includes the following tasks:
 
   - Network Health
@@ -8,7 +17,7 @@ This exercise includes the following tasks:
   
 ## **Task 1: Network Health**
 
-Azure Monitor Network Insights provides a comprehensive and visual representation through topologies of the health and metrics of all deployed network resources without requiring any configuration. It also provides access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), and traffic analytics.
+In this task, you'll explore Azure monitor and examine the resource health of various deployed resources. 
 
 1. Navigate to the Azure portal. Using the search bar, search for **Monitor (1)** and **select (2)** from the suggestions.
 
@@ -40,7 +49,7 @@ Azure Monitor Network Insights provides a comprehensive and visual representatio
 
 ## **Task 2: Network Topology** 
 
-The topology capability of Azure Network Watcher enables you to view all of the resources in a virtual network, the resources associated with the resources in a virtual network and the relationships between the resources. In this task, you'll view resources in a Microsoft Azure virtual network, and the relationships between the resources.
+ In this task, you'll view resources in a Microsoft Azure virtual network, and the relationships between the resources.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Network Watcher (1)** and **select (2)** from the suggestions.
 
@@ -60,7 +69,7 @@ The topology capability of Azure Network Watcher enables you to view all of the 
 
 ## **Task 3: Secure Access via Bastion Host**
 
-In this task, we are demonstrating how you can connect to VMs in an environment without configuring a public IP on the VMs.
+In this task, you'll learn how to access and Azure virtual machine using Azure Bastion service.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Virtual networks (1)** and **select (2)** from the suggestions.
 
@@ -105,11 +114,11 @@ In this task, we are demonstrating how you can connect to VMs in an environment 
 
 ## **Task 4: Prepare the Network Watcher monitoring environment and NSG Flow**
 
-Network Watcher provides several features to monitor and diagnose network performance issues. We will create NSG flow logs that will provide detailed information about the network traffic that passes through your NSG. They capture information such as source and destination IP addresses, source and destination ports, protocol, and action taken (allow or deny) by the NSG. This information can be used for troubleshooting network connectivity issues, monitoring and analyzing network traffic patterns, and detecting potential security threats.
-
 NSG Diagnostic Logs provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorized access attempts, and monitor the NSG's behavior.
 
 NSG Flow Logs capture information about the network traffic flowing through a Network Security Group. They provide visibility into the network communications and can be used for analyzing network behavior, detecting threats, and investigating security incidents.
+
+In this task, You will create NSG flow logs that will provide detailed information about the network traffic that passes through your NSG. This information can be used for troubleshooting network connectivity issues, monitoring and analyzing network traffic patterns, and detecting potential security threats.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
 
