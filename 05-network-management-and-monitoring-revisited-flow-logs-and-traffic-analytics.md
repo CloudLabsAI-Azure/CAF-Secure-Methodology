@@ -38,7 +38,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 1. Paste the **JumpVM DNS Name** in the **Computer** field and click on **Connect**.
    * **JumpVM DNS Name**: **<inject key="JumpVM DNS Name" />**
 
-   ![](images/a25.png)  
+        ![](images/a25.png)  
  
 1. You will see the error **Remote desktop can't connected to the remote computer** because we are denied the inbound rule for disallowing the RDP and clicking on **OK**.
 
