@@ -369,10 +369,10 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
    | Resource group              | Select the resource group **JumpVM-rg (2)**                       |
    | Resource group location     | Default same as resource group                                |
    | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
-   | Tier                        | Select **Standard (4)**                                            |
+   | Tier                        | Select **Premium (4)**                                            |
  
   
-    ![](images/a125.png)
+    ![](images/a152.png)
   
 1. On the **Secrets**, Leave it default as same and click on **Next: Endpoint >**.
   
