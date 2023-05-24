@@ -64,7 +64,7 @@ This exercise includes the following tasks:
 
       ![](images1/associateappgateway.png)
     
- ## **Task 2: Publish your application to the internet with the application gateway**
+ ## **Task 2: Accessing your application using application gateway**
  
 In this task, you'll publish an application via Application Gateway by configuring the DNAT rules from the firewall policy.
 
@@ -93,46 +93,20 @@ In this task, you'll publish an application via Application Gateway by configuri
  
   In this task, you will login into the Jump VM to configure the Custom rules for firewall policy and will publish the web application within the VM and from the Lab VM to check the application's reachability.
  
-1. In the Azure portal, search for **Virtual Machines (1)** and select it from the results **(2)**.
+ 1. In the Azure portal, search for **Virtual Machine (1)** and select it from the results (2).
 
-   ![](images1/virtual%20machines.png)
-     
-1. On Virtual machines page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />**.
-
-   ![](images1/jumpvm.png)
-
-1. Click on **Connect (1)** and then select **RDP (2)**.
-
-   ![](images1/conenctrdp.png)
-     
-1. Under **RDP** tab, click on **Download RDP file**.
-
-   ![](images1/downlaod.png)
-     
-1. Open the downloaded RDP file and click on **Connect**.
-
-   ![](images1/conect.png)
-   
-1. Enter the below given credentials and click on **Ok (3)**
-
-   - User name: Enter **.\demouser (1)**
-   - Password: Enter **<inject key="JumpVM Admin Password" enableCopy="true" /> (2)**
+      ![](images/a156.png "select gateway")
  
-      ![](images1/credentials.png)
-    
-1. Click on the **Yes** button to accept the certificate and add in trusted certificates.
+ 1. On Virtual machines page, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](images/a31.png)
-    
-1. Within the **Jump VM**, type **cmd (1)** in the search bar and right-click on **Command Prompt (2)** then click on **Run as administrator (3)**.
- 
-   ![](/images1/cmd1.png)
- 
- 1. On the Command Prompt, type **ipconfig (1)** and then copy the **IPv4 Address (2)** and save it to notepad for later use.
- 
-    ![](/images/image314.png)
- 
- 1. Now, navigate back to the **Lab VM**, search **WAF (1)** from the Azure Portal and then select **Web Application Firewall policies (WAF) (2)**.
+      ![](images/a157.png "select gateway")
+
+ 1. Copy the **Public IP address** and save it to notepad for later use.
+
+      ![](images/a158.png "select gateway")
+
+
+ 1. In the Azure Portal Search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
     ![](images/image302.png "select gateway")
  
@@ -144,10 +118,10 @@ In this task, you'll publish an application via Application Gateway by configuri
  
     - Custom rule name: **WAFcustomrule (1)**
     - Priority: Enter **1 (2)**.
-    - IP address or range: Enter **IPv4 Address (3)** that is copied above in step 2.
+    - IP address or range: Enter **Public IP address (3)** of the labvm that is copied above in step 3.
     - Click on **Add (4)**.
  
-      ![](images/a44.png "select gateway")
+      ![](images/a159.png "select gateway")
  
 1. Click on **Save**.
  
@@ -156,24 +130,32 @@ In this task, you'll publish an application via Application Gateway by configuri
 1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
    ![](images/image306.png "select gateway")
- 
-1. Now, navigate back to **JumpVM-<inject key="Deployment ID" enableCopy="false"/>** which you accessed using RDP and open the **Browser** from desktop
 
-   ![](images/scafinfra29.jpg "select gateway")
+1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
+     
+   ![rp](/images1/rgappgateway.png)
+    
+1. Under the **Application gateway** page, follow the below details:
+     - Select **Web application firewall (1)** under **Settings**.    
+     - Click on **firewallpolicy** under **Associated web application firewall policy (2)**.  
+  
+         ![config](/images1/webappfirewall.png)
  
-1. Open a new tab and browse the **IPv4 Address** for which you created the custom rule. you will see that your website is accessible.
-
-   ![ss](/images1/0.0.png)
-
-1. Close the RDP session, try accessing the **IPv4 Address** using a browser tab in **Lab VM**. You will observe that the IP address is not accessible and **This site can’t be reached** error shows up.
+1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
  
-   ![ss](/images1/site.png)
+    ![](/images1/switchtoprevention.png)
+
+1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the page.
+
+   ![](images/a160.png "select gateway")
+
+1. Navigate back to **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
+
+   ![](images/a161.png "select gateway")
 
  ## **Task 4: Attack simulation** 
      
 In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
-
-   > **Note**: You can perform this task only after finishing task 2 and task 3.
 
 You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
     
@@ -462,19 +444,6 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. On the **myWAFPolicy** page, under settings, click on **Policy settings (1)** and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
   
    ![](images/a111.png)    
-  
-
-1. From the **Start (1)** menu, search for **Windows PowerShell ISE (2)** and open it **(3)**.
-
-   ![](images/a114.png)
-
-1. Run the command given below to enable the Windows Subsystem for Linux.
-
-    ```
-    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-    ```
-
-    ![](images/a113.png)
   
 1. Navigate to the Azure portal and select the Azure Cloud Shell icon from the top menu.
 
