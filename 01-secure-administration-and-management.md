@@ -1,5 +1,11 @@
 # Exercise 2- Secure administration and management
+This exercise includes the following tasks:
 
+  - Network Health
+  - Network Topology
+  - Secure Access via Bastion Host
+  - Prepare the Network Watcher monitoring environment and NSG Flow
+  
 ## **Task 1: Network Health**
 
 Azure Monitor Network Insights provides a comprehensive and visual representation through topologies of the health and metrics of all deployed network resources without requiring any configuration. It also provides access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), and traffic analytics.

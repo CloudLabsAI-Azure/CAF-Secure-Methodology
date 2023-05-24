@@ -3,6 +3,12 @@
 - Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, flow logs and traffic analytics provide valuable insights into network traffic patterns and behavior.
 - Flow logs capture detailed information about network flows, including source and destination IP addresses, ports, protocols, and packet counts. They offer visibility into network traffic at the packet level, aiding in troubleshooting, detecting anomalies, and understanding network behavior.
 - Combining flow logs and traffic analytics enables network administrators to gain comprehensive visibility, streamline troubleshooting, and make data-driven decisions for network optimization and security enhancement.
+
+This exercise includes the following tasks:
+
+  - NSG Validation
+  - Network Watcher Traffic Analytics to monitor the network
+  
 ## **Task 1: NSG Validation (Optional)**
 
 In this task, we are accessing the virtual machine with the inbound port rule.
