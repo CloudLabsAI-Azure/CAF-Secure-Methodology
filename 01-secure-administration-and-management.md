@@ -44,13 +44,13 @@ The topology capability of Azure Network Watcher enables you to view all of the 
 
    ![](images/cafinfa2.jpg "search gateway")
 
-1. Select the **default subscription (1)**, **JumpVM-RG (2)** for Resource group, and **vnet (3)** for virtual network in the Topology tab.  
+1. Click on the **click on navigate to the experience**.
 
-   ![](images/cafinfa3.jpg "search gateway")
+   ![](images/scafinfra36.jpg "search gateway")
 
-1. Now, you'll be able to **visualize (1)** the Virtual network topology and understand how different network resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
+1. Now, you'll be able to **visualize (1)** the topology. You can explore the different connections to understand how different resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
-   ![](images/cafinfa4.jpg "search gateway")
+   ![](images/scafinfra37.jpg "search gateway")
 
 ## **Task 3: Secure Access via Bastion Host**
 
