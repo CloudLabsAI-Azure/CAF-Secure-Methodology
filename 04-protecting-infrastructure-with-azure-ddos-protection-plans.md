@@ -17,6 +17,8 @@ Azure DDoS Protection, combined with application design best practices, provides
 
 ## **Task 1: Configure Azure DDoS Network Protection**
 
+In this task, we are creating a DDoS protection plan to protecting the virtual network.
+
 1. In the Azure portal, search **DDoS protection plans (1)** and then select **DDoS protection plans (2)**.
  
    ![](images/ddos1.png)
@@ -74,6 +76,8 @@ Azure DDoS Protection, combined with application design best practices, provides
       
 ## **Task 2: Configure Azure DDoS IP Protection**
 
+In this task, we are protecting the Public Ip address with the DDoS protection.
+
 1. In the Azure portal, search **Public IP Addresses (1)** and then select **Public IP Addresses (2)**.
 
     ![](images/a33.png)
@@ -95,6 +99,8 @@ Azure DDoS Protection, combined with application design best practices, provides
     ![](images/a38.png)
     
 ## **Task 3: View metrics from Public IP address**
+
+In this task, we are viewing the metrics with the various aggregation.
 
 1. Navigate back to the **Firewalllp** page, Under Monitoring, select **Metrics**.
 
