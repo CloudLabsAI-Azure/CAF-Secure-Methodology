@@ -1,4 +1,4 @@
-# Exercise 5- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
+# Exercise 6- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
 ## **Task 1: NSG Validation**
 
