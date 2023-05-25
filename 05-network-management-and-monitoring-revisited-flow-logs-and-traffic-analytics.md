@@ -171,8 +171,12 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![l7](/images1/l7proto.png)
 
-
-
+## **Summary**
+ 
+In this exercise you have covered the following:
+  
+   - Performed NSG validation
+   - Monitored the network watcher traffic
 
 
 
