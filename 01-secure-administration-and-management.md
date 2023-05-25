@@ -187,3 +187,15 @@ In this task, You will create NSG flow logs that will provide detailed informati
    - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
 
       ![](images/a151.png)
+      
+
+## Summary
+ 
+In this exercise you have covered the following:
+  
+   - Explored on Network health 
+   - Explored on Network topology
+   - Secured Access via Bastion Host
+   - Configured the Network Watcher monitoring environment and NSG Flow
+
+ Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
