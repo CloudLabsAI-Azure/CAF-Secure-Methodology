@@ -190,6 +190,8 @@ In this task, you will test IDPS for HTTP traffic.
  
    ![](images/firewall13.png "search gateway")
 
+1. Click on **Apply** to update the firewall policy.
+	
 1. Navigate back to JumpVM, and run the `curl` command again:
 
     `curl -A "HaxerMen" <Firewall Public IP>`
