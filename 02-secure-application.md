@@ -473,15 +473,14 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    >**Note: It might take up to 10 minutes to display the block request 403**.
 
+## **Summary**
+ 
+In this exercise you have covered the following:
+  
+   - Configured WAF to Protect your web application 
+   - Published an application to the internet with the application gateway
+   - Customized WAF rules
+   - Performed Attack simulation
+   - Perfomed Rate Limiting using Azure Front Door
 
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
+Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
