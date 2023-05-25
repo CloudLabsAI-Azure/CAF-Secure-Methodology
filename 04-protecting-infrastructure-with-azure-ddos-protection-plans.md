@@ -129,7 +129,15 @@ In this task, you will explore and visualize the metrics using various kinds of 
       ![](images/a154.png)
       
       
-      
+## **Summary**
+ 
+In this exercise you have covered the following:
+  
+   - Configured Azure DDoS Network Protection
+   - Configured Azure DDoS IP Protection
+   - visualized the metrics using Public IP address
+
+Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.     
       
       
       
