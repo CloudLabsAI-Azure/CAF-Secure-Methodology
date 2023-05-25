@@ -364,6 +364,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
    ![](images/a67.png)
+   >**Note: The application might take around 5min to reflect, you can continue with the next task come back and refresh the page to view the changes**
    
 1. To test instant global failover in action, try the following steps **(Step 3 to Step 8 are optional)**:
 
