@@ -478,7 +478,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 In this exercise you have covered the following:
   
    - Configured WAF to Protect your web application 
-   - Published an application to the internet with the application gateway
+   - Accessed your application using application gateway
    - Customized WAF rules
    - Performed Attack simulation
    - Perfomed Rate Limiting using Azure Front Door
