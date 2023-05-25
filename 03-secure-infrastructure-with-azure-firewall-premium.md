@@ -201,8 +201,6 @@ In this task, you will test IDPS for HTTP traffic.
     `curl: (56) Recv failure: Connection was reset`
  
      ![](images/firewall14.png "search gateway")
-
-1. Go to the Monitor logs in the Azure portal and find the message for the blocked request.
  
 ## **Task 3: Web categories testing**
  
@@ -370,7 +368,7 @@ In this task, you will create an application rule to allow access to sports webs
  
          ![](images/CAF2.png "search gateway")
 
-1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error    connnection page, click on **Advanced**.
+1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error connnection page, click on **Advanced**.
  
       ![](images1/Advanced1.png)
  
