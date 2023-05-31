@@ -1,5 +1,6 @@
 # Release Notes
 
-### 04 November 2022
+### 29 May 2023
 
-- Onboarded the lab.
+- This is a newly updated lab.
+
