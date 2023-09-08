@@ -59,9 +59,6 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](images/cafinfa2.jpg "search gateway")
 
-1. Select the **click on navigate to the experience** option.
-
-   ![](images/scafinfra36.jpg "search gateway")
 
 1. Now, you'll be able to **visualize (1)** the topology. You can explore the different connections to understand how different resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
@@ -69,7 +66,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
 ## **Task 3: Secure Access via Bastion Host**
 
-In this task, you'll learn how to access and Azure virtual machine using Azure Bastion service.
+In this task, you'll learn how to access an Azure virtual machine using the Azure Bastion service.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Virtual networks (1)** and **select (2)** from the suggestions.
 
@@ -83,7 +80,7 @@ In this task, you'll learn how to access and Azure virtual machine using Azure B
    
    ![](images/a16.png "search gateway")
 
-1. You will see that **AzureBastionSubnet** is already present in the subnets, if you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore on this.
+1. You will see that **AzureBastionSubnet** is already present in the subnets, If you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore this.
 
    ![](images/a17.png "search gateway")
 
@@ -95,9 +92,9 @@ In this task, you'll learn how to access and Azure virtual machine using Azure B
 
    ![](images/a19.png "search gateway")
 
-1. On the Virtual Machine page, under **Settings**, click on **Connect (1)** then click on **Bastion (2)** and select **Use Bastion (3)**.
+1. On the Virtual Machine page, under **Settings**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
-   ![](images/a148.png)
+   ![](images/a170.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
  
