@@ -13,7 +13,7 @@ This exercise includes the following tasks:
   
 ## **Task 1: NSG Validation (Optional)**
 
-In this task, you'll access the virtual machine by configuring an inbound port rule in network security group.
+In this task, you'll access the virtual machine by configuring an inbound port rule in the network security group.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
 
@@ -40,7 +40,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
         ![](images/a25.png)  
  
-1. You will see the error **Remote desktop can't connected to the remote computer** because we are denied the inbound rule for disallowing the RDP and clicking on **OK**.
+1. You will see the error **Remote desktop can't be connected to the remote computer** because we are denied the inbound rule for disallowing the RDP and clicking on **OK**.
 
    ![](images/a27.png)
    
@@ -76,7 +76,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
      ![](images/image301.png "select gateway")
   
- 1. Copy the **Public Ip address** and save it to notepad for later use.
+ 1. Copy the **Public IP address** and save it to Notepad for later use.
 
      ![](images/editing12.png )
 
@@ -118,7 +118,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![traffic visualization](/images1/traffic%20visualisation.png)
 
-    > **Note: The dashboard may take up to 30 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and can come back later and check on this**.
+    > **Note: The dashboard may take up to 30 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
            
      
 1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
@@ -175,9 +175,8 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
 In this exercise you have covered the following:
   
-   - Performed NSG validation
-   - Monitored the network watcher traffic
-
+   - Performed NSG validation.
+   - Monitored the network watcher traffic.
 
 
 
