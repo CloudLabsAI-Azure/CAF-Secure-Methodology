@@ -340,19 +340,18 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    - Rule type: Select **Rate limit (2)**
    - Priority: Enter **1 (3)**
    - Rate limit duration: Select **1 minute (4)**
-   - Rate limit threshold (requests): Enter **100 (5)**
+   - Rate limit threshold (requests): Enter **1 (5)**
   
-      ![](images/a109.png)
+      ![](images/a176.png)
  
  1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
   
-    - Match type: Select **IP address**.
-    - Match variable: Select **RemoteAddr**
-    - Operation: Select **Does contain**
-    - Match values: Enter **0.0.0.0/0** and **::/0**
+    - Match type: Select **String**.
+    - Match variable: Select **RequestUri**
+    - Match values: Enter **contoso** and **azurefd**
     - Click on **Add**.
       
-      ![](images/a110.png)
+      ![](images/a177.png)
   
 1. Select **Save**.
   
@@ -362,33 +361,11 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
    ![](images/a111.png)    
   
-1. Navigate to the Azure portal and select the Azure Cloud Shell icon from the top menu.
+1. Navigate back to the website and try **refresh** in the browser, you will see a response from the website.
 
-   ![](images/a115.png)
+   ![](images/a178.png)
 
-1. The Cloud Shell window will open at the bottom of your browser window, select **Bash** to configure the Cloud Shell.
-
-   ![](images/a116.png)
-
-1. In the You have no storage mounted popup, click on **Create Storage**.
-  
-   ![](images/a117.png)
-  
-
-1. Once the bash shell is opened, run the below command to check the **Block response status code 403**.
-
-   ```
-   for a in {1..300} ; do curl -LIkm2  --write-out "%{http_code},%{time_total},%{time_connect},%{time_appconnect},%{time_starttransfer}\n"  --silent --output nul  https://contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net/#/search?q=apple &  done
-   ```
-   ![](images/a120.png)
-   
-   >**Note: Replace the Endpoint hostname that you copied in the previous task and make sure your URL ends with /#/search?q=apple &  done**.
-
-1. You can see the output below, where they block the request 403.
-
-   ![](images/a121.png)
-
-   >**Note: It might take up to 30 minutes to display the block request 403**.
+   >**Note: It might take up to 5 minutes to display the response**.
 
 ## **Summary**
  
