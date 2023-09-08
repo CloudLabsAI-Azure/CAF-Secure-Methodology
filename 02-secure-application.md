@@ -367,7 +367,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    >**Note: It might take up to 5 minutes to display the response**.
 
-1. After getting the response from the website Navigate back to **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
+1. After getting the response from the website navigate back to the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
    ![](images/a161.png "select gateway")
 
