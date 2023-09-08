@@ -98,7 +98,7 @@ In this task, you will secure the Public Ip address by using DDoS protection.
 
 1. Once you click on **Protect**, under **Protection type**, select **IP** and click on **Save**.
 
-    ![](images/a36.png)
+    ![](images/a175.png)
 
 1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection (3)** you will see that your public ip address is protected by **IP protection** as shown below.
 
