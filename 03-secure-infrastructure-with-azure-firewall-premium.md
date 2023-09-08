@@ -5,9 +5,9 @@ Azure Firewall is a cloud-native and intelligent network firewall security servi
 Azure Firewall Premium is a next-generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
 
 - **TLS Inspection** - decrypts outbound traffic, processes the data, then encrypts the data and sends it to the destination.
-- **IDPS** - A network intrusion detection and prevention system (IDPS) allow you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.
+- **IDPS** - A network intrusion detection and prevention system (IDPS) allows you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.
 - **URL filtering** - extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
-- **Web categories** - administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
+- **Web categories** - Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
 For more information, see `https://learn.microsoft.com/en-us/azure/firewall/premium-features`
  
 
@@ -92,7 +92,7 @@ In this task, you will test IDPS for HTTP traffic.
  
       ![](images/image301.png "select gateway")
 
-1.  Copy the **Public Ip address** and save it to notepad for later use.
+1.  Copy the **Public IP address** and save it to Notepad for later use.
 
      ![](images/editing12.png )
     
@@ -108,7 +108,7 @@ In this task, you will test IDPS for HTTP traffic.
 
     ![pip](/images1/firewallIP.png)
     
-1. Copy the **Public Ip address** and save it to notepad for later use.
+1. Copy the **Public IP address** and save it to Notepad for later use.
 
     ![ip](/images1/firewallip1.png)  
      
@@ -136,15 +136,15 @@ In this task, you will test IDPS for HTTP traffic.
       - Source: Enter *
       - Protocol: Select **TCP** from the drop-down list
       - Destination Ports: **80**
-      - Destination type: Select **IP Address** from the drop-down list
-      - Destination: Enter the IP address of the **Firewall** which you copied in step 8.
-      - Translated address: Enter the Public IP address of the **Application gateway** which you copied in step 4.
+      - Destination (Firewall PIP address): Enter the IP address of the **Firewall** which you copied in step 8.
+      - Translated type: Select **IP Address** from the drop-down list
+      - Translated address or FQDN: Enter the Public IP address of the **Application gateway** which you copied in step 4.
       - Translated port: **80**
      
      - Click on **Add (6)**.
 
        ![rule](/images1/rulecollection.png)
-1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open  **Command Prompt (2)** window.
+1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open the **Command Prompt (2)** window.
 
    ![](images/firewall9.png "search gateway")
 
@@ -168,11 +168,11 @@ In this task, you will test IDPS for HTTP traffic.
  
     ![](images/scafinfra25.jpg "search gateway")
  
- 1. You'll be able to see resource specific logs for IDPS event.
+ 1. You'll be able to see resource-specific logs for IDPS events.
  
     ![](images/scafinfra26.jpg "search gateway")
  
-    >**Note: In case you didn't find the Logs as expected, then it may take upto 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
+    >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
  
 1. Now navigate back to firewall policy and under **Settings** select **IDPS**.
@@ -215,7 +215,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/addroute.png)
  
-1. Under **Add Route** page, enter the below information:
+1. Under the **Add Route** page, enter the below information:
   
     - Route Name: Enter **firewallroute (1)**
     - Address prefix destination: Select **IP Address (2)** from the drop-down list
@@ -240,9 +240,9 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/selectvm.png)
 
- 1. On the Virtual Machine page, go to the **Overview (1)** tab and click on **Connect (2)** then select **Bastion (3)**.
+1. On the Virtual Machine page, under **Settings**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
-    ![](images1/connect.png)
+   ![](images/a170.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
  
@@ -307,7 +307,7 @@ In this task, you will create an application rule to allow access to sports webs
  
          ![](images/CAF3.png "search gateway")
  
- 1.  Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On the Privacy error connection page, click on **Advanced**.
+ 1.  Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On the Privacy error connection page, click on **Advanced**.
  
      ![](images1/Advanced.png)
  
@@ -329,7 +329,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/a124.png)
  
-     >**Note: In case you didn't find the Logs as expected, then it may take upto 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
+     >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
      ![](images/a162.png)
 
@@ -371,7 +371,7 @@ In this task, you will create an application rule to allow access to sports webs
  
          ![](images/CAF2.png "search gateway")
 
-1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error connnection page, click on **Advanced**.
+1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error connnection page, click on **Advanced**.
  
       ![](images1/Advanced1.png)
  
@@ -393,7 +393,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a124.png)
 
-    >**Note: In case you didn't find the Logs as expected, then it may take upto 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
+    >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
     ![](images/a162.png)
 
@@ -407,7 +407,7 @@ In this task, you will create an application rule to allow access to sports webs
   
     ![](images/a82.png) 
  
-1. On the IP Group page, on the **Basics** tab, enter or select the following information and click on **Next : IP addresses > (4)**.
+1. On the IP Group page, on the **Basics** tab, enter or select the following information and click on **Next: IP addresses > (4)**.
  
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
@@ -463,7 +463,7 @@ In this task, you will create an application rule to allow access to sports webs
  
          ![](images/a141.jpg "search gateway")
 
-1. Once the deployment completes navigating back to the Bastion VM tab and refresh the page where you have browsed for `www.news18.com`. On the Privacy error    connnection page, click on **Advanced**.
+1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.news18.com`. On the Privacy error connection page, click on **Advanced**.
  
       ![](images/a142.jpg)
  
@@ -594,7 +594,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 ### **Task 6.3: Associate the firewall policy with the virtual hub**
   
-1. From the Azure portal home page, select **Firewall Manager**. On Firewall Manager page, under **Security**, select **Azure Firewall Policies**.
+1. From the Azure portal home page, select **Firewall Manager**. On the Firewall Manager page, under **Security**, select **Azure Firewall Policies**.
   
    ![](images/a103.png)
  
@@ -623,6 +623,6 @@ In this exercise you have covered the following:
    - Performed Web category testing 
    - Implemented and Tested URL filtering
    - Performed IP groups
-   - Performed Azure Firewall Policies with Firewall Manager
+   - Performed Azure Firewall Policies with the Firewall Manager
 
 Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.

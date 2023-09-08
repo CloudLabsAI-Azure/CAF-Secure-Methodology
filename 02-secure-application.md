@@ -13,14 +13,14 @@ In this exercise, you will deploy an Azure Firewall and Application Gateway with
 This exercise includes the following tasks:
 
   - Configure WAF to protect your web application
-  - Accessing your application using application gateway
+  - Accessing your application using the application gateway
   - Application Gateway WAF Custom Rule to block IP
   - Attack simulation
   - Rate Limiting using Azure Front Door
 
  ## **Task 1: Configure WAF to protect your web application**
  
- In this task, you will add Virtual Machine as the Backend pool of the Application gateway and also configure the Application Gateway from the firewall policy.
+ In this task, you will add a Virtual Machine as the Backend pool of the Application gateway and also configure the Application Gateway from the firewall policy.
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
@@ -80,7 +80,7 @@ In this task, you'll publish an application via Application Gateway by configuri
  
       ![](images/image301.png "select gateway")
 
-1.  Copy the **Public Ip address** and save it to notepad for later use.
+1.  Copy the **Public IP address** and save it to Notepad for later use.
 
      ![](images/editing12.png )
           
@@ -91,7 +91,7 @@ In this task, you'll publish an application via Application Gateway by configuri
 
  ## **Task 3: Application Gateway WAF Custom Rule to block IP**
  
-  In this task, you will login into the Jump VM to configure the Custom rules for firewall policy and will publish the web application within the VM and from the Lab VM to check the application's reachability.
+  In this task, you will log in into the Jump VM to configure the Custom rules for firewall policy and will publish the web application within the VM and from the Lab VM to check the application's reachability.
  
  1. In the Azure portal, search for **Virtual Machine (1)** and select it from the results (2).
 
@@ -101,7 +101,7 @@ In this task, you'll publish an application via Application Gateway by configuri
 
       ![](images/a157.png "select gateway")
 
- 1. Copy the **Public IP address** and save it to notepad for later use.
+ 1. Copy the **Public IP address** and save it to Notepad for later use.
 
       ![](images/a158.png "select gateway")
 
@@ -125,7 +125,7 @@ In this task, you'll publish an application via Application Gateway by configuri
  
 1. Click on **Save**.
  
-   ![](images/image305.png "select gateway")
+   ![](images/a171.png "select gateway")
 
 1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
@@ -155,7 +155,7 @@ In this task, you'll publish an application via Application Gateway by configuri
 
  ## **Task 4: Attack simulation** 
      
-In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
+In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-site scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
 
 You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
     
@@ -279,7 +279,8 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
    ![](images/a67.png)
-   >**Note: The application might take around 5min to reflect, you can continue with the next task come back and refresh the page to view the changes**
+   
+   >**Note: The application might take around 5 minutes to reflect, you can continue with the next task come back and refresh the page to view the changes**
    
 1. To test instant global failover in action, try the following steps **(Step 3 to Step 8 are optional)**:
 
@@ -287,19 +288,19 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
    ![](images/a46.png)
 
-1. Select one of your web apps, then click **Stop**, then click **Yes** to confirm..
+1. Select one of your web apps, then click **Stop**, then click **Yes** to confirm.
 
-   ![](images/a68.png)
+   ![](images/a172.png)
 
 1. Switch back to your browser and select Refresh. You should see the same information page.
 
    ![](images/a67.png)
     
-   >**Note: there may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
+   >**Note: There may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
   
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
   
-   ![](images/a69.png)
+   ![](images/a173.png)
 
 1. Switch back to your browser and select Refresh. This time, you should see an error message.
 
@@ -309,13 +310,13 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Navigate to the **App services** tab. Select both of your web apps, then click **Start**, then click **Yes** to confirm.
   
-   ![](images/a71.png)
+   ![](images/a174.png)
 
 1. In a new browser tab paste the **endpoint** which you copied in the previous task.
   
    ![](images/a67.png)
   
-1. Click on **Magnifying glass** on top right corner of the website to search.
+1. Click on **Magnifying glass** on the top right corner of the website to search.
   
    ![](images/a72.png)
   
@@ -339,19 +340,18 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    - Rule type: Select **Rate limit (2)**
    - Priority: Enter **1 (3)**
    - Rate limit duration: Select **1 minute (4)**
-   - Rate limit threshold (requests): Enter **100 (5)**
+   - Rate limit threshold (requests): Enter **1 (5)**
   
-      ![](images/a109.png)
+      ![](images/a176.png)
  
  1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
   
-    - Match type: Select **IP address**.
-    - Match variable: Select **RemoteAddr**
-    - Operation: Select **Does contain**
-    - Match values: Enter **0.0.0.0/0** and **::/0**
+    - Match type: Select **String**.
+    - Match variable: Select **RequestUri**
+    - Match values: Enter **contoso** and **azurefd**
     - Click on **Add**.
       
-      ![](images/a110.png)
+      ![](images/a177.png)
   
 1. Select **Save**.
   
@@ -361,42 +361,24 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
    ![](images/a111.png)    
   
-1. Navigate to the Azure portal and select the Azure Cloud Shell icon from the top menu.
+1. Navigate back to the website and try **refresh** in the browser, you will see a response from the website.
 
-   ![](images/a115.png)
+   ![](images/a178.png)
 
-1. Cloud Shell window will open at the bottom of your browser window, select **Bash** to configure the Cloud Shell.
+   >**Note: It might take up to 5 minutes to display the response**.
 
-   ![](images/a116.png)
+1. After getting the response from the website navigate back to the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
-1. In the You have no storage mounted popup, click on **Create Storage**.
-  
-   ![](images/a117.png)
-  
-
-1. Once the bash shell is opened, run the below command to check the **Block response status code 403**.
-
-   ```
-   for a in {1..300} ; do curl -LIkm2  --write-out "%{http_code},%{time_total},%{time_connect},%{time_appconnect},%{time_starttransfer}\n"  --silent --output nul  https://contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net/#/search?q=apple &  done
-   ```
-   ![](images/a120.png)
-   
-   >**Note: Replace the Endpoint hostname that you copied in previous task and make sure your URL end with /#/search?q=apple &  done**.
-
-1. You can see the output below, where they block the request 403.
-
-   ![](images/a121.png)
-
-   >**Note: It might take up to 15 minutes to display the block request 403**.
+   ![](images/a161.png "select gateway")
 
 ## **Summary**
  
 In this exercise you have covered the following:
   
    - Configured WAF to Protect your web application 
-   - Accessed your application using application gateway
+   - Accessed your application using the application gateway
    - Customized WAF rules
    - Performed Attack simulation
-   - Perfomed Rate Limiting using Azure Front Door
+   - Performed Rate Limiting using Azure Front Door
 
 Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.

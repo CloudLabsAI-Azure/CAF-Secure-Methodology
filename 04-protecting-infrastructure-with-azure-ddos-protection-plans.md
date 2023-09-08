@@ -2,7 +2,7 @@
 
 ### What is DDoS protection?
 
-Distributed denial of service (DDoS) attacks is some of the largest availability and security concerns facing customers that are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
+Distributed denial of service (DDoS) attacks are some of the largest availability and security concerns facing customers who are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
 
 Azure DDoS Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. Protection is simple to enable on any new or existing virtual network, and it requires no application or resource changes.
 
@@ -82,7 +82,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
       
 ## **Task 2: Configure Azure DDoS IP Protection**
 
-In this task, you will secure the Public Ip address by using DDoS protection.
+In this task, you will secure the Public IP address by using DDoS protection.
 
 1. In the Azure portal, search **Public IP Addresses (1)** and then select **Public IP Addresses (2)**.
 
@@ -98,9 +98,9 @@ In this task, you will secure the Public Ip address by using DDoS protection.
 
 1. Once you click on **Protect**, under **Protection type**, select **IP** and click on **Save**.
 
-    ![](images/a36.png)
+    ![](images/a175.png)
 
-1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection (3)** you will see that your public ip address is protected by **IP protection** as shown below.
+1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection (3)** you will see that your public IP address is protected by **IP protection** as shown below.
 
     ![](images/a38.png)
     
@@ -135,7 +135,7 @@ In this exercise you have covered the following:
   
    - Configured Azure DDoS Network Protection
    - Configured Azure DDoS IP Protection
-   - Visualized the metrics using Public IP address
+   - Visualized the metrics using a Public IP address
 
 Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.     
       
