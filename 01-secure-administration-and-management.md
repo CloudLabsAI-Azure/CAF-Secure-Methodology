@@ -59,7 +59,10 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](images/cafinfa2.jpg "search gateway")
 
+1. On the topology page click on the bar to go to the new Topology experience:
 
+   ![](images/scafinfra36.jpg "search gateway")
+   
 1. Now, you'll be able to **visualize (1)** the topology. You can explore the different connections to understand how different resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
    ![](images/scafinfra37.jpg "search gateway")
