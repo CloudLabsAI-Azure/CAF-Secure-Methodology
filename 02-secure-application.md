@@ -66,7 +66,7 @@ This exercise includes the following tasks:
     
  ## **Task 2: Accessing your application using application gateway**
  
-In this task, you'll publish an application via Application Gateway by configuring the DNAT rules from the firewall policy.
+In this task, you will access the application by going through the Application Gateway that you just configured.
 
 1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
  
@@ -91,7 +91,7 @@ In this task, you'll publish an application via Application Gateway by configuri
 
  ## **Task 3: Application Gateway WAF Custom Rule to block IP**
  
-  In this task, you will log in into the Jump VM to configure the Custom rules for firewall policy and will publish the web application within the VM and from the Lab VM to check the application's reachability.
+In this task, you will block access from the Lab VM to the Jump VM by configuring a Firewall Policy custom rule. The rule will deny access to the web application by adding the Lab VM’s Public IP in the deny rule.
  
  1. In the Azure portal, search for **Virtual Machine (1)** and select it from the results (2).
 
@@ -149,6 +149,8 @@ In this task, you'll publish an application via Application Gateway by configuri
 
    ![](images/a160.png "select gateway")
 
+   >**Note**: This may take a few minutes to take effect. 
+
 1. Navigate back to **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
    ![](images/a161.png "select gateway")
@@ -157,8 +159,14 @@ In this task, you'll publish an application via Application Gateway by configuri
      
 In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-site scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
 
-You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
-    
+Since we are already blocking the Public IP of the Lab VM from accessing the web application. You will want to perform this test from your own machine’s browser. You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
+
+1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2.
+   
+   >**Note**: Your browsing URL value should look like ```http://20.185.224.102```
+
+    ![ss](/images/image307.png)
+
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
   
    >**Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
@@ -344,7 +352,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
       ![](images/a176.png)
  
- 1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string /promo:
+1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string ‘contoso’ and ‘azurefd’:
   
     - Match type: Select **String**.
     - Match variable: Select **RequestUri**
@@ -365,7 +373,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ![](images/a178.png)
 
-   >**Note: It might take up to 5 minutes to display the response**.
+   >**Note**: It may take a few minutes for the rate limit test policy to become active. Feel free to move on and come back later to test.
 
 1. After getting the response from the website navigate back to the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
