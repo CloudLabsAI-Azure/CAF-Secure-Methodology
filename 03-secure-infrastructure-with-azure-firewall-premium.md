@@ -314,7 +314,9 @@ In this task, you will create an application rule to allow access to sports webs
  1. Click on **Continue to www.nfl.com (unsafe)**.
  
     ![](images1/unsafe.png)
- 
+
+    >**Note**: If you have trouble reaching www.nfl.com, try www.nba.com or www.nhl.com.
+     
  1. Now you can see the NFL web page.
  
     ![](images/firewall22.png "search gateway")
