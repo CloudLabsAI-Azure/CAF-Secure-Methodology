@@ -352,7 +352,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
       ![](images/a176.png)
  
-1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string ‘contoso’ and ‘azurefd’:
+1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string `contoso` and `azurefd`:
   
     - Match type: Select **String**.
     - Match variable: Select **RequestUri**
