@@ -321,6 +321,8 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    ![](images/a174.png)
 
 1. In a new browser tab paste the **endpoint** which you copied in the previous task.
+
+   ![](images/OSwap.png)
   
    ![](images/a67.png)
   
