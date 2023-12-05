@@ -58,10 +58,6 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 1. From the sidebar, select **Topology** from Monitoring.
 
    ![](images/cafinfa2.jpg "search gateway")
-
-1. On the topology page click on the bar to go to the new Topology experience:
-
-   ![](images/scafinfra36.jpg "search gateway")
    
 1. Now, you'll be able to **visualize (1)** the topology. You can explore the different connections to understand how different resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
@@ -95,11 +91,13 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
    ![](images/a19.png "search gateway")
 
-1. On the Virtual Machine page, under **Settings**, click on **Connect (1)** then click on **Go to Bastion (2)**.
+1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
-   ![](images/a170.png)
+   ![](images/connect.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
+
+     >**Note**: Click on **Allow** Pop-up. 
  
     - **Username**: Enter **the jumpVM Admin Username from the email you received when registering (1)**
     - **Authentication Type**: Select **Password (2)** from the drop-down
@@ -184,10 +182,10 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    - **Diagnostic setting name**: **NSG_Flow_Logs (1)**
    - **Logs> Category groups**: check the **allLogs (2)** checkbox.
-   - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
+   - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox,and Click on **Save(5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
 
       ![](images/a151.png)
-      
+   
 
 ## Summary
  

@@ -25,7 +25,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
  
 1. From the sidebar, select **Networking** from Settings.
 
-   ![](images/a20.png "search gateway")
+   ![](images/networksettings.png)
 
 1. On the Networking page, Click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Deny (2)** from Action and click on **Save (3)**.
 

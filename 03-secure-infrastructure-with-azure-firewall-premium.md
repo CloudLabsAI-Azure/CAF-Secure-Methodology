@@ -164,7 +164,11 @@ In this task, you will test IDPS for HTTP traffic.
  
      ![](images1/firewall.png)
  
- 1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **IDPS event logs**.
+ 1. On the **AzureFirewall** page, select **Logs (1)** Click **x**
+
+    ![](images/logsexit.png)
+
+ 1. select **Logs (1)** ,click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **IDPS event logs**.
  
     ![](images/scafinfra25.jpg "search gateway")
  
