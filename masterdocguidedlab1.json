@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Infrastructure security HOL",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Infra-Security/main/gettingstarted.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Infra-Security/main/01-secure-administration-and-management.md",
+        "Order": 2
+      }      
+     
+    ]
+  }
+]
