@@ -121,7 +121,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
     - IP address or range: Enter **Public IP address (3)** of the labvm that is copied above in step 3.
     - Click on **Add (4)**.
  
-      ![](images/infra3.png)
+      ![](images1/infra3.png)
  
 1. Click on **Save**.
  
@@ -147,7 +147,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the website.
 
-   ![](images/infra4.png)
+   ![](images1/infra4.png)
 
    >**Note**: This may take a few minutes to take effect. 
 
