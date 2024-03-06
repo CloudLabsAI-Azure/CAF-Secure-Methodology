@@ -63,6 +63,8 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](images/scafinfra37.jpg "search gateway")
 
+   >**Note:** You can click the **Plus icon** next to the location to view the resource in the visual format.
+
 ## **Task 3: Secure Access via Bastion Host**
 
 In this task, you'll learn how to access an Azure virtual machine using the Azure Bastion service.
@@ -97,19 +99,25 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
 
-     >**Note**: Click on **Allow** Pop-up. 
+     
  
-    - **Username**: Enter **the jumpVM Admin Username from the email you received when registering (1)**
-    - **Authentication Type**: Select **Password (2)** from the drop-down
-    - **Password**: Enter **Enter the jumpVM Admin Password from the email you received when registering (3)**
+    - **Authentication Type**: Ensure **VM Password (1)** is chosen from the drop-down
+    - **Username**: Enter **<inject key="JumpVM Admin Username" enableCopy="false" /> (1)**
+    - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="false" />(3)**
     - Click on **Connect (4)**
  
-      ![](images1/bastionconnect.png)
+      ![](images1/infra1.png)
+
+     >**Note:** If the popup blocker prevents the new window, select the allow popup blocker and click on Done and Connect again.
+
+       ![](../media/infra2.png)
+
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
     ![](images1/allowpopup.png)
 
+   
 ## **Task 4: Prepare the Network Watcher monitoring environment and NSG Flow**
 
 NSG Diagnostic Logs provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorized access attempts, and monitor the NSG's behavior.
