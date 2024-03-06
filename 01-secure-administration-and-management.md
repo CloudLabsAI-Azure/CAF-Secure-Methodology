@@ -1,4 +1,4 @@
-# Exercise 2- Secure administration and management
+# Exercise 1- Secure administration and management
 
 Azure Monitor Network Insights provides a comprehensive and visual representation through topologies of the health and metrics of all deployed network resources without requiring any configuration. 
 
