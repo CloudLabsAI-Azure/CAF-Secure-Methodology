@@ -121,7 +121,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
     - IP address or range: Enter **Public IP address (3)** of the labvm that is copied above in step 3.
     - Click on **Add (4)**.
  
-      ![](images/a159.png "select gateway")
+      ![](images/infra3.png)
  
 1. Click on **Save**.
  
@@ -147,7 +147,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the website.
 
-   ![](images/a160.png "select gateway")
+   ![](images/infra4.png)
 
    >**Note**: This may take a few minutes to take effect. 
 
@@ -209,7 +209,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
     ![](images/a54.png)
 
-1. On the **Compare offerings** page, select **Custom create**. Then select **Continue to create a Front Door**.
+1. On the **Compare offerings** page, select **Azure Front Door** and **Custom create**. Then select **Continue to create a Front Door**.
   
     ![](images/a55.png)
   
