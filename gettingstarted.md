@@ -1,4 +1,4 @@
-# Exercise 1- Getting Started with Lab	
+# Getting Started with Lab	
 
 1. Once you launch the lab, a virtual machine (JumpVM) on the left and a lab guide on the right will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.	
 
