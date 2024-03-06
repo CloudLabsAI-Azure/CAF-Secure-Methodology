@@ -108,11 +108,11 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
  
       ![](images1/infra1.png)
 
-     >**Note:** If the popup blocker prevents the new window, select the allow popup blocker and click on Done and Connect again.
-
-       ![](../media/infra2.png)
-
- 
+       >**Note:** If the popup blocker prevents the new window, select the allow popup blocker and click on Done and Connect again.
+  
+        ![](images1/infra2.png)
+  
+   
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
     ![](images1/allowpopup.png)
