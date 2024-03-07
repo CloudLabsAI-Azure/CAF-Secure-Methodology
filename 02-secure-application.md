@@ -381,6 +381,12 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ![](images/a161.png "select gateway")
 
+    > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ## **Summary**
  
 In this exercise you have covered the following:
@@ -391,4 +397,4 @@ In this exercise you have covered the following:
    - Performed Attack simulation
    - Performed Rate Limiting using Azure Front Door
 
-Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
+
