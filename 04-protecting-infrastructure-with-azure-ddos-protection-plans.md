@@ -128,7 +128,8 @@ In this task, you will explore and visualize the metrics using various kinds of 
 
       ![](images/a154.png)
       
-      
+      >**Note:** The actual representation of the graph may vary from the images.
+
 ## **Summary**
  
 In this exercise you have covered the following:
