@@ -179,8 +179,10 @@ In this task, you will test IDPS for HTTP traffic.
     >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
  
-1. Now navigate back to firewall policy and under **Settings** select **IDPS**.
+1. Now navigate back to **Azure Firewall** from the **JumpVM-rg** and scroll down and select **firewall policy** and under **Settings** select **IDPS**.
  
+   ![](images/marinfral1.png)
+   
    ![](images/firewall10.png "search gateway")
  
 1. On the **IDPS** page select the **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
@@ -234,11 +236,11 @@ In this task, you will create an application rule to allow access to sports webs
 
        - Under Associate subnets, enter the following details:
   
-          - Virtual Network: Select **vnet (3)** from the drop-down list.
+          - Virtual Network: Select **vnet (JumpVM-rg) (3)** from the drop-down list.
           - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
           - Click on **Ok (5)**.
  
-            ![](images1/addsubnet.png)
+            ![](images1/marinfral2.png)
  
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
