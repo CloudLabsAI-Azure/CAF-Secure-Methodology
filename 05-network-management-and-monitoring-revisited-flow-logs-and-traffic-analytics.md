@@ -19,24 +19,24 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
    ![](images/a18.png "search gateway")
    
-1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
+1. Select the **labvm-<inject key="DeploymentID" enableCopy="false" />** from the list.
 
-   ![](images/a19.png "search gateway")
+   ![](images/marinfra1.png)
  
 1. From the sidebar, select **Networking** from Settings.
 
-   ![](images/networksettings.png)
+   ![](images/marinfra2.png)
 
 1. On the Networking page, Click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Deny (2)** from Action and click on **Save (3)**.
 
-   ![](images/a21.png "search gateway")
+   ![](images/marinfra3.png)
    
 1. On the JumpBox VM, in the search bar, **Search** for **RDP** and **select** the **Remote Desktop Connection** app.
    
    ![](images/a24.png)
 
-1. Paste the **JumpVM DNS Name** in the **Computer** field and click on **Connect**.
-   * **JumpVM DNS Name**: **<inject key="JumpVM DNS Name" />**
+1. Paste the **Labvm DNS Name** in the **Computer** field and click on **Connect**.
+   * **Labvm DNS Name**: **<inject key="Labvm DNS Name" />**
 
         ![](images/a25.png)  
  
@@ -44,15 +44,15 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
    ![](images/a27.png)
    
-1. Navigate back to the **JumpVM-<inject key="DeploymentID" enableCopy="false" />**, Open Networking tab and click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Allow (2)** from Action and click on **Save (3)**.
+1. Navigate back to the **labvm-<inject key="DeploymentID" enableCopy="false" />**, Open Networking tab and click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Allow (2)** from Action and click on **Save (3)**.
 
-   ![](images/a28.png)
+   ![](images/marinfra4.png)
 
 1. Navigate back on **Remote Desktop Connection**, click on **Connect** and you will see that you are able to connect to the VM.
 
-1. Now, enter the JUMPVM **username**, and **password** provided below and then click on the **OK** button.
-    - **Username**: **<inject key="JumpVM Admin Username" />**
-    - **Password**: **<inject key="JumpVM Admin Password" />**
+1. Now, enter the LabVM **username**, and **password** provided below and then click on the **OK** button.
+    - **Username**: **<inject key="Labvm Admin Username" />**
+    - **Password**: **<inject key="Labvm Admin Password" />**
    
         ![](images/a30.png)
    
