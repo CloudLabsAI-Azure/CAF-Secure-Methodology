@@ -1,4 +1,4 @@
-# Exercise 6- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
+# Exercise 5- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
 Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, flow logs and traffic analytics provide valuable insights into network traffic patterns and behavior.
 
@@ -171,6 +171,12 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![l7](/images1/l7proto.png)
 
+    > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ## **Summary**
  
 In this exercise you have covered the following:
@@ -180,8 +186,7 @@ In this exercise you have covered the following:
 
 
 
-
-
+ 
 
 
 
