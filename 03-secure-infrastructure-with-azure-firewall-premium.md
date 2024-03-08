@@ -244,16 +244,6 @@ In this task, you will test IDPS for HTTP traffic.
 
 1. Click on **Apply** to update the firewall policy.
 	
-1. Navigate back to JumpVM, and run the `curl` command again:
-
-    `curl -A "HaxerMen" <Firewall Public IP>`
-
-    Since the HTTP request is now blocked by the firewall, you'll see the following output after the connection timeout expires:
-
-    `curl: (56) Recv failure: Connection was reset`
- 
-     ![](images/firewall14.png "search gateway")
- 
 ## **Task 4: Web categories testing**
  
 In this task, you will create an application rule to allow access to sports websites.
