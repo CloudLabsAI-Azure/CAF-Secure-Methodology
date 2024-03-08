@@ -60,7 +60,54 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
    ![](images/a31.png)
 
-## **Task 2: Network Watcher Traffic Analytics to monitor the network**
+ ## **Task 2: Configure WAF to protect your web application**
+ 
+ In this task, you will add a Virtual Machine as the Backend pool of the Application gateway and also configure the Application Gateway from the firewall policy.
+ 
+ 1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
+ 
+      ![](images/searchgateway.png "search gateway")
+    
+ 1. Select your **Application Gateway**.
+
+      ![](images/appgateway.png "select gateway")
+      
+ 1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
+
+     ![](/images1/backendpools.png)
+     
+ 1. On the **Edit backend pool** page, follow the below-mentioned instructions:
+
+    - **Target type**: Select **Virtual Machine (1)** from the drop-down.
+    - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
+    - Click on **Save (3)**.
+
+      ![](/images1/editbackendpool.png)
+    
+1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
+
+ 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (2)**.
+
+      ![](images1/firewallpolicies.png)
+ 
+ 1. Click on **firewallpolicy** under the Web Application Firewall page and click on **Associated application gateways** under the **Settings** tab from the Application Gateway WAF policy page.
+
+     ![](/images1/firewallpolicy.png)
+     
+ 1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
+
+    ![](/images1/addappilcatiogateway.png)
+    
+ 1. Under the **Associate an application gateway** page, follow the below instructions:
+
+    - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop down. 
+    - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuration (2)**.
+    - Click on **Add (3)**.
+
+      ![](images1/associateappgateway.png)
+
+
+## **Task 3: Network Watcher Traffic Analytics to monitor the network**
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
