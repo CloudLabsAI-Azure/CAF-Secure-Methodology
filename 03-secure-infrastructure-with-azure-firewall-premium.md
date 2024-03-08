@@ -10,7 +10,6 @@ Azure Firewall Premium is a next-generation firewall with capabilities that are 
 - **Web categories** - Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
 For more information, see `https://learn.microsoft.com/en-us/azure/firewall/premium-features`
  
-
 This exercise includes the following tasks:
 
   - Add firewall diagnostics settings
@@ -20,7 +19,53 @@ This exercise includes the following tasks:
   - IP Groups
   - Azure Firewall Policies with Firewall Manager
 
-## **Task 1: Add firewall diagnostics settings** 
+ ## **Task 1: Configure WAF to protect your web application**
+ 
+ In this task, you will add a Virtual Machine as the Backend pool of the Application gateway and also configure the Application Gateway from the firewall policy.
+ 
+ 1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
+ 
+      ![](images/searchgateway.png "search gateway")
+    
+ 1. Select your **Application Gateway**.
+
+      ![](images/appgateway.png "select gateway")
+      
+ 1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
+
+     ![](/images1/backendpools.png)
+     
+ 1. On the **Edit backend pool** page, follow the below-mentioned instructions:
+
+    - **Target type**: Select **Virtual Machine (1)** from the drop-down.
+    - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
+    - Click on **Save (3)**.
+
+      ![](/images1/editbackendpool.png)
+    
+1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
+
+ 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (2)**.
+
+      ![](images1/firewallpolicies.png)
+ 
+ 1. Click on **firewallpolicy** under the Web Application Firewall page and click on **Associated application gateways** under the **Settings** tab from the Application Gateway WAF policy page.
+
+     ![](/images1/firewallpolicy.png)
+     
+ 1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
+
+    ![](/images1/addappilcatiogateway.png)
+    
+ 1. Under the **Associate an application gateway** page, follow the below instructions:
+
+    - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop down. 
+    - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuration (2)**.
+    - Click on **Add (3)**.
+
+      ![](images1/associateappgateway.png)
+
+## **Task 2: Add firewall diagnostics settings** 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
@@ -74,7 +119,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/scafinfra24.jpg "search gateway")
 
-## **Task 2: Test IDPS for HTTP traffic**
+## **Task 3: Test IDPS for HTTP traffic**
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
@@ -209,7 +254,7 @@ In this task, you will test IDPS for HTTP traffic.
  
      ![](images/firewall14.png "search gateway")
  
-## **Task 3: Web categories testing**
+## **Task 4: Web categories testing**
  
 In this task, you will create an application rule to allow access to sports websites.
  
@@ -341,7 +386,7 @@ In this task, you will create an application rule to allow access to sports webs
 
      ![](images/a162.png)
 
-## **Task 4: Implement and Test URL filtering**
+## **Task 5: Implement and Test URL filtering**
  
 1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **can't reach this page**.
  
@@ -405,7 +450,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     ![](images/a162.png)
 
-## **Task 5: IP Groups**
+## **Task 6: IP Groups**
 
 1. Navigate to the home page in the Azure portal, search for **IP groups (1)** and **select (2)** from suggestions.
  
@@ -483,9 +528,9 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a144.jpg "search gateway") 
  
-## **Task 6: Azure Firewall Policies with Firewall Manager (Optional)**
+## **Task 7: Azure Firewall Policies with Firewall Manager (Optional)**
 
-### **Task 6.1: Create a Firewall Policy**
+### **Task 7.1: Create a Firewall Policy**
 
 1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
@@ -556,7 +601,7 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/a97.png)
  
-### **Task 6.2: Create the firewall hub virtual network**
+### **Task 7.2: Create the firewall hub virtual network**
  
 1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
@@ -600,7 +645,7 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/a102.png)
  
-### **Task 6.3: Associate the firewall policy with the virtual hub**
+### **Task 7.3: Associate the firewall policy with the virtual hub**
   
 1. From the Azure portal home page, select **Firewall Manager**. On the Firewall Manager page, under **Security**, select **Azure Firewall Policies**.
   
