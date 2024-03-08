@@ -107,6 +107,80 @@ In this task, you'll access the virtual machine by configuring an inbound port r
       ![](images1/associateappgateway.png)
 
 
+## **Task 3: Add firewall diagnostics settings** 
+
+In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
+
+1. Navigate to the home page in the Azure portal, search for **Subscriptions (1)** and **select (2)** from suggestions.
+
+   ![](images/scafinfra19.jpg "search gateway")
+
+1. Select the **default subscription** available in the list.
+
+   ![](images/scafinfra20.jpg "search gateway")
+
+1. From the left-side blade, select **Preview features (1)** and select **Microsoft.Network (2)** in the types list.
+
+   ![](images/scafinfra21.jpg "search gateway")
+
+1. select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
+
+   ![](images/scafinfra22.jpg "search gateway")
+
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
+
+   ![](images/firewall1.png "search gateway")
+
+2. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
+
+   ![](images/firewall2.png "search gateway")
+
+3. Select **Add diagnostic setting** on the **Diagnostic settings**. 
+
+   ![](images/firewall4.png "search gateway")
+
+4. Enter the **Diagnostic setting name** as **fw-diagnostics**.
+
+   ![](images/firewall3.png "search gateway")
+
+5. Under **Logs**, select the below mentioned categories.
+   
+   - Azure Firewall Application Rule
+   - Azure Firewall Network Rule
+   - Azure Firewall Nat Rule
+   - Azure Firewall Threat Intelligence
+   - Azure Firewall IDPS Signature
+   - Azure Firewall DNS query
+   - Azure Firewall FQDN Resolution Failure
+   - Azure Firewall Fat Flow Log
+   - Azure Firewall Flow Trace Log
+
+     ![](images/scafinfra23.jpg "search gateway")
+
+6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
+
+   ![](images/scafinfra24.jpg "search gateway")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## **Task 3: Network Watcher Traffic Analytics to monitor the network**
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
@@ -144,6 +218,39 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 1. Copy the Public Ip and save it in a text editor.
 
     ![ip](/images1/firewallip1.png)
+
+1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
+
+   ![FM](/images1/firewallmanager.png)
+    
+1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
+
+   ![policy](/images1/selectfirewallpolicy.png)
+   
+1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
+
+   ![rule](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/dnat1.png?raw=true)
+    
+1. Under the **Add a rule collection** page, enter the below details:
+
+    - Name: **afw-contoso-prod-firewall-rulecolection (1)**
+    - Rule Collection type: **DNAT (2)**
+    - Priority: **100 (3)**
+    - Rule collection group: **DefaultDnatRuleCollectionGroup (4)**
+    - Under **Rules (5)** mention the below details:
+      - Name: **afw-dnat-http**
+      - Source type: Select **IP Address** from the drop-down list
+      - Source: Enter *
+      - Protocol: Select **TCP** from the drop-down list
+      - Destination Ports: **80**
+      - Destination (Firewall PIP address): Enter the IP address of the **Firewall** which you copied in previous step.
+      - Translated type: Select **IP Address** from the drop-down list
+      - Translated address or FQDN: Enter the Public IP address of the **Application gateway** which you copied in previous step.
+      - Translated port: **80**
+     
+     - Click on **Add (6)**.
+
+       ![rule](/images1/rulecollection.png)
       
 1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
 
@@ -152,15 +259,15 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Logs** from the options on the left side of the Network Watcher blade.
 
    ![netwat](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/traffic.png?raw=true)
-      
+        
+1. Now, click on  **Try new Traffic Analytics...** notification.
+   
+   ![time interval](/images1/marinfral8.png)
+
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
    ![time interval](/images1/timeinterval.png)
-   
-   > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
 
-      ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/raw/main/media/timeinterval.png)
-      
 1. Now, you can observe the total number of network traffic flows from **Traffic Visualization**.
 
     ![traffic visualization](/images1/traffic%20visualisation.png)
