@@ -161,26 +161,6 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/scafinfra24.jpg "search gateway")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Task 3: Network Watcher Traffic Analytics to monitor the network**
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
@@ -256,14 +236,28 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
    ![pip](/images/a32.png)
 
+1. Go to the Home page and search for **Network Watcher** and select it.
+
+1. From the left hand pane of the **Network Watcher** select **Flow Logs** under **Logs**
+
+1. Click on **Create** in the top navigation pane.
+
+1. In the **Basics** tab, click on **Select Resource** and choose **Network Security Group** from the dropdown.
+
+   ![rule](/images1/marinfra9.png)
+
+1. Leave eveything as default and click **Next: Analytics**.
+
+1. In the **Analytics** tab, check **Enable Traffic Analysis** and change the **Traffic Analytics Processing Time** to **Every 15 mins**
+
+   ![rule](/images1/marinfra10.png)
+
+1. Click **Next** and click on **Review + Create** and subsequently click on **Create**
+
 1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Logs** from the options on the left side of the Network Watcher blade.
 
    ![netwat](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/traffic.png?raw=true)
         
-1. Now, click on  **Try new Traffic Analytics...** notification.
-   
-   ![time interval](/images1/marinfral8.png)
-
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
    ![time interval](/images1/timeinterval.png)
