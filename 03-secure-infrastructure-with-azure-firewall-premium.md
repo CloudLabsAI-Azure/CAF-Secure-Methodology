@@ -291,7 +291,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/selectvm.png)
 
-1. On the Virtual Machine page, under **Settings**, click on **Connect (1)** then click on **Go to Bastion (2)**.
+1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
    ![](images/a170.png)
  
@@ -302,7 +302,9 @@ In this task, you will create an application rule to allow access to sports webs
     - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
-      ![](images1/bastionconnect.png)
+      ![](images1/marinfral3.png)
+
+     >**Note:** If a pop-up is disallowing you kindly allow it and click on **Connect** to connect to the VM
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
@@ -319,6 +321,10 @@ In this task, you will create an application rule to allow access to sports webs
    ```
    ![](images1/error.png)
  
+   >**Note:** In order to paste within a bastion session copy  the content to the clipboard by clicking the arrow icon  within the bastion vm and paste it
+
+     ![](images1/marinfral4.png)
+
 1. Navigate back to the other tab, where Azure Portal is opened.
  
 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **firewallpolicy**.
@@ -388,13 +394,13 @@ In this task, you will create an application rule to allow access to sports webs
 
 ## **Task 5: Implement and Test URL filtering**
  
-1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **can't reach this page**.
+1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **Action:Deny...**.
  
     ```
     www.nytimes.com/section/world
     ```
  
-    ![](images1/error1.png)
+    ![](images1/marinfral5.png)
  
  
 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
@@ -485,7 +491,7 @@ In this task, you will create an application rule to allow access to sports webs
     www.news18.com
     ```
  
-    ![](images/a145.jpg)
+    ![](images/marinfral6.png)
  
  
 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
@@ -631,9 +637,9 @@ In this task, you will create an application rule to allow access to sports webs
 
     ![](images/a99.png)
 
-1. On the **Azure Firewall** tab, Leave it to default and click on **Next: Security Partner Provider**.
+1. On the **Azure Firewall** tab,for **Specify number of Public IP addresses** enter **1** and leave the others as default and click on **Next: Security Partner Provider**.
  
-   ![](images/a100.png)
+   ![](images/marinfral7.png)
  
 1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create**.
  
