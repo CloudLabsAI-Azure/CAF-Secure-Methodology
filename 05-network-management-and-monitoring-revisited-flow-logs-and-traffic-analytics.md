@@ -123,7 +123,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/scafinfra21.jpg "search gateway")
 
-1. select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
+1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
 
    ![](images/scafinfra22.jpg "search gateway")
 
@@ -242,17 +242,17 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
 1. Click on **Create** in the top navigation pane.
 
-1. In the **Basics** tab, click on **Select Resource** and choose **Network Security Group** from the dropdown.
+1. In the **Basics** tab, click on **Select resource** and choose **Network security group** from the dropdown. Choose **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg** and select **Confirm selection**. Scroll down and provide **Retention (days)** as **O**
 
    ![rule](/images1/marinfra9.png)
 
 1. Leave eveything as default and click **Next: Analytics**.
 
-1. In the **Analytics** tab, check **Enable Traffic Analysis** and change the **Traffic Analytics Processing Time** to **Every 15 mins**
+1. In the **Analytics** tab, check **Enable Traffic Analysis** and change the **Traffic Analytics processing interval** to **Every 10 mins**
 
    ![rule](/images1/marinfra10.png)
 
-1. Click **Next** and click on **Review + Create** and subsequently click on **Create**
+1. Click **Next:Tags>** and click on **Review + Create** and subsequently click on **Create**
 
 1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Logs** from the options on the left side of the Network Watcher blade.
 
@@ -262,42 +262,44 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
    ![time interval](/images1/timeinterval.png)
 
+   > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
+
+      ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/raw/main/media/timeinterval.png)
+
 1. Now, you can observe the total number of network traffic flows from **Traffic Visualization**.
 
-    ![traffic visualization](/images1/traffic%20visualisation.png)
+    ![traffic visualization](/images/lab5-13.png)
 
-    > **Note: The dashboard may take up to 30 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
+    > **Note: The dashboard may take up to 30-60 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
            
      
 1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
-    ![env](/images1/environment1.png)
+    ![env](/images/lab5-14.png)
       
 1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating with it.
 
-    ![map](/images1/viewmap.png)
+    ![map](/images/lab5-15.png)
      
 1. In the **Traffic Analytics Geo Map View** page, click on the **Green** icon which indicates the Azure region, and observe the resources deployed under the region, to explore more select **More details**.
 
-    ![md](/images1/moredetails.png)
+    ![md](/images/lab5-16.png)
       
-1. Under the **More Insights** blade, scroll down and explore traffic distribution for deployments of the East US region.
+1. Under the **More Insights** blade, scroll down and explore traffic distribution for deployments of the region.
 
-    ![comm](/images1/moreinsights.png)
+    ![comm](/images/lab5-17.png)
      
 1. To close the **Traffic Analytics Geo Map View**, click on the cross at the top right corner.
 
      ![close](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/close.png?raw=true)
-      
-1. Close the **Ports receiving traffic from the Internet** page by clicking the **Cross (X) icon** from the top right corner.
-      
+            
 1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across the host, subnet, VNet, and VMSS.
 
-    ![tr](/images1/totaltraffic.png)
+    ![tr](/images/lab5-18.png)
      
 1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
 
-    ![td](/images1/ipsee.png)
+    ![tr](/images/lab5-20.png)
     
 1. You can observe the graph of the **Time trending chart for the top 5 talking IPs** from the **Traffic distribution across the top IPs** page.
 
@@ -306,8 +308,6 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 1. Under **Details of top 5 talking IPs**, select VM IP to explore more about traffic distribution.
 
      ![see more](/images1/top5.png)
-     
-1. Close the **Traffic distribution across top IPs** by clicking the **cross (X) icon** at the top-left corner of the page.
     
 1. In the same way, you can explore more about **Malicious traffic**, and **Blocked traffic** 
 
