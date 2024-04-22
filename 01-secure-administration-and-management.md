@@ -97,14 +97,15 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
 
-     >**Note**: Click on **Allow** Pop-up. 
- 
     - **Username**: Enter **the jumpVM Admin Username from the email you received when registering (1)**
     - **Authentication Type**: Select **Password (2)** from the drop-down
     - **Password**: Enter **Enter the jumpVM Admin Password from the email you received when registering (3)**
     - Click on **Connect (4)**
  
       ![](images1/bastionconnect.png)
+
+      >**Note:** Click on **Allow** Pop-up.
+       ![](images1/22-04-2024(1).png)
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
