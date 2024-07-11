@@ -1,5 +1,7 @@
 # Exercise 4- Secure Infrastructure with Azure Firewall Premium
 
+### Overview: 
+
 Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best-of-breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
 
 Azure Firewall Premium is a next-generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
@@ -251,7 +253,7 @@ In this task, you will create an application rule to allow access to sports webs
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
  
     - **Username**: Enter **demouser (1)**
-    - **Authentication Type**: Select **Password (2)** from the drop-down
+    - **Authentication Type**: Select **VM Password (2)** from the drop-down
     - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
@@ -297,6 +299,7 @@ In this task, you will create an application rule to allow access to sports webs
     - Name: **GeneralWeb (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **103 (3)**
+    - Rule Collection Action: **Allow**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
     - Under **Rules (5)** mention the below details:
       - Name: **AllowSports**
@@ -363,6 +366,7 @@ In this task, you will create an application rule to allow access to sports webs
     - Name: **Firewall-rulecollection (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **100 (3)**
+    - Rule Collection Action: **Allow**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
     - Under **Rules (5)** mention the below details:
       - Name: **URLFiltering**
@@ -584,9 +588,9 @@ In this task, you will create an application rule to allow access to sports webs
 
     ![](images/a99.png)
 
-1. On the **Azure Firewall** tab, Leave it to default and click on **Next: Security Partner Provider**.
+1. On the **Azure Firewall** tab, keep **Availability Zone** as **None**, **Specify number of Public IP addresses** 1 and keep other fields as **default**. click on **Next: Security Partner Provider**.
  
-   ![](images/a100.png)
+   ![](./images/firewallshub1.png)
  
 1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create**.
  

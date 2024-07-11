@@ -1,8 +1,10 @@
 # Exercise 6- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
-Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, flow logs and traffic analytics provide valuable insights into network traffic patterns and behavior.
+### Overview:
 
-Flow logs capture detailed information about network flows, including source and destination IP addresses, ports, protocols, and packet counts. They offer visibility into network traffic at the packet level, aiding in troubleshooting, detecting anomalies, and understanding network behavior.
+Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, **Flow logs** and **Traffic analytics** provide valuable insights into network traffic patterns and behavior.
+
+**Flow logs** capture detailed information about network flows, including source and destination IP addresses, ports, protocols, and packet counts. They offer visibility into network traffic at the packet level, aiding in troubleshooting, detecting anomalies, and understanding network behavior.
 
 Combining flow logs and traffic analytics enables network administrators to gain comprehensive visibility, streamline troubleshooting, and make data-driven decisions for network optimization and security enhancement.
 
@@ -104,12 +106,12 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
 1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Monitoring** from the options on the left side of the Network Watcher blade.
 
-   ![trafic_analayticsofexc5](https://github.com/NIREEKSHITH45/CAF-Infra-Security/assets/92374933/8ecfc227-edc9-4c88-9235-92f4b793a6ee)
+   ![](./images/traficanayltics.png)
 
       
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
-   ![time interval](/images1/timeinterval.png)
+   ![time interval](./images/flows.png)
    
    > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
    >
@@ -126,7 +128,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
      
 1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
-    ![env](/images1/environment1.png)
+    ![env](./images/envir.png)
       
 1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating with it.
 

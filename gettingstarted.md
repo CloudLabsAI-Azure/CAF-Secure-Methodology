@@ -4,7 +4,7 @@
 
    ![](images/a87.png)	
 
-2. To get lab environment details, click on the **Environment Details** tab located next to the *Lab Guide* tab. 	
+2. To get lab environment details, click on the **Environment Details** tab located next to the **Lab Guide** tab. 	
 
    ![](images/a86.png)	
 
@@ -16,11 +16,11 @@
 
 2. Login to Azure with the username **<inject key="AzureAdUserEmail" />** (1) and click on **Next** (2).
 
-   ![](images/enter-email.jpg)
+   ![](images/signin01.png)
 
 3. Enter password **<inject key="AzureAdUserPassword" />** (1) and click on **Sign in** (2).
 
-   ![](images/password-signin.jpg)
+   ![](./images/pw01.png)
    
    >**Note:** If there's a popup entitled **Action Required**, then click on **Ask later**.
    
@@ -28,11 +28,11 @@
 
    >**Note:** If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes**, Choose **No**.
    
-   ![](images/stay-sign-in.jpg)
+   ![](images/stay.png)
      
-   >**Note:** If there's another popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
+   >**Note:** If there's another popup entitled **Welcome to Microsoft Azure** click on **cancel**.
    
-   ![](images/welcome-azure-later.jpg)
+   ![](images/azurewelcome.png)
    
 4. **Close** the recommendation page by clicking on the X mark.
   

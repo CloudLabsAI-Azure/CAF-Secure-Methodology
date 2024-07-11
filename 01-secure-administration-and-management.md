@@ -1,14 +1,14 @@
 # Exercise 2- Secure administration and management
 
-Azure Monitor Network Insights provides a comprehensive and visual representation through topologies of the health and metrics of all deployed network resources without requiring any configuration. 
+### Overview
 
-The topology capability of Azure Network Watcher enables you to view all of the resources in a virtual network, the resources associated with the resources in a virtual network and the relationships between the resources.
+**Azure Monitor Network Insights** provides a comprehensive and visual representation of the health and metrics of all deployed network resources through topologies, without requiring any configuration. It also offers access to network monitoring capabilities such as Connection Monitor, flow logging for network security groups (NSGs), and traffic analytics.
 
-Azure Bastion is a fully managed service provided by Microsoft Azure that enables secure and seamless Remote Desktop Protocol (RDP) and Secure Shell (SSH) access to virtual machines (VMs) within a virtual network (VNet) without the need for a public IP address or a virtual private network (VPN) connection.
+The topology capability of **Azure Network Watcher** allows you to view all the resources in a virtual network, the resources associated with those in a virtual network, and the relationships between these resources.
 
-Azure Monitor Network Insights provides a comprehensive and visual representation through topologies of the health and metrics of all deployed network resources without requiring any configuration. It also provides access to network monitoring capabilities like Connection Monitor, flow logging for network security groups (NSGs), and traffic analytics.
+**Azure Bastion** is a fully managed service provided by Microsoft Azure that enables secure and seamless Remote Desktop Protocol (RDP) and Secure Shell (SSH) access to virtual machines (VMs) within a virtual network (VNet) without the need for a public IP address or a virtual private network (VPN) connection.
 
-This exercise includes the following tasks:
+This exercise includes the below tasks:
 
   - Network Health
   - Network Topology
@@ -27,7 +27,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](images/a4.png "search gateway")
    
-1. On the **Network health** tab, you can customize the resource health and alerts view by using filters like **Subscription**, **Resource Group**, and **Type**, and you can use the search box to search for resources and their associated resources. For example, a public IP is associated with an application gateway. A search for the public IP's DNS name will return both the public IP and the associated application gateway.
+1. On the **Network health** tab, you can customize the resource health and alerts view using filters such as **Subscription**, **Resource Group**, and **Type**. You can also use the search box to find resources and their associated resources. For example, a public IP may be associated with an application gateway. A search for the public IP's DNS name will return both the public IP and the associated application gateway.
 
    ![](images/a5.png "search gateway")
 
@@ -59,8 +59,17 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](images/cafinfa2.jpg "search gateway")
 
-1. Move the pointer to **<inject key="Region" />** and 
-then click **Expand** to see the topology.
+1. On the **Topology** page, click on the **Scope** (1).
+
+   ![](./images/infrasec.png)
+
+1. Under the **Select Scope** choose the **All subscriptions selected** (1) for Subscriptions, **All resource groups selected** (2) for Resource Groups, and **East US** (3) for the Locations and then click on **Save**.
+
+   ![](./images/selectscope.png)
+
+1. Hover the mouse on the location pointer inside **Geo Map** and then click **Expand** to see the topology.
+
+   ![](./images/hover.png)
 
 1. Now, you'll be able to **visualize (1)** the topology. You can explore the different connections to understand how different resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
@@ -100,9 +109,9 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
 
-    - **Username**: Enter **the jumpVM Admin Username from the email you received when registering (1)**
-    - **Authentication Type**: Select **Password (2)** from the drop-down
-    - **Password**: Enter **Enter the jumpVM Admin Password from the email you received when registering (3)**
+    - **Username**: Enter **<inject key="JumpVM Admin Username" />**
+    - **Authentication Type**: Select **VM Password (2)** from the drop-down
+    - **Password**: Enter **<inject key="JumpVM Admin Password" />**
     - Click on **Connect (4)**
  
       ![](images1/bastionconnect.png)
@@ -116,9 +125,9 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 ## **Task 4: Prepare the Network Watcher monitoring environment and NSG Flow**
 
-NSG Diagnostic Logs provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorized access attempts, and monitor the NSG's behavior.
+**NSG Diagnostic Logs** provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorized access attempts, and monitor the NSG's behavior.
 
-NSG Flow Logs capture information about the network traffic flowing through a Network Security Group. They provide visibility into the network communications and can be used for analyzing network behavior, detecting threats, and investigating security incidents.
+**NSG Flow Logs** capture information about the network traffic flowing through a Network Security Group. They provide visibility into the network communications and can be used for analyzing network behavior, detecting threats, and investigating security incidents.
 
 In this task, You will create NSG flow logs that will provide detailed information about the network traffic that passes through your NSG. This information can be used for troubleshooting network connectivity issues, monitoring and analyzing network traffic patterns, and detecting potential security threats.
 
@@ -142,9 +151,9 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    ![](images/cafinfra9.jpg)
 
-1. In the Create a flow log page, select the **default subscription (1)** in the drop-down and click on **Select resource (2)**.
+1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, **Network security group (3)** as a Select target resource.
 
-   ![](images/cafinfra10.jpg)
+   ![](images/nsgflog.png)
 
 1. In the Select network security group page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg** **(1)** and click on **Confirm selection (2)**.
 
