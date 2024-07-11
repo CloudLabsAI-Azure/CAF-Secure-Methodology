@@ -1,4 +1,4 @@
-# Exercise 5- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
+# Exercise 1- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
 Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, flow logs and traffic analytics provide valuable insights into network traffic patterns and behavior.
 
