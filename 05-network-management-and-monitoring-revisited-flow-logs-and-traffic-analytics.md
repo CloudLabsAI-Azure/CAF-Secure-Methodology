@@ -254,15 +254,18 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
 1. Click **Next:Tags>** and click on **Review + Create** and subsequently click on **Create**
 
-1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Logs** from the options on the left side of the Network Watcher blade.
+1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Monitoring** from the options on the left side of the Network Watcher blade.
 
-   ![netwat](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/blob/main/media/traffic.png?raw=true)
+   ![trafic_analayticsofexc5](https://github.com/NIREEKSHITH45/CAF-Secure-Methodology/assets/92374933/2bc9f2f5-28d5-4e23-806e-7b0e85802565)
+
         
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
    ![time interval](/images1/timeinterval.png)
 
    > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
+   >
+   > **It may take upto 30 to 60 minutes to click on Meanwhile, click here to see just resource data and perform the above step option to come up.**
 
       ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/raw/main/media/timeinterval.png)
 
@@ -270,7 +273,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![traffic visualization](/images/lab5-13.png)
 
-    > **Note: The dashboard may take up to 30-60 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
+    > **Note: The dashboard may take up to 60-90 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
            
      
 1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
