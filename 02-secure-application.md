@@ -366,6 +366,10 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. Select **Save**.
   
    ![](images/firewallpolicysave3.1.png)
+
+1. Select **Switch to prevention mode** under **Overview** blade.
+
+   ![](./images/preventionmode.png)
   
 1. On the **myWAFPolicy** page, under settings, click on **Policy settings (1)** and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
   
