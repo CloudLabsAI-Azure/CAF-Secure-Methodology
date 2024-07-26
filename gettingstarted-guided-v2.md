@@ -47,16 +47,20 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
       ![](./images/GS3.png "Enter Password")
+
+4. If you see the **Action required** pop-up , click **Ask later**.
+
+     ![](./images/imagescre.png)
  
-4. If you see the pop-up **Stay Signed in?**, click **No**.
+5. If you see the pop-up **Stay Signed in?**, click **No**.
 
    ![](./images/GS9.png)
 
-5. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+6. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-6. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+7. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
    
-7. Now, click on the **Next** from the lower right corner to move to the next page.
+8. Now, click on the **Next** from the lower right corner to move to the next page.
 
    ![](./images/GS4.png)
  
