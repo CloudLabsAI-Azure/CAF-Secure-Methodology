@@ -390,7 +390,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. After getting the response from the website navigate back to the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
-   ![](images/a161.png "select gateway")
+   ![](images/CAF-lab2-23.png)
 
    <validation step="e1519098-0127-4c6e-a16f-29740022e862" /> 
 
