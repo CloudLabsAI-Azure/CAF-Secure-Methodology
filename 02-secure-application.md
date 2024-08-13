@@ -99,12 +99,11 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
  1. On Virtual machines page, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
-      ![](images/a157.png "select gateway")
+      ![](images/CAF-lab2-8.png)
 
  1. Copy the **Public IP address** and save it to Notepad for later use.
 
-      ![](images/a158.png "select gateway")
-
+      ![](images/CAF-lab2-9.png)
 
  1. In the Azure Portal Search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
@@ -112,7 +111,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
  1. On the WAF page, select your **firewallpolicy (1)**, and under settings, click on **Custom rules (2)** and after that click on **+ Add custom rule (3)**.
  
-    ![](images/image303.png "select gateway")
+    ![](images/CAF-lab2-10.png)
  
  1. On the **Add custom rule** blade, enter the following details
  
@@ -125,7 +124,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
 1. Click on **Save**.
  
-   ![](images/a171.png "select gateway")
+   ![](images/CAF-lab2-11.png)
 
 1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
@@ -139,11 +138,11 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
      - Select **Web application firewall (1)** under **Settings**.    
      - Click on **firewallpolicy** under **Associated web application firewall policy (2)**.  
   
-         ![config](/images1/webappfirewall.png)
+         ![](images/CAF-lab2-12.png)
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
  
-    ![](/images1/switchtoprevention.png)
+    ![](images/CAF-lab2-13.png)
 
 1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the website.
 
