@@ -15,7 +15,7 @@ This exercise includes the following tasks:
   - Secure Access via Bastion Host
   - Prepare the Network Watcher monitoring environment and NSG Flow
   
-## **Task 1: Network Health**
+## Task 1: Network Health
 
 In this task, you'll explore Azure monitor and examine the resource health of various deployed resources. 
 
@@ -47,7 +47,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
     ![](images/a13.png "search gateway")
 
-## **Task 2: Network Topology** 
+## Task 2: Network Topology
 
  In this task, you'll view resources in a Microsoft Azure virtual network, and the relationships between the resources.
 
@@ -65,7 +65,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    >**Note:** You can click the **Plus icon** next to the location to view the resource in the visual format.
 
-## **Task 3: Secure Access via Bastion Host**
+## Task 3: Secure Access via Bastion Host
 
 In this task, you'll learn how to access an Azure virtual machine using the Azure Bastion service.
 
@@ -118,7 +118,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
     ![](images1/allowpopup.png)
 
    
-## **Task 4: Prepare the Network Watcher monitoring environment and NSG Flow**
+## Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
 
 NSG Diagnostic Logs provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorized access attempts, and monitor the NSG's behavior.
 
