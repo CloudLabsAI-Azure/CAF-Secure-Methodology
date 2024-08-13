@@ -91,7 +91,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
 
-   ![](images/a19.png "search gateway")
+    ![](images/CAF-10png.png)
 
 1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
@@ -132,11 +132,11 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. Select the **JumpVM-rg** from the list.
 
-   ![](images/cafinfra6.jpg)
+   ![](images/CAF-06png.png)
 
 1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
 
-   ![](images/cafinfra7.jpg)
+   ![](images/CAF-07png.png)
 
 1. In the sidebar, select **NSG flow logs** from the Monitoring menu.
 
@@ -146,13 +146,13 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    ![](images/cafinfra9.jpg)
 
-1. In the Create a flow log page, select the **default subscription (1)** in the drop-down and click on **Select resource (2)**.
+1. In the Create a flow log page, select the **default subscription (1)** then **+ Select target resource (2)** and from the drop down select **Network security group (3)**.
 
-   ![](images/cafinfra10.jpg)
+   ![](images/CAF-01png.png)
 
 1. In the Select network security group page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg** **(1)** and click on **Confirm selection (2)**.
 
-   ![](images/cafinfra11.jpg)
+   ![](images/CAF-02png.png)
 
 1. For the Instance details, Provide the following details and click on **Next: Analytics > (4)**
 
@@ -160,15 +160,15 @@ In this task, You will create NSG flow logs that will provide detailed informati
    - **Storage account**: select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
    - **Retention (days)**: **30 (3)**
 
-      ![](images/scafinfra27.jpg)  
+      ![](images/CAF-03png.png)
    
 1. Under the **Analytics** tab, check the box to **Enable Traffic Analytics (1)**, select **Every 10 mins (2)** under the Traffic Analytics processing interval and click **Review + Create (3)**.
 
-   ![create](images/a149.png)
+   ![](images/CAF-(04)png.png)
 
 1. In the Create page, click on the **Create** button, and wait till the deployment completion.
 
-   ![](images/a150.png)  
+   ![](images/CAF-05png.png)
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
 
@@ -176,15 +176,15 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. Select the **JumpVM-rg** from the list.
 
-   ![](images/cafinfra6.jpg)
+   ![](images/CAF-06png.png)
 
 1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
 
-   ![](images/cafinfra7.jpg)
+   ![](images/CAF-07png.png)
 
 1. From the sidebar, select **Diagnostic settings (1)** and click on **+ Add diagnostic setting (2)**.
 
-   ![](images/cafinfra15.jpg)
+   ![](images/CAF-08png.png)
 
 1. In the Diagnostic settings page, provide the following details and click on **Save (5)**.
 
@@ -192,7 +192,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
    - **Logs> Category groups**: check the **allLogs (2)** checkbox.
    - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox,and Click on **Save(5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
 
-      ![](images/a151.png)
+      ![](images/CAF-09png.png)
 
    <validation step="0801fcbb-aa4d-4366-a034-90ff2f2fbd28" />
 
