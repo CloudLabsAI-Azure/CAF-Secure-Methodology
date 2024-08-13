@@ -68,13 +68,13 @@ This exercise includes the following tasks:
  
 In this task, you will access the application by going through the Application Gateway that you just configured.
 
-1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
+1. In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
  
-     ![](images/searchgateway.png "search gateway")
+     ![](images/CAF-lab2-1.png)
  
 1. Select your **Application Gateway**.
  
-     ![](images/appgateway.png "select gateway")
+   ![](images/CAF-lab2-2.png)
  
 1. Select the **Frontend public IP address** of the application gateway.
  
@@ -202,11 +202,11 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 1. In the Azure portal, search for **Front Door and CDN profiles (1)** and select it from the results **(2)**.
   
-    ![](images/a53.png)
+    ![](images/CAF-lab2-14.png)
   
 1. Select **+ Create** to create a Front Door and CDN profile.
   
-    ![](images/a54.png)
+    ![](images/CAF-lab2-15.png)
 
 1. On the **Compare offerings** page, select **Azure Front Door** and **Custom create**. Then select **Continue to create a Front Door**.
   
@@ -283,7 +283,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. On the Front Door resource in the **Overview (1)** blade, locate the endpoint hostname that is created for your endpoint. For example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. **Copy (2)** this FQDN.
   
-   ![](images/a66.png)
+   ![](images/CAF-lab2-17.png)
     
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
@@ -295,11 +295,11 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Switch to the Azure portal, search for and select **App services**.
   
-   ![](images/a46.png)
+   ![](images/CAF-lab2-22.png)
 
 1. Select one of your web apps, then click **Stop**, then click **Yes** to confirm.
 
-   ![](images/a172.png)
+   ![](images/CAF-lab2-18.png)
 
 1. Switch back to your browser and select Refresh. You should see the same information page.
 
@@ -319,7 +319,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Navigate to the **App services** tab. Select both of your web apps, then click **Start**, then click **Yes** to confirm.
   
-   ![](images/a174.png)
+   ![](images/CAF-lab2-19.png)
 
 1. In a new browser tab paste the **endpoint** which you copied in the previous task.
 
@@ -370,7 +370,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. On the **myWAFPolicy** page, under settings, click on **Policy settings (1)** and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
   
-   ![](images/a111.png)    
+   ![](images/CAF-lab2-21.png)
   
 1. Navigate back to the website and try **refresh** in the browser, you will see a response from the website.
 
