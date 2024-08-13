@@ -23,7 +23,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](images/a3.png)
 
-1. From the sidebar, select **Networks** from Insights.
+1. From the sidebar, select **Networks** from **Insights** section.
 
    ![](images/a4.png "search gateway")
    
