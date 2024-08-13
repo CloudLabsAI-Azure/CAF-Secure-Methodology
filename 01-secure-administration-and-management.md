@@ -193,8 +193,10 @@ In this task, You will create NSG flow logs that will provide detailed informati
    - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox,and Click on **Save(5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
 
       ![](images/a151.png)
-   
-      > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+
+   <validation step="0801fcbb-aa4d-4366-a034-90ff2f2fbd28" />
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
       > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
       > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
