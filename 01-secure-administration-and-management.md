@@ -53,7 +53,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
 1. Navigate to the Azure portal. Using the search bar, search for **Network Watcher (1)** and **select (2)** from the suggestions.
 
-   ![](images/cafinfa1.jpg)
+   ![](images/CAF-12png.png)
 
 1. From the sidebar, select **Topology** from Monitoring.
 
@@ -95,7 +95,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
-   ![](images/connect.png)
+   ![](images/CAF-11png.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
 
