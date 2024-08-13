@@ -21,7 +21,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
 1. Navigate to the Azure portal. Using the search bar, search for **Monitor (1)** and **select (2)** from the suggestions.
 
-   ![](images/a3.png)
+   ![](images/CAF-14png.png)
 
 1. From the sidebar, select **Networks** from **Insights** section.
 
@@ -128,7 +128,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
 
-   ![](images/cafinfra5.jpg)
+   ![](images/CAF-13png.png)
 
 1. Select the **JumpVM-rg** from the list.
 
@@ -172,7 +172,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
 
-   ![](images/cafinfra5.jpg)
+   ![](images/CAF-13png.png)
 
 1. Select the **JumpVM-rg** from the list.
 
