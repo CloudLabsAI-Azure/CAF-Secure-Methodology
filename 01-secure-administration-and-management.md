@@ -120,6 +120,8 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
    
 ## Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
 
+In this task, you'll be configuring and setting up Network Security Group (NSG) flow logs and diagnostic settings in Azure. 
+
 NSG Diagnostic Logs provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorized access attempts, and monitor the NSG's behavior.
 
 NSG Flow Logs capture information about the network traffic flowing through a Network Security Group. They provide visibility into the network communications and can be used for analyzing network behavior, detecting threats, and investigating security incidents.
