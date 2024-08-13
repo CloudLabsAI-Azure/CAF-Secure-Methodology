@@ -201,7 +201,10 @@ In this task, You will create NSG flow logs that will provide detailed informati
       > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Summary
- 
+
+In this exercise, you have learnt implementing robust security measures for your Azure environment. By monitoring network health, visualizing connections with Network Watcher, and securing VM access through Azure Bastion, we've ensured that your network is both secure and transparent. Additionally, we've set up NSG flow logs and diagnostics to provide ongoing insights and protection for your network traffic.
+
+## Review 
 In this exercise you have covered the following:
   
    - Explored on Network health 
@@ -209,3 +212,4 @@ In this exercise you have covered the following:
    - Secured Access via Bastion Host
    - Configured the Network Watcher monitoring environment and NSG Flow
 
+## You have successfully completed the lab.
