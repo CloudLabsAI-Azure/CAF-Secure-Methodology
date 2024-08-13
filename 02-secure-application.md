@@ -400,8 +400,11 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## **Summary**
- 
+## Summary
+
+In this lab, we secured your web applications using Azure's robust security features. We configured the Web Application Firewall (WAF) to protect against common web vulnerabilities, set up custom rules to block specific IP addresses, and performed attack simulations to test the security measures. Additionally, we implemented rate limiting with Azure Front Door to manage traffic efficiently, ensuring your applications are both secure and optimized for performance. These steps help safeguard your applications from potential threats and maintain high availability.
+
+## Review
 In this exercise you have covered the following:
   
    - Configured WAF to Protect your web application 
@@ -410,4 +413,5 @@ In this exercise you have covered the following:
    - Performed Attack simulation
    - Performed Rate Limiting using Azure Front Door
 
+## You have successfully completed the lab.
 
