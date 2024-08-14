@@ -106,7 +106,6 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
       ![](images1/associateappgateway.png)
 
-
 ## **Task 3: Add firewall diagnostics settings** 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
@@ -125,25 +124,25 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
 
-  ![](images/CAF-lab3-3.png)
+   ![](images/CAF-lab3-4.png)
 
-1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the **AzureFirewall** resource.
 
-   ![](images/firewall1.png "search gateway")
+    ![](images/firewall1.png "search gateway")
 
-2. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
+1. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
 
    ![](images/firewall2.png "search gateway")
 
-3. Select **Add diagnostic setting** on the **Diagnostic settings**. 
+1. Select **Add diagnostic setting** on the **Diagnostic settings**. 
 
    ![](images/firewall4.png "search gateway")
 
-4. Enter the **Diagnostic setting name** as **fw-diagnostics**.
+1. Enter the **Diagnostic setting name** as **fw-diagnostics**.
 
    ![](images/CAF-lab3-7.png)
 
-5. Under **Logs**, select the below mentioned categories.
+1. Under **Logs**, select the below mentioned categories.
    
    - Azure Firewall Application Rule
    - Azure Firewall Network Rule
@@ -157,7 +156,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
      ![](images/CAF-lab3-8.png)
 
-6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
+1. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
    ![](images/CAF-lab3-9.png)
 
@@ -187,7 +186,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
       ![](/images/image307.png)
 
-1. Navigate to the resource group **JumpVM-rg**, and from the **Overview (1)** tab select the Firewall.
+1. Navigate to the resource group **JumpVM-rg**, and from the **Overview (1)** tab select the **AzureFirewall**.
 
    ![loadbalancer](/images1/firewall.png)
    
@@ -205,11 +204,11 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
     
 1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
 
-   ![policy](/images1/selectfirewallpolicy.png)
+    ![policy](/images1/selectfirewallpolicy.png)
    
 1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
 
-   ![](images/CAF-lab5-10.png)
+    ![](images/CAF-lab5-10.png)
     
 1. Under the **Add a rule collection** page, enter the below details:
 
@@ -234,11 +233,11 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
       
 1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
 
-   ![pip](/images/a32.png)
+    ![pip](/images/a32.png)
 
 1. Go to the Home page and search for **Network Watcher** and select it.
 
-   ![](images/CAF-lab5-11.png)
+    ![](images/CAF-lab5-11.png)
     
 1. From the left hand pane of the **Network Watcher** select **Flow Logs** under **Logs**. Click on **+ Create** in the top navigation pane.
 
@@ -247,9 +246,9 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 1. In the **Basics** tab, click on **+ Select target resource (1)** and choose **Network security group (2)** from the dropdown. Choose **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg (3)** and select 
    **Confirm selection (4)**.
 
-  ![](images/CAF-lab5-13.png)
+    ![](images/CAF-lab5-13.png)
 
-  ![](images/CAF-lab5-14.png)
+    ![](images/CAF-lab5-14.png)
 
 1. Scroll down and provide **Retention (days) (1)** as **O**. Leave eveything as default and click **Next: Analytics (2)**.
 
@@ -329,29 +328,11 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
     ![l7](/images1/l7proto.png)
 
 ## **Summary**
+
+## Review
  
 In this exercise you have covered the following:
   
    - Performed NSG validation.
    - Monitored the network watcher traffic.
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
