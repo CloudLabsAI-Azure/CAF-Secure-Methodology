@@ -25,15 +25,15 @@ This exercise includes the following tasks:
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
-      ![](images/searchgateway.png "search gateway")
+      ![](images/CAF-lab2-1.png)
     
  1. Select your **Application Gateway**.
 
-      ![](images/appgateway.png "select gateway")
+      ![](images/CAF-lab2-2.png)
       
  1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
 
-     ![](/images1/backendpools.png)
+     ![](images/CAF-lab2-3.png)
      
  1. On the **Edit backend pool** page, follow the below-mentioned instructions:
 
@@ -41,7 +41,7 @@ This exercise includes the following tasks:
     - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
     - Click on **Save (3)**.
 
-      ![](/images1/editbackendpool.png)
+      ![](images/CAF-lab2-4.png)
     
 1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
 
@@ -55,7 +55,7 @@ This exercise includes the following tasks:
      
  1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
 
-    ![](/images1/addappilcatiogateway.png)
+    ![](images/CAF-lab2-5.png)
     
  1. Under the **Associate an application gateway** page, follow the below instructions:
 
