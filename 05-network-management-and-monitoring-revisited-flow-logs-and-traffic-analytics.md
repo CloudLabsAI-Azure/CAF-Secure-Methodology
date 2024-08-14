@@ -160,6 +160,14 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/CAF-lab3-9.png)
 
+   <validation step="c6207003-7e0d-467c-a0cb-9bb7fbbc5246" /> 
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ## **Task 4: Network Watcher Traffic Analytics to monitor the network**
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
@@ -326,6 +334,16 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 1. From the **Most frequent L7 protocols** page, you can explore more about the ports and their ranging.
 
     ![l7](/images1/l7proto.png)
+
+   <validation step="a223c077-e008-44a7-a7e7-b07b393d0d58" /> 
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+
 
 ## Summary
 
