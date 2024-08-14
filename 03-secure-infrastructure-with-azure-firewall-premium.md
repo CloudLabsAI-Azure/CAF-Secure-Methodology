@@ -697,6 +697,8 @@ In this task, you'll associate a firewall policy with a secured virtual hub. You
 
 ## Summary
 
+In this Exercise, you'll configure an Azure Application Gateway with Web Application Firewall (WAF) to protect your applications. Set up Azure Firewall for network traffic filtering, configure logging, and test intrusion detection/prevention systems (IDPS). Implement URL filtering, web categories, and IP groups for enhanced security. Optionally, use Firewall Manager to manage policies across multiple firewalls.
+
 ## Review
  
 In this exercise you have covered the following:
@@ -708,4 +710,4 @@ In this exercise you have covered the following:
    - Performed IP groups
    - Performed Azure Firewall Policies with the Firewall Manager
 
-
+## You have successfully completed the lab.
