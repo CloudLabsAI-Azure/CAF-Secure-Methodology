@@ -160,7 +160,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/CAF-lab3-9.png)
 
-## **Task 3: Network Watcher Traffic Analytics to monitor the network**
+## **Task 4: Network Watcher Traffic Analytics to monitor the network**
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
