@@ -130,7 +130,9 @@ In this task, you will explore and visualize the metrics using various kinds of 
       
       >**Note:** The actual representation of the graph may vary from the images.
 
-      > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+   <validation step="0c795838-9731-43f0-8861-c081c1ee019a" />
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
       > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
       > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
