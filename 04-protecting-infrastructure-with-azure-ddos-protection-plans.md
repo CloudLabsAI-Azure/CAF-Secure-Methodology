@@ -136,15 +136,19 @@ In this task, you will explore and visualize the metrics using various kinds of 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
       > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## **Summary**
- 
+## Summary
+
+In this exercise, we focused on securing your infrastructure using Azure DDoS Protection. We configured DDoS Network Protection to safeguard your virtual networks and set up DDoS IP Protection to secure public IP addresses against attacks. Additionally, we explored how to monitor and visualize key DDoS metrics, helping you proactively detect and mitigate potential threats. These steps ensure that your cloud-based applications remain resilient against various types of DDoS attacks, maintaining high availability and security.
+
+## Review 
+
 In this exercise you have covered the following:
   
    - Configured Azure DDoS Network Protection
    - Configured Azure DDoS IP Protection
    - Visualized the metrics using a Public IP address
 
-
+## You have successfully completed the lab.
 
       
       
