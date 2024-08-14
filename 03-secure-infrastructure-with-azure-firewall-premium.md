@@ -131,11 +131,11 @@ In this task, you will test IDPS for HTTP traffic.
 
 1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
  
-     ![](images/searchgateway.png "search gateway")
+     ![](images/CAF-lab2-1.png)
  
 1. Select your **Application Gateway**.
  
-     ![](images/appgateway.png "select gateway")
+     ![](images/CAF-lab2-2.png)
  
 1. Select the **Frontend public IP address** of the application gateway.
  
@@ -267,7 +267,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. On the Route table page, select **Routes (1)** under **Settings** and click on **+ Add (2)**.
  
-    ![](images1/addroute.png)
+    ![](images/CAF-lab3-23.png)
  
 1. Under the **Add Route** page, enter the below information:
   
@@ -288,24 +288,26 @@ In this task, you will create an application rule to allow access to sports webs
           - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
           - Click on **Ok (5)**.
  
-            ![](images1/marinfral2.png)
+            ![](images/CAF-lab3-25.png)
+
+	   ![](images/CAF-lab3-26.png)
  
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
-    ![](images1/selectvm.png)
+    ![](images/CAF-lab3-27.png)
 
 1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
-   ![](images/a170.png)
+    ![](images/CAF-lab3-28.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
- 
-    - **Username**: Enter **demouser (1)**
-    - **Authentication Type**: Select **Password (2)** from the drop-down
+
+    - **Authentication Type**: Select **VM Password (1)** from the drop-down
+    - **Username**: Enter **demouser (2)**
     - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
-      ![](images1/marinfral3.png)
+      ![](images/CAF-lab3-29.png)
 
      >**Note:** If a pop-up is disallowing you kindly allow it and click on **Connect** to connect to the VM
  
@@ -315,14 +317,14 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Within the Bastion VM, search for **Edge (1)** and select **Microsoft Edge (2)**.
  
-    ![](images1/selectedge.png)
+    ![](images/CAF-lab3-30.png)
  
 1. Navigate to the below-mentioned URL and you can see the error **can't reach this page**.
  
    ```
    https://www.nfl.com
    ```
-   ![](images1/error.png)
+   ![](images/CAF-lab3-31.png)
  
    >**Note:** In order to paste within a bastion session copy  the content to the clipboard by clicking the arrow icon  within the bastion vm and paste it
 
@@ -478,15 +480,15 @@ In this task, you will create an application rule to allow access to sports webs
    | Name             | Enter **IpGroup (2)**                                        |
    | Region           | Select **East US (3)**                                       |
  
-    ![](images/a83.png)
+    ![](images/CAF-lab3-32.png)
 
 1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
  
-    ![](images/a122.png)
+    ![](images/CAF-lab3-33.png)
  
 1. Review the Summary, and then select **Create**.
  
-    ![](images/a123.png)
+    ![](images/CAF-lab3-34.png)
 
 1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **can't reach this page**.
  
