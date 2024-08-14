@@ -679,9 +679,9 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/a108.png)	
 	
-  <validation step="9f40f014-c785-4918-bde1-dadc915aada2" /> 
+   <validation step="9f40f014-c785-4918-bde1-dadc915aada2" /> 
 
-  > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
