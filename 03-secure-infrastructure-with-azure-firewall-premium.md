@@ -193,6 +193,7 @@ In this task, you will test IDPS for HTTP traffic.
      - Click on **Add (6)**.
 
        ![rule](/images1/rulecollection.png)
+
 1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open the **Command Prompt (2)** window.
 
    ![](images/firewall9.png "search gateway")
@@ -288,9 +289,9 @@ In this task, you will create an application rule to allow access to sports webs
           - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
           - Click on **Ok (5)**.
  
-            ![](images/CAF-lab3-25.png)
+             ![](images/CAF-lab3-25.png)
 
-	   ![](images/CAF-lab3-26.png)
+	     ![](images/CAF-lab3-26.png)
  
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
