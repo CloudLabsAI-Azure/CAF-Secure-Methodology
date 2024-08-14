@@ -85,9 +85,13 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
     ![](images/CAF-lab3-4.png)
 
-1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
+1. Select **OK** when Do you want to register the selected features?.
 
-   ![](images/firewall1.png "search gateway")
+   ![](images/CAF-lab3-5.png)
+
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the **AzureFirewall** resource.
+
+   ![](images/CAF-lab3-6.png)
 
 2. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
 
@@ -99,7 +103,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 4. Enter the **Diagnostic setting name** as **fw-diagnostics**.
 
-   ![](images/firewall3.png "search gateway")
+    ![](images/CAF-lab3-7.png)
 
 5. Under **Logs**, select the below mentioned categories.
    
@@ -113,11 +117,11 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
    - Azure Firewall Fat Flow Log
    - Azure Firewall Flow Trace Log
 
-     ![](images/scafinfra23.jpg "search gateway")
+     ![](images/CAF-lab3-8.png)
 
 6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
-   ![](images/scafinfra24.jpg "search gateway")
+   ![](images/CAF-lab3-9.png)
 
 ## **Task 3: Test IDPS for HTTP traffic**
 
@@ -135,27 +139,27 @@ In this task, you will test IDPS for HTTP traffic.
  
 1. Select the **Frontend public IP address** of the application gateway.
  
-      ![](images/image301.png "select gateway")
+      ![](images/CAF-lab3-10.png)
 
 1.  Copy the **Public IP address** and save it to Notepad for later use.
 
-     ![](images/editing12.png )
+     ![](images/CAF-lab3-11.png)
     
-1. On the Azure Portal **Home** page, search **Azure Firewall (1)** and then select **Firewalls (2)**.
+1. On the Azure Portal **Home** page, search **Firewall (1)** and then select **Firewalls (2)**.
 
-   ![firewall](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/Azurefirewallnew.png?raw=true)
+   ![](images/CAF-lab3-12.png)
     
 1. Click on the **AzureFirewall**.
 
-   ![firewall](/images1/azurefirewall.png)
+   ![](images/CAF-lab3-13.png)
    
 1. Select **Firewall Public IP** from the Overview tab.
 
-    ![pip](/images1/firewallIP.png)
+    ![](images/CAF-lab3-14.png)
     
 1. Copy the **Public IP address** and save it to Notepad for later use.
 
-    ![ip](/images1/firewallip1.png)  
+    ![](images/CAF-lab3-15.png)
      
 1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
@@ -163,11 +167,11 @@ In this task, you will test IDPS for HTTP traffic.
     
 1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
 
-   ![policy](/images1/selectfirewallpolicy.png)
+   ![](images/CAF-lab3-16.png)
    
 1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
 
-   ![rule](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/dnat1.png?raw=true)
+   ![](images/CAF-lab3-17.png)
     
 1. Under the **Add a rule collection** page, enter the below details:
 
@@ -211,11 +215,11 @@ In this task, you will test IDPS for HTTP traffic.
  
  1. On the **AzureFirewall** page, select **Logs (1)** Click **x**
 
-    ![](images/logsexit.png)
+     ![](images/CAF-lab3-18.png)
 
- 1. select **Logs (1)** ,click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **IDPS event logs**.
+ 1. Select **Logs (1)** ,click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **IDPS event logs**.
  
-    ![](images/scafinfra25.jpg "search gateway")
+     ![](images/CAF-lab3-19.png)
  
  1. You'll be able to see resource-specific logs for IDPS events.
  
@@ -224,11 +228,11 @@ In this task, you will test IDPS for HTTP traffic.
     >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
  
-1. Now navigate back to **Azure Firewall** from the **JumpVM-rg** and scroll down and select **firewall policy** and under **Settings** select **IDPS**.
+1. Now navigate back to **Azure Firewall** from the **JumpVM-rg** and scroll down and select **firewall policy** > **IDPS**.
  
-   ![](images/marinfral1.png)
+   ![](images/CAF-lab3-20.png)
    
-   ![](images/firewall10.png "search gateway")
+   ![](images/CAF-lab3-21.png)
  
 1. On the **IDPS** page select the **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
  
@@ -240,7 +244,7 @@ In this task, you will test IDPS for HTTP traffic.
  
 1. Under edit rules, change **Signature Mode** to **Alert and Deny** and click on **Apply**.  Wait for the deployment to complete before proceeding.
  
-   ![](images/firewall13.png "search gateway")
+   ![](images/CAF-lab3-22.png)
 
 1. Click on **Apply** to update the firewall policy.
 
@@ -251,7 +255,6 @@ In this task, you will test IDPS for HTTP traffic.
       > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
       > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 
  
 ## **Task 4: Web categories testing**
