@@ -77,9 +77,9 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/CAF-lab3-2.png)
 
-1. From the left-side blade, select **Preview features (1)** and choose **Provide : All** then on **Provider** window search and select **Microsoft Network** and click on **Apply**
+1. From the left-side blade, select **Preview features (1)** and choose **Provide : All** then on **Provider** window search and select **Microsoft Network** and click on **Apply**.
 
-   ![](images/CAF-lab3-3.png)
+   ![](images/CAF-lab5-9.png)
 
 1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
 
