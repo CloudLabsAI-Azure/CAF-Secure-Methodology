@@ -327,7 +327,9 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![l7](/images1/l7proto.png)
 
-## **Summary**
+## Summary
+
+In this lab, you explored critical aspects of network management and monitoring in Azure, focusing on enhancing network security and visibility. You validated Network Security Group (NSG) rules, configured the Web Application Firewall (WAF) to protect web applications, and enabled diagnostic settings for Azure Firewall to collect detailed logs. Additionally, you implemented Traffic Analytics to monitor and analyze network traffic patterns. These tasks provided you with hands-on experience in securing and optimizing network infrastructure, enabling data-driven decisions for improved network performance and security.
 
 ## Review
  
@@ -336,3 +338,4 @@ In this exercise you have covered the following:
    - Performed NSG validation.
    - Monitored the network watcher traffic.
 
+## You have successfully completed the lab.
