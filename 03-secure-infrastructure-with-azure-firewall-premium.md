@@ -25,15 +25,15 @@ This exercise includes the following tasks:
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
-      ![](images/searchgateway.png "search gateway")
+      ![](images/CAF-lab2-1.png)
     
  1. Select your **Application Gateway**.
 
-      ![](images/appgateway.png "select gateway")
+      ![](images/CAF-lab2-2.png)
       
  1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
 
-     ![](/images1/backendpools.png)
+     ![](images/CAF-lab2-3.png)
      
  1. On the **Edit backend pool** page, follow the below-mentioned instructions:
 
@@ -41,7 +41,7 @@ This exercise includes the following tasks:
     - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
     - Click on **Save (3)**.
 
-      ![](/images1/editbackendpool.png)
+      ![](images/CAF-lab2-4.png)
     
 1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
 
@@ -55,7 +55,7 @@ This exercise includes the following tasks:
      
  1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
 
-    ![](/images1/addappilcatiogateway.png)
+    ![](images/CAF-lab2-5.png)
     
  1. Under the **Associate an application gateway** page, follow the below instructions:
 
@@ -71,23 +71,27 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 1. Navigate to the home page in the Azure portal, search for **Subscriptions (1)** and **select (2)** from suggestions.
 
-   ![](images/scafinfra19.jpg "search gateway")
+   ![](images/CAF-lab3-1.png)
 
 1. Select the **default subscription** available in the list.
 
-   ![](images/scafinfra20.jpg "search gateway")
+   ![](images/CAF-lab3-2.png)
 
-1. From the left-side blade, select **Preview features (1)** and select **Microsoft.Network (2)** in the types list.
+1. From the left-side blade, select **Preview features (1)** and choose **Provide : All** then on **Provider** window search and select **Microsoft Network** and click on **Apply**.
 
-   ![](images/scafinfra21.jpg "search gateway")
+   ![](images/CAF-lab5-9.png)
 
-1. select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
+1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
 
-   ![](images/scafinfra22.jpg "search gateway")
+    ![](images/CAF-lab3-4.png)
 
-1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
+1. Select **OK** when Do you want to register the selected features?.
 
-   ![](images/firewall1.png "search gateway")
+   ![](images/CAF-lab3-5.png)
+
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the **AzureFirewall** resource.
+
+   ![](images/CAF-lab3-6.png)
 
 2. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
 
@@ -99,7 +103,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 4. Enter the **Diagnostic setting name** as **fw-diagnostics**.
 
-   ![](images/firewall3.png "search gateway")
+    ![](images/CAF-lab3-7.png)
 
 5. Under **Logs**, select the below mentioned categories.
    
@@ -113,49 +117,49 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
    - Azure Firewall Fat Flow Log
    - Azure Firewall Flow Trace Log
 
-     ![](images/scafinfra23.jpg "search gateway")
+     ![](images/CAF-lab3-8.png)
 
 6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
-   ![](images/scafinfra24.jpg "search gateway")
+   ![](images/CAF-lab3-9.png)
 
 ## **Task 3: Test IDPS for HTTP traffic**
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
-In this task, you will test IDPS for HTTP traffic.
+In this task, you'll configure Azure Firewall Premium's IDPS (Intrusion Detection and Prevention System) to detect and block malicious HTTP traffic. You'll set up DNAT rules to redirect traffic, simulate an attack using a test VM, and verify the firewall's response through log analysis. Finally, you'll update IDPS signature rules to enforce stricter security measures.
 
 1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
  
-     ![](images/searchgateway.png "search gateway")
+     ![](images/CAF-lab2-1.png)
  
 1. Select your **Application Gateway**.
  
-     ![](images/appgateway.png "select gateway")
+     ![](images/CAF-lab2-2.png)
  
 1. Select the **Frontend public IP address** of the application gateway.
  
-      ![](images/image301.png "select gateway")
+      ![](images/CAF-lab3-10.png)
 
 1.  Copy the **Public IP address** and save it to Notepad for later use.
 
-     ![](images/editing12.png )
+     ![](images/CAF-lab3-11.png)
     
-1. On the Azure Portal **Home** page, search **Azure Firewall (1)** and then select **Firewalls (2)**.
+1. On the Azure Portal **Home** page, search **Firewall (1)** and then select **Firewalls (2)**.
 
-   ![firewall](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/Azurefirewallnew.png?raw=true)
+   ![](images/CAF-lab3-12.png)
     
 1. Click on the **AzureFirewall**.
 
-   ![firewall](/images1/azurefirewall.png)
+   ![](images/CAF-lab3-13.png)
    
 1. Select **Firewall Public IP** from the Overview tab.
 
-    ![pip](/images1/firewallIP.png)
+    ![](images/CAF-lab3-14.png)
     
 1. Copy the **Public IP address** and save it to Notepad for later use.
 
-    ![ip](/images1/firewallip1.png)  
+    ![](images/CAF-lab3-15.png)
      
 1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
@@ -163,11 +167,11 @@ In this task, you will test IDPS for HTTP traffic.
     
 1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
 
-   ![policy](/images1/selectfirewallpolicy.png)
+   ![](images/CAF-lab3-16.png)
    
 1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
 
-   ![rule](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/dnat1.png?raw=true)
+   ![](images/CAF-lab3-17.png)
     
 1. Under the **Add a rule collection** page, enter the below details:
 
@@ -189,6 +193,7 @@ In this task, you will test IDPS for HTTP traffic.
      - Click on **Add (6)**.
 
        ![rule](/images1/rulecollection.png)
+
 1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open the **Command Prompt (2)** window.
 
    ![](images/firewall9.png "search gateway")
@@ -211,11 +216,11 @@ In this task, you will test IDPS for HTTP traffic.
  
  1. On the **AzureFirewall** page, select **Logs (1)** Click **x**
 
-    ![](images/logsexit.png)
+     ![](images/CAF-lab3-18.png)
 
- 1. select **Logs (1)** ,click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **IDPS event logs**.
+ 1. Select **Logs (1)** ,click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **IDPS event logs**.
  
-    ![](images/scafinfra25.jpg "search gateway")
+     ![](images/CAF-lab3-19.png)
  
  1. You'll be able to see resource-specific logs for IDPS events.
  
@@ -224,11 +229,11 @@ In this task, you will test IDPS for HTTP traffic.
     >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
  
-1. Now navigate back to **Azure Firewall** from the **JumpVM-rg** and scroll down and select **firewall policy** and under **Settings** select **IDPS**.
+1. Now navigate back to **Azure Firewall** from the **JumpVM-rg** and scroll down and select **firewall policy** > **IDPS**.
  
-   ![](images/marinfral1.png)
+   ![](images/CAF-lab3-20.png)
    
-   ![](images/firewall10.png "search gateway")
+   ![](images/CAF-lab3-21.png)
  
 1. On the **IDPS** page select the **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
  
@@ -240,10 +245,19 @@ In this task, you will test IDPS for HTTP traffic.
  
 1. Under edit rules, change **Signature Mode** to **Alert and Deny** and click on **Apply**.  Wait for the deployment to complete before proceeding.
  
-   ![](images/firewall13.png "search gateway")
+   ![](images/CAF-lab3-22.png)
 
 1. Click on **Apply** to update the firewall policy.
-	
+
+   <validation step="400ff3c9-29ed-4768-aed1-b234085208b0" /> 
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+      > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+ 
 ## **Task 4: Web categories testing**
  
 In this task, you will create an application rule to allow access to sports websites.
@@ -254,7 +268,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. On the Route table page, select **Routes (1)** under **Settings** and click on **+ Add (2)**.
  
-    ![](images1/addroute.png)
+    ![](images/CAF-lab3-23.png)
  
 1. Under the **Add Route** page, enter the below information:
   
@@ -275,24 +289,26 @@ In this task, you will create an application rule to allow access to sports webs
           - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
           - Click on **Ok (5)**.
  
-            ![](images1/marinfral2.png)
+             ![](images/CAF-lab3-25.png)
+
+	     ![](images/CAF-lab3-26.png)
  
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
-    ![](images1/selectvm.png)
+    ![](images/CAF-lab3-27.png)
 
 1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
-   ![](images/a170.png)
+    ![](images/CAF-lab3-28.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
- 
-    - **Username**: Enter **demouser (1)**
-    - **Authentication Type**: Select **Password (2)** from the drop-down
+
+    - **Authentication Type**: Select **VM Password (1)** from the drop-down
+    - **Username**: Enter **demouser (2)**
     - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
-      ![](images1/marinfral3.png)
+      ![](images/CAF-lab3-29.png)
 
      >**Note:** If a pop-up is disallowing you kindly allow it and click on **Connect** to connect to the VM
  
@@ -302,14 +318,14 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Within the Bastion VM, search for **Edge (1)** and select **Microsoft Edge (2)**.
  
-    ![](images1/selectedge.png)
+    ![](images/CAF-lab3-30.png)
  
 1. Navigate to the below-mentioned URL and you can see the error **can't reach this page**.
  
    ```
    https://www.nfl.com
    ```
-   ![](images1/error.png)
+   ![](images/CAF-lab3-31.png)
  
    >**Note:** In order to paste within a bastion session copy  the content to the clipboard by clicking the arrow icon  within the bastion vm and paste it
 
@@ -383,7 +399,9 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images/a162.png)
 
 ## **Task 5: Implement and Test URL filtering**
- 
+
+In this task, you'll implement and test URL filtering with Azure Firewall. You'll first try to access a blocked URL from a Bastion VM. Then, you'll create an application rule in Azure Firewall to allow the URL, test the access again, and verify the changes by reviewing the firewall logs. 
+
 1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **Action:Deny...**.
  
     ```
@@ -448,6 +466,8 @@ In this task, you will create an application rule to allow access to sports webs
 
 ## **Task 6: IP Groups**
 
+In this task, you'll create an IP Group in Azure, then use it in a firewall rule to allow access to a specific website from a Bastion VM. You'll first observe the blocked access, configure the rule with the IP Group, and then verify that the website loads correctly.
+
 1. Navigate to the home page in the Azure portal, search for **IP groups (1)** and **select (2)** from suggestions.
  
     ![](images/a81.png)
@@ -465,15 +485,15 @@ In this task, you will create an application rule to allow access to sports webs
    | Name             | Enter **IpGroup (2)**                                        |
    | Region           | Select **East US (3)**                                       |
  
-    ![](images/a83.png)
+    ![](images/CAF-lab3-32.png)
 
 1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
  
-    ![](images/a122.png)
+    ![](images/CAF-lab3-33.png)
  
 1. Review the Summary, and then select **Create**.
  
-    ![](images/a123.png)
+    ![](images/CAF-lab3-34.png)
 
 1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **can't reach this page**.
  
@@ -527,6 +547,8 @@ In this task, you will create an application rule to allow access to sports webs
 ## **Task 7: Azure Firewall Policies with Firewall Manager (Optional)**
 
 ### **Task 7.1: Create a Firewall Policy**
+
+In this task, you'll create an Azure Firewall Policy. You'll configure basic settings, leave DNS and TLS settings as default, and add network rules to allow web and RDP traffic between specified IP ranges. Finally, you'll review and create the policy.
 
 1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
@@ -598,6 +620,8 @@ In this task, you will create an application rule to allow access to sports webs
    ![](images/a97.png)
  
 ### **Task 7.2: Create the firewall hub virtual network**
+
+In this task, you'll create a secured virtual hub in Azure, which includes setting up a new virtual network with Azure Firewall. You'll configure basic settings, create a new Virtual WAN, and assign a public IP address to the firewall. Finally, you'll review the setup and deploy the secured virtual hub.
  
 1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
@@ -608,8 +632,6 @@ In this task, you will create an application rule to allow access to sports webs
    ![](images/a98.png)
 
 1. On the **Virtual hubs** page, select Create **+ Create new secured virtual hub**.
- 
- 
  
 1. On the secured virtual hub page, on the **Basics** tab, enter or select the following information and click on **Next: Azure Firewall > (8)**.
  
@@ -642,6 +664,8 @@ In this task, you will create an application rule to allow access to sports webs
    ![](images/a102.png)
  
 ### **Task 7.3: Associate the firewall policy with the virtual hub**
+
+In this task, you'll associate a firewall policy with a secured virtual hub. You'll select the firewall policy, manage its associations, and link it to the virtual hub. Finally, you'll verify that the policy is correctly associated and secured.
   
 1. From the Azure portal home page, select **Firewall Manager**. On the Firewall Manager page, under **Security**, select **Azure Firewall Policies**.
   
@@ -663,13 +687,19 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/a108.png)	
 	
-    > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+   <validation step="9f40f014-c785-4918-bde1-dadc915aada2" /> 
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## **Summary**
+## Summary
+
+In this Exercise, you'll configure an Azure Application Gateway with Web Application Firewall (WAF) to protect your applications. Set up Azure Firewall for network traffic filtering, configure logging, and test intrusion detection/prevention systems (IDPS). Implement URL filtering, web categories, and IP groups for enhanced security. Optionally, use Firewall Manager to manage policies across multiple firewalls.
+
+## Review
  
 In this exercise you have covered the following:
   
@@ -680,4 +710,4 @@ In this exercise you have covered the following:
    - Performed IP groups
    - Performed Azure Firewall Policies with the Firewall Manager
 
-
+## You have successfully completed the lab.

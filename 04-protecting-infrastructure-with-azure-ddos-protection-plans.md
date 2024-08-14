@@ -27,11 +27,9 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
 1. In the Azure portal, search **DDoS protection plans (1)** and then select **DDoS protection plans (2)**.
  
-   ![](images/ddos1.png)
+   ![](images/CAF-lab4-1.png)
  
 1. Click on Create.
- 
-    ![](images/ddos2.png)
  
 1. On the **DDoS protection** page, provide the information as mentioned below,
    - Subscription: **Leave it as default (1)**.
@@ -40,25 +38,27 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
    - Region: **<inject key="Region" />**
    - Click on **Next-Tags**.
  
-     ![](images/ddos3.png)
+      ![](images/CAF-lab4-2.png)
  
 1. On the **Tags** tab, leave everything to default and then click on **Review + create**.
- 
-     ![](images/ddos4.png)
-  
+   
 1. If the validation is passed then click on **Create**.
 
     >**NOTE**: It may take a couple of minutes for the workspace to be created.
 
-      ![](images/ddos5.png)
+    ![](images/CAF-lab4-3.png)
  
 1. Once the DDoS protection is added you will see a notification that says **Deployment succeeded**, as shown below.
 
       ![](images/ddos6.png)
- 
+
+1. Click on **Go to resource**.
+
+    ![](images/CAF-lab4-4.png)
+   
 1. On the DDoS protection page, under setting click on **Protected resources (1)** and then select the **vnet (2)** and click on **Add (3)**.
  
-      ![](images/ddos10.png)
+      ![](images/CAF-lab4-5.png)
 
 1. On the **Add virtual network to DDoS plan** blade, provide the information as mentioned below,
     - Subscription: **Leave it as default (1)**.
@@ -66,7 +66,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
     - Virtual network: Select **vnet (3)**.
     - Click on **Add (4)**
    
-      ![](images/ddos8.png)
+      ![](images/CAF-lab4-6.png)
  
 1. Once the Protected resources are added you will see a notification that says **Successfully updated the virtual network vnet**, as shown below.
  
@@ -74,11 +74,11 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
 1. Now, In the Azure portal, search **Firewall Manager (1)** and then select **Firewall Manager (2)**.
  
-      ![](images/ddos11.png)
+      ![](images/CAF-lab4-7.png)
 
 1. Under Deployments, click on **Virtual Networks**, and you will see that you are protected.
  
-      ![](images/ddos12.png)
+      ![](images/CAF-lab4-8.png)
       
 ## **Task 2: Configure Azure DDoS IP Protection**
 
@@ -94,11 +94,11 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
 1. In the **Overview** pane, you will see **Protect IP address** on the bottom right corner, click on **Protect**.
 
-    ![](images/a35.png)
+    ![](images/CAF-lab4-9.png)
 
 1. Once you click on **Protect**, under **Protection type**, select **IP** and click on **Save**.
 
-    ![](images/a175.png)
+    ![](images/CAF-lab4-10.png)
 
 1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection (3)** you will see that your public IP address is protected by **IP protection** as shown below.
 
@@ -130,21 +130,27 @@ In this task, you will explore and visualize the metrics using various kinds of 
       
       >**Note:** The actual representation of the graph may vary from the images.
 
-      > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+   <validation step="0c795838-9731-43f0-8861-c081c1ee019a" />
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
       > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
       > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
       > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## **Summary**
- 
+## Summary
+
+In this exercise, we focused on securing your infrastructure using Azure DDoS Protection. We configured DDoS Network Protection to safeguard your virtual networks and set up DDoS IP Protection to secure public IP addresses against attacks. Additionally, we explored how to monitor and visualize key DDoS metrics, helping you proactively detect and mitigate potential threats. These steps ensure that your cloud-based applications remain resilient against various types of DDoS attacks, maintaining high availability and security.
+
+## Review 
+
 In this exercise you have covered the following:
   
    - Configured Azure DDoS Network Protection
    - Configured Azure DDoS IP Protection
    - Visualized the metrics using a Public IP address
 
-
+## You have successfully completed the lab.
 
       
       

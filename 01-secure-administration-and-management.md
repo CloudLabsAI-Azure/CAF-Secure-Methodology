@@ -15,15 +15,15 @@ This exercise includes the following tasks:
   - Secure Access via Bastion Host
   - Prepare the Network Watcher monitoring environment and NSG Flow
   
-## **Task 1: Network Health**
+## Task 1: Network Health
 
 In this task, you'll explore Azure monitor and examine the resource health of various deployed resources. 
 
 1. Navigate to the Azure portal. Using the search bar, search for **Monitor (1)** and **select (2)** from the suggestions.
 
-   ![](images/a3.png)
+   ![](images/CAF-14png.png)
 
-1. From the sidebar, select **Networks** from Insights.
+1. From the sidebar, select **Networks** from **Insights** section.
 
    ![](images/a4.png "search gateway")
    
@@ -47,13 +47,13 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
     ![](images/a13.png "search gateway")
 
-## **Task 2: Network Topology** 
+## Task 2: Network Topology
 
  In this task, you'll view resources in a Microsoft Azure virtual network, and the relationships between the resources.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Network Watcher (1)** and **select (2)** from the suggestions.
 
-   ![](images/cafinfa1.jpg)
+   ![](images/CAF-12png.png)
 
 1. From the sidebar, select **Topology** from Monitoring.
 
@@ -65,7 +65,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    >**Note:** You can click the **Plus icon** next to the location to view the resource in the visual format.
 
-## **Task 3: Secure Access via Bastion Host**
+## Task 3: Secure Access via Bastion Host
 
 In this task, you'll learn how to access an Azure virtual machine using the Azure Bastion service.
 
@@ -91,11 +91,11 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
 
-   ![](images/a19.png "search gateway")
+    ![](images/CAF-10png.png)
 
 1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
-   ![](images/connect.png)
+   ![](images/CAF-11png.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
 
@@ -118,7 +118,9 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
     ![](images1/allowpopup.png)
 
    
-## **Task 4: Prepare the Network Watcher monitoring environment and NSG Flow**
+## Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
+
+In this task, you'll be configuring and setting up Network Security Group (NSG) flow logs and diagnostic settings in Azure. 
 
 NSG Diagnostic Logs provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorized access attempts, and monitor the NSG's behavior.
 
@@ -128,15 +130,15 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
 
-   ![](images/cafinfra5.jpg)
+   ![](images/CAF-13png.png)
 
 1. Select the **JumpVM-rg** from the list.
 
-   ![](images/cafinfra6.jpg)
+   ![](images/CAF-06png.png)
 
 1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
 
-   ![](images/cafinfra7.jpg)
+   ![](images/CAF-07png.png)
 
 1. In the sidebar, select **NSG flow logs** from the Monitoring menu.
 
@@ -146,13 +148,13 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    ![](images/cafinfra9.jpg)
 
-1. In the Create a flow log page, select the **default subscription (1)** in the drop-down and click on **Select resource (2)**.
+1. In the Create a flow log page, select the **default subscription (1)** then **+ Select target resource (2)** and from the drop down select **Network security group (3)**.
 
-   ![](images/cafinfra10.jpg)
+   ![](images/CAF-01png.png)
 
 1. In the Select network security group page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg** **(1)** and click on **Confirm selection (2)**.
 
-   ![](images/cafinfra11.jpg)
+   ![](images/CAF-02png.png)
 
 1. For the Instance details, Provide the following details and click on **Next: Analytics > (4)**
 
@@ -160,31 +162,31 @@ In this task, You will create NSG flow logs that will provide detailed informati
    - **Storage account**: select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
    - **Retention (days)**: **30 (3)**
 
-      ![](images/scafinfra27.jpg)  
+      ![](images/CAF-03png.png)
    
 1. Under the **Analytics** tab, check the box to **Enable Traffic Analytics (1)**, select **Every 10 mins (2)** under the Traffic Analytics processing interval and click **Review + Create (3)**.
 
-   ![create](images/a149.png)
+   ![](images/CAF-(04)png.png)
 
 1. In the Create page, click on the **Create** button, and wait till the deployment completion.
 
-   ![](images/a150.png)  
+   ![](images/CAF-05png.png)
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
 
-   ![](images/cafinfra5.jpg)
+   ![](images/CAF-13png.png)
 
 1. Select the **JumpVM-rg** from the list.
 
-   ![](images/cafinfra6.jpg)
+   ![](images/CAF-06png.png)
 
 1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
 
-   ![](images/cafinfra7.jpg)
+   ![](images/CAF-07png.png)
 
 1. From the sidebar, select **Diagnostic settings (1)** and click on **+ Add diagnostic setting (2)**.
 
-   ![](images/cafinfra15.jpg)
+   ![](images/CAF-08png.png)
 
 1. In the Diagnostic settings page, provide the following details and click on **Save (5)**.
 
@@ -192,16 +194,21 @@ In this task, You will create NSG flow logs that will provide detailed informati
    - **Logs> Category groups**: check the **allLogs (2)** checkbox.
    - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox,and Click on **Save(5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
 
-      ![](images/a151.png)
-   
-      > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+      ![](images/CAF-09png.png)
+
+   <validation step="0801fcbb-aa4d-4366-a034-90ff2f2fbd28" />
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
       > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
       > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
       > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Summary
- 
+
+In this exercise, you have learnt implementing robust security measures for your Azure environment. By monitoring network health, visualizing connections with Network Watcher, and securing VM access through Azure Bastion, we've ensured that your network is both secure and transparent. Additionally, we've set up NSG flow logs and diagnostics to provide ongoing insights and protection for your network traffic.
+
+## Review 
 In this exercise you have covered the following:
   
    - Explored on Network health 
@@ -209,3 +216,4 @@ In this exercise you have covered the following:
    - Secured Access via Bastion Host
    - Configured the Network Watcher monitoring environment and NSG Flow
 
+## You have successfully completed the lab.

@@ -17,36 +17,36 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
 1. Navigate to the Azure portal. Using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
 
-   ![](images/a18.png "search gateway")
+   ![](images/CAF-lab5-1.png)
    
 1. Select the **labvm-<inject key="DeploymentID" enableCopy="false" />** from the list.
 
-   ![](images/marinfra1.png)
+   ![](images/CAF-lab5-2.png)
  
 1. From the sidebar, select **Network settings** under **Networking** option.
 
-   ![](images/marinfra2.png)
+   ![](images/CAF-lab5-3.png)
 
 1. On the Network settings page, Click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Deny (2)** from Action and click on **Save (3)**.
 
-   ![](images/lab5-2.png)
+   ![](images/CAF-lab5-4.png)
    
 1. On the JumpBox VM, in the search bar, **Search** for **RDP** and **select** the **Remote Desktop Connection** app.
    
-   ![](images/a24.png)
+   ![](images/CAF-lab5-5.png)
 
 1. Paste the **Labvm DNS Name** in the **Computer** field and click on **Connect**.
    * **Labvm DNS Name**: **<inject key="Labvm DNS Name" />**
 
-        ![](images/a25.png)  
+        ![](images/CAF-lab5-6.png) 
  
 1. You will see the error **Remote desktop can't be connected to the remote computer** because we are denied the inbound rule for disallowing the RDP and clicking on **OK**.
 
-   ![](images/a27.png)
+   ![](images/CAF-lab5-7.png)
    
 1. Navigate back to the **labvm-<inject key="DeploymentID" enableCopy="false" />**, Open Networking tab and click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Allow (2)** from Action and click on **Save (3)**.
 
-   ![](images/lab5-3.png)
+   ![](images/CAF-lab5-8.png)
 
 1. Navigate back on **Remote Desktop Connection**, click on **Connect** and you will see that you are able to connect to the VM.
 
@@ -66,15 +66,15 @@ In this task, you'll access the virtual machine by configuring an inbound port r
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
-      ![](images/searchgateway.png "search gateway")
+      ![](images/CAF-lab2-1.png)
     
  1. Select your **Application Gateway**.
 
-      ![](images/appgateway.png "select gateway")
+      ![](images/CAF-lab2-2.png)
       
  1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
 
-     ![](/images1/backendpools.png)
+     ![](images/CAF-lab2-3.png)
      
  1. On the **Edit backend pool** page, follow the below-mentioned instructions:
 
@@ -96,7 +96,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
      
  1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
 
-    ![](/images1/addappilcatiogateway.png)
+    ![](images/CAF-lab2-5.png)
     
  1. Under the **Associate an application gateway** page, follow the below instructions:
 
@@ -106,44 +106,43 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
       ![](images1/associateappgateway.png)
 
-
 ## **Task 3: Add firewall diagnostics settings** 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
 1. Navigate to the home page in the Azure portal, search for **Subscriptions (1)** and **select (2)** from suggestions.
 
-   ![](images/scafinfra19.jpg "search gateway")
+   ![](images/CAF-lab3-1.png)
 
 1. Select the **default subscription** available in the list.
 
-   ![](images/scafinfra20.jpg "search gateway")
+   ![](images/CAF-lab3-2.png)
 
-1. From the left-side blade, select **Preview features (1)** and select **Microsoft.Network (2)** in the types list.
+1. 1. From the left-side blade, select **Preview features (1)** and choose **Provide : All** then on **Provider** window search and select **Microsoft Network** and click on **Apply**.
 
-   ![](images/scafinfra21.jpg "search gateway")
+   ![](images/CAF-lab5-9.png)
 
 1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
 
-   ![](images/scafinfra22.jpg "search gateway")
+   ![](images/CAF-lab3-4.png)
 
-1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the **AzureFirewall** resource.
 
-   ![](images/firewall1.png "search gateway")
+    ![](images/firewall1.png "search gateway")
 
-2. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
+1. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
 
    ![](images/firewall2.png "search gateway")
 
-3. Select **Add diagnostic setting** on the **Diagnostic settings**. 
+1. Select **Add diagnostic setting** on the **Diagnostic settings**. 
 
    ![](images/firewall4.png "search gateway")
 
-4. Enter the **Diagnostic setting name** as **fw-diagnostics**.
+1. Enter the **Diagnostic setting name** as **fw-diagnostics**.
 
-   ![](images/firewall3.png "search gateway")
+   ![](images/CAF-lab3-7.png)
 
-5. Under **Logs**, select the below mentioned categories.
+1. Under **Logs**, select the below mentioned categories.
    
    - Azure Firewall Application Rule
    - Azure Firewall Network Rule
@@ -155,31 +154,39 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
    - Azure Firewall Fat Flow Log
    - Azure Firewall Flow Trace Log
 
-     ![](images/scafinfra23.jpg "search gateway")
+     ![](images/CAF-lab3-8.png)
 
-6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
+1. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
-   ![](images/scafinfra24.jpg "search gateway")
+   ![](images/CAF-lab3-9.png)
 
-## **Task 3: Network Watcher Traffic Analytics to monitor the network**
+   <validation step="c6207003-7e0d-467c-a0cb-9bb7fbbc5246" /> 
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+## **Task 4: Network Watcher Traffic Analytics to monitor the network**
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
 1. Navigate to the Azure portal. Using the search bar, search for **Application gateways (1)** and **select (2)** from the suggestions..
  
-     ![](images/searchgateway.png "search gateway")
+     ![](images/CAF-lab2-1.png)
  
- 1. Select your **Application Gateway**.
+1. Select your **Application Gateway**.
  
-     ![](images/appgateway.png "select gateway")
+     ![](images/CAF-lab2-2.png)
  
  1. Select the **Frontend public IP address** of the application gateway.
  
-     ![](images/image301.png "select gateway")
+     ![](images/CAF-lab3-10.png)
   
  1. Copy the **Public IP address** and save it to Notepad for later use.
 
-     ![](images/editing12.png )
+     ![](images/CAF-lab3-11.png)
 
  1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab and generate some traffic by refreshing the browser.
  
@@ -187,7 +194,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
       ![](/images/image307.png)
 
-1. Navigate to the resource group **JumpVM-rg**, and from the **Overview (1)** tab select the Firewall.
+1. Navigate to the resource group **JumpVM-rg**, and from the **Overview (1)** tab select the **AzureFirewall**.
 
    ![loadbalancer](/images1/firewall.png)
    
@@ -205,11 +212,11 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
     
 1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
 
-   ![policy](/images1/selectfirewallpolicy.png)
+    ![policy](/images1/selectfirewallpolicy.png)
    
 1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
 
-   ![rule](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/dnat1.png?raw=true)
+    ![](images/CAF-lab5-10.png)
     
 1. Under the **Add a rule collection** page, enter the below details:
 
@@ -234,30 +241,36 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
       
 1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
 
-   ![pip](/images/a32.png)
+    ![pip](/images/a32.png)
 
 1. Go to the Home page and search for **Network Watcher** and select it.
 
-1. From the left hand pane of the **Network Watcher** select **Flow Logs** under **Logs**
+    ![](images/CAF-lab5-11.png)
+    
+1. From the left hand pane of the **Network Watcher** select **Flow Logs** under **Logs**. Click on **+ Create** in the top navigation pane.
 
-1. Click on **Create** in the top navigation pane.
+    ![](images/CAF-lab5-12.png)
+   
+1. In the **Basics** tab, click on **+ Select target resource (1)** and choose **Network security group (2)** from the dropdown. Choose **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg (3)** and select 
+   **Confirm selection (4)**.
 
-1. In the **Basics** tab, click on **Select resource** and choose **Network security group** from the dropdown. Choose **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg** and select **Confirm selection**. Scroll down and provide **Retention (days)** as **O**
+    ![](images/CAF-lab5-13.png)
 
-   ![rule](/images1/marinfra9.png)
+    ![](images/CAF-lab5-14.png)
 
-1. Leave eveything as default and click **Next: Analytics**.
+1. Scroll down and provide **Retention (days) (1)** as **O**. Leave eveything as default and click **Next: Analytics (2)**.
 
-1. In the **Analytics** tab, check **Enable Traffic Analysis** and change the **Traffic Analytics processing interval** to **Every 10 mins**
+   ![](images/CAF-lab5-15.png)
+    
+1. In the **Analytics** tab, check **Enable Traffic Analysis (1)** and change the **Traffic Analytics processing interval** to **Every 10 mins (2)** then Click **Next:Tags> (3)** 
 
-   ![rule](/images1/marinfra10.png)
+   ![](images/CAF-lab5-16.png)
 
-1. Click **Next:Tags>** and click on **Review + Create** and subsequently click on **Create**
+1. Click on **Review + Create** and subsequently click on **Create**
 
 1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Monitoring** from the options on the left side of the Network Watcher blade.
 
-   ![trafic_analayticsofexc5](https://github.com/NIREEKSHITH45/CAF-Secure-Methodology/assets/92374933/2bc9f2f5-28d5-4e23-806e-7b0e85802565)
-
+   ![](images/CAF-lab5-17.png)
         
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
@@ -322,30 +335,25 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![l7](/images1/l7proto.png)
 
-## **Summary**
+   <validation step="a223c077-e008-44a7-a7e7-b07b393d0d58" /> 
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+
+
+## Summary
+
+In this lab, you explored critical aspects of network management and monitoring in Azure, focusing on enhancing network security and visibility. You validated Network Security Group (NSG) rules, configured the Web Application Firewall (WAF) to protect web applications, and enabled diagnostic settings for Azure Firewall to collect detailed logs. Additionally, you implemented Traffic Analytics to monitor and analyze network traffic patterns. These tasks provided you with hands-on experience in securing and optimizing network infrastructure, enabling data-driven decisions for improved network performance and security.
+
+## Review
  
 In this exercise you have covered the following:
   
    - Performed NSG validation.
    - Monitored the network watcher traffic.
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## You have successfully completed the lab.

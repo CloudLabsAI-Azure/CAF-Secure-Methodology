@@ -24,15 +24,15 @@ This exercise includes the following tasks:
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
-      ![](images/searchgateway.png "search gateway")
+      ![](images/CAF-lab2-1.png)
     
  1. Select your **Application Gateway**.
 
-      ![](images/appgateway.png "select gateway")
+      ![](images/CAF-lab2-2.png)
       
  1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
 
-     ![](/images1/backendpools.png)
+     ![](images/CAF-lab2-3.png)
      
  1. On the **Edit backend pool** page, follow the below-mentioned instructions:
 
@@ -40,7 +40,7 @@ This exercise includes the following tasks:
     - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
     - Click on **Save (3)**.
 
-      ![](/images1/editbackendpool.png)
+      ![](images/CAF-lab2-4.png)
     
 1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
 
@@ -54,7 +54,7 @@ This exercise includes the following tasks:
      
  1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
 
-    ![](/images1/addappilcatiogateway.png)
+    ![](images/CAF-lab2-5.png)
     
  1. Under the **Associate an application gateway** page, follow the below instructions:
 
@@ -68,21 +68,21 @@ This exercise includes the following tasks:
  
 In this task, you will access the application by going through the Application Gateway that you just configured.
 
-1.  In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
+1. In the Azure **Home** page, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
  
-     ![](images/searchgateway.png "search gateway")
+     ![](images/CAF-lab2-1.png)
  
 1. Select your **Application Gateway**.
  
-     ![](images/appgateway.png "select gateway")
+   ![](images/CAF-lab2-2.png)
  
 1. Select the **Frontend public IP address** of the application gateway.
  
-      ![](images/image301.png "select gateway")
+      ![](images/CAF-lab2-6.png)
 
 1.  Copy the **Public IP address** and save it to Notepad for later use.
 
-     ![](images/editing12.png )
+     ![](images/CAF-lab2-7.png)
           
 1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** into a new browser tab that you copied in step 4.
 
@@ -99,12 +99,11 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
  1. On Virtual machines page, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
-      ![](images/a157.png "select gateway")
+      ![](images/CAF-lab2-8.png)
 
  1. Copy the **Public IP address** and save it to Notepad for later use.
 
-      ![](images/a158.png "select gateway")
-
+      ![](images/CAF-lab2-9.png)
 
  1. In the Azure Portal Search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
@@ -112,7 +111,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
  1. On the WAF page, select your **firewallpolicy (1)**, and under settings, click on **Custom rules (2)** and after that click on **+ Add custom rule (3)**.
  
-    ![](images/image303.png "select gateway")
+    ![](images/CAF-lab2-10.png)
  
  1. On the **Add custom rule** blade, enter the following details
  
@@ -125,7 +124,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
 1. Click on **Save**.
  
-   ![](images/a171.png "select gateway")
+   ![](images/CAF-lab2-11.png)
 
 1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
@@ -139,11 +138,11 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
      - Select **Web application firewall (1)** under **Settings**.    
      - Click on **firewallpolicy** under **Associated web application firewall policy (2)**.  
   
-         ![config](/images1/webappfirewall.png)
+         ![](images/CAF-lab2-12.png)
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
  
-    ![](/images1/switchtoprevention.png)
+    ![](images/CAF-lab2-13.png)
 
 1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the website.
 
@@ -154,6 +153,16 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 1. Navigate back to **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
    ![](images/a161.png "select gateway")
+
+
+ <validation step="5a378ae3-6334-483c-8846-e94f8f5ecd26" /> 
+
+ > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+      > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 
  ## **Task 4: Attack simulation** 
      
@@ -203,11 +212,11 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 1. In the Azure portal, search for **Front Door and CDN profiles (1)** and select it from the results **(2)**.
   
-    ![](images/a53.png)
+    ![](images/CAF-lab2-14.png)
   
 1. Select **+ Create** to create a Front Door and CDN profile.
   
-    ![](images/a54.png)
+    ![](images/CAF-lab2-15.png)
 
 1. On the **Compare offerings** page, select **Azure Front Door** and **Custom create**. Then select **Continue to create a Front Door**.
   
@@ -275,14 +284,16 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
    ![](images/a61.png)
     
    ![](images/a65.png)
-  
+
+1. Once deployment is succeeded click on **Go to resouce**.
+     
 ### **Task 5.2: View Azure Front Door in action**
   
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
   
 1. On the Front Door resource in the **Overview (1)** blade, locate the endpoint hostname that is created for your endpoint. For example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. **Copy (2)** this FQDN.
   
-   ![](images/a66.png)
+   ![](images/CAF-lab2-17.png)
     
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
   
@@ -294,11 +305,11 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Switch to the Azure portal, search for and select **App services**.
   
-   ![](images/a46.png)
+   ![](images/CAF-lab2-22.png)
 
 1. Select one of your web apps, then click **Stop**, then click **Yes** to confirm.
 
-   ![](images/a172.png)
+   ![](images/CAF-lab2-18.png)
 
 1. Switch back to your browser and select Refresh. You should see the same information page.
 
@@ -318,7 +329,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Navigate to the **App services** tab. Select both of your web apps, then click **Start**, then click **Yes** to confirm.
   
-   ![](images/a174.png)
+   ![](images/CAF-lab2-19.png)
 
 1. In a new browser tab paste the **endpoint** which you copied in the previous task.
 
@@ -365,11 +376,11 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
 1. Select **Save**.
   
-   ![](images/firewallpolicysave3.1.png)
+   ![](images/CAF-lab2-20.png)
   
 1. On the **myWAFPolicy** page, under settings, click on **Policy settings (1)** and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
   
-   ![](images/a111.png)    
+   ![](images/CAF-lab2-21.png)
   
 1. Navigate back to the website and try **refresh** in the browser, you will see a response from the website.
 
@@ -379,16 +390,21 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. After getting the response from the website navigate back to the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
-   ![](images/a161.png "select gateway")
+   ![](images/CAF-lab2-23.png)
 
-    > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
+   <validation step="e1519098-0127-4c6e-a16f-29740022e862" /> 
+
+   > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## **Summary**
- 
+## Summary
+
+In this lab, we secured your web applications using Azure's robust security features. We configured the Web Application Firewall (WAF) to protect against common web vulnerabilities, set up custom rules to block specific IP addresses, and performed attack simulations to test the security measures. Additionally, we implemented rate limiting with Azure Front Door to manage traffic efficiently, ensuring your applications are both secure and optimized for performance. These steps help safeguard your applications from potential threats and maintain high availability.
+
+## Review
 In this exercise you have covered the following:
   
    - Configured WAF to Protect your web application 
@@ -397,4 +413,5 @@ In this exercise you have covered the following:
    - Performed Attack simulation
    - Performed Rate Limiting using Azure Front Door
 
+## You have successfully completed the lab.
 
