@@ -208,7 +208,7 @@ In this task, you will set up an Azure Front Door configuration that pools two i
   
 ### **Task 5.1: Create a Front Door for your application**
 
-Configure Azure Front Door to direct user traffic based on the lowest latency between the two Web App's origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
+In this task, you're setting up an Azure Front Door instance to improve application performance and security. Configure Azure Front Door to direct user traffic based on the lowest latency between the two Web App's origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
   
 1. In the Azure portal, search for **Front Door and CDN profiles (1)** and select it from the results **(2)**.
   
@@ -288,8 +288,10 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
 1. Once deployment is succeeded click on **Go to resouce**.
      
 ### **Task 5.2: View Azure Front Door in action**
+
+In this task, you'll be verifying the deployment and functionality of Azure Front Door.
   
-Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
+>**Note**: Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
   
 1. On the Front Door resource in the **Overview (1)** blade, locate the endpoint hostname that is created for your endpoint. For example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. **Copy (2)** this FQDN.
   
@@ -326,6 +328,8 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    ![](images/a70.png)
 
 ### **Task 5.3: Create a Rate Limit Rule**
+
+In this task, you'll be creating and testing a rate limit rule in Azure Front Door's Web Application Firewall (WAF).
   
 1. Navigate to the **App services** tab. Select both of your web apps, then click **Start**, then click **Yes** to confirm.
   
@@ -370,8 +374,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
     - Match type: Select **String**.
     - Match variable: Select **RequestUri**
     - Match values: Enter **contoso** and **azurefd**
-    - Click on **Add**.
-      
+    - Click on **Add**. 
       ![](images/a177.png)
   
 1. Select **Save**.
