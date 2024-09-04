@@ -238,6 +238,8 @@ In this task, you'll configure Azure Firewall Premium's IDPS (Intrusion Detectio
 1. On the **IDPS** page select the **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
  
    ![](images/firewall11.png "search gateway")
+
+    >**Note: In case you didn't find the Signature ID continue onto the next task and please try this step after 20-30 mins as it can take sometime to show up.**
  
 1. Select **2032081 (1)** signature id and click on **Edit Rules (2)**.
  
