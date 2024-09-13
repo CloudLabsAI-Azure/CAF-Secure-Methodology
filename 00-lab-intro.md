@@ -1,6 +1,6 @@
 # Infrastructure and Application Security 
 
-### Overall Estimated Duration: 2 hours
+### Overall Estimated Duration: 8 hours
 
 ## Overview
 
