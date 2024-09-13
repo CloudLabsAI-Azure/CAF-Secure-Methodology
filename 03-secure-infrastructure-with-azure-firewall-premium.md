@@ -1,6 +1,6 @@
 # Lab 03: Secure Infrastructure with Azure Firewall Premium
 
-### Overview: 
+## Overview: 
 
 Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best-of-breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
 
@@ -12,17 +12,18 @@ Azure Firewall Premium is a next-generation firewall with capabilities that are 
 - **Web categories** - Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
 For more information, see `https://learn.microsoft.com/en-us/azure/firewall/premium-features`
  
+## Lab Objectives
 
-This exercise includes the following tasks:
+You will be able to complete the following tasks:
 
-  - Add firewall diagnostics settings
-  - Test IDPS for HTTP traffic
-  - Web categories testing
-  - Implement and Test URL filtering
-  - IP Groups
-  - Azure Firewall Policies with Firewall Manager
+- Task 1: Add firewall diagnostics settings
+- Task 2: Test IDPS for HTTP traffic
+- Task 3: Web categories testing
+- Task 4: Implement and Test URL filtering
+- Task 5: IP Groups
+- Task 6: Azure Firewall Policies with Firewall Manager
 
-## **Task 1: Add firewall diagnostics settings** 
+## Task 1: Add firewall diagnostics settings 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
@@ -76,7 +77,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/scafinfra24.jpg "search gateway")
 
-## **Task 2: Test IDPS for HTTP traffic**
+## Task 2: Test IDPS for HTTP traffic
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
@@ -209,7 +210,7 @@ In this task, you will test IDPS for HTTP traffic.
  
      ![](images/firewall14.png "search gateway")
  
-## **Task 3: Web categories testing**
+## Task 3: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
  
@@ -342,7 +343,7 @@ In this task, you will create an application rule to allow access to sports webs
 
      ![](images/a162.png)
 
-## **Task 4: Implement and Test URL filtering**
+## Task 4: Implement and Test URL filtering
  
 1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **can't reach this page**.
  
@@ -407,7 +408,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     ![](images/a162.png)
 
-## **Task 5: IP Groups**
+## Task 5: IP Groups
 
 1. Navigate to the home page in the Azure portal, search for **IP groups (1)** and **select (2)** from suggestions.
  
@@ -485,9 +486,9 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a144.jpg "search gateway") 
  
-## **Task 6: Azure Firewall Policies with Firewall Manager (Optional)**
+## Task 6: Azure Firewall Policies with Firewall Manager (Optional)
 
-### **Task 6.1: Create a Firewall Policy**
+### Task 6.1: Create a Firewall Policy
 
 1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
@@ -558,7 +559,7 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/a97.png)
  
-### **Task 6.2: Create the firewall hub virtual network**
+### Task 6.2: Create the firewall hub virtual network
  
 1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
@@ -602,7 +603,7 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/a102.png)
  
-### **Task 6.3: Associate the firewall policy with the virtual hub**
+### Task 6.3: Associate the firewall policy with the virtual hub
   
 1. From the Azure portal home page, select **Firewall Manager**. On the Firewall Manager page, under **Security**, select **Azure Firewall Policies**.
   
@@ -624,15 +625,15 @@ In this task, you will create an application rule to allow access to sports webs
  
    ![](images/a108.png)	
 	
-## **Summary**
+## Summary
  
-In this exercise you have covered the following:
+In this lab you have covered the following:
   
-   - Added firewall diagnostics settings 
-   - Tested IDPS for HTTP traffic
-   - Performed Web category testing 
-   - Implemented and Tested URL filtering
-   - Performed IP groups
-   - Performed Azure Firewall Policies with the Firewall Manager
+- Added firewall diagnostics settings 
+- Tested IDPS for HTTP traffic
+- Performed Web category testing 
+- Implemented and Tested URL filtering
+- Performed IP groups
+- Performed Azure Firewall Policies with the Firewall Manager
 
-Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
+### You have successfully completed the lab
