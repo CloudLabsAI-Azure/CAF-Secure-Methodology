@@ -1,4 +1,4 @@
-# Exercise 3- Secure application  
+# Lab 02: Secure application  
 
 ### Overview
 
