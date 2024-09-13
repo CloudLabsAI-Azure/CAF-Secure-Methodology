@@ -1,6 +1,6 @@
 # Lab 05: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
-### Overview:
+## Overview:
 
 Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, **Flow logs** and **Traffic analytics** provide valuable insights into network traffic patterns and behavior.
 
@@ -8,12 +8,14 @@ Network management and monitoring play a crucial role in maintaining a secure an
 
 Combining flow logs and traffic analytics enables network administrators to gain comprehensive visibility, streamline troubleshooting, and make data-driven decisions for network optimization and security enhancement.
 
-This exercise includes the following tasks:
+## Lab Objectives
 
-  - NSG Validation
-  - Network Watcher Traffic Analytics to monitor the network
+You will be able to complete the following tasks:
+
+- Task 1: NSG Validation
+- Task 2: Network Watcher Traffic Analytics to monitor the network
   
-## **Task 1: NSG Validation (Optional)**
+## Task 1: NSG Validation (Optional)
 
 In this task, you'll access the virtual machine by configuring an inbound port rule in the network security group.
 
@@ -62,7 +64,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
    ![](images/a31.png)
 
-## **Task 2: Network Watcher Traffic Analytics to monitor the network**
+## Task 2: Network Watcher Traffic Analytics to monitor the network
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
@@ -176,14 +178,14 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![l7](/images1/l7proto.png)
 
-## **Summary**
+## Summary
  
-In this exercise you have covered the following:
+In this lab you have covered the following:
   
-   - Performed NSG validation.
-   - Monitored the network watcher traffic.
+- Performed NSG validation.
+- Monitored the network watcher traffic.
 
-
+### You have successfully completed the lab
 
 
 
