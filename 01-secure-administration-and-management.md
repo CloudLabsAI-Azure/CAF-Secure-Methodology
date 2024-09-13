@@ -1,6 +1,6 @@
 # Lab 01: Secure administration and management
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 90 minutes
 
 ## Overview
 
