@@ -1,6 +1,6 @@
 # Lab 02: Secure application  
 
-### Overview
+## Overview
 
 Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. To learn more about Azure Firewall refer: `https://docs.microsoft.com/en-us/azure/firewall`
 
@@ -8,19 +8,21 @@ Azure Application Gateway is a web traffic load balancer that enables you to man
 
 Azure Web Application Firewall provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks. Preventing such attacks in application code is challenging. It can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps make security management much simpler. To learn more about Azure Web Application Firewall refer: `https://docs.microsoft.com/en-us/azure/application-gateway`
 
-In this exercise, you will deploy an Azure Firewall and Application Gateway with WAF V2 then you will publish an application through it. You'll also test the security of the application and perform a sample attack.
+In this lab, you will deploy an Azure Firewall and Application Gateway with WAF V2 then you will publish an application through it. You'll also test the security of the application and perform a sample attack.
 
-This exercise includes the following tasks:
+## Lab Objectives
 
-  - Configure WAF to protect your web application
-  - Accessing your application using the application gateway
-  - Application Gateway WAF Custom Rule to block IP
-  - Attack simulation
-  - Rate Limiting using Azure Front Door
+You will be able to complete the following tasks:
 
- ## **Task 1: Configure WAF to protect your web application**
+- Task 1: Configure WAF to protect your web application
+- Task 2: Accessing your application using the application gateway
+- Task 3: Application Gateway WAF Custom Rule to block IP
+- Task 4: Attack simulation
+- Task 5: Rate Limiting using Azure Front Door
+
+## Task 1: Configure WAF to protect your web application
  
- In this task, you will add a Virtual Machine as the Backend pool of the Application gateway and also configure the Application Gateway from the firewall policy.
+In this task, you will add a Virtual Machine as the Backend pool of the Application gateway and also configure the Application Gateway from the firewall policy.
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
@@ -64,7 +66,7 @@ This exercise includes the following tasks:
 
       ![](images1/associateappgateway.png)
     
- ## **Task 2: Accessing your application using application gateway**
+ ## Task 2: Accessing your application using application gateway
  
 In this task, you will access the application by going through the Application Gateway that you just configured.
 
@@ -89,7 +91,7 @@ In this task, you will access the application by going through the Application G
    ![ss](/images/image307.png)
        
 
- ## **Task 3: Application Gateway WAF Custom Rule to block IP**
+ ## Task 3: Application Gateway WAF Custom Rule to block IP
  
 In this task, you will block access from the Lab VM to the Jump VM by configuring a Firewall Policy custom rule. The rule will deny access to the web application by adding the Lab VM’s Public IP in the deny rule.
  
@@ -155,7 +157,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
    ![](images/a161.png "select gateway")
 
- ## **Task 4: Attack simulation** 
+ ## Task 4: Attack simulation
      
 In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-site scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
 
@@ -191,13 +193,13 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
     
     ![server error](/images1/403.png)
 
-## **Task 5: Rate Limiting using Azure Front Door**
+## Task 5: Rate Limiting using Azure Front Door
   
 In this task, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:  
   
 ![](images/a80.png)
   
-### **Task 5.1: Create a Front Door for your application**
+### Task 5.1: Create a Front Door for your application
 
 Configure Azure Front Door to direct user traffic based on the lowest latency between the two Web App's origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
   
@@ -276,7 +278,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
     
    ![](images/a65.png)
   
-### **Task 5.2: View Azure Front Door in action**
+### Task 5.2: View Azure Front Door in action
   
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
   
@@ -314,7 +316,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ![](images/a70.png)
 
-### **Task 5.3: Create a Rate Limit Rule**
+### Task 5.3: Create a Rate Limit Rule
   
 1. Navigate to the **App services** tab. Select both of your web apps, then click **Start**, then click **Yes** to confirm.
   
@@ -385,14 +387,14 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ![](images/a161.png "select gateway")
 
-## **Summary**
+## Summary
  
-In this exercise you have covered the following:
+In this lab you have covered the following:
   
-   - Configured WAF to Protect your web application 
-   - Accessed your application using the application gateway
-   - Customized WAF rules
-   - Performed Attack simulation
-   - Performed Rate Limiting using Azure Front Door
+- Configured WAF to Protect your web application 
+- Accessed your application using the application gateway
+- Customized WAF rules
+- Performed Attack simulation
+- Performed Rate Limiting using Azure Front Door
 
-Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
+### You have successfully completed the lab
