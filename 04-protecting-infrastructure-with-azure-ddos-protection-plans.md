@@ -1,5 +1,7 @@
 # Lab 04: Protecting Infrastructure with Azure DDoS Protection Plans
 
+### Estimated Duration: 60 minutes
+
 ## Overview
 
 ### What is DDoS protection?
