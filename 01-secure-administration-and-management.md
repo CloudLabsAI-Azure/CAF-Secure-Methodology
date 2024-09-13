@@ -1,4 +1,4 @@
-# Exercise 2- Secure administration and management
+# Lab 01: Secure administration and management
 
 ### Overview
 
