@@ -1,5 +1,7 @@
 # Lab 04: Protecting Infrastructure with Azure DDoS Protection Plans
 
+## Overview
+
 ### What is DDoS protection?
 
 Distributed denial of service (DDoS) attacks are some of the largest availability and security concerns facing customers who are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
@@ -15,13 +17,15 @@ Azure DDoS Protection, combined with application design best practices, provides
 - **Protocol attacks**: These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic, by interacting with the client, and blocking malicious traffic.
 - **Resource (application) layer attacks**: These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layer 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection to provide defence against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
 
-This exercise includes the following tasks:
+## Lab Objectives
 
-  - Configure Azure DDoS Network Protection
-  - Configure Azure DDoS IP Protection
-  - View metrics from Public IP address
+You will be able to complete the following tasks:
+
+- Task 1: Configure Azure DDoS Network Protection
+- Task 2: Configure Azure DDoS IP Protection
+- Task 3: View metrics from Public IP address
   
-## **Task 1: Configure Azure DDoS Network Protection**
+## Task 1: Configure Azure DDoS Network Protection
 
 In this task, you will create a DDoS protection plan to protect the virtual network.
 
@@ -80,7 +84,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
       ![](images/ddos12.png)
       
-## **Task 2: Configure Azure DDoS IP Protection**
+## Task 2: Configure Azure DDoS IP Protection
 
 In this task, you will secure the Public IP address by using DDoS protection.
 
@@ -104,7 +108,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
     ![](images/a38.png)
     
-## **Task 3: View metrics from Public IP address**
+## Task 3: View metrics from Public IP address
 
 In this task, you will explore and visualize the metrics using various kinds of aggregation.
 
@@ -129,15 +133,15 @@ In this task, you will explore and visualize the metrics using various kinds of 
       ![](images/a154.png)
       
       
-## **Summary**
+## Summary
  
-In this exercise you have covered the following:
+In this lab you have covered the following:
   
-   - Configured Azure DDoS Network Protection
-   - Configured Azure DDoS IP Protection
-   - Visualized the metrics using a Public IP address
+- Configured Azure DDoS Network Protection
+- Configured Azure DDoS IP Protection
+- Visualized the metrics using a Public IP address
 
-Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.     
+### You have successfully completed the lab     
       
       
       
