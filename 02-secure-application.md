@@ -1,5 +1,7 @@
 # Lab 02: Secure application  
 
+### Estimated Duration: 90 minutes
+
 ## Overview
 
 Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. To learn more about Azure Firewall refer: `https://docs.microsoft.com/en-us/azure/firewall`
