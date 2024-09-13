@@ -43,6 +43,20 @@ Various Azure resources and services are integrated to provide a comprehensive s
 
 ## Explanation of Components
 
+The architecture for this lab involves several key components:
+
+- **Azure Monitor:** Provides comprehensive monitoring and diagnostics for Azure resources, offering insights into performance, health, and security.
+- **Network Watcher:** Enables network monitoring and diagnostics, including traffic analysis and network flow logging, to enhance security and troubleshoot issues.
+- **Virtual Network:** Creates isolated, secure network environments for Azure resources, allowing controlled communication and traffic management.
+- **Virtual Machine:** Provides scalable computing resources for running applications and services, with security controls to protect against threats.
+- **Network Security Group (NSG):** Controls inbound and outbound traffic to Azure resources by defining security rules to enforce network access policies.
+- **Application Gateway:** A web traffic load balancer that manages and secures traffic for web applications, including features like SSL termination and URL-based routing.
+- **Web Application Firewall (WAF) Policies:** Protects web applications from common threats and vulnerabilities by filtering and monitoring HTTP requests through configurable WAF rules.
+- **Front Door and CDN Profiles:** Provides global application delivery and content distribution, enhancing performance and security by optimizing traffic routing and providing DDoS protection.
+- **Azure App Services (Web App):** A platform for hosting and managing web applications with built-in security features like authentication, access controls, and threat detection.
+- **Azure Firewall:** A managed, cloud-based network security service that protects Azure Virtual Networks by filtering traffic and enforcing security policies.
+- **DDoS Protection:** Safeguards Azure resources from distributed denial-of-service attacks by providing automated detection and mitigation to maintain service availability.
+
 ## Getting Started with the lab
  
 Welcome to your Infrastructure Security Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
