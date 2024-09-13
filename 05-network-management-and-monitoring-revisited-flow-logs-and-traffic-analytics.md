@@ -1,5 +1,7 @@
 # Lab 05: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
+### Estimated Duration: 30 minutes
+
 ## Overview:
 
 Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, **Flow logs** and **Traffic analytics** provide valuable insights into network traffic patterns and behavior.
