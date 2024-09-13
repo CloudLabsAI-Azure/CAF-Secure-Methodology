@@ -1,4 +1,4 @@
-# Exercise 6- Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
+# Lab 05: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
 ### Overview:
 
