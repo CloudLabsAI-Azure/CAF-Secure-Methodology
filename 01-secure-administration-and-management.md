@@ -1,6 +1,6 @@
 # Lab 01: Secure administration and management
 
-### Overview
+## Overview
 
 **Azure Monitor Network Insights** provides a comprehensive and visual representation of the health and metrics of all deployed network resources through topologies, without requiring any configuration. It also offers access to network monitoring capabilities such as Connection Monitor, flow logging for network security groups (NSGs), and traffic analytics.
 
@@ -8,14 +8,16 @@ The topology capability of **Azure Network Watcher** allows you to view all the 
 
 **Azure Bastion** is a fully managed service provided by Microsoft Azure that enables secure and seamless Remote Desktop Protocol (RDP) and Secure Shell (SSH) access to virtual machines (VMs) within a virtual network (VNet) without the need for a public IP address or a virtual private network (VPN) connection.
 
-This exercise includes the below tasks:
+## Lab Objectives
 
-  - Network Health
-  - Network Topology
-  - Secure Access via Bastion Host
-  - Prepare the Network Watcher monitoring environment and NSG Flow
+You will be able to complete the following tasks:
+
+  - Task 1: Network Health
+  - Task 2: Network Topology
+  - Task 3: Secure Access via Bastion Host
+  - Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
   
-## **Task 1: Network Health**
+## Task 1: Network Health
 
 In this task, you'll explore Azure monitor and examine the resource health of various deployed resources. 
 
@@ -47,7 +49,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
     ![](images/a13.png "search gateway")
 
-## **Task 2: Network Topology** 
+## Task 2: Network Topology
 
  In this task, you'll view resources in a Microsoft Azure virtual network, and the relationships between the resources.
 
@@ -75,7 +77,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](images/scafinfra37.jpg "search gateway")
 
-## **Task 3: Secure Access via Bastion Host**
+## Task 3: Secure Access via Bastion Host
 
 In this task, you'll learn how to access an Azure virtual machine using the Azure Bastion service.
 
@@ -123,7 +125,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
  
     ![](images1/allowpopup.png)
 
-## **Task 4: Prepare the Network Watcher monitoring environment and NSG Flow**
+## Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
 
 **NSG Diagnostic Logs** provide detailed information about the health and performance of a Network Security Group. These logs include data related to the configuration changes, rules evaluation, and the overall state of the NSG. Diagnostic Logs can help identify issues with NSG rules, detect unauthorized access attempts, and monitor the NSG's behavior.
 
@@ -202,11 +204,11 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 ## Summary
  
-In this exercise you have covered the following:
+In this lab you have covered the following:
   
-   - Explored on Network health 
-   - Explored on Network topology
-   - Secured Access via Bastion Host
-   - Configured the Network Watcher monitoring environment and NSG Flow
+- Explored on Network health 
+- Explored on Network topology
+- Secured Access via Bastion Host
+- Configured the Network Watcher monitoring environment and NSG Flow
 
- Click on the **Next** button present in the bottom-right corner of the lab guide to start with the next exercise of the lab.
+### You have successfully completed the lab
