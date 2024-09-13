@@ -39,6 +39,8 @@ Various Azure resources and services are integrated to provide a comprehensive s
 
 ## Architechture Diagram
 
+![Architecture Diagram](./images/infra-security-arch-diagram.png)
+
 ## Explanation of Components
 
 ## Getting Started with the lab
