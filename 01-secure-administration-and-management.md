@@ -1,5 +1,7 @@
 # Lab 01: Secure administration and management
 
+### Estimated Duration: 60 minutes
+
 ## Overview
 
 **Azure Monitor Network Insights** provides a comprehensive and visual representation of the health and metrics of all deployed network resources through topologies, without requiring any configuration. It also offers access to network monitoring capabilities such as Connection Monitor, flow logging for network security groups (NSGs), and traffic analytics.
