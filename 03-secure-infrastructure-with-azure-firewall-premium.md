@@ -1,5 +1,7 @@
 # Lab 03: Secure Infrastructure with Azure Firewall Premium
 
+### Estimated Duration: 90 minutes
+
 ## Overview: 
 
 Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best-of-breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
