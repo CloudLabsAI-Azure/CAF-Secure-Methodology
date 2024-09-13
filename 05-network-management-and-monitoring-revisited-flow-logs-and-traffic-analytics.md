@@ -1,6 +1,6 @@
 # Lab 05: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
-### Estimated Duration: 30 minutes
+### Estimated Duration: 60 minutes
 
 ## Overview:
 
