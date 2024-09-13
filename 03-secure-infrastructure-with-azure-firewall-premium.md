@@ -1,4 +1,4 @@
-# Exercise 4- Secure Infrastructure with Azure Firewall Premium
+# Lab 03: Secure Infrastructure with Azure Firewall Premium
 
 ### Overview: 
 
