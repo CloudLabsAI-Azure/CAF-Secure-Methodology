@@ -1,4 +1,4 @@
-# Exercise 5- Protecting Infrastructure with Azure DDoS Protection Plans
+# Lab 04: Protecting Infrastructure with Azure DDoS Protection Plans
 
 ### What is DDoS protection?
 
