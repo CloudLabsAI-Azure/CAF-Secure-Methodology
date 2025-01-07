@@ -35,7 +35,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
    
    ![](images/CAF-lab5-5.png)
 
-1. Paste the **Labvm DNS Name** in the **Computer** field and click on **Connect**.
+1. Paste the **Labvm DNS Name** in the **Computer (1)** field and click on **Connect (2)**.
    * **Labvm DNS Name**: **<inject key="Labvm DNS Name" />**
 
         ![](images/CAF-lab5-6.png) 
@@ -72,7 +72,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
       ![](images/CAF-lab2-2.png)
       
- 1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
+ 1. On the Application gateway blade click on the **Backend pools (1)** under setting and then select **AGBackendtarget (2)**.
 
      ![](images/CAF-lab2-3.png)
      
@@ -118,13 +118,17 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/CAF-lab3-2.png)
 
-1. 1. From the left-side blade, select **Preview features (1)** and choose **Provide : All** then on **Provider** window search and select **Microsoft Network** and click on **Apply**.
+1. From the left-side blade, select **Preview features (1)** and choose **Provide : All (2)** then on **Provider** window **search (3)** and select **Microsoft Network (4)** and click on **Apply (5)**.
 
    ![](images/CAF-lab5-9.png)
 
 1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
 
-   ![](images/CAF-lab3-4.png)
+   ![](images/CAF-lab3-4.png) 
+
+1. Select **OK** when Do you want to register the selected features?.
+
+   ![](images/CAF-lab3-5.png)
 
 1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the **AzureFirewall** resource.
 
@@ -160,13 +164,13 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/CAF-lab3-9.png)
 
-   <validation step="c6207003-7e0d-467c-a0cb-9bb7fbbc5246" /> 
+   <validation step="c6207003-7e0d-467c-a0cb-9bb7fbbc5246" />  
 
    > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## **Task 4: Network Watcher Traffic Analytics to monitor the network**
 
@@ -247,7 +251,8 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![](images/CAF-lab5-11.png)
     
-1. From the left hand pane of the **Network Watcher** select **Flow Logs** under **Logs**. Click on **+ Create** in the top navigation pane.
+1. From the left hand pane of the **Network Watcher** select **Flow Logs 
+(1)** under **Logs**. Click on **+ Create (2)** in the top navigation pane.
 
     ![](images/CAF-lab5-12.png)
    
@@ -341,7 +346,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 
 

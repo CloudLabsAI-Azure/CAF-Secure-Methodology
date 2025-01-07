@@ -77,7 +77,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/CAF-lab3-2.png)
 
-1. From the left-side blade, select **Preview features (1)** and choose **Provide : All** then on **Provider** window search and select **Microsoft Network** and click on **Apply**.
+1. From the left-side blade, select **Preview features (1)** and choose **Provide : All (2)** then on **Provider** window search **(3)** and select **Microsoft Network (4)** and click on **Apply (5)**.
 
    ![](images/CAF-lab5-9.png)
 
@@ -245,7 +245,7 @@ In this task, you'll configure Azure Firewall Premium's IDPS (Intrusion Detectio
  
    ![](images/firewall12.png "search gateway")
  
-1. Under edit rules, change **Signature Mode** to **Alert and Deny** and click on **Apply**.  Wait for the deployment to complete before proceeding.
+1. Under edit rules, change **Signature Mode** to **Alert and Deny (1)** and click on **Apply (2)**.  Wait for the deployment to complete before proceeding.
  
    ![](images/CAF-lab3-22.png)
 
@@ -257,7 +257,7 @@ In this task, you'll configure Azure Firewall Premium's IDPS (Intrusion Detectio
       > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
       > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+      > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
  
 ## **Task 4: Web categories testing**
@@ -293,7 +293,7 @@ In this task, you will create an application rule to allow access to sports webs
  
              ![](images/CAF-lab3-25.png)
 
-	     ![](images/CAF-lab3-26.png)
+	          ![](images/CAF-lab3-26.png)
  
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
@@ -324,12 +324,12 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Navigate to the below-mentioned URL and you can see the error **can't reach this page**.
  
-   ```
-   https://www.nfl.com
-   ```
-   ![](images/CAF-lab3-31.png)
+    ```
+    https://www.nfl.com
+    ```
+    ![](images/CAF-lab3-31.png)
  
-   >**Note:** In order to paste within a bastion session copy  the content to the clipboard by clicking the arrow icon  within the bastion vm and paste it
+     >**Note:** In order to paste within a bastion session copy  the content to the clipboard by clicking the arrow icon  within the bastion vm and paste it
 
      ![](images1/marinfral4.png)
 
@@ -351,7 +351,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Now, select **Application Rules (1)** from the **Settings** tab under the Firewall Policy page and select **+ Add a rule collection (2)**.
    
-   ![](images/firewall17.png "search gateway")
+    ![](images/firewall17.png "search gateway")
  
 1. Under the **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
  
@@ -411,7 +411,6 @@ In this task, you'll implement and test URL filtering with Azure Firewall. You'l
     ```
  
     ![](images1/marinfral5.png)
- 
  
 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
  
@@ -480,14 +479,14 @@ In this task, you'll create an IP Group in Azure, then use it in a firewall rule
  
 1. On the IP Group page, on the **Basics** tab, enter or select the following information and click on **Next: IP addresses > (4)**.
  
-   | **Setting**      | **Value**                                                    |
-   | ---------------- | ------------------------------------------------------------ |
-   | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
-   | Name             | Enter **IpGroup (2)**                                        |
-   | Region           | Select **East US (3)**                                       |
+      | **Setting**      | **Value**                                                    |
+      | ---------------- | ------------------------------------------------------------ |
+      | Subscription     | Select your subscription.                                    |
+      | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
+      | Name             | Enter **IpGroup (2)**                                        |
+      | Region           | Select **East US (3)**                                       |
  
-    ![](images/CAF-lab3-32.png)
+      ![](images/CAF-lab3-32.png)
 
 1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
  
@@ -505,7 +504,6 @@ In this task, you'll create an IP Group in Azure, then use it in a firewall rule
  
     ![](images/marinfral6.png)
  
- 
 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
  
     ![](images/firewall18.png "search gateway")
@@ -519,7 +517,7 @@ In this task, you'll create an IP Group in Azure, then use it in a firewall rule
     - Name: **Ipgroup-rule (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **104 (3)**
-	- Rule collection action: **Allow (4)**
+	 - Rule collection action: **Allow (4)**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (5)**
     - Under **Rules (6)** mention the below details:
       - Name: **URL-Ipgroup**
@@ -554,38 +552,37 @@ In this task, you'll create an Azure Firewall Policy. You'll configure basic set
 
 1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
-   ![](images/a89.png)
+    ![](images/a89.png)
  
 1. On the Firewall Manager page, from the **Overview (1)** tab, select **View Azure Firewall Policies (2)**.
  
-   ![](images/a90.png)
+    ![](images/a90.png)
  
 1. Select **+ Create Azure Firewall Policy**. 
  
- 
 1. On the Azure Firewall Policy page, on the **Basics** tab, enter or select the following information and click on **Next: DNS Settings > (5)**.
  
-   | **Setting**      | **Value**                                                    |
-   | ---------------- | ------------------------------------------------------------ |
-   | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
-   | Name             | Enter **Policy-01 (2)**                                      |
-   | Region           | Select **East US (3)**                                       |
-   | Policy tier      | Select **Standard (4)**                                      |
+      | **Setting**      | **Value**                                                    |
+      | ---------------- | ------------------------------------------------------------ |
+      | Subscription     | Select your subscription.                                    |
+      | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
+      | Name             | Enter **Policy-01 (2)**                                      |
+      | Region           | Select **East US (3)**                                       |
+      | Policy tier      | Select **Standard (4)**                                      |
  
-    ![](images/a91.png)
+      ![](images/a91.png)
  
 1. On the **DNS Settings** tab, leave it as default and click on **Next: TLS inspection >**.
  
-   ![](images/a92.png)
+    ![](images/a92.png)
  
 1. On the **TLS inspection** tab, leave it as default and click on **Next: Rules >**.
  
-   ![](images/a93.png)
+    ![](images/a93.png)
 
 1. On the **Rules** tab, select **+ Add a rule collection**.
 
-   ![](images/a94.png)
+    ![](images/a94.png)
  
 1. On the **Add a rule collection** page, enter or select the following information
  
@@ -615,11 +612,11 @@ In this task, you'll create an Azure Firewall Policy. You'll configure basic set
  
 1. Select **Review + Create**.
  
-   ![](images/a96.png)
+    ![](images/a96.png)
  
 1. Review the Summary page and then select **Create**.
  
-   ![](images/a97.png)
+    ![](images/a97.png)
  
 ### **Task 7.2: Create the firewall hub virtual network**
 
@@ -627,43 +624,42 @@ In this task, you'll create a secured virtual hub in Azure, which includes setti
  
 1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
  
-   ![](images/a89.png)
+    ![](images/a89.png)
  
 1. On the Firewall Manager, from the **Overview (1)** tab, select **View secured virtual hubs (2)**.
  
-   ![](images/a98.png)
+    ![](images/a98.png)
 
 1. On the **Virtual hubs** page, select Create **+ Create new secured virtual hub**.
  
 1. On the secured virtual hub page, on the **Basics** tab, enter or select the following information and click on **Next: Azure Firewall > (8)**.
- 
    
-   | **Setting**                                   | **Value**                                                    |
-   | ----------------------------------------------| ------------------------------------------------------------ |
-   | Subscription                                  | Select your subscription.                                    |
-   | Resource group                                | Select the resource group **JumpVM-rg (1)**                  |
-   | Region                                        | Select **East US (2)**                                       |
-   | Secured virtual hub name                      | Enter **Hub-01 (3)**                                         |
-   | Hub address space                             | Enter **10.2.0.0/16 (4)**                                    |
-   | Choose an existing vWAN or create a new one   | Choose **New vWAN (5)**                                      |
-   | Virtual WAN Name                              | Enter **Vwan-01 (6)**                                        |
-   | Type                                          | Select **Standard (7)**                                      |
+      | **Setting**                                   | **Value**                                                    |
+      | ----------------------------------------------| ------------------------------------------------------------ |
+      | Subscription                                  | Select your subscription.                                    |
+      | Resource group                                | Select the resource group **JumpVM-rg (1)**                  |
+      | Region                                        | Select **East US (2)**                                       |
+      | Secured virtual hub name                      | Enter **Hub-01 (3)**                                         |
+      | Hub address space                             | Enter **10.2.0.0/16 (4)**                                    |
+      | Choose an existing vWAN or create a new one   | Choose **New vWAN (5)**                                      |
+      | Virtual WAN Name                              | Enter **Vwan-01 (6)**                                        |
+      | Type                                          | Select **Standard (7)**                                      |
 
-    ![](images/a99.png)
+      ![](images/a99.png)
 
-1. On the **Azure Firewall** tab,for **Specify number of Public IP addresses** enter **1** and leave the others as default and click on **Next: Security Partner Provider**.
- 
-   ![](images/marinfral7.png)
+   1. On the **Azure Firewall** tab,for **Specify number of Public IP addresses** enter **1** and leave the others as default and click on **Next: Security Partner Provider**.
+   
+       ![](images/marinfral7.png)
  
 1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create**.
  
-   ![](images/a101.png)
+    ![](images/a101.png)
 
 1. Review the **Summary** page and select **Create**.  
  
-   >**Note**: Deployment may take up to 30 minutes to complete.
+    >**Note**: Deployment may take up to 30 minutes to complete.
  
-   ![](images/a102.png)
+    ![](images/a102.png)
  
 ### **Task 7.3: Associate the firewall policy with the virtual hub**
 
@@ -671,23 +667,23 @@ In this task, you'll associate a firewall policy with a secured virtual hub. You
   
 1. From the Azure portal home page, select **Firewall Manager**. On the Firewall Manager page, under **Security**, select **Azure Firewall Policies**.
   
-   ![](images/a103.png)
+    ![](images/a103.png)
  
 1. Select the checkbox for **Policy-01 (1)**, select **Manage associations(2)** and then select **Associate hubs (3)**.
  
-   ![](images/a104.png)
+    ![](images/a104.png)
  
 1. On the **Secure hubs with Azure Firewall Policy** page, Select the checkbox for **Hub-01 (1)** and Select **Add (2)**.
   
-   ![](images/a105.png)
+    ![](images/a105.png)
  
 1. When the policy has been attached, select **Refresh**. The association should be displayed.
    
-   ![](images/a106.png)
+    ![](images/a106.png)
  
 1. To open the firewall policy, click **Policy-01**, then under Settings, select **Secured virtual hubs (1)**. You will see that your policy status is **Secured (2)**.
  
-   ![](images/a108.png)	
+    ![](images/a108.png)	
 	
    <validation step="9f40f014-c785-4918-bde1-dadc915aada2" /> 
 
@@ -695,7 +691,7 @@ In this task, you'll associate a firewall policy with a secured virtual hub. You
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
     > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Summary
 

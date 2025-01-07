@@ -35,8 +35,8 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
    - Subscription: **Leave it as default (1)**.
    - Resource Group: **JumpVM-rg (2)**.
    - Name: Enter **DDoSprotection (3)**.
-   - Region: **<inject key="Region" />**
-   - Click on **Next-Tags**.
+   - Region: **<inject key="Region" />** **(4)**
+   - Click on **Next-Tags (5)**.
  
       ![](images/CAF-lab4-2.png)
  
@@ -96,7 +96,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
     ![](images/CAF-lab4-9.png)
 
-1. Once you click on **Protect**, under **Protection type**, select **IP** and click on **Save**.
+1. Once you click on **Protect**, under **Protection type**, select **IP (1)** and click on **Save (2)**.
 
     ![](images/CAF-lab4-10.png)
 
@@ -136,7 +136,7 @@ In this task, you will explore and visualize the metrics using various kinds of 
       > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
       > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+      > - If you need any assistance, please contact us at cloudlabslabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Summary
 

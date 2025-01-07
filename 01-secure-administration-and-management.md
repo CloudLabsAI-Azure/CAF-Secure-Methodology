@@ -61,7 +61,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
    
 1. Now, you'll be able to **visualize (1)** the topology. You can explore the different connections to understand how different resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
-   ![](images/scafinfra37.jpg "search gateway")
+   ![](images/applisec-lab1-2.png "search gateway")
 
    >**Note:** You can click the **Plus icon** next to the location to view the resource in the visual format.
 
@@ -164,7 +164,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
       ![](images/CAF-03png.png)
    
-1. Under the **Analytics** tab, check the box to **Enable Traffic Analytics (1)**, select **Every 10 mins (2)** under the Traffic Analytics processing interval and click **Review + Create (3)**.
+1. Under the **Analytics** tab, check the box to **Enable Traffic Analytics (1)**, select **Every 10 mins (2)** under the Traffic Analytics processing interval and leave **Subscription (3)** and **Log Analytics Workspace (4)** to default then click **Review + Create (5)**.
 
    ![](images/CAF-(04)png.png)
 
@@ -202,7 +202,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
       > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
       > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+      > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Summary
 
