@@ -11,7 +11,7 @@ Azure Firewall Premium is a next-generation firewall with capabilities that are 
 For more information, see `https://learn.microsoft.com/en-us/azure/firewall/premium-features`
  
 This exercise includes the following tasks:
-
+  - Configure WAF to protect your web application
   - Add firewall diagnostics settings
   - Test IDPS for HTTP traffic
   - Web categories testing
@@ -700,7 +700,7 @@ In this Exercise, you'll configure an Azure Application Gateway with Web Applica
 ## Review
  
 In this exercise you have covered the following:
-  
+   - Configure WAF to protect your web application
    - Added firewall diagnostics settings 
    - Tested IDPS for HTTP traffic
    - Performed Web category testing 

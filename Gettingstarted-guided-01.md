@@ -26,14 +26,23 @@ Participants should have:
 
 ## Architecture
 
-
+The architecture for this lab focuses on securing administration and managing Azure environments effectively. It integrates multiple Azure services to ensure comprehensive monitoring, secure access, and traffic analysis. The flow begins with monitoring network health and visualizing topology, then enforces secure access using a Bastion Host, and finally prepares a robust monitoring setup with Network Watcher and NSG Flow logs. This architecture ensures end-to-end visibility and secure management of the network environment.
 
 ## Architecture Diagram 
 
+![](./images/Lab001.png) 
 
+## Explanation of Components 
 
-## Explanation of Components
+The architecture for this lab involves the following key components: 
 
+- **Network Health:** Azure Monitor provides tools to track and visualize the performance and health of your Azure resources. It collects metrics, logs, and diagnostics to identify bottlenecks, latency, or downtime issues. With custom dashboards and alerts, you can proactively address potential network problems, ensuring seamless operations.  
+
+- **Network Topology:** Azure Network Watcher's topology feature offers a graphical representation of your network resources, such as virtual networks, subnets, and connected devices. This visualization helps you understand your network structure and analyze connectivity issues, providing insights into the dependencies between resources.  
+
+- **Secure Access via Bastion Host:** Azure Bastion is a secure and fully managed service that allows remote access to your virtual machines directly from the Azure portal without exposing RDP or SSH ports over the internet. This eliminates security risks associated with public IP exposure, ensuring safe administration of your VMs.  
+
+- **Prepare the Monitoring Environment and NSG Flow:** NSG Diagnostic Logs offer comprehensive insights into the configuration, rules evaluation, and overall health of Network Security Groups, enabling the identification of misconfigurations and unauthorized access attempts. Additionally, NSG Flow Logs capture detailed traffic data, such as source and destination IPs, ports, and protocols, facilitating network traffic analysis, threat detection, and the investigation of security incidents to ensure secure and efficient network operations.  
 
 ## Getting Started with the Lab 
 

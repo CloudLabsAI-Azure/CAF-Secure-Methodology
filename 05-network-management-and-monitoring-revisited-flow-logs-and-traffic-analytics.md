@@ -8,8 +8,10 @@ Combining flow logs and traffic analytics enables network administrators to gain
 
 This exercise includes the following tasks:
 
-  - NSG Validation
-  - Network Watcher Traffic Analytics to monitor the network
+  - NSG Validation.
+  - Configure WAF to protect your web application.
+  - Add firewall diagnostics settings.
+  - Network Watcher Traffic Analytics to monitor the network.
   
 ## **Task 1: NSG Validation (Optional)**
 
@@ -359,6 +361,8 @@ In this lab, you explored critical aspects of network management and monitoring 
 In this exercise you have covered the following:
   
    - Performed NSG validation.
+   - Configure WAF to protect your web application.
+  - Add firewall diagnostics settings.
    - Monitored the network watcher traffic.
 
 ## You have successfully completed the lab.
