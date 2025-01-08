@@ -4,10 +4,6 @@
 
 ## Overview 
 
-
-
-**Overview**  
-
 Azure DDoS Protection is a comprehensive solution designed to defend cloud-based infrastructures from distributed denial-of-service (DDoS) attacks. By leveraging Azure's global network scale and advanced mitigation techniques, this service ensures the availability and security of your applications against volumetric, protocol, and application-layer attacks. Azure DDoS Protection works seamlessly with your virtual networks and public IP addresses to provide robust security without requiring application changes.  
 
 In this hands-on lab, you will configure Azure DDoS Protection to safeguard your cloud infrastructure. You will set up a DDoS protection plan, secure public IP addresses, and monitor key metrics to identify and mitigate potential threats. Through these tasks, you'll gain practical experience in protecting virtual networks and public-facing resources, ensuring resilience and high availability for your applications.
