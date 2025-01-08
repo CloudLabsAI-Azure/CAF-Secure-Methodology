@@ -1,8 +1,6 @@
 # Getting Started with Your Microsoft Azure Infrastructure and Application Security Workshop
 
-### Overall Estimated Duration : 60 Minutes
-
-## Overview 
+### Overall Estimated Duration : 2 hours
 
 ## Overview
 
