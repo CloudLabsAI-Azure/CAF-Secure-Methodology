@@ -19,8 +19,8 @@ Participants should have:
 - **Familiarity with Azure Firewall and Web Application Firewall (WAF)**: Basic understanding of Azure Firewall and WAF features, including their purpose and functionality for network security.
 - **Basic Understanding of Firewall Rules and Policies**: Familiarity with how to create and manage firewall rules and security policies in Azure to control network traffic.
 - **Experience with Diagnostic Settings and Logs**: Knowledge of how to configure diagnostic settings and view logs in Azure to monitor and troubleshoot resources effectively.
-6. **Experience in Network Configuration**: Basic understanding of configuring route tables, public IP addresses, and Network Address Translation (NAT) rules in Azure.
-7. **Basic Knowledge of Web Application Security**: Understanding the fundamentals of web application security and the role of firewall rules in protecting applications from cyber threats.
+- **Experience in Network Configuration**: Basic understanding of configuring route tables, public IP addresses, and Network Address Translation (NAT) rules in Azure.
+- **Basic Knowledge of Web Application Security**: Understanding the fundamentals of web application security and the role of firewall rules in protecting applications from cyber threats.
 
 ## Architecture
 
