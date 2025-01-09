@@ -4,11 +4,11 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/SachithaBS/CAF-Secure-Methodology/main/Gettingstarted-guided-03.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Secure-Methodology/main/Gettingstarted-guided-03.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/SachithaBS/CAF-Secure-Methodology/main/03-secure-infrastructure-with-azure-firewall-premium.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Secure-Methodology/main/03-secure-infrastructure-with-azure-firewall-premium.md",
         "Order": 2
       }      
      
