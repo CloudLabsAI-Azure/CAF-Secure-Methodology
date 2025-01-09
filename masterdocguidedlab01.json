@@ -4,11 +4,11 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/SachithaBS/CAF-Secure-Methodology/main/Gettingstarted-guided-01.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Secure-Methodology/main/Gettingstarted-guided-01.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/SachithaBS/CAF-Secure-Methodology/main/01-secure-administration-and-management.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Secure-Methodology/main/01-secure-administration-and-management.md",
         "Order": 2
       }      
      
