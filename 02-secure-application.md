@@ -174,14 +174,14 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
 1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2.
    
    >**Note**: Your browsing URL value should look like ```http://20.185.224.102```
-
-     ![ss](/images/image307.png)
-
+   
+       ![ss](/images/image307.png)
+   
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
-
+   
    >**Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
     
-     ![ss](/images1/attack.png)
+        ![ss](/images1/attack.png)
   
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
