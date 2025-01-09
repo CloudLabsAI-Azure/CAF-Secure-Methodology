@@ -310,7 +310,7 @@ In this task, you'll be verifying the deployment and functionality of Azure Fron
 
      ![](images/CAF-lab2-18.png)
 
-1. Switch back to your browser and select Refresh. You should see the same information pages.
+1. Switch back to your browser and select Refresh. You should see the same information page.
 
      ![](images/a67.png)
     
@@ -386,7 +386,7 @@ In this task, you'll be creating and testing a rate limit rule in Azure Front Do
 
      ![](images/a178.png)
 
-   >**Note**: It may take a few minutes for the rate limit test policy to become active. Feel free to move on and come back later to test.
+     >**Note**: It may take a few minutes for the rate limit test policy to become active. Feel free to move on and come back later to test.
 
 1. After getting the response from the website navigate back to the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
