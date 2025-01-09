@@ -164,14 +164,13 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
       > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-
  ## **Task 4: Attack simulation** 
      
 In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-site scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
 
 Since we are already blocking the Public IP of the Lab VM from accessing the web application. You will want to perform this test from your own machine’s browser. You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
 
-1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2.
+1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2..
    
    >**Note**: Your browsing URL value should look like ```http://20.185.224.102```
    
