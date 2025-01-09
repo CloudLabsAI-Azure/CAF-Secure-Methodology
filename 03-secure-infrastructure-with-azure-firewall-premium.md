@@ -337,7 +337,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **firewallpolicy**.
  
-   ![](images/firewall18.png "search gateway")
+     ![](images/firewall18.png "search gateway")
  
 1. Select **TLS inspection (1)** under the **Settings** tab and enter the below details under the **Key vault** tab:
  
@@ -517,7 +517,7 @@ In this task, you'll create an IP Group in Azure, then use it in a firewall rule
     - Name: **Ipgroup-rule (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **104 (3)**
-	 - Rule collection action: **Allow (4)**
+    - Rule collection action: **Allow (4)**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (5)**
     - Under **Rules (6)** mention the below details:
       - Name: **URL-Ipgroup**
