@@ -170,17 +170,13 @@ In this task, you will be testing your application for security and performing s
 
 Since we are already blocking the Public IP of the Lab VM from accessing the web application. You will want to perform this test from your own machine’s browser. You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
 
-1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2..
-   
-   >**Note**: Your browsing URL value should look like ```http://20.185.224.102```
-   
-       ![ss](/images/image307.png)
+1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2.
+     >**Note**: Your browsing URL value should look like ```http://20.185.224.102```
+     ![ss](/images/image307.png)
    
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
-   
-   >**Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
-    
-        ![ss](/images1/attack.png)
+     >**Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
+     ![ss](/images1/attack.png)
   
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
@@ -214,15 +210,15 @@ In this task, you're setting up an Azure Front Door instance to improve applicat
    
     ![](images/CAF-lab2-14.png)
   
-1. Select **+ Create** to create a Front Door and CDN profile.
+2. Select **+ Create** to create a Front Door and CDN profile.
   
     ![](images/CAF-lab2-15.png)
 
-1. On the **Compare offerings** page, select **Azure Front Door (1)** and **Custom create (2)**. Then select **Continue to create a Front Door (3)**.
+3. On the **Compare offerings** page, select **Azure Front Door (1)** and **Custom create (2)**. Then select **Continue to create a Front Door (3)**.
 
     ![](images/a55-1.png)
   
-1. On the **Basics** tab, enter or select the following information, and then select **Next: Secrets (5)**.
+4. On the **Basics** tab, enter or select the following information, and then select **Next: Secrets (5)**.
   
    | **Setting**                 | **Value**                                                     |
    | ----------------------------| ------------------------------------------------------------  |
@@ -232,59 +228,59 @@ In this task, you're setting up an Azure Front Door instance to improve applicat
    | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
    | Tier                        | Select **Premium (4)**                                            |
  
-     ![](images/a152.png)
+    ![](images/a152.png)
   
-1. On the **Secrets**, Leave it default as same and click on **Next: Endpoint >**.
+5. On the **Secrets**, Leave it default as same and click on **Next: Endpoint >**.
   
      ![](images/a56.png)
   
-1. In the **Endpoint** tab, select **Add an endpoint (1)** and give your endpoint name as **contoso-frontend (2)**. Select **Add** to add the endpoint.
+6. In the **Endpoint** tab, select **Add an endpoint (1)** and give your endpoint name as **contoso-frontend (2)**. Select **Add** to add the endpoint.
   
      ![](images/a64.png)
   
-1. Next, select **+ Add a route** to configure routing to your Web App origin.
+7. Next, select **+ Add a route** to configure routing to your Web App origin.
   
      ![](images/a57.png)
   
-1. On the **Add a route** page, enter name as **myRoute (1)** and click on **Add a new origin group (2)**.
+8. On the **Add a route** page, enter name as **myRoute (1)** and click on **Add a new origin group (2)**.
   
      ![](images/a126.png)
   
-1. On the **Add an origin group** pane, enter name as **myOriginGroup (1)** and click on **+ Add an origin (2)**.
+9. On the **Add an origin group** pane, enter name as **myOriginGroup (1)** and click on **+ Add an origin (2)**.
   
      ![](images/a127.png)
   
-1. To add the first origin, enter **OWASP-Main (1)** as the name, **App services (2)** as the origin type, and select **owasp-mainjump<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
+10. To add the first origin, enter **OWASP-Main (1)** as the name, **App services (2)** as the origin type, and select **owasp-mainjump<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
 
      ![](images/a130.png)
 
-1. To add the Second origin, enter **OWASP-Stage (1)** as the name, **App services (2)** as the origin type, and select **owasp-stage<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
+11. To add the Second origin, enter **OWASP-Stage (1)** as the name, **App services (2)** as the origin type, and select **owasp-stage<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
 
      ![](images/a131.png)
   
-1. Click on **Add**.
+12. Click on **Add**.
 
      ![](images/a132.png)
   
-1. Again select **Add** to add a route.
+13. Again select **Add** to add a route.
   
      ![](images/a133.png)
   
-1. Select **+ Add a policy** to apply a Web Application Firewall (WAF) policy to one or more domains in the Azure Front Door profile.
+14. Select **+ Add a policy** to apply a Web Application Firewall (WAF) policy to one or more domains in the Azure Front Door profile.
   
      ![](images/a59.png)
   
-1. On the **Add security policy** page, enter a name **mySecurityPolicy (1)**. Then select domains you want to associate the policy with. For WAF Policy, select **Create New** to create a new policy. Enter name of policy is **myWAFPolicy (2)**. Select **Save (3)** to add the security policy to the endpoint configuration.
+15. On the **Add security policy** page, enter a name **mySecurityPolicy (1)**. Then select domains you want to associate the policy with. For WAF Policy, select **Create New** to create a new policy. Enter name of policy is **myWAFPolicy (2)**. Select **Save (3)** to add the security policy to the endpoint configuration.
   
      ![](images/a60.png)
   
-1. Select **Review + Create**, review the Summary, and then select **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
+16. Select **Review + Create**, review the Summary, and then select **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
   
      ![](images/a61.png)
     
      ![](images/a65.png)
 
-1. Once deployment is succeeded click on **Go to resouce**.
+17. Once deployment is succeeded click on **Go to resouce**.
      
 ### **Task 5.2: View Azure Front Door in action**
 
@@ -300,7 +296,7 @@ In this task, you'll be verifying the deployment and functionality of Azure Fron
   
      ![](images/a67.png)
    
-   >**Note: The application might take around 5 minutes to reflect, you can continue with the next task come back and refresh the page to view the changes**
+     >**Note: The application might take around 5 minutes to reflect, you can continue with the next task come back and refresh the page to view the changes**
    
 1. To test instant global failover in action, try the following steps **(Step 3 to Step 8 are optional)**:
 
