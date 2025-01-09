@@ -4,11 +4,11 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Secure-Methodology/main/Gettingstarted-guided-04.md",
+        "RawFilePath": "https://raw.githubusercontent.com/SachithaBS/CAF-Secure-Methodology/main/Gettingstarted-guided-04.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Secure-Methodology/main/04-protecting-infrastructure-with-azure-ddos-protection-plans.md",
+        "RawFilePath": "https://raw.githubusercontent.com/SachithaBS/CAF-Secure-Methodology/main/04-protecting-infrastructure-with-azure-ddos-protection-plans.md",
         "Order": 2
       }      
      
