@@ -4,11 +4,11 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Secure-Methodology/main/Gettingstarted-guided-05.md",
+        "RawFilePath": "https://raw.githubusercontent.com/SachithaBS/CAF-Secure-Methodology/main/Gettingstarted-guided-05.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/CAF-Secure-Methodology/main/05-network-management-and-monitoring-revisited-flow-logs-and-traffic-analytics.md",
+        "RawFilePath": "https://raw.githubusercontent.com/SachithaBS/CAF-Secure-Methodology/main/05-network-management-and-monitoring-revisited-flow-logs-and-traffic-analytics.md",
         "Order": 2
       }      
      
