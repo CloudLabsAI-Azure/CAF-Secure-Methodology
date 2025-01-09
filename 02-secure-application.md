@@ -222,15 +222,15 @@ In this task, you're setting up an Azure Front Door instance to improve applicat
   
 4. On the **Basics** tab, enter or select the following information, and then select **Next: Secrets (5)**.
   
-   | **Setting**                 | **Value**                                                     |
-   | ----------------------------| ------------------------------------------------------------  |
-   | Subscription                | Select your subscription (1).                                     |
-   | Resource group              | Select the resource group **JumpVM-rg (2)**                       |
-   | Resource group location     | Default same as resource group                                |
-   | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
-   | Tier                        | Select **Premium (4)**                                            |
+     | **Setting**                 | **Value**                                                     |
+     | ----------------------------| ------------------------------------------------------------  |
+     | Subscription                | Select your subscription (1).                                     |
+     | Resource group              | Select the resource group **JumpVM-rg (2)**                       |
+     | Resource group location     | Default same as resource group                                |
+     | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
+     | Tier                        | Select **Premium (4)**                                            |
  
-    ![](images/a152.png)
+      ![](images/a152.png)
   
 5. On the **Secrets**, Leave it default as same and click on **Next: Endpoint >**.
   
@@ -357,14 +357,13 @@ In this task, you'll be creating and testing a rate limit rule in Azure Front Do
      ![](images/a75.png)
   
 1. On the **Add custom rule** blade, enter the following details
- 
-   - Custom rule name: Enter **rateLimitRule (1)**.
-   - Rule type: Select **Rate limit (2)**
-   - Priority: Enter **1 (3)**
-   - Rate limit duration: Select **1 minute (4)**
-   - Rate limit threshold (requests): Enter **1 (5)**
+     - Custom rule name: Enter **rateLimitRule (1)**.
+     - Rule type: Select **Rate limit (2)**
+     - Priority: Enter **1 (3)**
+     - Rate limit duration: Select **1 minute (4)**
+     - Rate limit threshold (requests): Enter **1 (5)**
   
-        ![](images/a176.png)
+       ![](images/a176.png)
  
 1. In Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string `contoso` and `azurefd`:
   
