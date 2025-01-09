@@ -172,11 +172,13 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
 
 1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2.
      >**Note**: Your browsing URL value should look like ```http://20.185.224.102```
-     ![ss](/images/image307.png)
+
+      ![ss](/images/image307.png)
    
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
      >**Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
-     ![ss](/images1/attack.png)
+     
+       ![ss](/images1/attack.png)
   
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
@@ -308,11 +310,11 @@ In this task, you'll be verifying the deployment and functionality of Azure Fron
 
      ![](images/CAF-lab2-18.png)
 
-1. Switch back to your browser and select Refresh. You should see the same information page.
+1. Switch back to your browser and select Refresh. You should see the same information pages.
 
      ![](images/a67.png)
     
-   >**Note: There may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
+      >**Note: There may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
   
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
   
