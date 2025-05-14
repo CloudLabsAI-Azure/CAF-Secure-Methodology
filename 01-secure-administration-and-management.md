@@ -1,6 +1,6 @@
-# Lab 01: Secure administration and management
+# Exercise 1: Secure administration and management
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 120 minutes
 
 ## Overview
 
@@ -121,7 +121,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
       ![](images1/bastionconnect.png)
 
       >**Note:** Click on **Allow** Pop-up.
-      
+
        ![](images1/22-04-2024(1).png)
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
