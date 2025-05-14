@@ -1,4 +1,4 @@
-# Exercise 3: Secure application 
+# Exercise 2: Secure application 
 
 ### Estimated Duration: 120 minutes
 
@@ -36,7 +36,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
       
  1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
 
-     ![](/images1/backendpools.png)
+     ![](images1/backendpools.png)
      
  1. On the **Edit backend pool** page, follow the below-mentioned instructions:
 
@@ -44,7 +44,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
     - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
     - Click on **Save (3)**.
 
-      ![](/images1/editbackendpool.png)
+      ![](images1/editbackendpool.png)
     
 1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
 
@@ -54,11 +54,11 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
  
  1. Click on **firewallpolicy** under the Web Application Firewall page and click on **Associated application gateways** under the **Settings** tab from the Application Gateway WAF policy page.
 
-     ![](/images1/firewallpolicy.png)
+     ![](images1/firewallpolicy.png)
      
  1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
 
-    ![](/images1/addappilcatiogateway.png)
+    ![](images1/addappilcatiogateway.png)
     
  1. Under the **Associate an application gateway** page, follow the below instructions:
 
@@ -90,7 +90,7 @@ In this task, you will access the application by going through the Application G
           
 1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** into a new browser tab that you copied in step 4.
 
-   ![ss](/images/image307.png)
+   ![ss](images/image307.png)
        
 
  ## Task 3: Application Gateway WAF Custom Rule to block IP
@@ -137,17 +137,17 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
-   ![rp](/images1/rgappgateway.png)
+   ![rp](images1/rgappgateway.png)
     
 1. Under the **Application gateway** page, follow the below details:
      - Select **Web application firewall (1)** under **Settings**.    
      - Click on **firewallpolicy** under **Associated web application firewall policy (2)**.  
   
-         ![config](/images1/webappfirewall.png)
+         ![config](images1/webappfirewall.png)
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
  
-    ![](/images1/switchtoprevention.png)
+    ![](images1/switchtoprevention.png)
 
 1. Navigate back to the browser tab where you accessed the application gateway website and **refresh** the tab; you will no longer be able to see the website.
 
@@ -178,31 +178,31 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
    
    >**Note**: Your browsing URL value should look like ```http://20.185.224.102```
 
-    ![ss](/images/image307.png)
+    ![ss](images/image307.png)
 
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
   
    >**Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
     
-   ![ss](/images1/attack.png)
+   ![ss](images1/attack.png)
   
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
-   ![rp](/images1/rgappgateway.png)
+   ![rp](images1/rgappgateway.png)
     
 1. Under the **Application gateway** page, follow the below details:
      - Select **Web application firewall (1)** under **Settings**.    
      - Click on **firewallpolicy** under **Associated web application firewall policy (2)**.  
   
-         ![config](/images1/webappfirewall.png)
+         ![config](images1/webappfirewall.png)
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
  
-    ![](/images1/switchtoprevention.png)
+    ![](images1/switchtoprevention.png)
     
 1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the **403 Forbidden error**.
     
-    ![server error](/images1/403.png)
+    ![server error](images1/403.png)
 
 ## Task 5: Rate Limiting using Azure Front Door
   
@@ -382,7 +382,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Select **Switch to prevention mode** under **Overview** blade.
 
-   ![](./images/preventionmode.png)
+   ![](images/preventionmode.png)
   
 1. On the **myWAFPolicy** page, under settings, click on **Policy settings (1)** and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
   
