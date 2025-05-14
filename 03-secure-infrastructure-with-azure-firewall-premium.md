@@ -1,4 +1,4 @@
-# Lab 03: Secure Infrastructure with Azure Firewall Premium
+# Exercise 4: Secure Infrastructure with Azure Firewall Premium
 
 ### Estimated Duration: 120 minutes
 
@@ -211,7 +211,16 @@ In this task, you will test IDPS for HTTP traffic.
     `curl: (56) Recv failure: Connection was reset`
  
      ![](images/firewall14.png "search gateway")
- 
+
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="e5f9dd50-2ebf-44f8-bcc0-09543bd58111" />
+
+
 ## Task 3: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
@@ -626,7 +635,16 @@ In this task, you will create an application rule to allow access to sports webs
 1. To open the firewall policy, click **Policy-01**, then under Settings, select **Secured virtual hubs (1)**. You will see that your policy status is **Secured (2)**.
  
    ![](images/a108.png)	
-	
+
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="659469d6-4b83-467d-a4ce-83adf7dc61ba" />
+
+
 ## Summary
  
 In this lab you have covered the following:
@@ -638,4 +656,4 @@ In this lab you have covered the following:
 - Performed IP groups
 - Performed Azure Firewall Policies with the Firewall Manager
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.
