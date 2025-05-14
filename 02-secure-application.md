@@ -1,4 +1,4 @@
-# Lab 02: Secure application  
+# Exercise 3: Secure application 
 
 ### Estimated Duration: 120 minutes
 
@@ -158,6 +158,15 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 1. Navigate back to **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
    ![](images/a161.png "select gateway")
+
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="09e5a606-3e3a-4e3a-bc6b-93380fcde756" />
+
 
  ## Task 4: Attack simulation
      
@@ -389,6 +398,13 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ![](images/a161.png "select gateway")
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="cc732f3b-1c39-4339-b1c4-b43b2b31b193" />
+
 ## Summary
  
 In this lab you have covered the following:
@@ -399,4 +415,4 @@ In this lab you have covered the following:
 - Performed Attack simulation
 - Performed Rate Limiting using Azure Front Door
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.
