@@ -1,4 +1,4 @@
-# Exercise 4: Secure Infrastructure with Azure Firewall Premium
+# Exercise 3: Secure Infrastructure with Azure Firewall Premium
 
 ### Estimated Duration: 120 minutes
 
@@ -107,23 +107,23 @@ In this task, you will test IDPS for HTTP traffic.
     
 1. Click on the **AzureFirewall**.
 
-   ![firewall](/images1/azurefirewall.png)
+   ![firewall](images1/azurefirewall.png)
    
 1. Select **Firewall Public IP** from the Overview tab.
 
-    ![pip](/images1/firewallIP.png)
+    ![pip](images1/firewallIP.png)
     
 1. Copy the **Public IP address** and save it to Notepad for later use.
 
-    ![ip](/images1/firewallip1.png)  
+    ![ip](images1/firewallip1.png)  
      
 1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
-   ![FM](/images1/firewallmanager.png)
+   ![FM](images1/firewallmanager.png)
     
 1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
 
-   ![policy](/images1/selectfirewallpolicy.png)
+   ![policy](images1/selectfirewallpolicy.png)
    
 1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
 
@@ -148,7 +148,7 @@ In this task, you will test IDPS for HTTP traffic.
      
      - Click on **Add (6)**.
 
-       ![rule](/images1/rulecollection.png)
+       ![rule](images1/rulecollection.png)
 1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open the **Command Prompt (2)** window.
 
    ![](images/firewall9.png "search gateway")
