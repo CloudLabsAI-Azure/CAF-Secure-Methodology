@@ -1,6 +1,6 @@
-# Lab 01: Secure administration and management
+# Exercise 1: Secure administration and management
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 120 minutes
 
 ## Overview
 
@@ -121,11 +121,19 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
       ![](images1/bastionconnect.png)
 
       >**Note:** Click on **Allow** Pop-up.
+
        ![](images1/22-04-2024(1).png)
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
     ![](images1/allowpopup.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="f287d359-99b1-4b6c-8519-647983bf4a68" />
 
 ## Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
 
@@ -213,4 +221,4 @@ In this lab you have covered the following:
 - Secured Access via Bastion Host
 - Configured the Network Watcher monitoring environment and NSG Flow
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.

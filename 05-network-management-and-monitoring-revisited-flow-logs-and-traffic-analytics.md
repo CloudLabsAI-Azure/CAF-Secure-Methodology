@@ -1,4 +1,4 @@
-# Lab 05: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
+# Exercise 5: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
 ### Estimated Duration: 60 minutes
 
@@ -90,32 +90,32 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
       > **Note**: You will see that your website is running.
  
-      ![](/images/image307.png)
+      ![](images/image307.png)
 
 1. Navigate to the resource group **JumpVM-rg**, and from the **Overview (1)** tab select the Firewall.
 
-   ![loadbalancer](/images1/firewall.png)
+   ![loadbalancer](images1/firewall.png)
    
 1. Select **Firewall Public IP** from the Overview tab.
 
-    ![pip](/images1/firewallIP.png)
+    ![pip](images1/firewallIP.png)
     
 1. Copy the Public Ip and save it in a text editor.
 
-    ![ip](/images1/firewallip1.png)
+    ![ip](images1/firewallip1.png)
       
 1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
 
-   ![pip](/images/a32.png)
+   ![pip](images/a32.png)
 
 1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Monitoring** from the options on the left side of the Network Watcher blade.
 
-   ![](./images/traficanayltics.png)
+   ![](images/traficanayltics.png)
 
       
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
-   ![time interval](./images/flows.png)
+   ![time interval](images/flows.png)
    
    > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
    >
@@ -125,26 +125,26 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
       
 1. Now, you can observe the total number of network traffic flows from **Traffic Visualization**.
 
-    ![traffic visualization](/images1/traffic%20visualisation.png)
+    ![traffic visualization](images1/traffic%20visualisation.png)
 
     > **Note: The dashboard may take up to 60-90 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
            
      
 1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
-    ![env](./images/envir.png)
+    ![env](images/envir.png)
       
 1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating with it.
 
-    ![map](/images1/viewmap.png)
+    ![map](images1/viewmap.png)
      
 1. In the **Traffic Analytics Geo Map View** page, click on the **Green** icon which indicates the Azure region, and observe the resources deployed under the region, to explore more select **More details**.
 
-    ![md](/images1/moredetails.png)
+    ![md](images1/moredetails.png)
       
 1. Under the **More Insights** blade, scroll down and explore traffic distribution for deployments of the East US region.
 
-    ![comm](/images1/moreinsights.png)
+    ![comm](images1/moreinsights.png)
      
 1. To close the **Traffic Analytics Geo Map View**, click on the cross at the top right corner.
 
@@ -154,19 +154,19 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
       
 1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across the host, subnet, VNet, and VMSS.
 
-    ![tr](/images1/totaltraffic.png)
+    ![tr](images1/totaltraffic.png)
      
 1. To view the analytics of traffic flows across the host, select **IP (1)**, then select **See all (2)** from **Traffic Distribution**.
 
-    ![td](/images1/ipsee.png)
+    ![td](images1/ipsee.png)
     
 1. You can observe the graph of the **Time trending chart for the top 5 talking IPs** from the **Traffic distribution across the top IPs** page.
 
-    ![see more](/images1/trafficdistri.png)
+    ![see more](images1/trafficdistri.png)
     
 1. Under **Details of top 5 talking IPs**, select VM IP to explore more about traffic distribution.
 
-     ![see more](/images1/top5.png)
+     ![see more](images1/top5.png)
      
 1. Close the **Traffic distribution across top IPs** by clicking the **cross (X) icon** at the top-left corner of the page.
     
@@ -174,11 +174,11 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
 1. Now scroll down to **Application ports**, to view analytics for application ports utilized across your environment and select **See all**.
 
-    ![ap](/images1/applicationports.png)
+    ![ap](images1/applicationports.png)
      
 1. From the **Most frequent L7 protocols** page, you can explore more about the ports and their ranging.
 
-    ![l7](/images1/l7proto.png)
+    ![l7](images1/l7proto.png)
 
 ## Summary
  

@@ -1,4 +1,4 @@
-# Lab 03: Secure Infrastructure with Azure Firewall Premium
+# Exercise 3: Secure Infrastructure with Azure Firewall Premium
 
 ### Estimated Duration: 120 minutes
 
@@ -107,23 +107,23 @@ In this task, you will test IDPS for HTTP traffic.
     
 1. Click on the **AzureFirewall**.
 
-   ![firewall](/images1/azurefirewall.png)
+   ![firewall](images1/azurefirewall.png)
    
 1. Select **Firewall Public IP** from the Overview tab.
 
-    ![pip](/images1/firewallIP.png)
+    ![pip](images1/firewallIP.png)
     
 1. Copy the **Public IP address** and save it to Notepad for later use.
 
-    ![ip](/images1/firewallip1.png)  
+    ![ip](images1/firewallip1.png)  
      
 1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
-   ![FM](/images1/firewallmanager.png)
+   ![FM](images1/firewallmanager.png)
     
 1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
 
-   ![policy](/images1/selectfirewallpolicy.png)
+   ![policy](images1/selectfirewallpolicy.png)
    
 1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
 
@@ -148,7 +148,7 @@ In this task, you will test IDPS for HTTP traffic.
      
      - Click on **Add (6)**.
 
-       ![rule](/images1/rulecollection.png)
+       ![rule](images1/rulecollection.png)
 1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open the **Command Prompt (2)** window.
 
    ![](images/firewall9.png "search gateway")
@@ -211,7 +211,16 @@ In this task, you will test IDPS for HTTP traffic.
     `curl: (56) Recv failure: Connection was reset`
  
      ![](images/firewall14.png "search gateway")
- 
+
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="e5f9dd50-2ebf-44f8-bcc0-09543bd58111" />
+
+
 ## Task 3: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
@@ -626,7 +635,16 @@ In this task, you will create an application rule to allow access to sports webs
 1. To open the firewall policy, click **Policy-01**, then under Settings, select **Secured virtual hubs (1)**. You will see that your policy status is **Secured (2)**.
  
    ![](images/a108.png)	
-	
+
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="659469d6-4b83-467d-a4ce-83adf7dc61ba" />
+
+
 ## Summary
  
 In this lab you have covered the following:
@@ -638,4 +656,4 @@ In this lab you have covered the following:
 - Performed IP groups
 - Performed Azure Firewall Policies with the Firewall Manager
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.
