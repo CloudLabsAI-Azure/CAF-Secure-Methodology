@@ -67,7 +67,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](./images/infrasec.png)
 
-1. Under the **Select Scope** choose the **All subscriptions selected** (1) for Subscriptions, **All resource groups selected** (2) for Resource Groups, and **East US** (3) for the Locations and then click on **Save**.
+1. Under the **Select Scope** choose the **All subscriptions selected** **(1)** for Subscriptions, **All resource groups selected** **(2)** for Resource Groups, and **<inject key="Region" />** **(3)** for the Locations and then click on **Save**.
 
    ![](./images/selectscope.png)
 
