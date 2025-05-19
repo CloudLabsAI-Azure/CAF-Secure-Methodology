@@ -65,7 +65,7 @@ Welcome to your Infrastructure Security Workshop! We've prepared a seamless envi
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-   ![](./images/GS6.png)
+   ![](./images/environment.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -75,19 +75,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-   ![](./images/GS17.png)
+   ![](./images/GS17-1.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](./images/GS8.png)
+   ![](./images/GS8-1.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-  ![](./images/GS5.png)
+  ![](./images/GS5-1.png)
  
 ## Let's Get Started with Azure Portal
  
@@ -111,9 +111,47 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    ![](./images/GS9.png)
 
-5. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+5. If you see the pop-up **Action Required**, leave it as default and then click on **Ask later**. Next, on the **Help us protect your account** pop-up click on **Skip for now** (14 days until this is required), and then select **Next**.
 
-6. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+   ![](images/skip-for-now.png)
+
+   >**NOTE:** Do not enable MFA. Select **Ask Later**.
+
+6. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
+7. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+
+8. Please note that for few exercises, we will be logging into the virtual machines via Bastion. To use the copy-paste functionality, click the arrow to copy the content to your clipboard, and then paste it as needed.
+
+   ![](images/build5.png)
+
+   ![](images/build6.png)
+
+## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
+
+1. At the **"More information required"** prompt, select **Next**.
+
+1. On the **"Keep your account secure"** page, select **Next** twice.
+
+1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
+
+   - Open **Google Play Store** (Android) or **App Store** (iOS).
+   - Search for **Microsoft Authenticator** and tap **Install**.
+   - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
+
+1. A **QR code** will be displayed on your computer screen.
+
+1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
+
+1. After scanning, click **Next** to proceed.
+
+1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
+       
+1. If prompted to stay signed in, you can click **No**.
+
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+ 
+1. Now, click on the **Next** from the lower right corner to move to the next page.
 
 ## Support Contact
  
