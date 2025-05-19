@@ -29,7 +29,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
    ![](images/a19.png "search gateway")
  
-1. From the sidebar, select **Networking** from Settings.
+1. From the sidebar, select **Network settings** under Networking tab.
 
    ![](images/networksettings.png)
 
@@ -37,7 +37,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
    ![](images/a21.png "search gateway")
    
-1. On the JumpBox VM, in the search bar, **Search** for **RDP** and **select** the **Remote Desktop Connection** app.
+1. On the JumpBox VM, in the search bar, **Search** for **RDP (2)** and select **Remote Desktop Connection (3)** app.
    
    ![](images/a24.png)
 
@@ -92,7 +92,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
       ![](images/image307.png)
 
-1. Navigate to the resource group **JumpVM-rg**, and from the **Overview (1)** tab select the Firewall.
+1. Navigate to the resource group **JumpVM-rg**, and from the **Overview** tab, select **AzureFirewall**.
 
    ![loadbalancer](images1/firewall.png)
    
@@ -104,11 +104,11 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![ip](images1/firewallip1.png)
       
-1. Navigate to the Firewall's public IP address and generate some traffic by refreshing the browser.
+1. Navigate to the Firewall's public IP address and refresh the page multiple times to generate some traffic.
 
    ![pip](images/a32.png)
 
-1. Navigate back to the Network Watcher and select **Traffic Analytics**, under **Monitoring** from the options on the left side of the Network Watcher blade.
+1. Navigate back to the Network Watcher and select **Traffic Analytics** under **Monitoring** from the options on the left side of the Network Watcher blade.
 
    ![](images/traficanayltics.png)
 
@@ -121,16 +121,16 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
    >
    > **It may take upto 30 to 60 minutes to click on Meanwhile, click here to see just resource data and perform the above step option to come up**.
 
-      ![](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Solutions/raw/main/media/timeinterval.png)
+      ![](images1/timeinterval-1.png)
       
-1. Now, you can observe the total number of network traffic flows from **Traffic Visualization**.
+1. Now, you can observe the total number of network traffic flows from **Traffic Visualization** present in **Traffic Analytics** page.
 
     ![traffic visualization](images1/traffic%20visualisation.png)
 
     > **Note: The dashboard may take up to 60-90 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
            
      
-1. Under **Traffic Analytics** Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
+1. Under **Traffic Analytics**, Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
     ![env](images/envir.png)
       
@@ -148,7 +148,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
      
 1. To close the **Traffic Analytics Geo Map View**, click on the cross at the top right corner.
 
-     ![close](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/close.png?raw=true)
+     ![close](images1/close-1.png)
       
 1. Close the **Ports receiving traffic from the Internet** page by clicking the **Cross (X) icon** from the top right corner.
       
@@ -188,23 +188,4 @@ In this lab you have covered the following:
 - Monitored the network watcher traffic.
 
 ### You have successfully completed the lab
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
