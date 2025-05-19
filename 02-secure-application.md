@@ -44,23 +44,25 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
     - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
     - Click on **Save (3)**.
 
-      ![](images1/editbackendpool.png)
+      ![](images/editbackendpool-1.png)
     
 1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
 
- 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (2)**.
+   ![](images/editbackendpool-succeeded.png)
 
-      ![](images1/firewallpolicies.png)
+1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (2)**.
+
+   ![](images1/firewallpolicies.png)
  
- 1. Click on **firewallpolicy** under the Web Application Firewall page and click on **Associated application gateways** under the **Settings** tab from the Application Gateway WAF policy page.
+1. Click on **firewallpolicy** under the Web Application Firewall page and click on **Associated application gateways** under the **Settings** tab from the Application Gateway WAF policy page.
 
-     ![](images1/firewallpolicy.png)
+   ![](images1/firewallpolicy.png)
      
- 1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
+1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
 
-    ![](images1/addappilcatiogateway.png)
+   ![](images1/addappilcatiogateway.png)
     
- 1. Under the **Associate an application gateway** page, follow the below instructions:
+1. Under the **Associate an application gateway** page, follow the below instructions:
 
     - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop down. 
     - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuration (2)**.
@@ -68,7 +70,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
       ![](images1/associateappgateway.png)
     
- ## Task 2: Accessing your application using application gateway
+## Task 2: Accessing your application using application gateway
  
 In this task, you will access the application by going through the Application Gateway that you just configured.
 
@@ -116,16 +118,17 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
  1. On the WAF page, select your **firewallpolicy (1)**, and under settings, click on **Custom rules (2)** and after that click on **+ Add custom rule (3)**.
  
-    ![](images/image303.png "select gateway")
+    ![](images/image303-1.png "select gateway")
  
  1. On the **Add custom rule** blade, enter the following details
  
     - Custom rule name: **WAFcustomrule (1)**
-    - Priority: Enter **1 (2)**.
-    - IP address or range: Enter **Public IP address (3)** of the labvm that is copied above in step 3.
-    - Click on **Add (4)**.
+    - Rule type: Select **Match (2)**
+    - Priority: Enter **1 (3)**.
+    - IP address or range: Enter **Public IP address (4)** of the labvm that is copied above in step 3.
+    - Click on **Add (5)**.
  
-      ![](images/a159.png "select gateway")
+      ![](images/a159-1.png "select gateway")
  
 1. Click on **Save**.
  
@@ -228,13 +231,13 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 1. On the **Basics** tab, enter or select the following information, and then select **Next: Secret (5)**.
   
-   | **Setting**                 | **Value**                                                     |
-   | ----------------------------| ------------------------------------------------------------  |
-   | Subscription                | Select your subscription (1).                                     |
-   | Resource group              | Select the resource group **JumpVM-rg (2)**                       |
-   | Resource group location     | Default same as resource group                                |
-   | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
-   | Tier                        | Select **Premium (4)**                                            |
+    | **Setting**                 | **Value**                                                     |
+    | ----------------------------| ------------------------------------------------------------  |
+    | Subscription                | Select your subscription (1).                                     |
+    | Resource group              | Select the resource group **JumpVM-rg (2)**                       |
+    | Resource group location     | Default same as resource group                                |
+    | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
+    | Tier                        | Select **Premium (4)**                                            |
  
   
     ![](images/a152.png)
@@ -279,15 +282,16 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
    ![](images/a59.png)
   
-1. On the **Add security policy** page, enter a name **mySecurityPolicy (1)**. Then select domains you want to associate the policy with. For WAF Policy, select **Create New** to create a new policy. Enter name of policy is **myWAFPolicy (2)**. Select **Save (3)** to add the security policy to the endpoint configuration.
+1. On the **Add security policy** page, enter a Name **mySecurityPolicy (1)**. Then select **domains (2)** you want to associate the policy with from the dropdown. For WAF Policy, select **Create New** to create a new policy. Enter name of policy is **myWAFPolicy (3)** and click on **Create (4)**. Select **Save (5)** to add the security policy to the endpoint configuration.
   
-   ![](images/a60.png)
+   ![](images/a60-1.png)
   
 1. Select **Review + Create**, review the Summary, and then select **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
   
-   ![](images/a61.png)
+    ![](images/a61.png)
+   
     
-   ![](images/a65.png)
+    ![](images/a65.png)
   
 ### Task 5.2: View Azure Front Door in action
   

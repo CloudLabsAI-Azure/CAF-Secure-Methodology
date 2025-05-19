@@ -35,33 +35,33 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 1. Select the **default subscription** available in the list.
 
-   ![](images/scafinfra20.jpg "search gateway")
+   ![](images/scafinfra20-1.png "search gateway")
 
-1. From the left-side blade, select **Preview features (1)** and select **Microsoft.Network (2)** in the types list.
+1. From the left-side blade, select **Preview features (1)** and select **Microsoft.Network (2)** in the Provider list and click on **Apply (3)**.
 
-   ![](images/scafinfra21.jpg "search gateway")
+   ![](images/scafinfra21-1.png "search gateway")
 
 1. select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
 
-   ![](images/scafinfra22.jpg "search gateway")
+   ![](images/scafinfra22-1.png "search gateway")
 
 1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
 
    ![](images/firewall1.png "search gateway")
 
-2. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
+1. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
 
    ![](images/firewall2.png "search gateway")
 
-3. Select **Add diagnostic setting** on the **Diagnostic settings**. 
+1. Select **Add diagnostic setting** on the **Diagnostic settings**. 
 
    ![](images/firewall4.png "search gateway")
 
-4. Enter the **Diagnostic setting name** as **fw-diagnostics**.
+1. Enter the **Diagnostic setting name** as **fw-diagnostics**.
 
    ![](images/firewall3.png "search gateway")
 
-5. Under **Logs**, select the below mentioned categories.
+1. Under **Logs**, select the below mentioned categories.
    
    - Azure Firewall Application Rule
    - Azure Firewall Network Rule
@@ -75,7 +75,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
      ![](images/scafinfra23.jpg "search gateway")
 
-6. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
+1. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
    ![](images/scafinfra24.jpg "search gateway")
 
@@ -97,13 +97,13 @@ In this task, you will test IDPS for HTTP traffic.
  
       ![](images/image301.png "select gateway")
 
-1.  Copy the **Public IP address** and save it to Notepad for later use.
+1. Copy the **Public IP address** and save it to Notepad for later use.
 
      ![](images/editing12.png )
     
-1. On the Azure Portal **Home** page, search **Azure Firewall (1)** and then select **Firewalls (2)**.
+1. On the Azure Portal **Home** page, search **Firewalls (1)** and then select **Firewalls (2)**.
 
-   ![firewall](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/Azurefirewallnew.png?raw=true)
+   ![firewall](images/Azurefirewallnew-1.png)
     
 1. Click on the **AzureFirewall**.
 
@@ -119,15 +119,15 @@ In this task, you will test IDPS for HTTP traffic.
      
 1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
-   ![FM](images1/firewallmanager.png)
+   ![FM](images/firewallmanager-1.png)
     
 1. Select **Azure Firewall Policies (1)** under the **Firewall Manager** page and click on Firewall Policy **firewallpolicy (2)**.
 
-   ![policy](images1/selectfirewallpolicy.png)
+   ![policy](images/selectfirewallpolicy-1.png)
    
-1. Select **DNAT Rules (1)** from the **Settings** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
+1. Select **DNAT Rules (1)** from the **Rules** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
 
-   ![rule](https://github.com/CloudLabsAI-Azure/AIW-Azure-Network-Services/blob/main/media/dnat1.png?raw=true)
+   ![rule](images/dnat1-1.png)
     
 1. Under the **Add a rule collection** page, enter the below details:
 
@@ -186,7 +186,7 @@ In this task, you will test IDPS for HTTP traffic.
  
 1. Now navigate back to firewall policy and under **Settings** select **IDPS**.
  
-   ![](images/firewall10.png "search gateway")
+   ![](images/firewall10-1.png "search gateway")
  
 1. On the **IDPS** page select the **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
  
@@ -246,13 +246,12 @@ In this task, you will create an application rule to allow access to sports webs
  
  1. Now select **Subnets (1)** and Click on **Associate (2)**.
 
-       - Under Associate subnets, enter the following details:
-  
-          - Virtual Network: Select **vnet (3)** from the drop-down list.
-          - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
-          - Click on **Ok (5)**.
+    - Under Associate subnets, enter the following details:
+    - Virtual Network: Select **vnet (JumpVM-rg) (3)** from the drop-down list.
+    - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
+    - Click on **Ok (5)**.
  
-            ![](images1/addsubnet.png)
+      ![](images/addsubnet-1.png)
  
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
@@ -260,16 +259,16 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. On the Virtual Machine page, under **Settings**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
-   ![](images/a170.png)
+   ![](images/connect-1.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
  
-    - **Username**: Enter **demouser (1)**
-    - **Authentication Type**: Select **VM Password (2)** from the drop-down
+    - **Authentication Type**: Select **VM Password (1)** from the drop-down
+    - **Username**: Enter **demouser (2)**
     - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
-      ![](images1/bastionconnect.png)
+      ![](images/bastionconnect-1.png)
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
@@ -281,10 +280,11 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Navigate to the below-mentioned URL and you can see the error **can't reach this page**.
  
-   ```
-   https://www.nfl.com
-   ```
-   ![](images1/error.png)
+    ```
+    https://www.nfl.com
+    ```
+    
+    ![](images1/error.png)
  
 1. Navigate back to the other tab, where Azure Portal is opened.
  
@@ -295,9 +295,9 @@ In this task, you will create an application rule to allow access to sports webs
 1. Select **TLS inspection (1)** under the **Settings** tab and enter the below details under the **Key vault** tab:
  
     - Parent policy: Choose **Enabled (2)**
-    - Managed Identity: Select **(New) fw-cert-id-ZrNC4l8WLg97D  (3)** from the drop-down list
-    - Key Vault: Select **(New) fw-cert-kv-ZrNC4l8WLg97D (4)** from the drop-down
-    - Certificate: Select **(New) fw-cert-ZrNC4l8WLg97D (5)** from the drop-down
+    - Managed Identity: Select **(New) fw-cert-id-xxxxxxxxxx  (3)** from the drop-down list
+    - Key Vault: Select **(New) fw-cert-kv-xxxxxxxxxx (4)** from the drop-down
+    - Certificate: Select **(New) fw-cert-xxxxxxxxxx (5)** from the drop-down
     - Click on **Save (6)**
  
       ![](images1/tlsinspection.png)
@@ -322,7 +322,7 @@ In this task, you will create an application rule to allow access to sports webs
       - Destination Type: Select **Web categories**
       - Destination: Enter `Sports`
      
-     - Click on **Add (6)**
+    - Click on **Add (6)**
  
          ![](images/CAF3.png "search gateway")
  
@@ -431,14 +431,14 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. On the IP Group page, on the **Basics** tab, enter or select the following information and click on **Next: IP addresses > (4)**.
  
-   | **Setting**      | **Value**                                                    |
-   | ---------------- | ------------------------------------------------------------ |
-   | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
-   | Name             | Enter **IpGroup (2)**                                        |
-   | Region           | Select **East US (3)**                                       |
+    | **Setting**      | **Value**                                                    |
+    | ---------------- | ------------------------------------------------------------ |
+    | Subscription     | Select your subscription.                                    |
+    | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
+    | Name             | Enter **IpGroup (2)**                                        |
+    | Region           | Select **East US (3)**                                       |
  
-    ![](images/a83.png)
+     ![](images/a83.png)
 
 1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
  
@@ -455,8 +455,7 @@ In this task, you will create an application rule to allow access to sports webs
     ```
  
     ![](images/a145.jpg)
- 
- 
+  
 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
  
     ![](images/firewall18.png "search gateway")
@@ -470,7 +469,7 @@ In this task, you will create an application rule to allow access to sports webs
     - Name: **Ipgroup-rule (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **104 (3)**
-	- Rule collection action: **Allow (4)**
+	 - Rule collection action: **Allow (4)**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (5)**
     - Under **Rules (6)** mention the below details:
       - Name: **URL-Ipgroup**
@@ -510,31 +509,30 @@ In this task, you will create an application rule to allow access to sports webs
    ![](images/a90.png)
  
 1. Select **+ Create Azure Firewall Policy**. 
- 
- 
+  
 1. On the Azure Firewall Policy page, on the **Basics** tab, enter or select the following information and click on **Next: DNS Settings > (5)**.
  
-   | **Setting**      | **Value**                                                    |
-   | ---------------- | ------------------------------------------------------------ |
-   | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
-   | Name             | Enter **Policy-01 (2)**                                      |
-   | Region           | Select **East US (3)**                                       |
-   | Policy tier      | Select **Standard (4)**                                      |
+    | **Setting**      | **Value**                                                    |
+    | ---------------- | ------------------------------------------------------------ |
+    | Subscription     | Select your subscription.                                    |
+    | Resource group   | Select the resource group **JumpVM-rg (1)**                  |
+    | Name             | Enter **Policy-01 (2)**                                      |
+    | Region           | Select **East US (3)**                                       |
+    | Policy tier      | Select **Standard (4)**                                      |
  
-    ![](images/a91.png)
+     ![](images/a91.png)
  
 1. On the **DNS Settings** tab, leave it as default and click on **Next: TLS inspection >**.
  
-   ![](images/a92.png)
+    ![](images/a92.png)
  
 1. On the **TLS inspection** tab, leave it as default and click on **Next: Rules >**.
  
-   ![](images/a93.png)
+    ![](images/a93.png)
 
 1. On the **Rules** tab, select **+ Add a rule collection**.
 
-   ![](images/a94.png)
+    ![](images/a94.png)
  
 1. On the **Add a rule collection** page, enter or select the following information
  
@@ -564,11 +562,11 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Select **Review + Create**.
  
-   ![](images/a96.png)
+    ![](images/a96.png)
  
 1. Review the Summary page and then select **Create**.
  
-   ![](images/a97.png)
+    ![](images/a97.png)
  
 ### Task 6.2: Create the firewall hub virtual network
  
@@ -583,58 +581,57 @@ In this task, you will create an application rule to allow access to sports webs
 1. On the **Virtual hubs** page, select Create **+ Create new secured virtual hub**.
  
  
- 
 1. On the secured virtual hub page, on the **Basics** tab, enter or select the following information and click on **Next: Azure Firewall > (8)**.
  
    
-   | **Setting**                                   | **Value**                                                    |
-   | ----------------------------------------------| ------------------------------------------------------------ |
-   | Subscription                                  | Select your subscription.                                    |
-   | Resource group                                | Select the resource group **JumpVM-rg (1)**                  |
-   | Region                                        | Select **East US (2)**                                       |
-   | Secured virtual hub name                      | Enter **Hub-01 (3)**                                         |
-   | Hub address space                             | Enter **10.2.0.0/16 (4)**                                    |
-   | Choose an existing vWAN or create a new one   | Choose **New vWAN (5)**                                      |
-   | Virtual WAN Name                              | Enter **Vwan-01 (6)**                                        |
-   | Type                                          | Select **Standard (7)**                                      |
+     | **Setting**                                   | **Value**                                                    |
+     | ----------------------------------------------| ------------------------------------------------------------ |
+     | Subscription                                  | Select your subscription.                                    |
+     | Resource group                                | Select the resource group **JumpVM-rg (1)**                  |
+     | Region                                        | Select **East US (2)**                                       |
+     | Secured virtual hub name                      | Enter **Hub-01 (3)**                                         |
+     | Hub address space                             | Enter **10.2.0.0/16 (4)**                                    |
+     | Choose an existing vWAN or create a new one   | Choose **New vWAN (5)**                                      |
+     | Virtual WAN Name                              | Enter **Vwan-01 (6)**                                        |
+     | Type                                          | Select **Standard (7)**                                      |
 
-    ![](images/a99.png)
+      ![](images/a99.png)
 
 1. On the **Azure Firewall** tab, keep **Availability Zone** as **None**, **Specify number of Public IP addresses** 1 and keep other fields as **default**. click on **Next: Security Partner Provider**.
  
-   ![](./images/firewallshub1.png)
+    ![](images/firewallshub1.png)
  
 1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create**.
  
-   ![](images/a101.png)
+    ![](images/a101.png)
 
 1. Review the **Summary** page and select **Create**.  
  
    >**Note**: Deployment may take up to 30 minutes to complete.
  
-   ![](images/a102.png)
+    ![](images/a102.png)
  
 ### Task 6.3: Associate the firewall policy with the virtual hub
   
 1. From the Azure portal home page, select **Firewall Manager**. On the Firewall Manager page, under **Security**, select **Azure Firewall Policies**.
   
-   ![](images/a103.png)
+    ![](images/a103.png)
  
 1. Select the checkbox for **Policy-01 (1)**, select **Manage associations(2)** and then select **Associate hubs (3)**.
  
-   ![](images/a104.png)
+    ![](images/a104.png)
  
 1. On the **Secure hubs with Azure Firewall Policy** page, Select the checkbox for **Hub-01 (1)** and Select **Add (2)**.
   
-   ![](images/a105.png)
+    ![](images/a105.png)
  
 1. When the policy has been attached, select **Refresh**. The association should be displayed.
    
-   ![](images/a106.png)
+    ![](images/a106.png)
  
 1. To open the firewall policy, click **Policy-01**, then under Settings, select **Secured virtual hubs (1)**. You will see that your policy status is **Secured (2)**.
  
-   ![](images/a108.png)	
+    ![](images/a108.png)	
 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
