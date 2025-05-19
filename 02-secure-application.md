@@ -4,7 +4,7 @@
 
 ## Overview
 
-Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. To learn more about Azure Firewall refer: `https://docs.microsoft.com/en-us/azure/firewall`
+Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. To learn more about Azure Firewall, refer: `https://docs.microsoft.com/en-us/azure/firewall`
 
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP). To learn more about Application gateway refer: `https://docs.microsoft.com/en-us/azure/application-gateway`
 
@@ -24,7 +24,7 @@ You will be able to complete the following tasks:
 
 ## Task 1: Configure WAF to protect your web application
  
-In this task, you will add a Virtual Machine as the Backend pool of the Application gateway and also configure the Application Gateway from the firewall policy.
+In this task, you will add a Virtual Machine as the Backend pool of the Application Gateway and also configure the Application Gateway from the firewall policy.
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
@@ -38,10 +38,12 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
      ![](images1/backendpools.png)
      
- 1. On the **Edit backend pool** page, follow the below-mentioned instructions:
+ 1. On the **Edit backend pool** page, follow the instructions below:
 
     - **Target type**: Select **Virtual Machine (1)** from the drop-down.
+
     - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
+
     - Click on **Save (3)**.
 
       ![](images/editbackendpool-1.png)
@@ -62,10 +64,12 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
    ![](images1/addappilcatiogateway.png)
     
-1. Under the **Associate an application gateway** page, follow the below instructions:
+1. Under the **Associate an application gateway** page, follow the instructions below:
 
     - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop down. 
+    
     - **Check** the box next to **Apply the Web Application Firewall policy configuration even if it's different from the current configuration (2)**.
+    
     - Click on **Add (3)**.
 
       ![](images1/associateappgateway.png)
@@ -99,22 +103,21 @@ In this task, you will access the application by going through the Application G
 
    ![ss](images/image307.png)
        
-
 ## Task 3: Application Gateway WAF Custom Rule to block IP
  
 In this task, you will block access from the Lab VM to the Jump VM by configuring a Firewall Policy custom rule. The rule will deny access to the web application by adding the Lab VM’s Public IP in the deny rule.
  
 1. In the Azure portal, search for **Virtual Machines (1)** and select it from the results **(2)**.
 
-   ![](images/a156.png "select gateway")
+    ![](images/a156.png "select gateway")
  
 1. On Virtual machines page, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
-   ![](images/a157.png "select gateway")
+    ![](images/a157.png "select gateway")
 
 1. Copy the **Public IP address** and save it to Notepad for later use.
 
-   ![](images/a158.png "select gateway")
+    ![](images/a158.png "select gateway")
 
 1. In the Azure Portal Search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
@@ -127,9 +130,13 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 1. On the **Add custom rule** blade, enter the following details:
  
     - Custom rule name: **WAFcustomrule (1)**
+    
     - Rule type: Select **Match (2)**
+    
     - Priority: Enter **1 (3)**.
-    - IP address or range: Enter **Public IP address (4)** of the labvm that is copied above in step 3.
+    
+    - IP address or range: Enter the **Public IP address (4)** of the labvm that is copied above in step 3.
+    
     - Click on **Add (5)**.
  
       ![](images/a159-1.png "select gateway")
@@ -138,7 +145,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
    ![](images/a171.png "select gateway")
 
-1. Once the custom rule is created you will see the notification that says **Successfully updated the WAF policy**, as shown below.
+1. Once the custom rule is created, you will see the notification that says **Successfully updated the WAF policy**, as shown below.
  
    ![](images/image306.png "select gateway")
 
@@ -146,15 +153,17 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
      
    ![rp](images1/rgappgateway.png)
     
-1. Under the **Application gateway** page, follow the below details:
+1. Under the **Application gateway** page, follow the details below:
+
      - Select **Web application firewall (1)** under **Settings**.    
+     
      - Click on **firewallpolicy (2)** under **Associated web application firewall policy**.  
   
          ![config](images1/webappfirewall.png)
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
 
-   >**Note**: Wait for the firewallpolicy to get updated before proceeding to next step.
+   >**Note**: Wait for the firewall policy to get updated before proceeding to the next step.
  
     ![](images1/switchtoprevention.png)
 
@@ -168,14 +177,12 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
    ![](images/a161.png "select gateway")
 
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="09e5a606-3e3a-4e3a-bc6b-93380fcde756" />
-
 
 ## Task 4: Attack simulation
      
@@ -199,15 +206,17 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
      
     ![rp](images1/rgappgateway.png)
     
-1. Under the **Application gateway** page, follow the below details:
+1. Under the **Application gateway** page, follow the details below:
+
      - Select **Web application firewall (1)** under **Settings**.    
+     
      - Click on **firewallpolicy (2)** under **Associated web application firewall policy**.  
   
          ![config](images1/webappfirewall.png)
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
 
-     >**Note**: Wait for the firewallpolicy to get updated before proceeding to next step.
+     >**Note**: Wait for the firewall policy to get updated before proceeding to the next step.
 
     ![](images1/switchtoprevention.png)
     
@@ -215,7 +224,7 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
     
     ![server error](images1/403.png)
 
-     >**Note**: This may take a few minutes to take effect.
+     >**Note:** This may take a few minutes to take effect.
 
 ## Task 5: Rate Limiting using Azure Front Door
   
@@ -291,17 +300,16 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
     ![](images/a59.png)
   
-1. On the **Add security policy** page, enter a Name **mySecurityPolicy (1)**. Then select **Domains (2)** you want to associate the policy with from the dropdown. For WAF Policy, select **Create New** to create a new policy. Enter name of policy is **myWAFPolicy (3)** and click on **Create (4)**. Select **Save (5)** to add the security policy to the endpoint configuration.
+1. On the **Add security policy** page, enter a Name **mySecurityPolicy (1)**. Then select the **Domains (2)** you want to associate the policy with from the dropdown. For WAF Policy, select **Create New** to create a new policy. Enter the name of the policy as **myWAFPolicy (3)** and click on **Create (4)**. Select **Save (5)** to add the security policy to the endpoint configuration.
   
      ![](images/a60-1.png)
   
-1. Select **Review + Create**, review the Summary, and then select **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
+1. Select **Review + Create**, review the Summary, and then select **Create** to deploy the Azure Front Door profile. It will take a few minutes for the configurations to be propagated to all edge locations.
 
     >**Note:** Wait for the deployment to complete which might take few minutes before moving on to next task.
 
     ![](images/a61.png)
    
-
     ![](images/a65.png)
   
 ### Task 5.2: View Azure Front Door in action
@@ -316,7 +324,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
     ![](images/a67.png)
    
-    >**Note: The application might take around 5 minutes to reflect, you can continue with the next task come back and refresh the page to view the changes**
+    >**Note: The application might take around 5 minutes to reflect, you can continue with the next task, come back and refresh the page to view the changes**
    
 1. To test instant global failover in action, try the following steps **(Step 3 to Step 8 are optional)**:
 
@@ -348,17 +356,17 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
   
     ![](images/a174.png)
 
-1. In a new browser tab paste the **endpoint** which you copied in the previous task.
+1. In a new browser tab, paste the **endpoint** which you copied in the previous task.
 
     ![](images/OSwap.png)
   
     ![](images/a67.png)
   
-1. Click on **Magnifying glass** on the top right corner of the website to search.
+1. Click on the **Magnifying glass** in the top right corner of the website to search.
   
     ![](images/a72.png)
   
-1. Type in any keyword **(e.g. apple)** and you will see a response from the website. As this site is using JSON, try **refresh** in the browser to do the same search again and now you will not see any response message in the website as you saw previously.
+1. Type in any keyword **(e.g. apple)** and you will see a response from the website. As this site is using JSON, try **refresh** in the browser to do the same search again, and now you will not see any response message on the website as you saw previously.
   
     ![](images/a73.png)
   
@@ -375,9 +383,13 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. On the **Add custom rule** blade, enter the following details
  
     - Custom rule name: Enter **rateLimitRule (1)**.
+    
     - Rule type: Select **Rate limit (2)**
+    
     - Priority: Enter **1 (3)**
+    
     - Rate limit duration: Select **1 minute (4)**
+    
     - Rate limit threshold (requests): Enter **1 (5)**
   
        ![](images/a176.png)
@@ -385,8 +397,11 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. Under Conditions, enter the information required to specify a match condition to identify requests where the URL contains the string `contoso` and `azurefd`:
   
     - Match type: Select **String**.
+    
     - Match variable: Select **RequestUri**
+    
     - Match values: Enter **contoso** and **azurefd**
+    
     - Click on **Add**.
       
        ![](images/a177.png)
@@ -399,9 +414,9 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
     ![](images/preventionmode.png)
 
-    >**Note**: Wait for the firewallpolicy to get updated before proceeding to next step.
+    >**Note**: Wait for the firewall policy to get updated before proceeding to the next step.
 
-1. On the **myWAFPolicy** page, under Settings, click on **Policy settings (1)** and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
+1. On the **myWAFPolicy** page, under Settings, click on **Policy settings (1)**, and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
   
     ![](images/a111.png)    
   
@@ -411,7 +426,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
     >**Note**: It may take a few minutes for the rate limit test policy to become active. Feel free to move on and come back later to test.
 
-1. After getting the response from the website navigate back to the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
+1. After getting the response from the website, navigate back to the **firewallpolicy** page, go to the **Overview (1)** tab, and click on **Switch to detection mode (2)**.
 
      ![](images/a161.png "select gateway")
 
@@ -424,9 +439,9 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 ## Summary
  
-In this lab you have covered the following:
+In this lab, you have covered the following:
   
-- Configured WAF to Protect your web application 
+- Configured WAF to protect your web application 
 - Accessed your application using the application gateway
 - Customized WAF rules
 - Performed Attack simulation
