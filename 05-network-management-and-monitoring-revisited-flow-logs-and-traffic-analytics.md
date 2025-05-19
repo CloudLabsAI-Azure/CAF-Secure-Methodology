@@ -29,7 +29,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
    ![](images/a19.png "search gateway")
  
-1. From the sidebar, select **Network settings** under Networking tab.
+1. From the sidebar, select **Network settings** under the Networking tab.
 
    ![](images/networksettings.png)
 
@@ -42,11 +42,12 @@ In this task, you'll access the virtual machine by configuring an inbound port r
    ![](images/a24.png)
 
 1. Paste the **JumpVM DNS Name** in the **Computer** field and click on **Connect**.
-   * **JumpVM DNS Name**: **<inject key="JumpVM DNS Name" />**
+   
+    * **JumpVM DNS Name**: **<inject key="JumpVM DNS Name" />**
 
         ![](images/a25.png)  
  
-1. You will see the error **Remote desktop can't be connected to the remote computer** because we are denied the inbound rule for disallowing the RDP and clicking on **OK**.
+1. You will see the error **Remote desktop can't be connected to the remote computer** because we are denied the inbound rule for disallowing the RDP, and clicking on **OK**.
 
    ![](images/a27.png)
    
@@ -54,15 +55,17 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
    ![](images/a28.png)
 
-1. Navigate back on **Remote Desktop Connection**, click on **Connect** and you will see that you are able to connect to the VM.
+1. Navigate back to **Remote Desktop Connection**, click on **Connect**, and you will see that you are able to connect to the VM.
 
 1. Now, enter the JUMPVM **username**, and **password** provided below and then click on the **OK** button.
+    
     - **Username**: **<inject key="JumpVM Admin Username" />**
+    
     - **Password**: **<inject key="JumpVM Admin Password" />**
    
         ![](images/a30.png)
    
-1. Next, click on the **Yes** button to accept the certificate and add in trusted certificates.
+1. Next, click on the **Yes** button to accept the certificate and add to trusted certificates.
 
    ![](images/a31.png)
 
@@ -86,7 +89,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
      ![](images/editing12.png )
 
- 1. To test the application copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab and generate some traffic by refreshing the browser.
+ 1. To test the application, copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab and generate some traffic by refreshing the browser.
  
       > **Note**: You will see that your website is running.
  
@@ -100,7 +103,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
     ![pip](images1/firewallIP.png)
     
-1. Copy the Public Ip and save it in a text editor.
+1. Copy the Public IP and save it in a text editor.
 
     ![ip](images1/firewallip1.png)
       
@@ -111,25 +114,23 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 1. Navigate back to the Network Watcher and select **Traffic Analytics** under **Monitoring** from the options on the left side of the Network Watcher blade.
 
    ![](images/traficanayltics.png)
-
       
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
    ![time interval](images/flows.png)
    
    > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
-   >
+   
    > **It may take upto 30 to 60 minutes to click on Meanwhile, click here to see just resource data and perform the above step option to come up**.
 
       ![](images1/timeinterval-1.png)
       
-1. Now, you can observe the total number of network traffic flows from **Traffic Visualization** present in **Traffic Analytics** page.
+1. Now, you can observe the total number of network traffic flows from **Traffic Visualization** present in the **Traffic Analytics** page.
 
     ![traffic visualization](images1/traffic%20visualisation.png)
 
     > **Note: The dashboard may take up to 60-90 minutes to appear when deployed for the first time. This is because Traffic Analytics must first aggregate enough data for it to derive meaningful insights. If it takes more time, you can perform the next task and come back later and check on this**.
            
-     
 1. Under **Traffic Analytics**, Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
     ![env](images/envir.png)
@@ -150,7 +151,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
      ![close](images1/close-1.png)
       
-1. Close the **Ports receiving traffic from the Internet** page by clicking the **Cross (X) icon** from the top right corner.
+1. Close the **Ports receiving traffic from the Internet** page by clicking the **Cross (X) icon** in the top right corner.
       
 1. Under the Traffic Analytics page, scroll down to **Traffic Distribution** to view the analytics of traffic flows across the host, subnet, VNet, and VMSS.
 
@@ -182,10 +183,9 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
 ## Summary
  
-In this lab you have covered the following:
+In this lab, you have covered the following:
   
 - Performed NSG validation.
 - Monitored the network watcher traffic.
 
 ### You have successfully completed the lab
-
