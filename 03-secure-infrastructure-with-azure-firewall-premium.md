@@ -4,7 +4,7 @@
 
 ## Overview: 
 
-Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best-of-breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
+Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best-of-breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall-as-a-service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
 
 Azure Firewall Premium is a next-generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
 
@@ -95,11 +95,11 @@ In this task, you will test IDPS for HTTP traffic.
  
 1. Select the **Frontend public IP address** of the application gateway.
  
-      ![](images/image301.png "select gateway")
+    ![](images/image301.png "select gateway")
 
 1. Copy the **Public IP address** and save it to Notepad for later use.
 
-     ![](images/editing12.png )
+    ![](images/editing12.png )
     
 1. On the Azure Portal **Home** page, search **Firewalls (1)** and then select **Firewalls (2)**.
 
@@ -107,7 +107,7 @@ In this task, you will test IDPS for HTTP traffic.
     
 1. Click on the **AzureFirewall**.
 
-   ![firewall](images1/azurefirewall.png)
+    ![firewall](images1/azurefirewall.png)
    
 1. Select **Firewall Public IP** from the Overview tab.
 
@@ -117,7 +117,7 @@ In this task, you will test IDPS for HTTP traffic.
 
     ![ip](images1/firewallip1.png)  
      
-1. Navigate back on Azure Firewall, Select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
+1. Navigate back to Azure Firewall, select **Firewall Manager (1)** from the **Settings** tab, and click on **Visit Azure Firewall Manager to configure and manage this firewall (2)**
 
    ![FM](images/firewallmanager-1.png)
     
@@ -129,7 +129,7 @@ In this task, you will test IDPS for HTTP traffic.
 
    ![rule](images/dnat1-1.png)
     
-1. Under the **Add a rule collection** page, enter the below details:
+1. Under the **Add a rule collection** page, enter the details below:
 
     - Name: **afw-contoso-prod-firewall-rulecolection (1)**
     - Rule Collection type: **DNAT (2)**
@@ -164,7 +164,7 @@ In this task, you will test IDPS for HTTP traffic.
  
         ![](images/firewall7.png "search gateway")
  
- 1. In the custom prompt you will see your Web server response.
+ 1. In the custom prompt, you will see your Web server response.
  
     ![](images/firewall8.png "search gateway")
  
@@ -176,7 +176,7 @@ In this task, you will test IDPS for HTTP traffic.
 
     ![](images/logsexit.png)
 
- 1. select **Logs (1)** ,click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **IDPS event logs**.
+ 1. Select **Logs (1)**, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **IDPS event logs**.
  
     ![](images/scafinfra25.jpg "search gateway")
  
@@ -185,9 +185,8 @@ In this task, you will test IDPS for HTTP traffic.
     ![](images/scafinfra26.jpg "search gateway")
  
     >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
-
  
-1. Now navigate back to firewall policy and under **Settings** select **IDPS**.
+1. Now navigate back to the firewall policy and under **Settings** select **IDPS**.
  
    ![](images/firewall10-1.png "search gateway")
  
@@ -199,15 +198,15 @@ In this task, you will test IDPS for HTTP traffic.
  
    ![](images/firewall12.png "search gateway")
  
-1. Under edit rules, change **Signature Mode** to **Alert and Deny (1)** and click on **Apply (2)**.  Wait for the deployment to complete before proceeding.
+1. Under edit rules, change **Signature Mode** to **Alert and Deny (1)** and click on **Apply (2)**. Wait for the deployment to complete before proceeding.
  
    ![](images/firewall13.png "search gateway")
 
 1. Click on **Apply** to update the firewall policy.
 
-    >**Note:** Wait for few minutes for the policy to get updated.
+    >**Note:** Wait for a few minutes for the policy to get updated.
 
-1. Navigate back to JumpVM, and run the `curl` command again:
+1. Navigate back to JumpVM and run the `curl` command again:
 
     `curl -A "HaxerMen" <Firewall Public IP>`
 
@@ -224,7 +223,6 @@ In this task, you will test IDPS for HTTP traffic.
 
 <validation step="e5f9dd50-2ebf-44f8-bcc0-09543bd58111" />
 
-
 ## Task 3: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
@@ -237,13 +235,18 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/addroute.png)
  
-1. Under the **Add Route** page, enter the below information:
+1. Under the **Add Route** page, enter the following information:
   
     - Route Name: Enter **firewallroute (1)**
+    
     - Address prefix destination: Select **IP Addresses (2)** from the drop-down list
+    
     - Destination IP address/ CIDR ranges: Enter **0.0.0.0/0 (3)**
+    
     - Next hop type: Select **Virtual appliance (4)** from the drop-down list
+    
     - Next hop address: Enter the **Private IP Address** of the Firewall **(5)**.
+    
     - Select **Add (6)**
  
       ![](images1/addrouterule.png)
@@ -251,8 +254,11 @@ In this task, you will create an application rule to allow access to sports webs
  1. Now select **Subnets (1)** under Settings and Click on **+ Associate (2)**.
 
     - Under Associate subnets, enter the following details:
+
     - Virtual Network: Select **vnet (JumpVM-rg) (3)** from the drop-down list.
+
     - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
+
     - Click on **OK (5)**.
  
       ![](images/addsubnet-1.png)
@@ -265,7 +271,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/connect-1.png)
  
-1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
+1. On the Bastion page, follow the instructions below to connect to the Virtual Machine using Bastion:
  
     - **Authentication Type**: Select **VM Password (1)** from the drop-down
     - **Username**: Enter **demouser (2)**
@@ -282,7 +288,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/selectedge.png)
  
-1. Navigate to the below-mentioned URL and you can see the error **can't reach this page**.
+1. Navigate to the below-mentioned URL, and you can see the error **can't reach this page**.
  
     ```
     https://www.nfl.com
@@ -296,7 +302,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/build6.png)
  
-1. Navigate back to the other tab, where Azure Portal is opened.
+1. Navigate back to the other tab, where the Azure Portal is open.
  
 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **firewallpolicy**.
  
@@ -305,20 +311,24 @@ In this task, you will create an application rule to allow access to sports webs
 1. Select **TLS inspection (1)** under the **Settings** tab and enter the below details under the **Key vault** tab:
  
     - Parent policy: Choose **Enabled (2)**
+    
     - Managed Identity: Select **(New) fw-cert-id-xxxxxxxxxx  (3)** from the drop-down list
+    
     - Key Vault: Select **(New) fw-cert-kv-xxxxxxxxxx (4)** from the drop-down
+    
     - Certificate: Select **(New) fw-cert-xxxxxxxxxx (5)** from the drop-down
+    
     - Click on **Save (6)**
  
       ![](images1/tlsinspection.png)
 
-      >**Note:** This might take 5-6 minutes for updating the firewallpolicy. Wait for the firewallpolicy to get updated before proceeding to next steps.
+      >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.
 
 1. Now, select **Application Rules (1)** from the **Settings** tab under the Firewall Policy page and select **+ Add a rule collection (2)**.
    
      ![](images/firewall17.png "search gateway")
  
-1. Under the **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
+1. Under the **Add a rule collection** page, enter the details below to enable the web application in Bastion VM:
  
     - Name: **GeneralWeb (1)**
     - Rule Collection type: **Application (2)**
@@ -338,9 +348,9 @@ In this task, you will create an application rule to allow access to sports webs
  
          ![](images/CAF3.png "search gateway")
 
-     >**Note:** This might take 5-6 minutes for updating the firewallpolicy. Wait for the firewallpolicy to get updated before proceeding to next steps. 
+     >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps. 
  
-1.  Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On the Privacy error connection page, click on **Advanced**.
+1.  Once the deployment completes, navigate back to the Bastion VM tab and refresh the page where you have browsed for `https://www.nfl.com`. On the Privacy error connection page, click on **Advanced**.
  
      ![](images1/Advanced.png)
  
@@ -354,7 +364,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/firewall22.png "search gateway")
  
-1. Again, navigate to the other tab, where Azure Portal is opened.
+1. Again, navigate to the other tab, where the Azure Portal is opened.
  
 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
  
@@ -386,7 +396,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/firewall17.png "search gateway")
  
-1. Under **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
+1. Under the **Add a rule collection** page, enter the details below to enable the web application in the Bastion VM:
 
     - Name: **Firewall-rulecollection (1)**
     - Rule Collection type: **Application (2)**
@@ -406,9 +416,9 @@ In this task, you will create an application rule to allow access to sports webs
  
          ![](images/CAF2.png "search gateway")
 
-    >**Note:** This might take 5-6 minutes for updating the firewallpolicy. Wait for the firewallpolicy to get updated before proceeding to next steps.     
+    >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.     
 
-1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error connnection page, click on **Advanced**.
+1. Once the deployment completes, navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error connection page, click on **Advanced**.
  
       ![](images1/Advanced1.png)
  
@@ -416,17 +426,17 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/unsafe1.png)
  
-1. Now you validate that the HTML response is displayed as expected in the browser.
+1. Now, you validate that the HTML response is displayed as expected in the browser.
  
     ![](images/CAF1.png "search gateway")
  
-1. Again, navigate to the other tab, where Azure Portal is opened.
+1. Again, navigate to the other tab, where the Azure Portal is opened.
  
 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
  
     ![](images1/firewall.png)
  
-1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule log**.
+1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and click on **Run (3)** for **Application rule log**.
  
     ![](images/a124.png)
 
@@ -455,7 +465,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/a83.png)
 
-1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
+1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + create (2)**.
  
     ![](images/a122.png)
  
@@ -471,7 +481,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a145.jpg)
   
-1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group then select **firewallpolicy**.
+1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group, then select **firewallpolicy**.
  
     ![](images/firewall18.png "search gateway")
  
@@ -479,7 +489,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/firewall17.png "search gateway")
 
-1. Under **Add a rule collection** page, enter the below details to enable the web application in Bastion VM:
+1. Under the **Add a rule collection** page, enter the details below to enable the web application in the Bastion VM:
 
     - Name: **Ipgroup-rule (1)**
     - Rule Collection type: **Application (2)**
@@ -499,7 +509,7 @@ In this task, you will create an application rule to allow access to sports webs
  
          ![](images/a141.jpg "search gateway")
 
-     >**Note:** This might take 5-6 minutes for updating the firewallpolicy. Wait for the firewallpolicy to get updated before proceeding to next steps.
+     >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to next steps.
 
 1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.news18.com`. On the Privacy error connection page, click on **Advanced**.
  
@@ -507,9 +517,9 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Click on **Continue to www.news18.com (unsafe)**.
  
-    ![](images/a143.jpg)  
+    ![](images/a143.jpg)
 
-1. Now you validate that the HTML response is displayed as expected in the browser.
+1. Now, you validate that the HTML response is displayed as expected in the browser.
  
     ![](images/a144.jpg "search gateway") 
  
@@ -600,7 +610,6 @@ In this task, you will create an application rule to allow access to sports webs
      ![](images/create-virtual-hub.png)
 
 1. On the secured virtual hub page, on the **Basics** tab, enter or select the following information and click on **Next: Azure Firewall > (8)**.
- 
    
      | **Setting**                                   | **Value**                                                    |
      | ----------------------------------------------| ------------------------------------------------------------ |
@@ -622,8 +631,7 @@ In this task, you will create an application rule to allow access to sports webs
      | Azure Firewall tier                           | **Standard (1)**                                             |
      | Availability zone                             | **None (2)**                                                 |
      | Specify number of Public IP addresses         | **1 (3)**                                                    |
-     | Subscription                                  | Select your default subscription **(4)**                            |
-
+     | Subscription                                  | Select your default subscription **(4)**                     |
 
      ![](images/firewallshub1-1.png)
  
@@ -643,7 +651,7 @@ In this task, you will create an application rule to allow access to sports webs
   
     ![](images/a103.png)
  
-1. Select the checkbox for **Policy-01 (1)**, select **Manage associations(2)** and then select **Associate hubs (3)**.
+1. Select the checkbox for **Policy-01 (1)**, select **Manage associations (2)** and then select **Associate hubs (3)**.
  
     ![](images/a104.png)
  
@@ -659,7 +667,6 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a108.png)	
 
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
@@ -667,15 +674,14 @@ In this task, you will create an application rule to allow access to sports webs
 
 <validation step="659469d6-4b83-467d-a4ce-83adf7dc61ba" />
 
-
 ## Summary
  
-In this lab you have covered the following:
+In this lab, you have covered the following:
   
 - Added firewall diagnostics settings 
 - Tested IDPS for HTTP traffic
 - Performed Web category testing 
-- Implemented and Tested URL filtering
+- Implemented and tested URL filtering
 - Performed IP groups
 - Performed Azure Firewall Policies with the Firewall Manager
 
