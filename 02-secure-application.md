@@ -116,7 +116,6 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
    ![](images/a158.png "select gateway")
 
-
 1. In the Azure Portal Search **WAF (1)** and then select **Web Application Firewall policies (WAF) (2)**.
  
    ![](images/image302.png "select gateway")
@@ -208,7 +207,7 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
 
-   >**Note**: Wait for the firewallpolicy to get updated before proceeding to next step.
+     >**Note**: Wait for the firewallpolicy to get updated before proceeding to next step.
 
     ![](images1/switchtoprevention.png)
     
@@ -216,7 +215,7 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
     
     ![server error](images1/403.png)
 
-   >**Note**: This may take a few minutes to take effect.
+     >**Note**: This may take a few minutes to take effect.
 
 ## Task 5: Rate Limiting using Azure Front Door
   
@@ -295,11 +294,11 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 1. On the **Add security policy** page, enter a Name **mySecurityPolicy (1)**. Then select **domains (2)** you want to associate the policy with from the dropdown. For WAF Policy, select **Create New** to create a new policy. Enter name of policy is **myWAFPolicy (3)** and click on **Create (4)**. Select **Save (5)** to add the security policy to the endpoint configuration.
   
-   ![](images/a60-1.png)
+     ![](images/a60-1.png)
   
 1. Select **Review + Create**, review the Summary, and then select **Create** to deploy the Azure Front Door profile. It will take a few minutes for configurations to be propagated to all edge locations.
 
-   >**Note:** Wait for the deployment to complete which might take few minutes before moving on to next task.
+    >**Note:** Wait for the deployment to complete which might take few minutes before moving on to next task.
 
     ![](images/a61.png)
    
@@ -401,7 +400,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
     ![](images/preventionmode.png)
 
-   >**Note**: Wait for the firewallpolicy to get updated before proceeding to next step.
+    >**Note**: Wait for the firewallpolicy to get updated before proceeding to next step.
 
 1. On the **myWAFPolicy** page, under settings, click on **Policy settings (1)** and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
   
