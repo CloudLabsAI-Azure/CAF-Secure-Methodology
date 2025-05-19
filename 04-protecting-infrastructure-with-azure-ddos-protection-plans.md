@@ -35,7 +35,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
    ![](images/ddos1.png)
  
-1. Click on Create.
+1. Click on **+ Create**.
  
     ![](images/ddos2.png)
  
@@ -62,7 +62,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
       ![](images/ddos6.png)
  
-1. On the DDoS protection page, under setting click on **Protected resources (1)** and then select the **vnet (2)** and click on **Add (3)**.
+1. On the DDoS protection page, under Settings tab, click on **Protected resources (1)** and then select the **vnet (2)** and click on **Add (3)**.
  
       ![](images/ddos10.png)
 
@@ -82,7 +82,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
       ![](images/ddos11.png)
 
-1. Under Deployments, click on **Virtual Networks**, and you will see that you are protected.
+1. Under Deployments tab, click on **Virtual Networks**, and you will see that you are protected.
  
       ![](images/ddos12.png)
 
@@ -103,7 +103,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
     ![](images/a33.png)
 
-1. Select the **Firewalllp** from the list.
+1. Select the **firewalllp** from the list.
 
     ![](images/a34.png)
 
@@ -123,7 +123,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
 In this task, you will explore and visualize the metrics using various kinds of aggregation.
 
-1. Navigate back to the **Firewalllp** page, Under Monitoring, select **Metrics**.
+1. Navigate back to the **firewalllp** page, Under Monitoring, select **Metrics**.
 
     ![](images/a40.png)
 
@@ -131,15 +131,15 @@ In this task, you will explore and visualize the metrics using various kinds of 
 
     ![](images/a41.png)
 
-1. Once you click on Scope, select **Public IP Address (1)** from **Resources type** then select the specific public IP address you want to log metrics for, and then select **Apply (3)**.
+1. Once you click on Scope, select **Public IP Addresses (1)** from **Resources type** then select the specific **public IP address (2)** you want to log metrics for, and then click on **Apply (3)**.
 
      ![](images/a42.png)
 
-1. Under **Metric** select **Inbound SYN packets to trigger DDoS mitigation** then under **Aggregation** select type as **Count**.
+1. Under **Metric**, select **Inbound SYN packets to trigger DDoS mitigation** then under **Aggregation**, select type as **Count**.
   
      ![](images/a153.png)
 
-1. Follow the above step to add **Inbound TCP packets to trigger DDoS mitigation** and **Inbound UDP packets to trigger DDoS mitigation**. 
+1. Follow previous step to add **Inbound TCP packets to trigger DDoS mitigation** and **Inbound UDP packets to trigger DDoS mitigation**. 
 
       ![](images/a154.png)
       

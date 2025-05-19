@@ -59,7 +59,7 @@ The architecture for this lab involves several key components:
 
 ## Getting Started with the lab
  
-Welcome to your Infrastructure Security Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Infrastructure and Application Security Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
@@ -91,7 +91,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the Azure Portal icon as shown below:
+1. On your virtual machine, click on the **Azure Portal** icon as shown below:
  
     ![](./images/GS1.png)
  
@@ -119,13 +119,8 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 6. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-7. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+7. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-8. Please note that for few exercises, we will be logging into the virtual machines via Bastion. To use the copy-paste functionality, click the arrow to copy the content to your clipboard, and then paste it as needed.
-
-   ![](images/build5.png)
-
-   ![](images/build6.png)
 
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
 
