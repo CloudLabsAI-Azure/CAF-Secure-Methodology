@@ -207,12 +207,16 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
          ![config](images1/webappfirewall.png)
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
- 
+
+   >**Note**: Wait for the firewallpolicy to get updated before proceeding to next step.
+
     ![](images1/switchtoprevention.png)
     
 1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the **403 Forbidden error**.
     
     ![server error](images1/403.png)
+
+   >**Note**: This may take a few minutes to take effect.
 
 ## Task 5: Rate Limiting using Azure Front Door
   
@@ -269,7 +273,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
     ![](images/a127.png)
   
-1. To add the first origin, enter **OWASP-Main (1)** as the name, **App services (2)** as the origin type, and select **owasp-mainjump<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
+1. To add the First origin, enter **OWASP-Main (1)** as the name, **App services (2)** as the origin type, and select **owasp-mainjump<inject key="DeploymentID" enableCopy="false" />.azurewebsites.net (3)** as the host name then click **Add (4)**.
   
     ![](images/a130.png)
 
@@ -396,7 +400,9 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. Select **Switch to prevention mode** under **Overview** blade.
 
     ![](images/preventionmode.png)
-  
+
+   >**Note**: Wait for the firewallpolicy to get updated before proceeding to next step.
+
 1. On the **myWAFPolicy** page, under settings, click on **Policy settings (1)** and you will notice that your block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and then click on **Save (4)**.
   
     ![](images/a111.png)    
