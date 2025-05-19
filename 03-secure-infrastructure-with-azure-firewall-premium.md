@@ -41,11 +41,11 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/scafinfra21-1.png "search gateway")
 
-1. select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
+1. Select **Enable Azure Firewall Structured Logs (1)** and click on **Register (2)**.
 
    ![](images/scafinfra22-1.png "search gateway")
 
-1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the AzureFirewall resource.
+1. In the Azure portal, navigate to your **JumpVM-rg** resource group and select the **AzureFirewall** resource.
 
    ![](images/firewall1.png "search gateway")
 
@@ -53,11 +53,11 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/firewall2.png "search gateway")
 
-1. Select **Add diagnostic setting** on the **Diagnostic settings**. 
+1. Select **+ Add diagnostic setting** on the **Diagnostic settings** page. 
 
    ![](images/firewall4.png "search gateway")
 
-1. Enter the **Diagnostic setting name** as **fw-diagnostics**.
+1. Enter the **Diagnostic setting name** as **fw-diagnostics**
 
    ![](images/firewall3.png "search gateway")
 
@@ -125,7 +125,7 @@ In this task, you will test IDPS for HTTP traffic.
 
    ![policy](images/selectfirewallpolicy-1.png)
    
-1. Select **DNAT Rules (1)** from the **Rules** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
+1. Select **DNAT rules (1)** from the **Rules** tab under the **Firewall Policy** page and select **+ Add a rule collection (2)**
 
    ![rule](images/dnat1-1.png)
     
@@ -162,7 +162,7 @@ In this task, you will test IDPS for HTTP traffic.
 
      `curl -A "HaxerMen" <Firewall Public IP>`
  
-   ![](images/firewall7.png "search gateway")
+        ![](images/firewall7.png "search gateway")
  
  1. In the custom prompt you will see your Web server response.
  
@@ -172,7 +172,7 @@ In this task, you will test IDPS for HTTP traffic.
  
      ![](images1/firewall.png)
  
- 1. On the **AzureFirewall** page, select **Logs (1)** Click **x**
+ 1. On the **AzureFirewall** page, select **Logs (1)** under Monitoring, click on **X (2)**
 
     ![](images/logsexit.png)
 
@@ -199,7 +199,7 @@ In this task, you will test IDPS for HTTP traffic.
  
    ![](images/firewall12.png "search gateway")
  
-1. Under edit rules, change **Signature Mode** to **Alert and Deny** and click on **Apply**.  Wait for the deployment to complete before proceeding.
+1. Under edit rules, change **Signature Mode** to **Alert and Deny (1)** and click on **Apply (2)**.  Wait for the deployment to complete before proceeding.
  
    ![](images/firewall13.png "search gateway")
 
@@ -216,7 +216,6 @@ In this task, you will test IDPS for HTTP traffic.
     `curl: (56) Recv failure: Connection was reset`
  
      ![](images/firewall14.png "search gateway")
-
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -241,20 +240,20 @@ In this task, you will create an application rule to allow access to sports webs
 1. Under the **Add Route** page, enter the below information:
   
     - Route Name: Enter **firewallroute (1)**
-    - Address prefix destination: Select **IP Address (2)** from the drop-down list
+    - Address prefix destination: Select **IP Addresses (2)** from the drop-down list
     - Destination IP address/ CIDR ranges: Enter **0.0.0.0/0 (3)**
     - Next hop type: Select **Virtual appliance (4)** from the drop-down list
-    - Next hop address: Enter the **private IP Address** of the Firewall **(5)**.
+    - Next hop address: Enter the **Private IP Address** of the Firewall **(5)**.
     - Select **Add (6)**
  
       ![](images1/addrouterule.png)
  
- 1. Now select **Subnets (1)** and Click on **Associate (2)**.
+ 1. Now select **Subnets (1)** under Settings and Click on **+ Associate (2)**.
 
     - Under Associate subnets, enter the following details:
     - Virtual Network: Select **vnet (JumpVM-rg) (3)** from the drop-down list.
     - Subnet: Select **jumpvmsubnet (4)** from the drop-down list.
-    - Click on **Ok (5)**.
+    - Click on **OK (5)**.
  
       ![](images/addsubnet-1.png)
  
@@ -262,7 +261,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/selectvm.png)
 
-1. On the Virtual Machine page, under **Settings**, click on **Connect (1)** then click on **Go to Bastion (2)**.
+1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
      ![](images/connect-1.png)
  
@@ -270,7 +269,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     - **Authentication Type**: Select **VM Password (1)** from the drop-down
     - **Username**: Enter **demouser (2)**
-    - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
+    - **VM Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
       ![](images/bastionconnect-1.png)
@@ -290,6 +289,12 @@ In this task, you will create an application rule to allow access to sports webs
     ```
     
     ![](images1/error.png)
+
+    > **Note:** If the copy-paste functionality isn't working directly, click the arrow icon to copy the content to your clipboard, then paste it where needed.
+ 
+    ![](images/build5.png)
+ 
+    ![](images/build6.png)
  
 1. Navigate back to the other tab, where Azure Portal is opened.
  
@@ -355,7 +360,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images1/firewall.png)
  
-1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule log**.
+1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule logs**.
  
      ![](images/a124.png)
  
