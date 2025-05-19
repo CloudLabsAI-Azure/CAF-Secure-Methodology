@@ -63,7 +63,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](images/cafinfa2.jpg "search gateway")
 
-1. On the **Topology** page, click on the **Scope** (1).
+1. On the **Topology** page, click on the **Scope** **(1)**.
 
    ![](./images/infrasec.png)
 
@@ -115,7 +115,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
     - **Authentication Type**: Select **VM Password (1)** from the drop-down
     - **Username**: Enter **<inject key="JumpVM Admin Username" />**  **(2)**
-    - **Password**: Enter **<inject key="JumpVM Admin Password" />**  **(3)**
+    - **VM Password**: Enter **<inject key="JumpVM Admin Password" />**  **(3)**
     - Click on **Connect (4)**
  
       ![](images/bastionconnect-1.png)
@@ -137,7 +137,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 In this task, You will create NSG flow logs that will provide detailed information about the network traffic that passes through your NSG. This information can be used for troubleshooting network connectivity issues, monitoring and analyzing network traffic patterns, and detecting potential security threats.
 
-1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
       ![](images/cafinfra5.jpg)
 
@@ -153,7 +153,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra8.jpg)
 
-1. Click on the **create** button.
+1. Click on **+ Create** button.
 
     ![](images/cafinfra9.jpg)
 
@@ -168,22 +168,22 @@ In this task, You will create NSG flow logs that will provide detailed informati
 1. For the Instance details, Provide the following details and click on **Next: Analytics > (4)**
 
    - **Subscription**: select **default subscription (1)** from the drop-down.
-   - **Storage account**: select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
+   - **Storage Account**: select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
    - **Retention (days)**: **30 (3)**
 
        ![](images/scafinfra27.jpg)  
    
-1. Under the **Analytics** tab, check the box to **Enable Traffic Analytics (1)**, select **Every 10 mins (2)** under the Traffic Analytics processing interval and click **Review + Create (3)**.
+1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the Traffic analytics processing interval and click **Review + Create (3)**.
 
     ![create](images/a149-1.png)
 
-1. In the Create page, click on the **Create** button.
+1. On the Review + Create tab, review the summary and click on **Create** button.
 
    >**Note:** The deployment might take few minutes to complete, wait till the deployment completion before proceeding to next step.
 
      ![](images/a150.png)  
 
-1. Navigate to the Azure portal. Using the search bar, search for **Resource group (1)** and **select (2)** from the suggestions.
+1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
     ![](images/cafinfra5.jpg)
 
@@ -195,15 +195,15 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra7.jpg)
 
-1. From the sidebar, select **Diagnostic settings (1)** and click on **+ Add diagnostic setting (2)**.
+1. From the sidebar, select **Diagnostic settings (1)** under monitoring and click on **+ Add diagnostic setting (2)**.
 
     ![](images/cafinfra15.jpg)
 
 1. In the Diagnostic settings page, provide the following details and click on **Save (5)**.
 
    - **Diagnostic setting name**: **NSG_Flow_Logs (1)**
-   - **Logs> Category groups**: check the **allLogs (2)** checkbox.
-   - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox,and Click on **Save(5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
+   - **Logs -> Category groups**: check the **allLogs (2)** checkbox.
+   - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox,and Click on **Save (5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
 
       ![](images/a151.png)
 
