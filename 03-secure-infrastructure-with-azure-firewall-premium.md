@@ -479,7 +479,7 @@ In this task, you will create an application rule to allow access to sports webs
     - Name: **Ipgroup-rule (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **104 (3)**
-	- Rule collection action: **Allow (4)**
+	 - Rule collection action: **Allow (4)**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (5)**
     - Under **Rules (6)** mention the below details:
       - Name: **URL-Ipgroup**
@@ -494,7 +494,7 @@ In this task, you will create an application rule to allow access to sports webs
  
          ![](images/a141.jpg "search gateway")
 
-    >**Note:** This might take 5-6 minutes for updating the firewallpolicy. Wait for the firewallpolicy to get updated before proceeding to next steps.
+     >**Note:** This might take 5-6 minutes for updating the firewallpolicy. Wait for the firewallpolicy to get updated before proceeding to next steps.
 
 1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.news18.com`. On the Privacy error connection page, click on **Advanced**.
  
@@ -619,10 +619,10 @@ In this task, you will create an application rule to allow access to sports webs
     ![](images/a101.png)
 
 1. Review the **Summary** page and select **Create**.  
- 
-   >**Note**: Deployment may take up to 30 minutes to complete.
- 
-     ![](images/a102.png)
+  
+    ![](images/a102.png)
+
+    >**Note**: Deployment may take up to 30 minutes to complete.
  
 ### Task 6.3: Associate the firewall policy with the virtual hub
   
