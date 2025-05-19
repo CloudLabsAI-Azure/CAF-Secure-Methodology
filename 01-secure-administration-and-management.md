@@ -21,7 +21,7 @@ You will be able to complete the following tasks:
   
 ## Task 1: Network Health
 
-In this task, you'll explore Azure monitor and examine the resource health of various deployed resources. 
+In this task, you'll explore Azure Monitor and examine the resource health of various deployed resources. 
 
 1. Navigate to the Azure portal. Using the search bar, search for **Monitor (1)** and **select (2)** from the suggestions.
 
@@ -39,7 +39,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](images/a12-1.png "search gateway")
 
-1. You can click on any resource to select the resource view, The resource view helps you visualize how a resource is configured. The resource view is currently available for **Azure Application Gateway**, **Azure Firewall**, and **Bastions**. For example, for Application Gateway, you can access the resource view by selecting the Application Gateway resource name in the metrics grid view. You can do the same thing for Azure Firewall, and Bastions.
+1. You can click on any resource to select the resource view. The resource view helps you visualize how a resource is configured. The resource view is currently available for **Azure Application Gateway**, **Azure Firewall**, and **Bastions**. For example, for Application Gateway, you can access the resource view by selecting the Application Gateway resource name in the metrics grid view. You can do the same thing for Azure Firewall and Bastions.
 
    ![](images/a146-1.png "search gateway")
 
@@ -53,7 +53,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
 ## Task 2: Network Topology
 
- In this task, you'll view resources in a Microsoft Azure virtual network, and the relationships between the resources.
+ In this task, you'll view resources in a Microsoft Azure virtual network and the relationships between the resources.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Network Watcher (1)** and **select (2)** from the suggestions.
 
@@ -75,7 +75,7 @@ In this task, you'll explore Azure monitor and examine the resource health of va
 
    ![](./images/hover.png)
 
-1. Now, you'll be able to **visualize (1)** the topology. You can explore the different connections to understand how different resources such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
+1. Now, you'll be able to **visualize (1)** the topology. You can explore the different connections to understand how different resources, such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
    ![](images/scafinfra37.jpg "search gateway")
 
@@ -95,11 +95,11 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
    
    ![](images/a16.png "search gateway")
 
-1. You will see that **AzureBastionSubnet** is already present in the subnets, If you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore this.
+1. You will see that **AzureBastionSubnet** is already present in the subnets. If you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore this.
 
    ![](images/a17.png "search gateway")
 
-1. Now Using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
+1. Now, using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
 
    ![](images/a18.png "search gateway")
 
@@ -111,23 +111,25 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
  
    ![](images/connect-1.png)
  
-1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
+1. On the Bastion page, follow the instructions below to connect to the Virtual Machine using Bastion:
 
     - **Authentication Type**: Select **VM Password (1)** from the drop-down
+    
     - **Username**: Enter **<inject key="JumpVM Admin Username" />**  **(2)**
+    
     - **VM Password**: Enter **<inject key="JumpVM Admin Password" />**  **(3)**
+    
     - Click on **Connect (4)**
  
       ![](images/bastionconnect-1.png)
 
-      >**Note:** If the Connection is blocked by browser, Click on the **Pop-up (1)** button, select **Always allow pop-ups and redirects from https://portal.azure.com (2)** and then click on **Done (3)**.
+      >**Note:** If the Connection is blocked by the browser, click on the **Pop-up (1)** button, select **Always allow pop-ups and redirects from https://portal.azure.com (2)** and then click on **Done (3)**.
 
        ![](images/unblock-redirects.png)
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
     ![](images1/allowpopup.png)
-
 
 ## Task 4: Prepare the Network Watcher monitoring environment and NSG Flow
 
@@ -139,11 +141,11 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
-      ![](images/cafinfra5.jpg)
+    ![](images/cafinfra5.jpg)
 
 1. Select the **JumpVM-rg** from the list.
 
-      ![](images/cafinfra6.jpg)
+    ![](images/cafinfra6.jpg)
 
 1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
 
@@ -157,7 +159,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra9.jpg)
 
-1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, **Network security group (3)** as a Select target resource.
+1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, and **Network security group (3)** as a Select target resource.
 
     ![](images/nsgflog.png)
 
@@ -165,10 +167,12 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
     ![](images/caninfra11-1.png)
 
-1. For the Instance details, Provide the following details and click on **Next: Analytics > (4)**
+1. For the Instance details, provide the following details and click on **Next: Analytics > (4)**
 
    - **Subscription**: select **default subscription (1)** from the drop-down.
+
    - **Storage Account**: select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
+
    - **Retention (days)**: **30 (3)**
 
        ![](images/scafinfra27.jpg)  
@@ -179,7 +183,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. On the Review + Create tab, review the summary and click on **Create** button.
 
-   >**Note:** The deployment might take few minutes to complete, wait till the deployment completion before proceeding to next step.
+   >**Note:** The deployment might take a few minutes to complete, wait till the deployment is completed before proceeding to next step.
 
      ![](images/a150.png)  
 
@@ -202,8 +206,10 @@ In this task, You will create NSG flow logs that will provide detailed informati
 1. In the Diagnostic settings page, provide the following details and click on **Save (5)**.
 
    - **Diagnostic setting name**: **NSG_Flow_Logs (1)**
+
    - **Logs -> Category groups**: check the **allLogs (2)** checkbox.
-   - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox,and Click on **Save (5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for storage account.
+
+   - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox, and click on **Save (5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for a storage account.
 
       ![](images/a151.png)
 
@@ -218,9 +224,9 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 ## Summary
  
-In this lab you have covered the following:
+In this lab, you have covered the following:
   
-- Explored on Network health 
+- Explored Network health 
 - Explored on Network topology
 - Secured Access via Bastion Host
 - Configured the Network Watcher monitoring environment and NSG Flow
