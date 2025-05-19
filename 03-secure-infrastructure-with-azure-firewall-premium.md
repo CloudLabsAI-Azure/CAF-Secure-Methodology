@@ -382,7 +382,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/firewall18.png "search gateway")
  
-1. Select **Application Rules (1)** from the **Settings** tab under Firewall Policy page and select **+ Add a rule collection (2)**.
+1. Select **Application rules (1)** from the **Settings** tab under Firewall Policy page and select **+ Add a rule collection (2)**.
  
     ![](images/firewall17.png "search gateway")
  
@@ -426,7 +426,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/firewall.png)
  
-1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule log**.
+1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule logs**.
  
     ![](images/a124.png)
 
@@ -455,7 +455,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/a83.png)
 
-1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + Create (2)**.
+1. On the **IP addresses** tab, enter `*` in the **IP address, range or subnet (1)** field and then click **Review + create (2)**.
  
     ![](images/a122.png)
  
@@ -475,7 +475,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/firewall18.png "search gateway")
  
-1. Select **Application Rules (1)** from the **Settings** tab under Firewall Policy page and select **+ Add a rule collection (2)**.
+1. Select **Application rules (1)** from the **Settings** tab under Firewall Policy page and select **+ Add a rule collection (2)**.
  
     ![](images/firewall17.png "search gateway")
 
@@ -517,7 +517,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 ### Task 6.1: Create a Firewall Policy
 
-1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and **select (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **firewall Manager (1)** and **select (2)** from suggestions.
  
      ![](images/a89.png)
  
@@ -577,7 +577,7 @@ In this task, you will create an application rule to allow access to sports webs
  
       ![](images/a95.png)
  
-1. Select **Review + Create**.
+1. Select **Review + create**.
  
     ![](images/a96.png)
  
@@ -615,11 +615,11 @@ In this task, you will create an application rule to allow access to sports webs
 
       ![](images/a99.png)
 
-1. On the **Azure Firewall** tab, keep **Availability Zone** as **None**, **Specify number of Public IP addresses** 1 and keep other fields as **default**. click on **Next: Security Partner Provider**.
+1. On the **Azure Firewall** tab, select Azure Firewall tier as **Standard**,  keep **Availability Zone** as **None**, **Specify number of Public IP addresses** as **1** and keep other fields as **default**. click on **Next: Security Partner Provider >**.
  
     ![](images/firewallshub1.png)
  
-1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create**.
+1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create >**.
  
     ![](images/a101.png)
 
@@ -635,7 +635,7 @@ In this task, you will create an application rule to allow access to sports webs
   
     ![](images/a103.png)
  
-1. Select the checkbox for **Policy-01 (1)**, select **Manage associations(2)** and then select **Associate hubs (3)**.
+1. Select the checkbox for **Policy-01 (1)**, select **Manage associations (2)** and then select **Associate hubs (3)**.
  
     ![](images/a104.png)
  
@@ -647,7 +647,7 @@ In this task, you will create an application rule to allow access to sports webs
    
     ![](images/a106.png)
  
-1. To open the firewall policy, click **Policy-01**, then under Settings, select **Secured virtual hubs (1)**. You will see that your policy status is **Secured (2)**.
+1. To open the firewall policy, click **Policy-01**, then under Settings, select **Secured virtual hubs (1)**. You will see that your Policy Status is **Secured (2)**.
  
     ![](images/a108.png)	
 
