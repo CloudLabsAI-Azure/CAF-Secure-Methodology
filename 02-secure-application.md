@@ -236,9 +236,9 @@ In this task, you will set up an Azure Front Door configuration that pools two i
 
 Configure Azure Front Door to direct user traffic based on the lowest latency between the two Web App's origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
   
-1. In the Azure portal, search for **Front Doors (1)** and select it from the results **(2)**.
+1. In the Azure portal, search for **Front Door (1)** and select **Front Door and CDN profiles (2)** from the results.
   
-    ![](images1/search-front-door.png)
+    ![](images1/infra-app-security-mayupdate-1.png)
   
 1. Select **+ Create** to create a Front Door and CDN profile.
   
