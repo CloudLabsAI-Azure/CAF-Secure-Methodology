@@ -91,7 +91,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
  1. To test the application, copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab and generate some traffic by refreshing the browser.
  
-      > **Note**: You will see that your website is running.
+      > **Note**: You will see that your website is running. If website is not running, make sure the firewall policy of application gateway is at detection mode.
  
       ![](images/image307.png)
 
