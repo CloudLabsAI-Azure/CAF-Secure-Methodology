@@ -245,7 +245,11 @@ In this task, you will create an application rule to allow access to sports webs
     
     - Next hop type: Select **Virtual appliance (4)** from the drop-down list
     
-    - Next hop address: Enter the **Private IP Address** of the Firewall **(5)**.
+    - Next hop address: Enter the **Private IP Address** of the Firewall **(5)**. 
+      
+      >**Note**: The **private IP** address can be found on the **Overview** page of the **AzureFirewall** resource.
+
+      ![](images1/itp11.png)
     
     - Select **Add (6)**
  
