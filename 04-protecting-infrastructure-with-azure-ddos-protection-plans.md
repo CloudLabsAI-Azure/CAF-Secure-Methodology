@@ -48,9 +48,9 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Region: **<inject key="Region" />**
 
-   - Click on **Next-Tags**.
+   - Click on **Next : Tags >**.
  
-     ![](images/ddos3.png)
+    ![](images/ddos3.png)
  
 1. On the **Tags** tab, leave everything to default and then click on **Review + create**.
  
@@ -62,11 +62,11 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
       ![](images/ddos5.png)
  
-1. Once the DDoS protection is added, you will see a notification that says **Deployment succeeded**, as shown below.
+1. Once the DDoS protection is added, you will see a notification that says **Deployment succeeded**, as shown below. Click on **Go to resource**.
 
       ![](images/ddos6.png)
  
-1. On the DDoS protection page, under the Settings tab, click on **Protected resources (1)** and then select the **vnet (2)** and click on **Add (3)**.
+1. On the DDoS protection page, under the **Settings** tab, select **Protected resources (1)** then **VNET (2)** and click on **+ Add (3)**.
  
       ![](images/ddos10.png)
 
@@ -105,11 +105,11 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
 In this task, you will secure the Public IP address by using DDoS protection.
 
-1. In the Azure portal, search **Public IP Addresses (1)** and then select **Public IP Addresses (2)**.
+1. In the Azure portal, search **Public IP addresses (1)** and then select **Public IP addresses (2)**.
 
     ![](images/a33.png)
 
-1. Select the **firewalllp** from the list.
+1. Select the **firewallIP** from the list.
 
     ![](images/a34.png)
 
@@ -129,15 +129,15 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
 In this task, you will explore and visualize the metrics using various kinds of aggregation.
 
-1. Navigate back to the **firewalllp** page, Under Monitoring, select **Metrics**.
+1. Navigate back to the **firewallIP** page, Under Monitoring, select **Metrics**.
 
     ![](images/a40.png)
 
-1. Select **Add metric** then select **Scope**.
+1. Select **Add metric** then **Scope**.
 
-    ![](images/a41.png)
+    ![](images/E4T3S2.png)
 
-1. Once you click on Scope, select **Public IP Addresses (1)** from **Resources type**, then select the specific **public IP address (2)** you want to log metrics for, and then click on **Apply (3)**.
+1. Once you click on Scope, select **Public IP addresses (1)** from **Resources type**, then select the specific **public IP address (2)** you want to log metrics for, and click on **Apply (3)**.
 
      ![](images/a42.png)
 
