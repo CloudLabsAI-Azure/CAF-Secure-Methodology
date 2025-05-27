@@ -8,10 +8,10 @@ Azure Firewall is a cloud-native and intelligent network firewall security servi
 
 Azure Firewall Premium is a next-generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
 
-- **TLS Inspection** - decrypts outbound traffic, processes the data, then encrypts the data and sends it to the destination.
-- **IDPS** - A network intrusion detection and prevention system (IDPS) allows you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.
-- **URL filtering** - extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
-- **Web categories** - Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
+- **TLS Inspection:** decrypts outbound traffic, processes the data, then encrypts the data and sends it to the destination.
+- **IDPS:** A network intrusion detection and prevention system (IDPS) allows you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.
+- **URL filtering:** extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
+- **Web categories:** Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
 For more information, see `https://learn.microsoft.com/en-us/azure/firewall/premium-features`
  
 ## Lab Objectives
@@ -37,7 +37,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/scafinfra20-1.png "search gateway")
 
-1. From the left-side blade, select **Preview features (1)** and select **Microsoft.Network (2)** in the Provider list and click on **Apply (3)**.
+1. From the left-side blade, select **Preview features (1)** under Settings and select **Microsoft.Network (2)** in the Provider list and click on **Apply (3)**.
 
    ![](images/scafinfra21-1.png "search gateway")
 
@@ -49,7 +49,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/firewall1.png "search gateway")
 
-1. On the firewall page, under **Monitoring**, select **Diagnostic settings**.
+1. On the firewall page select **Diagnostic settings** under Monitoring section.
 
    ![](images/firewall2.png "search gateway")
 

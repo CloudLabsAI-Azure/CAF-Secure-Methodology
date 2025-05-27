@@ -436,7 +436,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
     >**Note**: It may take a few minutes for the rate limit policy to take effect. You can continue with other tasks and return later to test.
 
-1. After getting the response from the website, navigate back to the **myWAFpolicy** page, go to the **Overview** tab, and click on **Switch to detection mode (1)**.
+1. After getting the response from the website, navigate back to the **myWAFpolicy** page, go to the **Overview (1)** tab, and click on **Switch to detection mode (2)**.
 
     ![](images/a161.png "select gateway")
 
