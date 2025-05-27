@@ -31,11 +31,11 @@ In this task, you'll access the virtual machine by configuring an inbound port r
  
 1. From the sidebar, select **Network settings** under the Networking tab.
 
-   ![](images/networksettings.png)
+   ![](images/E5T1S3.png)
 
 1. On the Networking page, Click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Deny (2)** from Action and click on **Save (3)**.
 
-   ![](images/a21.png "search gateway")
+   ![](images/E5T1S4.png "search gateway")
    
 1. On the JumpBox VM, in the search bar, **Search** for **RDP (2)** and select **Remote Desktop Connection (3)** app.
    
@@ -47,13 +47,13 @@ In this task, you'll access the virtual machine by configuring an inbound port r
 
         ![](images/a25.png)  
  
-1. You will see the error **Remote desktop can't be connected to the remote computer** because we are denied the inbound rule for disallowing the RDP, and clicking on **OK**.
+1. You will see the error **Remote desktop can't be connected to the remote computer**.This is due to the inbound rule that explicitly denies RDP access. Click on **OK**.
 
    ![](images/a27.png)
    
 1. Navigate back to the **JumpVM-<inject key="DeploymentID" enableCopy="false" />**, Open Networking tab and click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Allow (2)** from Action and click on **Save (3)**.
 
-   ![](images/a28.png)
+   ![](images/E5T1S8.png)
 
 1. Navigate back to **Remote Desktop Connection**, click on **Connect**, and you will see that you are able to connect to the VM.
 
@@ -83,17 +83,19 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
  1. Select the **Frontend public IP address** of the application gateway.
  
-     ![](images/image301.png "select gateway")
+     ![](images/E5T2S3.png "select gateway")
   
  1. Copy the **Public IP address** and save it to Notepad for later use.
 
-     ![](images/editing12.png )
+     ![](images/E5T2S4.png )
 
  1. To test the application, copy and paste the Frontend public IP address of **Application Gateway** in a new browser tab and generate some traffic by refreshing the browser.
  
+     ![](images/image307.png)
+
       > **Note**: You will see that your website is running. If website is not running, make sure the firewall policy of application gateway is at detection mode.
- 
-      ![](images/image307.png)
+
+    ![](images/E5T2S5.png)
 
 1. Navigate to the resource group **JumpVM-rg**, and from the **Overview** tab, select **AzureFirewall**.
 
@@ -111,7 +113,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
    ![pip](images/a32.png)
 
-1. Navigate back to the Network Watcher and select **Traffic Analytics** under **Monitoring** from the options on the left side of the Network Watcher blade.
+1. Navigate back to the **Network Watcher** and select **Traffic Analytics** under **Monitoring** from the options on the left side of the Network Watcher blade.
 
    ![](images/traficanayltics.png)
       
@@ -133,7 +135,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
            
 1. Under **Traffic Analytics**, Scroll down to **Your Environment** to view the total number of **Deployed Azure regions (1)**, **TA Enabled NSGs (2)**, **Virtual networks (3)**, and **Virtual subnetworks (4)**.
 
-    ![env](images/envir.png)
+    ![env](images/E5T2S13.png)
       
 1. To visualize the traffic distribution by geography, click on **View map**. The geo-map shows the traffic distribution to a data center from countries/regions and continents communicating with it.
 
