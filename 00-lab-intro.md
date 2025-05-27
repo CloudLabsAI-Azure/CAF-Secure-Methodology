@@ -1,6 +1,6 @@
 # Infrastructure and Application Security 
 
-### Overall Estimated Duration: 8 hours
+### Overall Estimated Duration: 8 Hours
 
 ## Overview
 
@@ -67,7 +67,7 @@ Once you're ready to dive in, your virtual machine and **Lab Guide** will be rig
 
    ![](./images/environment.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
@@ -121,7 +121,6 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 7. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
 
 1. At the **"More information required"** prompt, select **Next**.
@@ -131,7 +130,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
 
    - Open **Google Play Store** (Android) or **App Store** (iOS).
+   
    - Search for **Microsoft Authenticator** and tap **Install**.
+   
    - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
 
 1. A **QR code** will be displayed on your computer screen.
@@ -153,7 +154,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
 Learner Support Contacts:
+
 - Email Support: cloudlabs-support@spektrasystems.com
+
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
 Now, click on **Next** from the lower right corner to move on to the next page.
