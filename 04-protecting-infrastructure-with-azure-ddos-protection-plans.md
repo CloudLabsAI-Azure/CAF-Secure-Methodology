@@ -50,7 +50,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Click on **Next : Tags >**.
  
-    ![](images/ddos3.png)
+     ![](images/ddos3.png)
  
 1. On the **Tags** tab, leave everything to default and then click on **Review + create**.
  

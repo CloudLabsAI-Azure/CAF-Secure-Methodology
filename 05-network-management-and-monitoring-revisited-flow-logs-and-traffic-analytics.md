@@ -14,62 +14,9 @@ Combining flow logs and traffic analytics enables network administrators to gain
 
 You will be able to complete the following tasks:
 
-- Task 1: NSG Validation
-- Task 2: Network Watcher Traffic Analytics to monitor the network
+- Task 1: Network Watcher Traffic Analytics to monitor the network
   
-## Task 1: NSG Validation (Optional)
-
-In this task, you'll access the virtual machine by configuring an inbound port rule in the network security group.
-
-1. Navigate to the Azure portal. Using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
-
-   ![](images/a18.png "search gateway")
-   
-1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
-
-   ![](images/E5T1S2.png "search gateway")
- 
-1. From the sidebar, select **Network settings** under the Networking tab.
-
-   ![](images/E5T1S3.png)
-
-1. On the Networking page, Click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Deny (2)** from Action and click on **Save (3)**.
-
-   ![](images/E5T1S4.png "search gateway")
-   
-1. On the JumpBox VM, in the search bar, **Search** for **RDP (2)** and select **Remote Desktop Connection (3)** app.
-   
-   ![](images/a24.png)
-
-1. Paste the **JumpVM DNS Name** in the **Computer** field and click on **Connect**.
-   
-    * **JumpVM DNS Name**: **<inject key="JumpVM DNS Name" />**
-
-        ![](images/a25.png)  
- 
-1. You will see the error **Remote desktop can't be connected to the remote computer**.This is due to the inbound rule that explicitly denies RDP access. Click on **OK**.
-
-   ![](images/a27.png)
-   
-1. Navigate back to the **JumpVM-<inject key="DeploymentID" enableCopy="false" />**, Open Networking tab and click on **default-allow-rdp (1)** inbound port rule to edit the configuration, select **Allow (2)** from Action and click on **Save (3)**.
-
-   ![](images/E5T1S8.png)
-
-1. Navigate back to **Remote Desktop Connection**, click on **Connect**, and you will see that you are able to connect to the VM.
-
-1. Now, enter the JUMPVM **username**, and **password** provided below and then click on the **OK** button.
-    
-    - **Username**: **<inject key="JumpVM Admin Username" />**
-    
-    - **Password**: **<inject key="JumpVM Admin Password" />**
-   
-        ![](images/a30.png)
-   
-1. Next, click on the **Yes** button to accept the certificate and add to trusted certificates.
-
-   ![](images/a31.png)
-
-## Task 2: Network Watcher Traffic Analytics to monitor the network
+## Task 1: Network Watcher Traffic Analytics to monitor the network
 
 In this task, you will enable the Traffic Analytics in the NSG flow logs and review the logs.
  
@@ -187,7 +134,6 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
 In this exercise, you have covered the following:
   
-- Performed NSG validation.
 - Monitored the network watcher traffic.
 
 ### You have successfully completed the lab
