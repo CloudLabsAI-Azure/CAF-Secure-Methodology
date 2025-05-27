@@ -431,6 +431,8 @@ In this task, you will create an application rule to allow access to sports webs
 1. Click on **Continue to www.nytimes.com (unsafe)**.
  
     ![](images1/unsafe1.png)
+
+    > **Note:** The website may take a few moments to load. In the meantime, please proceed with the testing steps and revisit this later towards the end.
  
 1. Validate that the HTML response is displayed as expected in the browser.
 
