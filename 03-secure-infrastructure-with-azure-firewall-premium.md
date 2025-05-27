@@ -386,7 +386,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 ## Task 4: Implement and Test URL filtering
  
-1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **can't reach this page**.
+1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **Hmmm... can't reach this page**.
  
     ```
     www.nytimes.com/section/world
@@ -436,13 +436,13 @@ In this task, you will create an application rule to allow access to sports webs
 
    ![](images/CAF1.png "search gateway")
 
-2. Switch to the other tab where the Azure Portal is open.
+1. Switch to the other tab where the Azure Portal is open.
 
-3. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
+1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
 
    ![](images1/firewall.png)
 
-4. On the **AzureFirewall** page, select **Logs (1)** under the **Monitoring** tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and click **Run (3)** for **Application rule log**. Ensure the mode is set to **KQL mode** to view the query and results.
+1. On the **AzureFirewall** page, select **Logs (1)** under the **Monitoring** tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and click **Run (3)** for **Application rule log**. Ensure the mode is set to **KQL mode** to view the query and results.
 
    ![](images/a124.png)
 
