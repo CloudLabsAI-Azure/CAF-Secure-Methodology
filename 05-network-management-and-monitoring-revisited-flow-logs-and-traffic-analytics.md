@@ -27,7 +27,7 @@ In this task, you'll access the virtual machine by configuring an inbound port r
    
 1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
 
-   ![](images/a19.png "search gateway")
+   ![](images/E5T1S2.png "search gateway")
  
 1. From the sidebar, select **Network settings** under the Networking tab.
 
