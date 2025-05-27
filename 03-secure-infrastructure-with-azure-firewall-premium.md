@@ -656,15 +656,15 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Select the checkbox for **Policy-01 (1)**, click on **Manage associations (2)**, and then choose **Associate hubs (3)**.
 
-   ![](images/a104.png)
+    ![](images/a104.png)
 
 2. On the **Secure hubs with Azure Firewall Policy** page, select the checkbox for **Hub-01 (1)** and click **Add (2)**.
 
-   ![](images/a105.png)
+    ![](images/a105.png)
 
 3. After the policy is attached, click **Refresh**. The association will then be displayed.
 
-   ![](images/a106.png)
+    ![](images/a106.png)
 
 4. To view the firewall policy, click **Policy-01** and then select **Secured virtual hubs (1)** from the **Settings** section. You should see the policy status shown as **Secured (2)**.
  
