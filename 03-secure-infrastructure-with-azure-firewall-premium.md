@@ -392,13 +392,13 @@ In this task, you will create an application rule to allow access to sports webs
     www.nytimes.com/section/world
     ```
  
-     ![](images1/error1.png)
+    ![](images1/error1.png)
   
 1. Switch back to the other tab where the **Azure Portal** is open. In your **JumpVM-rg** resource group, select **firewallpolicy**.
 
-   ![](images/firewall18.png "search gateway")
+    ![](images/firewall18.png "search gateway")
 
-2. Select **Application Rules (1)** from the **Settings** tab on the Firewall Policy page, then click **+ Add a rule collection (2)**.
+1. Select **Application Rules (1)** from the **Settings** tab on the Firewall Policy page, then click **+ Add a rule collection (2)**.
  
     ![](images/firewall17.png "search gateway")
  
@@ -426,7 +426,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 1. Once the deployment completes, navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error connection page, click on **Advanced**.
  
-      ![](images1/Advanced1.png)
+    ![](images1/Advanced1.png)
  
 1. Click on **Continue to www.nytimes.com (unsafe)**.
  
