@@ -77,7 +77,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
 1. Under **Destination details**, select **Send to Log Analytics workspace (1)**, select **Resource specific (2)** for Destination table option, and then click on **Save (3)**.
 
-   ![](images/scafinfra24.jpg "search gateway")
+   ![](images/E3T1S10.png "search gateway")
 
 ## Task 2: Test IDPS for HTTP traffic
 
@@ -121,7 +121,7 @@ In this task, you will test IDPS for HTTP traffic.
 
    ![FM](images/firewallmanager-1.png)
     
-1. Select **Azure Firewall Policies (1)** under the **Settings** tab  and click on Firewall Policy **firewallpolicy (2)**.
+1. Select **Azure Firewall Policies (1)** under the **Security**  and click on Firewall Policy **firewallpolicy (2)**.
 
    ![policy](images/selectfirewallpolicy-1.png)
    
@@ -180,15 +180,16 @@ In this task, you will test IDPS for HTTP traffic.
  
     ![](images/scafinfra25.jpg "search gateway")
  
- 1. You'll be able to see resource-specific logs for IDPS events.
+ 1. After you clicking on run, You'll be able to see resource-specific logs for IDPS events in **Simple Mode** if you want to see the **KQL query (2)** change the mode from the top right corner.
  
-    ![](images/scafinfra26.jpg "search gateway")
+    ![](images/E3T2S19i.png "search gateway")
+    ![](images/E3T2S19.png "search gateway")
  
     >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
  
 1. Now navigate back to the firewall policy and under **Settings** select **IDPS**.
  
-   ![](images/firewall10-1.png "search gateway")
+   ![](images/E3T2S20.png "search gateway")
  
 1. On the **IDPS** page select the **Signature rules (1)** tab and under **Signature ID**, in the open text box type **2032081 (2)**.
  
@@ -374,13 +375,13 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images1/firewall.png)
  
-1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule logs**.
+1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)** and click on **Run (3)** for **Application rule logs**. Ensure the mode is set to **KQL mode**
  
      ![](images/a124.png)
  
      >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
-     ![](images/a162.png)
+     ![](images/E3T3S21.png)
 
 ## Task 4: Implement and Test URL filtering
  
@@ -440,13 +441,13 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images1/firewall.png)
  
-1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and click on **Run (3)** for **Application rule log**.
+1. On the **AzureFirewall** page, select **Logs (1)** under the Monitoring tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and click on **Run (3)** for **Application rule log**. Ensure the mode is set to **KQL mode** to view the query and result.
  
     ![](images/a124.png)
 
     >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
 
-    ![](images/a162.png)
+    ![](images/E3T4S10.png)
 
 ## Task 5: IP Groups
 
@@ -475,7 +476,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Review the Summary, and then select **Create**.
  
-    ![](images/a123.png)
+    ![](images/E3T5S5.png)
 
 1. Navigate back to the tab where you have opened Bastion VM and browse the below-mentioned URL. You can see the error **can't reach this page**.
  
@@ -535,12 +536,10 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/a89.png)
  
-1. On the Firewall Manager page, from the **Overview (1)** tab, select **View Azure Firewall Policies (2)**.
- 
-     ![](images/a90.png)
- 
-1. Select **+ Create Azure Firewall Policy**. 
-  
+1. On the Firewall Manager page, navigate to **Azure Firewall Policies (1)** blade under security and click on **+ Create Azure Firewall Policy (2)**. 
+
+   ![](images/E3T6.1S2.png)
+
 1. On the Azure Firewall Policy page, on the **Basics** tab, enter or select the following information and click on **Next: DNS Settings > (5)**.
  
     | **Setting**      | **Value**                                                    |
@@ -551,19 +550,19 @@ In this task, you will create an application rule to allow access to sports webs
     | Region           | Select **East US (3)**                                       |
     | Policy tier      | Select **Standard (4)**                                      |
  
-     ![](images/a91.png)
+     ![](images/E3T6.1S3.png)
  
 1. On the **DNS Settings** tab, leave it as default and click on **Next: TLS inspection >**.
  
-    ![](images/a92.png)
+    ![](images/E3T6.1S4.png)
  
 1. On the **TLS inspection** tab, leave it as default and click on **Next: Rules >**.
  
-    ![](images/a93.png)
+    ![](images/E3T6.1S5.png)
 
 1. On the **Rules** tab, select **+ Add a rule collection**.
 
-    ![](images/a94.png)
+    ![](images/E3T6.1S6.png)
  
 1. On the **Add a rule collection** page, enter or select the following information
  
@@ -605,11 +604,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/a89.png)
  
-1. On the Firewall Manager, from the **Overview (1)** tab, select **View secured virtual hubs (2)**.
- 
-     ![](images/a98.png)
-
-1. On the **Virtual hubs** page, select Create **+ Create new secured virtual hub**.
+1. On the Firewall Manager page, select **Virtual Hubs** blade and click on **+ Create new secured virtual hub**.
  
      ![](images/create-virtual-hub.png)
 
@@ -637,7 +632,7 @@ In this task, you will create an application rule to allow access to sports webs
      | Specify number of Public IP addresses         | **1 (3)**                                                    |
      | Subscription                                  | Select your default subscription **(4)**                     |
 
-     ![](images/firewallshub1-1.png)
+     ![](images/E3T6.2S4.png)
  
 1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create**.
  

@@ -93,7 +93,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. From the sidebar, select **Subnets** from Settings.
    
-   ![](images/a16.png "search gateway")
+   ![](images/E1T3S3.png "search gateway")
 
 1. You will see that **AzureBastionSubnet** is already present in the subnets. If you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore this.
 
@@ -105,7 +105,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
 
-   ![](images/a19.png "search gateway")
+   ![](images/E1T3S6.png "search gateway")
 
 1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
@@ -151,21 +151,17 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra7.jpg)
 
-1. In the sidebar, select **NSG flow logs** from the Monitoring menu.
+1. In the blades section, select **NSG flow logs (1)** from the Monitoring menu and Click on **+ Create (2)** button.
 
-    ![](images/cafinfra8.jpg)
-
-1. Click on **+ Create** button.
-
-    ![](images/cafinfra9.jpg)
+    ![](images/E1T4S4.png)
 
 1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, and **Network security group (3)** as a Select target resource.
 
-    ![](images/nsgflog.png)
+    ![](images/E1T4S6.png)
 
 1. In the Select network security group page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg** **(1)** and click on **Confirm selection (2)**.
 
-    ![](images/caninfra11-1.png)
+    ![](images/E1T4S7.png)
 
 1. For the Instance details, provide the following details and click on **Next: Analytics > (4)**
 
@@ -175,7 +171,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    - **Retention (days)**: **30 (3)**
 
-       ![](images/scafinfra27.jpg)  
+       ![](images/E1T4S8.png)  
    
 1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the Traffic analytics processing interval and click **Review + Create (3)**.
 
@@ -185,7 +181,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    >**Note:** The deployment might take a few minutes to complete, wait till the deployment is completed before proceeding to next step.
 
-     ![](images/a150.png)  
+   ![](images/E1T4S10.png)  
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
@@ -211,7 +207,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox, and click on **Save (5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for a storage account.
 
-      ![](images/a151.png)
+      ![](images/E1T4S15.png)
 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
