@@ -267,8 +267,7 @@ In this task, you will create an application rule to allow access to sports webs
      
      * Click on **OK (5)**.
 
- 
-      ![](images/addsubnet-1.png)
+       ![](images/addsubnet-1.png)
  
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
