@@ -447,7 +447,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 ## Summary
  
-In this lab, you have covered the following:
+In this exercise, you have covered the following:
   
 - Configured WAF to protect your web application 
 - Accessed your application using the application gateway
@@ -455,4 +455,4 @@ In this lab, you have covered the following:
 - Performed Attack simulation
 - Performed Rate Limiting using Azure Front Door
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.
+### Click on **Next >>** to proceed with next exercise.

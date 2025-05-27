@@ -75,7 +75,7 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
    ![](./images/hover.png)
 
-1. Now, you'll be able to **visualize (1)** the topology. You can explore the different connections to understand how different resources, such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
+1. Now, you'll be able to **Visualize (1)** the topology. You can explore the different connections to understand how different resources, such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
    ![](images/scafinfra37.jpg "search gateway")
 
@@ -107,7 +107,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
    ![](images/E1T3S6.png "search gateway")
 
-1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
+1. On the Virtual Machine page, click on **Connect (1)** under **Connect** and then click on **Go to Bastion (2)**.
  
    ![](images/connect-1.png)
  
@@ -155,7 +155,7 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/E1T4S4.png)
 
-1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, and **Network security group (3)** as a Select target resource.
+1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, and **Network security group (4)** as a Select target resource.
 
     ![](images/E1T4S6.png)
 
@@ -177,7 +177,7 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![create](images/a149-1.png)
 
-1. On the Review + Create tab, review the summary and click on **Create** button.
+1. On the Review + create tab, review the summary and click on **Create** button.
 
    >**Note:** The deployment might take a few minutes to complete. Wait till the deployment is completed before proceeding to the next step.
 
@@ -191,7 +191,7 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra6.jpg)
 
-1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
+1. From the list of resources, select the Network security group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
 
     ![](images/cafinfra7.jpg)
 
@@ -199,7 +199,7 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra15.jpg)
 
-1. In the Diagnostic settings page, provide the following details and click on **Save (5)**.
+1. In the Diagnostic settings page, provide the following details.
 
    - **Diagnostic setting name:** **NSG_Flow_Logs (1)**
 

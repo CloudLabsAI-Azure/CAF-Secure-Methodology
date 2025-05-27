@@ -677,7 +677,7 @@ In this task, you will create an application rule to allow access to sports webs
 
 ## Summary
  
-In this lab, you have covered the following:
+In this exercise, you have covered the following:
   
 - Added firewall diagnostics settings 
 - Tested IDPS for HTTP traffic
@@ -686,4 +686,4 @@ In this lab, you have covered the following:
 - Performed IP groups
 - Performed Azure Firewall Policies with the Firewall Manager
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.
+### Click on **Next >>** to proceed with next exercise.

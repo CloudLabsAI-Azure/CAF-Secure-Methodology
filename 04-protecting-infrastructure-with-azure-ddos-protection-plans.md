@@ -151,11 +151,11 @@ In this task, you will explore and visualize the metrics using various kinds of 
       
 ## Summary
  
-In this lab, you have covered the following:
+In this exercise, you have covered the following:
   
 - Configured Azure DDoS Network Protection
 - Configured Azure DDoS IP Protection
 - Visualized the metrics using a Public IP address
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.    
+### Click on **Next >>** to proceed with next exercise.   
       
