@@ -462,7 +462,6 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. On the **Basics** tab of the **Create an IP Group** page, provide the following details and then click **Next: IP addresses > (4)** to continue.
 
- 
     | **Setting**      | **Value**                                                    |
     | ---------------- | ------------------------------------------------------------ |
     | Subscription     | Select your subscription.                                    |
@@ -501,7 +500,7 @@ In this task, you will create an application rule to allow access to sports webs
     - Name: **Ipgroup-rule (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **104 (3)**
-	- Rule collection action: **Allow (4)**
+    - Rule collection action: **Allow (4)**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (5)**
     - Under **Rules (6)** mention the below details:
 
@@ -516,9 +515,9 @@ In this task, you will create an application rule to allow access to sports webs
  
           ![](images/a141.jpg "search gateway")
 
-          >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to next steps.
+          >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.
 
-1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.news18.com`. On the Privacy error connection page, click on **Advanced**.
+1. Once the deployment completes, navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.news18.com`. On the Privacy error connection page, click on **Advanced**.
  
     ![](images/a142.jpg)
  
