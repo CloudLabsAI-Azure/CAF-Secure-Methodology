@@ -180,14 +180,14 @@ In this task, you will test IDPS for HTTP traffic.
  
     ![](images/scafinfra25.jpg "search gateway")
  
- 1. After you clicking on run, You'll be able to see resource-specific logs for IDPS events in **Simple Mode** if you want to see the **KQL query (2)** change the mode from the top right corner.
+ 1. After you clicking on run, You'll be able to see resource-specific logs for IDPS events in **Simple Mode** if you want to see the **KQL mode** change the mode from the top right corner.
  
     ![](images/E3T2S19i.png "search gateway")
     ![](images/E3T2S19.png "search gateway")
  
     >**Note: In case you didn't find the Logs as expected, then it may take up to 6 hours to show up. Please refer to the screenshot for reference and continue with the next steps**.
  
-1. Now navigate back to the firewall policy and under **Settings** select **IDPS**.
+1. Now navigate back to the firewall policy and under **Settings (1)** select **IDPS(2)**.
  
    ![](images/E3T2S20.png "search gateway")
  
@@ -499,22 +499,21 @@ In this task, you will create an application rule to allow access to sports webs
     - Name: **Ipgroup-rule (1)**
     - Rule Collection type: **Application (2)**
     - Priority: **104 (3)**
-	 - Rule collection action: **Allow (4)**
+	- Rule collection action: **Allow (4)**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (5)**
     - Under **Rules (6)** mention the below details:
-      - Name: **URL-Ipgroup**
-      - Source type: Select **IP Group** from the drop-down list
-      - Source: Enter **Ipgroup**
-      - Protocol: Enter **http,https**
-      - TLS inspection: Check TLS inspection
-      - Destination Type: Select **URL**
-      - Destination: Enter `www.news18.com`
-     
-     - Click on **Add (7)**
+    - Name: **URL-Ipgroup**
+    - Source type: Select **IP Group** from the drop-down list
+    - Source: Enter **Ipgroup**
+    - Protocol: Enter **http,https**
+    - TLS inspection: Check TLS inspection
+    - Destination Type: Select **URL**
+    - Destination: Enter `www.news18.com`
+    - Click on **Add (7)**
  
          ![](images/a141.jpg "search gateway")
 
-     >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to next steps.
+        >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to next steps.
 
 1. Once the deployment completes navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.news18.com`. On the Privacy error connection page, click on **Advanced**.
  
@@ -538,7 +537,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. On the Firewall Manager page, navigate to **Azure Firewall Policies (1)** blade under security and click on **+ Create Azure Firewall Policy (2)**. 
 
-   ![](images/E3T6.1S2.png)
+      ![](images/E3T6.1S2.png)
 
 1. On the Azure Firewall Policy page, on the **Basics** tab, enter or select the following information and click on **Next: DNS Settings > (5)**.
  
@@ -578,7 +577,9 @@ In this task, you will create an application rule to allow access to sports webs
       - Destination Ports: **80**
       - Destination Type: Select **IP Address**
       - Destination: Enter **10.6.0.0/16**
+
     - On the next rule row, enter the following information:
+
       - Name: Enter **AllowRDP**
       - Source type: Select **IP Address** from the drop-down list
       - Source: Enter **192.168.1.0/24**
@@ -586,6 +587,7 @@ In this task, you will create an application rule to allow access to sports webs
       - Destination Ports: **3389**
       - Destination Type: Select **IP Address**
       - Destination: Enter **10.6.0.0/16**
+      
     - Click on **Add (6)**
  
       ![](images/a95.png)
