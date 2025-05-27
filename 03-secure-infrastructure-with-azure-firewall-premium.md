@@ -259,15 +259,15 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Now select **Subnets (1)** under **Settings**, and click on **+ Associate (2)**.
 
-   * Under **Associate subnets**, enter the following details:
+   -  Under **Associate subnets**, enter the following details:
    
-     * **Virtual Network**: Select **vnet (JumpVM-rg) (3)** from the drop-down list.
+      - **Virtual Network**: Select **vnet (JumpVM-rg) (3)** from the drop-down list.
      
-     * **Subnet**: Select **jumpvmsubnet (4)** from the drop-down list.
+      - **Subnet**: Select **jumpvmsubnet (4)** from the drop-down list.
      
-     * Click on **OK (5)**.
+      - Click on **OK (5)**.
 
-       ![](images/addsubnet-1.png)
+        ![](images/addsubnet-1.png)
  
 1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
  
