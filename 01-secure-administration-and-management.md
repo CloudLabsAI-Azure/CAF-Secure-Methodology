@@ -113,11 +113,11 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
  
 1. On the Bastion page, follow the instructions below to connect to the Virtual Machine using Bastion:
 
-    - **Authentication Type**: Select **VM Password (1)** from the drop-down
+    - **Authentication Type:** Select **VM Password (1)** from the drop-down
     
-    - **Username**: Enter **<inject key="JumpVM Admin Username" />**  **(2)**
+    - **Username:** Enter **<inject key="JumpVM Admin Username" />**  **(2)**
     
-    - **VM Password**: Enter **<inject key="JumpVM Admin Password" />**  **(3)**
+    - **VM Password:** Enter **<inject key="JumpVM Admin Password" />**  **(3)**
     
     - Click on **Connect (4)**
  
@@ -137,7 +137,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 **NSG Flow Logs** capture information about the network traffic flowing through a Network Security Group. They provide visibility into the network communications and can be used for analyzing network behavior, detecting threats, and investigating security incidents.
 
-In this task, You will create NSG flow logs that will provide detailed information about the network traffic that passes through your NSG. This information can be used for troubleshooting network connectivity issues, monitoring and analyzing network traffic patterns, and detecting potential security threats.
+In this task, you will create NSG flow logs that will provide detailed information about the network traffic that passes through your NSG. This information can be used for troubleshooting network connectivity issues, monitoring and analyzing network traffic patterns, and detecting potential security threats.
 
 1. Navigate to the Azure portal. Using the search bar, search for **Resource groups (1)** and **select (2)** from the suggestions.
 
@@ -165,21 +165,21 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. For the Instance details, provide the following details and click on **Next: Analytics > (4)**
 
-   - **Subscription**: select **default subscription (1)** from the drop-down.
+   - **Subscription:** select **default subscription (1)** from the drop-down.
 
-   - **Storage Account**: select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
+   - **Storage Account:** select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
 
-   - **Retention (days)**: **30 (3)**
+   - **Retention (days):** **30 (3)**
 
        ![](images/E1T4S8.png)  
    
-1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the Traffic analytics processing interval and click **Review + Create (3)**.
+1. Under the **Analytics** tab, check the box to **Enable traffic analytics (1)**, select **Every 10 mins (2)** under the Traffic analytics processing interval and click **Review + create (3)**.
 
     ![create](images/a149-1.png)
 
 1. On the Review + Create tab, review the summary and click on **Create** button.
 
-   >**Note:** The deployment might take a few minutes to complete, wait till the deployment is completed before proceeding to next step.
+   >**Note:** The deployment might take a few minutes to complete. Wait till the deployment is completed before proceeding to the next step.
 
    ![](images/E1T4S10.png)  
 
@@ -201,14 +201,13 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. In the Diagnostic settings page, provide the following details and click on **Save (5)**.
 
-   - **Diagnostic setting name**: **NSG_Flow_Logs (1)**
+   - **Diagnostic setting name:** **NSG_Flow_Logs (1)**
 
-   - **Logs -> Category groups**: check the **allLogs (2)** checkbox.
+   - **Logs -> Category groups:** check the **allLogs (2)** checkbox.
 
-   - **Destination details**: Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox, and click on **Save (5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for a storage account.
+   - **Destination details:** Select **Send to Log Analytics workspace (3)**. The existing log analytics workspace should be selected. Also select the **Archive to a storage account (4)** checkbox, and click on **Save (5)**. Make sure the default subscription is selected for subscription and nsglogs<inject key="DeploymentID" enableCopy="false" /> for a storage account.
 
       ![](images/E1T4S15.png)
-
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -217,14 +216,13 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 <validation step="f287d359-99b1-4b6c-8519-647983bf4a68" />
 
-
 ## Summary
  
-In this lab, you have covered the following:
+In this exercise, you have covered the following:
   
 - Explored Network health 
 - Explored on Network topology
 - Secured Access via Bastion Host
 - Configured the Network Watcher monitoring environment and NSG Flow
 
-### You have successfully completed the lab. Click on **Next >>** to proceed with next exercise.
+### Click on **Next >>** to proceed with next exercise.
