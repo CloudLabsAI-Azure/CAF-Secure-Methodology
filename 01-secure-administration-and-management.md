@@ -97,7 +97,7 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
 1. You will see that **AzureBastionSubnet** is already present in the subnets. If you want to see the subnet configuration, then you can click on the AzureBastionSubnet subnet and explore this.
 
-   ![](images/a17.png "search gateway")
+   ![](images/E1T3S4.png "search gateway")
 
 1. Now, using the search bar, search for **Virtual machines (1)** and **select (2)** from the suggestions.
 
@@ -151,7 +151,7 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra7.jpg)
 
-1. In the blades section, select **NSG flow logs (1)** from the Monitoring menu and Click on **+ Create (2)** button.
+1. Under **Monitoring** section, select **NSG flow logs (1)** blade and Click on **+ Create (2)** button.
 
     ![](images/E1T4S4.png)
 
