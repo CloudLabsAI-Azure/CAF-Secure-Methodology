@@ -316,7 +316,6 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
 
     > **Note:** Wait for the deployment to complete, which may take a few minutes, before proceeding to the next task.
 
-
     ![](images/a61.png)
    
     ![](images/a65.png)
