@@ -422,7 +422,7 @@ In this task, you will create an application rule to allow access to sports webs
  
          ![](images/CAF2.png "search gateway")
 
-    >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.     
+    > **Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.     
 
 1. Once the deployment completes, navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error connection page, click on **Advanced**.
  
@@ -434,21 +434,21 @@ In this task, you will create an application rule to allow access to sports webs
  
 1. Validate that the HTML response is displayed as expected in the browser.
 
-   ![](images/CAF1.png "search gateway")
+    ![](images/CAF1.png "search gateway")
 
 1. Switch to the other tab where the Azure Portal is open.
 
 1. In the Azure portal, go to your **JumpVM-rg** resource group and select **AzureFirewall**.
 
-   ![](images1/firewall.png)
+    ![](images1/firewall.png)
 
 1. On the **AzureFirewall** page, select **Logs (1)** under the **Monitoring** tab, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and click **Run (3)** for **Application rule log**. Ensure the mode is set to **KQL mode** to view the query and results.
 
-   ![](images/a124.png)
+    ![](images/a124.png)
 
-    > **Note:** If you don’t see the logs as expected, it may take up to 6 hours for them to appear. Please refer to the screenshot for reference and continue with the next steps.
+     > **Note:** If you don’t see the logs as expected, it may take up to 6 hours for them to appear. Please refer to the screenshot for reference and continue with the next steps.
 
-    ![](images/E3T4S10.png)
+     ![](images/E3T4S10.png)
 
 ## Task 5: IP Groups
 
