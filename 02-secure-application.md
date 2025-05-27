@@ -437,7 +437,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. After getting the response from the website, navigate back to the **myWAFpolicy** page, go to the **Overview (1)** tab, and click on **Switch to detection mode (2)**.
 
-    ![](images/a161.png "select gateway")
+    ![](images/mywafppo.png "select gateway")
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
