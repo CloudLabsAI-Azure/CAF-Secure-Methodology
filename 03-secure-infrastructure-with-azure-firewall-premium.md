@@ -330,9 +330,9 @@ In this task, you will create an application rule to allow access to sports webs
 
       >**Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.
 
-1. Now, select **Application Rules (1)** from the **Settings** tab on the **Firewall Policy** page, then click **+ Add a rule collection (2)**.
+1. Now, select **Application Rules (1)** from the **Rules** tab on the **Firewall Policy** page, then click **+ Add a rule collection (2)**.
    
-    ![](images/firewall17.png "search gateway")
+    ![](images/mywafppo1.png "search gateway")
  
 1. Under the **Add a rule collection** page, enter the details below to enable the web application in Bastion VM:
  
@@ -398,9 +398,9 @@ In this task, you will create an application rule to allow access to sports webs
 
     ![](images/firewall18.png "search gateway")
 
-1. Select **Application Rules (1)** from the **Settings** tab on the Firewall Policy page, then click **+ Add a rule collection (2)**.
+1. Select **Application rules (1)** from the **Rules** tab on the Firewall Policy page, then click **+ Add a rule collection (2)**.
  
-    ![](images/firewall17.png "search gateway")
+    ![](images/mywafppo1.png "search gateway")
  
 1. Under the **Add a rule collection** page, enter the details below to enable the web application in the Bastion VM:
 
@@ -479,21 +479,21 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/E3T5S5.png)
 
-1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **Hmmm... can't reach this page**.
+1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **Action Deny**.
  
     ```
     www.news18.com
     ```
  
-    ![](images/a145.jpg)
+    ![](images/mywafppo2.png)
   
 1. Now switch back to the other tab, where Azure Portal is opened and to your **JumpVM-rg** resource group, then select **firewallpolicy**.
  
     ![](images/firewall18.png "search gateway")
  
-1. Select **Application rules (1)** from **Settings** section on Firewall Policy page and select **+ Add a rule collection (2)**.
+1. Select **Application rules (1)** from **Rules** section on Firewall Policy page and select **+ Add a rule collection (2)**.
  
-    ![](images/firewall17.png "search gateway")
+    ![](images/mywafppo1.png "search gateway")
 
 1. Under the **Add a rule collection** page, enter the details below to enable the web application in the Bastion VM:
 
