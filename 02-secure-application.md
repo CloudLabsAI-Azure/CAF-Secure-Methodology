@@ -42,11 +42,11 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 
     - **Target type**: Select **Virtual Machine (1)** from the drop-down.
 
-    - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
+    - **Target**: Select **FirewallVM-nic (2)** from drop-down.
 
     - Click on **Save (3)**.
 
-      ![](images/editbackendpool-1.png)
+      ![](images/updateimg-12.png)
     
 1. Once the Backend pools are saved, you will see the notification that says **Deployment succeeded**.
 
@@ -99,9 +99,9 @@ In this task, you will access the application by going through the Application G
 
      ![](images/editing12.png )
           
-1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** into a new browser tab that you copied in step 4.
+1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** into a new browser tab that you copied in previous step.
 
-   ![ss](images/image307.png)
+   ![ss](images/updateimg-13.png)
        
 ## Task 3: Application Gateway WAF Custom Rule to block IP
  
@@ -196,15 +196,15 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
 
 1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2.
    
-    >**Note**: Your browsing URL value should look like ```http://20.185.224.102```
+    >**Note**: Your browsing URL value should look like ```https://20.169.169.81/```
 
-     ![ss](images/image307.png)
+     ![ss](images/updateimg-13.png)
 
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
   
-    >**Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
+    >**Note**: Your browsing URL value should look like ```http://20.169.169.81/?q=<script>```
     
-     ![ss](images1/attack.png)
+     ![ss](images1/updateimg-14.png)
   
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
