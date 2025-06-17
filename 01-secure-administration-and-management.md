@@ -1,6 +1,6 @@
 # Exercise 1: Secure administration and management
 
-### Estimated Duration: 120 minutes
+### Estimated Duration: 120 Minutes
 
 ## Overview
 
@@ -77,7 +77,7 @@ In this task, you'll explore Azure Monitor and examine the resource health of va
 
 1. Now, you'll be able to **Visualize (1)** the topology. You can explore the different connections to understand how different resources, such as virtual machines, subnets, virtual network gateways, and other network components are interconnected and how they communicate with each other. You can also download the topology by clicking on **Download topology (2)**.
 
-   ![](images/scafinfra37.jpg "search gateway")
+   ![](images/updateimg-3.png "search gateway")
 
 ## Task 3: Secure Access via Bastion Host
 
@@ -103,13 +103,13 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
    ![](images/a18.png "search gateway")
 
-1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
+1. Select the **FirewallVM** from the list.
 
-   ![](images/E1T3S6.png "search gateway")
+   ![](images/updateimg-4.png "search gateway")
 
 1. On the Virtual Machine page, click on **Connect (1)** under **Connect** and then click on **Go to Bastion (2)**.
  
-   ![](images/connect-1.png)
+   ![](images/updateimg-5.png)
  
 1. On the Bastion page, follow the instructions below to connect to the Virtual Machine using Bastion:
 
@@ -121,11 +121,11 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
     
     - Click on **Connect (4)**
  
-      ![](images/bastionconnect-1.png)
+      ![](images/update-6.png)
 
       >**Note:** If the Connection is blocked by the browser, click on the **Pop-up (1)** button, select **Always allow pop-ups and redirects from https://portal.azure.com (2)** and then click on **Done (3)**.
 
-       ![](images/unblock-redirects.png)
+       ![](images/updateimg-7.png)
  
 1. Now, you will be redirected to a new tab where the Bastion VM is opened. If you see the pop-up **See text and images copied to the clipboard**, click on **Allow**.
  
@@ -147,21 +147,21 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra6.jpg)
 
-1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
+1. From the list of resources, select the Network Security Group named **FirewallVM-nsg**.
 
-    ![](images/cafinfra7.jpg)
+    ![](images/updateimg-8.png)
 
 1. Under **Monitoring** section, select **NSG flow logs (1)** blade and Click on **+ Create (2)** button.
 
-    ![](images/E1T4S4.png)
+    ![](images/updateimg-9.png)
 
 1. In the Create a flow log page, select the **default subscription (1)**, **Network security group (2)** as Flow log type, and **Network security group (4)** as a Select target resource.
 
     ![](images/E1T4S6.png)
 
-1. In the Select network security group page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg** **(1)** and click on **Confirm selection (2)**.
+1. In the Select network security group page, select **FirewallVm-nsg** **(1)** and click on **Confirm selection (2)**.
 
-    ![](images/E1T4S7.png)
+    ![](images/updateimg-10.png)
 
 1. For the Instance details, provide the following details and click on **Next: Analytics > (4)**
 
@@ -191,13 +191,13 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
     ![](images/cafinfra6.jpg)
 
-1. From the list of resources, select the Network security group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
+1. From the list of resources, select the Network security group named **FirewallVM-nsg**.
 
-    ![](images/cafinfra7.jpg)
+    ![](images/updateimg-8.png)
 
 1. From the sidebar, select **Diagnostic settings (1)** under monitoring and click on **+ Add diagnostic setting (2)**.
 
-    ![](images/cafinfra15.jpg)
+    ![](images/updateimg-11.png)
 
 1. In the Diagnostic settings page, provide the following details.
 
