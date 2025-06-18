@@ -406,7 +406,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     - Name: **Firewall-rulecollection (1)**
     - Rule Collection type: **Application (2)**
-    - Priority: **101 (3)**
+    - Priority: **106 (3)**
     - Rule Collection Action: **Allow**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
     - Under **Rules (5)** mention the below details:
