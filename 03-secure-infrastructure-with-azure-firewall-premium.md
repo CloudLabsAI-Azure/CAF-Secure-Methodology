@@ -49,7 +49,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/firewall1.png "search gateway")
 
-1. On the firewall page select **Diagnostic settings** under Monitoring section.
+1. On the firewall page, select **Diagnostic settings** under Monitoring section.
 
    ![](images/firewall2.png "search gateway")
 
@@ -85,7 +85,7 @@ Azure Firewall Premium provides signature-based IDPS to allow rapid detection of
 
 In this task, you will test IDPS for HTTP traffic.
 
-1.  In the Azure portal, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
+1.  In the Azure portal, from the search bar, search for **Application gateways (1)** and then select **Application gateways (2)**.
  
      ![](images/searchgateway.png "search gateway")
  
@@ -334,7 +334,7 @@ In this task, you will create an application rule to allow access to sports webs
    
     ![](images/mywafppo1.png "search gateway")
  
-1. Under the **Add a rule collection** page, enter the details below to enable the web application in Bastion VM:
+1. Under the **Add a rule collection** page, enter the details below to enable the web application in the Bastion VM:
  
     - Name: **GeneralWeb (1)**
     - Rule Collection type: **Application (2)**
