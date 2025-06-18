@@ -1,6 +1,6 @@
 # Exercise 3: Secure Infrastructure with Azure Firewall Premium
 
-### Estimated Duration: 120 minutes
+### Estimated Duration: 120 Minutes
 
 ## Overview: 
 
@@ -121,9 +121,9 @@ In this task, you will test IDPS for HTTP traffic.
 
    ![FM](images/firewallmanager-1.png)
     
-1. Select **Azure Firewall Policies (1)** under **Security**, then click on the firewall policy named **firewallpolicy (2)**.
+1. Select **Azure Firewall Policies (1)** under **Firewall Manager**, then click on the firewall policy named **firewallpolicy (2)**.
 
-   ![policy](images/selectfirewallpolicy-1.png)
+   ![policy](images/updateimg-16.png)
    
 1. Select **DNAT rules (1)** from the **Rules** tab on the **Firewall Policy** page, then click **+ Add a rule collection (2)**.
 
@@ -152,7 +152,7 @@ In this task, you will test IDPS for HTTP traffic.
 
      > **Note:** This may take a few minutes to update the rule collection group. Please wait for the updates to complete before proceeding to the next steps.
 
-1. On the JumpVM virtual machine, search for **Command Prompt (1)** and open the **Command Prompt (2)** window.
+1. On the FirewallVM virtual machine, search for **Command Prompt (1)** and open the **Command Prompt (2)** window.
 
    ![](images/firewall9.png "search gateway")
 
@@ -269,13 +269,13 @@ In this task, you will create an application rule to allow access to sports webs
 
       ![](images/addsubnet-1.png)
  
-1. Navigate to your **JumpVM-rg** resource group and select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>**. 
+1. Navigate to your **JumpVM-rg** resource group and select **FirewallVM**. 
  
-    ![](images1/selectvm.png)
+    ![](images/updateimg-4.png)
 
 1. On the **Virtual Machine** page, click **Connect (1)** under the **Connect** section, then select **Go to Bastion (2)**.
  
-     ![](images/connect-1.png)
+     ![](images/updateimg-5.png)
  
 1. On the Bastion page, follow the instructions below to connect to the Virtual Machine using Bastion:
  
@@ -284,7 +284,7 @@ In this task, you will create an application rule to allow access to sports webs
     - **VM Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="true"/> (3)**
     - Click on **Connect (4)**
  
-      ![](images/bastionconnect-1.png)
+      ![](images/updateimg-17.png)
  
 1. You will now be redirected to a new tab where the Bastion VM opens. If you see the pop-up **"See text and images copied to the clipboard,"** click on **Allow**.
  
@@ -535,11 +535,11 @@ In this task, you will create an application rule to allow access to sports webs
 
 ### Task 6.1: Create a Firewall Policy
 
-1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and select **Firewall Manager (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **Network security (1)** and select **Network security (2)** from suggestions.
  
-     ![](images/a89.png)
+     ![](images/updateimg-18.png)
  
-1. On the Firewall Manager page, navigate to **Azure Firewall Policies (1)** under security and click on **+ Create Azure Firewall Policy (2)**. 
+1. On the Network security page, navigate to **Azure Firewall Policies (1)** under Firewall Manager and click on **+ Create (2)**. 
 
       ![](images/E3T6.1S2.png)
 
@@ -606,13 +606,13 @@ In this task, you will create an application rule to allow access to sports webs
  
 ### Task 6.2: Create the firewall hub virtual network
  
-1. Navigate to the home page in the Azure portal, search for **firewall manager (1)** and select **Firewall Manager (2)** from suggestions.
+1. Navigate to the home page in the Azure portal, search for **Network security (1)** and select **Network security (2)** from suggestions.
  
-    ![](images/a89.png)
+    ![](images/updateimg-18.png)
  
-1. On the Firewall Manager page, navigate to **Virtual Hubs** under **Deployments** and click **+ Create new secured virtual hub**.
+1. On the Network security page, navigate to **Virtual Hubs** under **Secure your resources** and click **+ Create new secured virtual hub**.
  
-    ![](images/create-virtual-hub.png)
+    ![](images/updateimg-19.png)
 
 1. On the **Basics** tab of secured virtual hub page, enter or select the following information and click on **Next: Azure Firewall > (8)**.
    
@@ -629,16 +629,15 @@ In this task, you will create an application rule to allow access to sports webs
 
       ![](images/a99.png)
 
-1. On the **Azure Firewall** tab, enter or select the following information and click on **Next: Security Partner Provider > (5)**
+1. On the **Azure Firewall** tab, enter or select the following information and click on **Next: Security Partner Provider > (4)**
 
      | **Setting**                                   | **Value**                                                    |
      | ----------------------------------------------| ------------------------------------------------------------ |
      | Azure Firewall tier                           | **Standard (1)**                                             |
-     | Availability zone                             | **None (2)**                                                 |
-     | Specify number of Public IP addresses         | **1 (3)**                                                    |
-     | Subscription                                  | Select your default subscription **(4)**                     |
+     | Specify number of Public IP addresses         | **1 (2)**                                                    |
+     | Subscription                                  | Select your default subscription **(3)**                     |
 
-     ![](images/E3T6.2S4.png)
+     ![](images/updateimg-20.png)
  
 1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create**.
  
@@ -652,25 +651,21 @@ In this task, you will create an application rule to allow access to sports webs
  
 ### Task 6.3: Associate the firewall policy with the virtual hub
   
-1. From the Azure portal home page, go to **Firewall Manager**. Then, on the Firewall Manager page, under **Security**, click on **Azure Firewall Policies**.
+1. From the Azure portal home page, go to **Network security**. Then, on the Network security page, under **Firewall Manager**, click on **Virtual Hubs**.
   
-    ![](images/a103.png)
+    ![](images/updateimg-21.png)
  
-1. Select the checkbox for **Policy-01 (1)**, click on **Manage associations (2)**, and then choose **Associate hubs (3)**.
+1. Select the checkbox for **Hub-01 (1)**, click on **Manage security (2)**, and then choose **Choose another firewall policy (3)**.
 
-    ![](images/a104.png)
+    ![](images/updateimg-22.png)
 
-2. On the **Secure hubs with Azure Firewall Policy** page, select the checkbox for **Hub-01 (1)** and click **Add (2)**.
+2. On the **Choose another firewall policy** page, select the checkbox for **policy-01 (1)** and click **Next: Review + confirm (2)**.
 
-    ![](images/a105.png)
+    ![](images/updateimg-23.png)
 
-3. After the policy is attached, click **Refresh**. The association will then be displayed.
+3. On the next page, click **Confirm** to associate hub-01 with policy-01.
 
-    ![](images/a106.png)
-
-4. To view the firewall policy, click **Policy-01** and then select **Secured virtual hubs (1)** from the **Settings** section. You should see the policy status shown as **Secured (2)**.
- 
-    ![](images/a108.png)	
+    ![](images/updateimg-24.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.

@@ -113,7 +113,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
 1. On **Compute Infrastructure | Virtual machines page**, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
-    ![](images/E2T3S2.png "select gateway")
+    ![](images/updateimg-15.png "select gateway")
 
 1. Copy the **Public IP address** and save it to Notepad for later use.
 

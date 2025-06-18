@@ -1,6 +1,6 @@
 # Exercise 5: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview:
 
@@ -60,9 +60,10 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
    ![pip](images/a32.png)
 
-1. Navigate back to the **Network Watcher** and select **Traffic Analytics** under **Monitoring** from the options on the left side of the Network Watcher blade.
+1. In the Azure portal, search for **Network Watcher** and select it. Once you're on the Network Watcher page, go to the left-hand menu under the **Monitoring** section and click on **Traffic Analytics**.
 
-   ![](images/traficanayltics.png)
+   ![](images/updateimg-26.png)
+   ![](images/updateimg-27.png)
       
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 
