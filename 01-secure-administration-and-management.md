@@ -201,7 +201,7 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
 1. In the Diagnostic settings page, provide the following details.
 
-   - **Diagnostic setting name:** **NSG_Flow_Logs (1)**
+   - Diagnostic setting name: **NSG_Flow_Logs (1)**
 
    - **Logs -> Category groups:** check the **allLogs (2)** checkbox.
 

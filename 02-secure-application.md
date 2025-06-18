@@ -1,6 +1,6 @@
 # Exercise 2: Secure application 
 
-### Estimated Duration: 120 minutes
+### Estimated Duration: 120 Minutes
 
 ## Overview
 
@@ -106,11 +106,11 @@ In this task, you will access the application by going through the Application G
  
 In this task, you will block access from the Lab VM to the Jump VM by configuring a Firewall Policy custom rule. The rule will deny access to the web application by adding the Lab VM’s Public IP in the deny rule.
  
-1. In the Azure portal, search for **Virtual Machines (1)** and select it from the results **(2)**.
+1. In the Azure portal, search for **Virtual machines (1)** and select it from the results **(2)**.
 
     ![](images/a156.png "select gateway")
  
-1. On **Compute Infrastructure | Virtual machines page**, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
+1. On the **Compute Infrastructure | Virtual machines page**, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
     ![](images/updateimg-15.png "select gateway")
 

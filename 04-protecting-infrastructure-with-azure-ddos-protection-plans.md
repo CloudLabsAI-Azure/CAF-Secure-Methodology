@@ -34,7 +34,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
    ![](images/ddos1.png)
  
-1. Click on **+ Create**.
+1. Click on **+ Create** to create a DDoS protection plan.
  
     ![](images/ddos2.png)
  
@@ -48,7 +48,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Region: **<inject key="Region" />**
 
-   - Click on **Next : Tags >**.
+   - Click on **Next : Tags > (4)**.
  
      ![](images/ddos3.png)
  
@@ -121,7 +121,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
     ![](images/a175.png)
 
-1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection (3)**, you will see that your public IP address is protected by **IP protection** as shown below.
+1. In the **Overview (1)** pane, select the **Properties (2)** tab. Under **DDoS protection (3)**, you will see that your public IP address is protected by **IP protection** as shown below.
 
     ![](images/a38.png)
     
@@ -137,7 +137,7 @@ In this task, you will explore and visualize the metrics using various kinds of 
 
     ![](images/E4T3S2.png)
 
-1. Once you click on Scope, select **Public IP addresses (1)** from **Resources type**, then select the specific **public IP address (2)** you want to log metrics for, and click on **Apply (3)**.
+1. Once you click on Scope, select **Public IP addresses (1)** from **Resources type**, then select the specific **Public IP address (2)** you want to log metrics for, and click on **Apply (3)**.
 
      ![](images/a42.png)
 
