@@ -165,9 +165,9 @@ In this task, you will create NSG flow logs that will provide detailed informati
 
 1. For the Instance details, provide the following details and click on **Next: Analytics > (4)**
 
-   - **Subscription:** select **default subscription (1)** from the drop-down.
+   - **Subscription:** Select **default subscription (1)** from the drop-down.
 
-   - **Storage Account:** select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
+   - **Storage Account:** Select **nsglogs<inject key="DeploymentID" enableCopy="false" />** from the drop down.
 
    - **Retention (days):** **30 (3)**
 
