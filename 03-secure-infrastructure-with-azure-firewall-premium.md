@@ -389,7 +389,7 @@ In this task, you will create an application rule to allow access to sports webs
 1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **Hmmm... can't reach this page**.
  
     ```
-    www.nytimes.com/section/world
+    www.hindustantimes.com
     ```
  
     ![](images1/error1.png)
