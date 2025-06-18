@@ -49,7 +49,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/firewall1.png "search gateway")
 
-1. On the firewall page select **Diagnostic settings** under Monitoring section.
+1. On the firewall page, select **Diagnostic settings** under Monitoring section.
 
    ![](images/firewall2.png "search gateway")
 
@@ -85,7 +85,7 @@ Azure Firewall Premium provides signature-based IDPS to allow rapid detection of
 
 In this task, you will test IDPS for HTTP traffic.
 
-1.  In the Azure portal, from the search bar search for **Application gateways (1)** and then select **Application gateways (2)**.
+1.  In the Azure portal, from the search bar, search for **Application gateways (1)** and then select **Application gateways (2)**.
  
      ![](images/searchgateway.png "search gateway")
  
@@ -109,7 +109,7 @@ In this task, you will test IDPS for HTTP traffic.
 
     ![firewall](images1/azurefirewall.png)
    
-1. Select **Firewall Public IP** from the **Overview** tab.
+1. Select **Firewall public IP** from the **Overview** tab.
 
     ![pip](images1/firewallIP.png)
     
@@ -152,7 +152,7 @@ In this task, you will test IDPS for HTTP traffic.
 
      > **Note:** This may take a few minutes to update the rule collection group. Please wait for the updates to complete before proceeding to the next steps.
 
-1. On the FirewallVM virtual machine, search for **Command Prompt (1)** and open the **Command Prompt (2)** window.
+1. On the **FirewallVM** virtual machine, search for **Command Prompt (1)** and open the **Command Prompt (2)** window.
 
    ![](images/firewall9.png "search gateway")
 
@@ -273,7 +273,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/updateimg-4.png)
 
-1. On the **Virtual Machine** page, click **Connect (1)** under the **Connect** section, then select **Go to Bastion (2)**.
+1. On the **FirewallVM Virtual Machine** page, click **Connect (1)** under the **Connect** section, then select **Go to Bastion (2)**.
  
      ![](images/updateimg-5.png)
  
@@ -334,7 +334,7 @@ In this task, you will create an application rule to allow access to sports webs
    
     ![](images/mywafppo1.png "search gateway")
  
-1. Under the **Add a rule collection** page, enter the details below to enable the web application in Bastion VM:
+1. Under the **Add a rule collection** page, enter the details below to enable the web application in the Bastion VM:
  
     - Name: **GeneralWeb (1)**
     - Rule Collection type: **Application (2)**
@@ -539,7 +539,7 @@ In this task, you will create an application rule to allow access to sports webs
  
      ![](images/updateimg-18.png)
  
-1. On the Network security page, navigate to **Azure Firewall Policies (1)** under Firewall Manager and click on **+ Create (2)**. 
+1. On the Network security page, navigate to **Azure Firewall Policies (1)** under Security and click on **+ Create Azure Firewall Policy (2)**. 
 
       ![](images/E3T6.1S2.png)
 
@@ -639,7 +639,7 @@ In this task, you will create an application rule to allow access to sports webs
 
      ![](images/updateimg-20.png)
  
-1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create**.
+1. On the **Security Partner Provider** tab, leave it to default and click on **Next: Review + create >**.
  
     ![](images/a101.png)
 
@@ -650,8 +650,12 @@ In this task, you will create an application rule to allow access to sports webs
     >**Note**: Deployment may take up to 30 minutes to complete.
  
 ### Task 6.3: Associate the firewall policy with the virtual hub
+
+1. Navigate to the home page in the Azure portal, search for **Network security (1)** and select **Network security (2)** from suggestions.
+ 
+    ![](images/updateimg-18.png)
   
-1. From the Azure portal home page, go to **Network security**. Then, on the Network security page, under **Firewall Manager**, click on **Virtual Hubs**.
+1. On the Network security page, under **Secure your resources** pane, click on **Virtual Hubs**.
   
     ![](images/updateimg-21.png)
  
@@ -659,7 +663,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     ![](images/updateimg-22.png)
 
-2. On the **Choose another firewall policy** page, select the checkbox for **policy-01 (1)** and click **Next: Review + confirm (2)**.
+2. On the **Choose another firewall policy** page, select the checkbox for **Policy-01 (1)** and click **Next: Review + confirm > (2)**.
 
     ![](images/updateimg-23.png)
 

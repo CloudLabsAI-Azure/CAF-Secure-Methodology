@@ -14,9 +14,9 @@ Azure DDoS Protection, combined with application design best practices, provides
 
 ### Types of attacks Azure DDoS Protection mitigates
 
-- **Volumetric attacks**: These attacks flood the network layer with a substantial amount of seemingly legitimate traffic. They include UDP floods, amplification floods, and other spoofed-packet floods. DDoS Protection mitigates these potential multi-gigabyte attacks by absorbing and scrubbing them, with Azure's global network scale, automatically.
-- **Protocol attacks**: These attacks render a target inaccessible, by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic, by interacting with the client, and blocking malicious traffic.
-- **Resource (application) layer attacks**: These attacks target web application packets, to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layer 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection to provide defence against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
+- **Volumetric attacks:** These attacks flood the network layer with a substantial amount of seemingly legitimate traffic. They include UDP floods, amplification floods, and other spoofed-packet floods. DDoS Protection mitigates these potential multi-gigabyte attacks by absorbing and scrubbing them, with Azure's global network scale, automatically.
+- **Protocol attacks:** These attacks render a target inaccessible by exploiting a weakness in the layer 3 and layer 4 protocol stack. They include SYN flood attacks, reflection attacks, and other protocol attacks. DDoS Protection mitigates these attacks, differentiating between malicious and legitimate traffic by interacting with the client and blocking malicious traffic.
+- **Resource (application) layer attacks:** These attacks target web application packets to disrupt the transmission of data between hosts. They include HTTP protocol violations, SQL injection, cross-site scripting, and other layer 7 attacks. Use a Web Application Firewall, such as the Azure Application Gateway web application firewall, as well as DDoS Protection to provide defence against these attacks. There are also third-party web application firewall offerings available in the Azure Marketplace.
 
 ## Lab Objectives
 
@@ -34,7 +34,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
    ![](images/ddos1.png)
  
-1. Click on **+ Create**.
+1. Click on **+ Create** to create a DDoS protection plan.
  
     ![](images/ddos2.png)
  
@@ -48,7 +48,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
 
    - Region: **<inject key="Region" />**
 
-   - Click on **Next : Tags >**.
+   - Click on **Next : Tags > (4)**.
  
      ![](images/ddos3.png)
  
@@ -58,7 +58,7 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
   
 1. If the validation is passed, then click on **Create**.
 
-    >**NOTE**: It may take a couple of minutes for the workspace to be created.
+    >**NOTE:** It may take a couple of minutes for the workspace to be created.
 
       ![](images/ddos5.png)
  
@@ -121,7 +121,7 @@ In this task, you will secure the Public IP address by using DDoS protection.
 
     ![](images/a175.png)
 
-1. In the **Overview (1)** pane, select the **Properties (2)** tab, under **DDoS protection (3)**, you will see that your public IP address is protected by **IP protection** as shown below.
+1. In the **Overview (1)** pane, select the **Properties (2)** tab. Under **DDoS protection (3)**, you will see that your public IP address is protected by **IP protection** as shown below.
 
     ![](images/a38.png)
     
@@ -137,7 +137,7 @@ In this task, you will explore and visualize the metrics using various kinds of 
 
     ![](images/E4T3S2.png)
 
-1. Once you click on Scope, select **Public IP addresses (1)** from **Resources type**, then select the specific **public IP address (2)** you want to log metrics for, and click on **Apply (3)**.
+1. Once you click on Scope, select **Public IP addresses (1)** from **Resources type**, then select the specific **Public IP address (2)** you want to log metrics for, and click on **Apply (3)**.
 
      ![](images/a42.png)
 
@@ -157,5 +157,4 @@ In this exercise, you have covered the following:
 - Configured Azure DDoS IP Protection
 - Visualized the metrics using a Public IP address
 
-### Click on **Next >>** to proceed with next exercise.   
-      
+### Click on **Next >>** to proceed with next exercise.
