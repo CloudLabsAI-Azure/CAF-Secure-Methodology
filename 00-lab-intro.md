@@ -65,7 +65,7 @@ Welcome to your Infrastructure and Application Security Workshop! We've prepared
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-   ![](./images/environment.png)
+   ![](./images/environment-1.png)
 
 ## Virtual Machine & Lab Guide
  
@@ -87,7 +87,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-  ![](./images/GS5-1.png)
+  ![](./images/GS5-100.png)
  
 ## Let's Get Started with Azure Portal
  
@@ -146,8 +146,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 1. If prompted to stay signed in, you can click **No**.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
- 
-1. Now, click on the **Next** from the lower right corner to move to the next page.
+   ![](images/gs1313.png)
 
 ## Support Contact
  
