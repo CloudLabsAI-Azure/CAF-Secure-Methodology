@@ -392,7 +392,7 @@ In this task, you will create an application rule to allow access to sports webs
     www.hindustantimes.com
     ```
  
-    ![](images1/error1.png)
+    ![](images/updateimg-30.png)
   
 1. Switch back to the other tab where the **Azure Portal** is open. In your **JumpVM-rg** resource group, select **firewallpolicy**.
 
@@ -406,7 +406,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     - Name: **Firewall-rulecollection (1)**
     - Rule Collection type: **Application (2)**
-    - Priority: **100 (3)**
+    - Priority: **101 (3)**
     - Rule Collection Action: **Allow**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
     - Under **Rules (5)** mention the below details:
@@ -416,27 +416,27 @@ In this task, you will create an application rule to allow access to sports webs
       - Protocol: Enter **http,https**
       - TLS inspection: Check TLS inspection
       - Destination Type: Select **URL**
-      - Destination: Enter `www.nytimes.com/section/world`
+      - Destination: Enter `www.hindustantimes.com`
      
      - Click on **Add (6)**
  
-         ![](images/CAF2.png "search gateway")
+         ![](images/updateimg-31.png "search gateway")
 
     > **Note:** This might take 5-6 minutes to update the firewall policy. Wait for the firewall policy to get updated before proceeding to the next steps.     
 
-1. Once the deployment completes, navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.nytimes.com/section/world`. On the Privacy error connection page, click on **Advanced**.
+1. Once the deployment completes, navigate back to the Bastion VM tab and refresh the page where you have browsed for `www.hindustantimes.com`. On the Privacy error connection page, click on **Advanced**.
  
-    ![](images1/Advanced1.png)
+    ![](images/updateimg-29.png)
  
-1. Click on **Continue to www.nytimes.com (unsafe)**.
+1. Click on **Continue to www.hindustantimes.com (unsafe)**.
  
-    ![](images1/unsafe1.png)
+    ![](images/updateimg-28.png)
 
     > **Note:** The website may take a few moments to load. In the meantime, please proceed with the testing steps and revisit this later towards the end.
  
 1. Validate that the HTML response is displayed as expected in the browser.
 
-    ![](images/CAF1.png "search gateway")
+    ![](images/updateimg-32.png "search gateway")
 
 1. Switch to the other tab where the Azure Portal is open.
 
