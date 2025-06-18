@@ -37,7 +37,7 @@ Participants should have the following prerequisites:
 
 Various Azure resources and services are integrated to provide a comprehensive security framework. At the core, **Azure Virtual Machines** and **Azure Virtual Networks** are protected using **Azure Firewall** and **Network Security Groups** to control and monitor traffic. **Microsoft Entra ID** (formerly know as Azure Active Directory (AAD)) manages identity and access, ensuring secure authentication and authorization. **Azure Security Center** offers unified security management and advanced threat protection across the Azure environment. **Azure Sentinel** provides intelligent security analytics and threat detection through a cloud-native SIEM (Security Information and Event Management) system. Data protection is enhanced using **Azure Key Vault** for managing secrets and **Azure Encryption** services to safeguard data at rest and in transit. Together, these resources create a layered security approach to defend against a wide range of cyber threats and ensure compliance with security policies and regulations.
 
-## Architechture Diagram
+## Architecture Diagram
 
 ![Architecture Diagram](./images/infra-security-arch-diagram.png)
 
