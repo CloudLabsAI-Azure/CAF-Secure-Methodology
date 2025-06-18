@@ -176,9 +176,9 @@ In this task, you will test IDPS for HTTP traffic.
 
     ![](images/logsexit.png)
 
-1. Select **Logs (1)**, click on **Firewall Logs (Resource Specific Tables - Preview) (2)**, and then click **Run (3)** to view **IDPS event logs**.
+1. Click on **Firewall Logs (Resource Specific Tables - Preview) (1)**, and then click **Run** to view **IDPS event logs (2)**.
  
-    ![](images/scafinfra25.jpg "search gateway")
+    ![](images/updateimg-34.png "search gateway")
  
 1. After clicking **Run**, you will see resource-specific logs for IDPS events in **Simple Mode**. To switch to **KQL mode**, change the mode from the top right corner.
  
@@ -406,7 +406,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     - Name: **Firewall-rulecollection (1)**
     - Rule Collection type: **Application (2)**
-    - Priority: **106 (3)**
+    - Priority: **107 (3)**
     - Rule Collection Action: **Allow**
     - Rule collection group: **DefaultApplicationRuleCollectionGroup (4)**
     - Under **Rules (5)** mention the below details:
@@ -610,7 +610,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/updateimg-18.png)
  
-1. On the Network security page, navigate to **Virtual Hubs** under Secure your resources and click **+ Create new secured virtual hub**.
+1. On the Network security page, navigate to **Virtual Hubs (1)** under Secure your resources and click **+ Create new secured virtual hub (2)**.
  
     ![](images/updateimg-19.png)
 
@@ -671,6 +671,9 @@ In this task, you will create an application rule to allow access to sports webs
 
     ![](images/updateimg-24.png)
 
+4. Return to the Virtual Hubs section, click on Hub-01, and you will see that the Azure Firewall status is marked as secured.
+
+    ![](images/updateimg-35.png)
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
