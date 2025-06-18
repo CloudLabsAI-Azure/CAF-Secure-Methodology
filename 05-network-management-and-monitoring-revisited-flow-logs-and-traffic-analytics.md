@@ -40,7 +40,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
      ![](images/image307.png)
 
-      > **Note**: You will see that your website is running. If website is not running, make sure the firewall policy of application gateway is in detection mode.
+      > **Note**: You will see that your website is running. If the website is not running, make sure the firewall policy of the application gateway is in detection mode.
 
     ![](images/E5T2S5.png)
 
@@ -63,6 +63,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 1. In the Azure portal, search for **Network Watcher** and select it. Once you're on the Network Watcher page, go to the left-hand menu under the **Monitoring** section and click on **Traffic Analytics**.
 
    ![](images/updateimg-26.png)
+   
    ![](images/updateimg-27.png)
       
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
@@ -71,7 +72,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
    
    > **Note: If you observe the Time interval is greyed out, click on Meanwhile, click here to see just resource data and perform the above step**.
    
-   > **It may take upto 30 to 60 minutes to click on Meanwhile, click here to see just resource data and perform the above step option to come up**.
+   > **It may take up to 30 to 60 minutes to click on **Meanwhile, click here to see just resource data and perform the above step option to come up**.
 
       ![](images1/timeinterval-1.png)
       
