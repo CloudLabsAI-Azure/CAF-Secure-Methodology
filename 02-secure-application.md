@@ -6,11 +6,11 @@
 
 Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. To learn more about Azure Firewall, refer: `https://docs.microsoft.com/en-us/azure/firewall`
 
-Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP). To learn more about Application gateway refer: `https://docs.microsoft.com/en-us/azure/application-gateway`
+Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP). To learn more about Application gateway, refer: `https://docs.microsoft.com/en-us/azure/application-gateway`
 
-Azure Web Application Firewall provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks. Preventing such attacks in application code is challenging. It can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps make security management much simpler. To learn more about Azure Web Application Firewall refer: `https://docs.microsoft.com/en-us/azure/application-gateway`
+Azure Web Application Firewall provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks. Preventing such attacks in application code is challenging. It can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps make security management much simpler. To learn more about Azure Web Application Firewall, refer: `https://docs.microsoft.com/en-us/azure/application-gateway`
 
-In this lab, you will deploy an Azure Firewall and Application Gateway with WAF V2 then you will publish an application through it. You'll also test the security of the application and perform a sample attack.
+In this lab, you will deploy an Azure Firewall and Application Gateway with WAF V2, then you will publish an application through it. You'll also test the security of the application and perform a sample attack.
 
 ## Lab Objectives
 
@@ -79,7 +79,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
    ![](images1/appgateway-notification.png)
 
 
-## Task 2: Accessing your application using application gateway
+## Task 2: Accessing your application using the application gateway
  
 In this task, you will access the application by going through the Application Gateway that you just configured.
 
@@ -238,7 +238,7 @@ In this task, you will set up an Azure Front Door configuration that pools two i
   
 ### Task 5.1: Create a Front Door for your application
 
-Configure Azure Front Door to direct user traffic based on the lowest latency between the two Web App's origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
+Configure Azure Front Door to direct user traffic based on the lowest latency between the two Web Apps' origins. You'll also secure your Azure Front Door with a Web Application Firewall (WAF) policy.
   
 1. In the Azure portal, search for **Front Door (1)** and select **Front Door and CDN profiles (2)** from the results.
   
