@@ -4,9 +4,9 @@
 
 ## Overview:
 
-Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, **Flow logs** and **Traffic analytics** provide valuable insights into network traffic patterns and behavior.
+Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, **Flow logs** and **Traffic analytics** provide valuable insights into network traffic patterns and behaviour.
 
-**Flow logs** capture detailed information about network flows, including source and destination IP addresses, ports, protocols, and packet counts. They offer visibility into network traffic at the packet level, aiding in troubleshooting, detecting anomalies, and understanding network behavior.
+**Flow logs** capture detailed information about network flows, including source and destination IP addresses, ports, protocols, and packet counts. They offer visibility into network traffic at the packet level, aiding in troubleshooting, detecting anomalies, and understanding network behaviour.
 
 Combining flow logs and traffic analytics enables network administrators to gain comprehensive visibility, streamline troubleshooting, and make data-driven decisions for network optimization and security enhancement.
 
@@ -40,7 +40,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
      ![](images/image307.png)
 
-      > **Note**: You will see that your website is running. If website is not running, make sure the firewall policy of application gateway is at detection mode.
+      > **Note**: You will see that your website is running. If website is not running, make sure the firewall policy of application gateway is in detection mode.
 
     ![](images/E5T2S5.png)
 
