@@ -1,12 +1,12 @@
 # Exercise 5: Network Management and Monitoring Revisited: Flow Logs and Traffic Analytics
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview:
 
-Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, **Flow logs** and **Traffic analytics** provide valuable insights into network traffic patterns and behavior.
+Network management and monitoring play a crucial role in maintaining a secure and efficient network infrastructure. In addition to traditional monitoring methods, **Flow logs** and **Traffic analytics** provide valuable insights into network traffic patterns and behaviour.
 
-**Flow logs** capture detailed information about network flows, including source and destination IP addresses, ports, protocols, and packet counts. They offer visibility into network traffic at the packet level, aiding in troubleshooting, detecting anomalies, and understanding network behavior.
+**Flow logs** capture detailed information about network flows, including source and destination IP addresses, ports, protocols, and packet counts. They offer visibility into network traffic at the packet level, aiding in troubleshooting, detecting anomalies, and understanding network behaviour.
 
 Combining flow logs and traffic analytics enables network administrators to gain comprehensive visibility, streamline troubleshooting, and make data-driven decisions for network optimization and security enhancement.
 
@@ -40,7 +40,7 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
  
      ![](images/image307.png)
 
-      > **Note**: You will see that your website is running. If website is not running, make sure the firewall policy of application gateway is at detection mode.
+      > **Note**: You will see that your website is running. If website is not running, make sure the firewall policy of application gateway is in detection mode.
 
     ![](images/E5T2S5.png)
 
@@ -60,9 +60,10 @@ In this task, you will enable the Traffic Analytics in the NSG flow logs and rev
 
    ![pip](images/a32.png)
 
-1. Navigate back to the **Network Watcher** and select **Traffic Analytics** under **Monitoring** from the options on the left side of the Network Watcher blade.
+1. In the Azure portal, search for **Network Watcher** and select it. Once you're on the Network Watcher page, go to the left-hand menu under the **Monitoring** section and click on **Traffic Analytics**.
 
-   ![](images/traficanayltics.png)
+   ![](images/updateimg-26.png)
+   ![](images/updateimg-27.png)
       
 1. On the **Traffic Analytics** page, set the time interval to the **Last 30 minutes**.
 

@@ -1,12 +1,12 @@
 # Exercise 4: Protecting Infrastructure with Azure DDoS Protection Plans
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
 ### What is DDoS protection?
 
-Distributed denial of service (DDoS) attacks are some of the largest availability and security concerns facing customers who are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
+Distributed denial of service (DDoS) attacks are some of the largest availability and security concerns facing customers who are moving their applications to the cloud. A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the Internet.
 
 Azure DDoS Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. Protection is simple to enable on any new or existing virtual network, and it requires no application or resource changes.
 
@@ -86,13 +86,13 @@ In this task, you will create a DDoS protection plan to protect the virtual netw
  
       ![](images/ddos9.png)
  
-1. Now, In the Azure portal, search **Firewall Manager (1)** and then select **Firewall Manager (2)**.
+1. Now, In the Azure portal, search **Network security (1)** and then select **Network security  (2)**.
  
-      ![](images/ddos11.png)
+      ![](images/updateimg-18.png)
 
-1. Under the Deployments tab, click on **Virtual Networks**, and you will see that you are protected.
+1. Under the **Secure your resources** tab, click on **Virtual Networks**, and you will see that you are protected.
  
-      ![](images/ddos12.png)
+      ![](images/updateimg-25.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
