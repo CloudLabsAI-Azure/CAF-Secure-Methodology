@@ -40,9 +40,9 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
      
  1. On the **Edit backend pool** page, follow the instructions below:
 
-    - **Target type**: Select **Virtual Machine (1)** from the drop-down.
+    - **Target type:** Select **Virtual Machine (1)** from the drop-down.
 
-    - **Target**: Select **FirewallVM-nic (2)** from drop-down.
+    - **Target:** Select **FirewallVM-nic (2)** from drop-down.
 
     - Click on **Save (3)**.
 
@@ -66,7 +66,7 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
     
 1. Under the **Associate an application gateway** page, follow the instructions below:
 
-    - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop down. 
+    - **Application Gateway (WAF v2 SKU):** Select **Application Gateway (1)** from the drop down. 
     
     - **Check** the box next to **Apply the Web Application Firewall policy configuration even if it's different from the current configuration (2)**.
     
@@ -77,7 +77,6 @@ In this task, you will add a Virtual Machine as the Backend pool of the Applicat
 1. Once the Application Gateway are saved, you will see the notification that says **Updated the Application Gateway**.
 
    ![](images1/appgateway-notification.png)
-
 
 ## Task 2: Accessing your application using the application gateway
  
@@ -167,7 +166,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
  
 1. On the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
 
-   >**Note**: Wait for the firewall policy to get updated before proceeding to the next step.
+   >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
  
     ![](images1/switchtoprevention.png)
 
@@ -175,7 +174,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
    ![](images/a160.png "select gateway")
 
-   >**Note**: This may take a few minutes to take effect. 
+   >**Note:** This may take a few minutes to take effect. 
 
 1. Navigate back to **firewallpolicy** page, go to the **Overview (1)** blade and click on **Switch to detection mode (2)**.
 
@@ -190,19 +189,19 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 ## Task 4: Attack simulation
      
-In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-site scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
+In this task, you will be testing your application for security and performing sample attacks like XSS. Cross-site scripting (XSS) attacks are a type of injection in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser-side script, to a different end-user.
 
 Since we are already blocking the Public IP of the Lab VM from accessing the web application. You will want to perform this test from your own machine’s browser. You can perform a sample attack on your application by passing this `?q=<script>` value at the end of the web application URL or IP address.
 
 1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2.
    
-    >**Note**: Your browsing URL value should look like ```https://20.169.169.81/```
+    >**Note:** Your browsing URL value should look like ```https://20.169.169.81/```
 
      ![ss](images/updateimg-13.png)
 
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
   
-    >**Note**: Your browsing URL value should look like ```http://20.169.169.81/?q=<script>```
+    >**Note:** Your browsing URL value should look like ```http://20.169.169.81/?q=<script>```
     
      ![ss](images1/updateimg-14.png)
   
@@ -220,7 +219,7 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
  
 1. On the **firewallpolicy** page, go to the **Overview (1)** blade and click on **Switch to prevention mode (2)**.
 
-     >**Note**: Wait for the firewall policy to get updated before proceeding to the next step.
+     >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
 
     ![](images1/switchtoprevention.png)
     
@@ -272,7 +271,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
 
     ![](images/E2T5.1S6.png)
 
-1. Now name the endpoint as **contoso-frontend (1)** and click on **Add (2)** to add the endpoint.
+1. Now, name the endpoint as **contoso-frontend (1)** and click on **Add (2)** to add the endpoint.
   
     ![](images/E2T5.1S7.png)
   
@@ -324,8 +323,7 @@ Configure Azure Front Door to direct user traffic based on the lowest latency be
   
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created.
   
-1. On the Front Door resource, go to the **Overview (1)** blade and locate the endpoint hostname created for your endpoint for example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. Then, **copy (2)** this FQDN.
-
+1. On the Front Door resource, go to the **Overview (1)** blade and locate the endpoint hostname created for your endpoint, for example, **contoso-frontend-ghbnd2bafvhmbzfs.z01.azurefd.net**. Then, **copy (2)** this FQDN.
   
     ![](images/E2T5.2S1.png)
     
@@ -423,7 +421,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
     ![](images/E2T5.2S13.png)
 
-    >**Note**: Wait for the firewall policy to get updated before proceeding to the next step.
+    >**Note:** Wait for the firewall policy to get updated before proceeding to the next step.
 
 1. On the **myWAFPolicy** page, under **Settings**, click **Policy settings (1)**. Notice the block response status code is set to **403 (2)**. Enter **This is a rate limit test (3)** under the block response body and click **Save (4)**.
   
@@ -433,7 +431,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
     ![](images/a178.png)
 
-    >**Note**: It may take a few minutes for the rate limit policy to take effect. You can continue with other tasks and return later to test.
+    >**Note:** It may take a few minutes for the rate limit policy to take effect. You can continue with other tasks and return later to test.
 
 1. After getting the response from the website, navigate back to the **myWAFpolicy** page, go to the **Overview (1)** tab, and click on **Switch to detection mode (2)**.
 
