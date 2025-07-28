@@ -89,24 +89,24 @@ In this task, you'll learn how to access an Azure virtual machine using the Azur
 
    ![](images/a18.png "search gateway")
 
-1. Select the **JumpVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
+1. Select the **FirewallVM-<inject key="DeploymentID" enableCopy="false" />** from the list.
 
-    ![](images/CAF-10png.png)
+    ![](images/VM-01.png)
 
 1. On the Virtual Machine page, under **Connect**, click on **Connect (1)** then click on **Go to Bastion (2)**.
  
-   ![](images/CAF-11png.png)
+   ![](images/VM-02.png)
  
 1. On the Bastion page, follow the below-mentioned instructions to connect to the Virtual Machine using Bastion:
 
      
  
     - **Authentication Type**: Ensure **VM Password (1)** is chosen from the drop-down
-    - **Username**: Enter **<inject key="JumpVM Admin Username" enableCopy="false" /> (1)**
-    - **Password**: Enter **<inject key="JumpVM Admin Password" enableCopy="false" />(3)**
+    - **Username**: Enter **<inject key="LABVM Admin Username" enableCopy="false" /> (1)**
+    - **Password**: Enter **<inject key="LABVM Admin Password" enableCopy="false" />(3)**
     - Click on **Connect (4)**
  
-      ![](images1/infra1.png)
+      ![](images/VM-03.png)
 
        >**Note:** If the popup blocker prevents the new window, select the allow popup blocker and click on Done and Connect again.
   
@@ -132,27 +132,27 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    ![](images/CAF-13png.png)
 
-1. Select the **JumpVM-rg** from the list.
+1. Select the **FirewallVM-rg** from the list.
 
-   ![](images/CAF-06png.png)
+   ![](images/RG-04.png)
 
-1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
+1. From the list of resources, select the Network Security Group named **FirewallVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
 
-   ![](images/CAF-07png.png)
+   ![](images/RG-005.png)
 
 1. In the sidebar, select **NSG flow logs** from the Monitoring menu.
 
-   ![](images/cafinfra8.jpg)
+   ![](images1/NSG-07.jpg)
 
 1. Click on the **create** button.
 
-   ![](images/cafinfra9.jpg)
+   ![](images1/NSG-003.jpg)
 
-1. In the Create a flow log page, select the **default subscription (1)** then **+ Select target resource (2)** and from the drop down select **Network security group (3)**.
+1. In the Create a flow log page, select the **default subscription (1)** then **+ Select target resource (2)** and from the drop down select **Network interface (3)**.
 
-   ![](images/CAF-01png.png)
+   ![](images/NI-08.png)
 
-1. In the Select network security group page, select **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg** **(1)** and click on **Confirm selection (2)**.
+1. In the Select network security group page, select **FirewallVM-<inject key="DeploymentID" enableCopy="false" />-nsg** **(1)** and click on **Confirm selection (2)**.
 
    ![](images/CAF-02png.png)
 
@@ -176,13 +176,13 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    ![](images/CAF-13png.png)
 
-1. Select the **JumpVM-rg** from the list.
+1. Select the **FirewallVM-rg** from the list.
 
-   ![](images/CAF-06png.png)
+   ![](images/RG-04.png)
 
-1. From the list of resources, select the Network Security Group named **JumpVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
+1. From the list of resources, select the Network Security Group named **FirewallVM-<inject key="DeploymentID" enableCopy="false" />-nsg**.
 
-   ![](images/CAF-07png.png)
+   ![](images/RG-005.png)
 
 1. From the sidebar, select **Diagnostic settings (1)** and click on **+ Add diagnostic setting (2)**.
 
