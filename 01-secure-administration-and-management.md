@@ -140,13 +140,9 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
    ![](images/RG-005.png)
 
-1. In the sidebar, select **NSG flow logs** from the Monitoring menu.
+1. In the sidebar, select **NSG flow logs** from the Monitoring menu. And click on the **create** button.
 
-   ![](images1/NSG-07.jpg)
-
-1. Click on the **create** button.
-
-   ![](images1/NSG-003.jpg)
+   ![](images1/NSG-003.png)
 
 1. In the Create a flow log page, select the **default subscription (1)** then **+ Select target resource (2)** and from the drop down select **Network interface (3)**.
 
@@ -186,7 +182,7 @@ In this task, You will create NSG flow logs that will provide detailed informati
 
 1. From the sidebar, select **Diagnostic settings (1)** and click on **+ Add diagnostic setting (2)**.
 
-   ![](images/CAF-08png.png)
+   ![](images/DI-01.png)
 
 1. In the Diagnostic settings page, provide the following details and click on **Save (5)**.
 
