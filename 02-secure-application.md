@@ -28,7 +28,7 @@ This exercise includes the following tasks:
     
  1. Select your **Application Gateway**.
 
-      ![](images/CAF-lab2-2.png)
+      ![](images/EDIT-02.png)
       
  1. On the Application gateway blade click on the **Backend pools (1)** under setting and then select **AGBackendtarget (2)**.
 
@@ -50,7 +50,7 @@ This exercise includes the following tasks:
  
  1. Click on **firewallpolicy** under the Web Application Firewall page and click on **Associated application gateways** under the **Settings** tab from the Application Gateway WAF policy page.
 
-     ![](/images1/firewallpolicy.png)
+     ![](/images/FW-05.png)
      
  1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
 
@@ -74,7 +74,7 @@ In this task, you will access the application by going through the Application G
  
 1. Select your **Application Gateway**.
  
-   ![](images/CAF-lab2-2.png)
+   ![](images/EDIT-02.png)
  
 1. Select the **Frontend public IP address** of the application gateway.
  
