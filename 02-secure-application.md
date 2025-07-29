@@ -37,10 +37,10 @@ This exercise includes the following tasks:
  1. On the **Edit backend pool** page, follow the below-mentioned instructions:
 
     - **Target type**: Select **Virtual Machine (1)** from the drop-down.
-    - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
+    - **Target**: Select **FirewallVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
     - Click on **Save (3)**.
 
-      ![](images/CAF-lab2-4.png)
+      ![](images/FW-001.png)
     
 1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
 
@@ -78,20 +78,20 @@ In this task, you will access the application by going through the Application G
  
 1. Select the **Frontend public IP address** of the application gateway.
  
-      ![](images/CAF-lab2-6.png)
+      ![](images/IP-04.png)
 
 1.  Copy the **Public IP address** and save it to Notepad for later use.
 
-     ![](images/CAF-lab2-7.png)
+     ![](images/IP-03.png)
           
 1. Now, to test the application copy and paste the Frontend public IP address of **Application Gateway** into a new browser tab that you copied in step 4.
 
-   ![ss](/images/image307.png)
+   ![ss](/images/IP-02.png)
        
 
  ## **Task 3: Application Gateway WAF Custom Rule to block IP**
  
-In this task, you will block access from the Lab VM to the Jump VM by configuring a Firewall Policy custom rule. The rule will deny access to the web application by adding the Lab VM’s Public IP in the deny rule.
+In this task, you will block access from the Lab VM to the Firewall VM by configuring a Firewall Policy custom rule. The rule will deny access to the web application by adding the Lab VM’s Public IP in the deny rule.
  
  1. In the Azure portal, search for **Virtual Machine (1)** and select it from the **results (2)**.
 
@@ -133,7 +133,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
-   ![rp](/images1/rgappgateway.png)
+   ![](/images/FW-02.png)
     
 1. Under the **Application gateway** page, follow the below details:
      - Select **Web application firewall (1)** under **Settings**.    
@@ -153,7 +153,7 @@ In this task, you will block access from the Lab VM to the Jump VM by configurin
 
 1. Navigate back to **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to detection mode (2)**.
 
-   ![](images/a161.png "select gateway")
+   ![](images/FW-3.png "select gateway")
 
 
  <validation step="5a378ae3-6334-483c-8846-e94f8f5ecd26" /> 
@@ -173,30 +173,30 @@ Since we are already blocking the Public IP of the Lab VM from accessing the web
 1. From your own machine's browser, access the application by putting in the **Application Gateway IP** that you looked up in Task 2.
      >**Note**: Your browsing URL value should look like ```http://20.185.224.102```
 
-      ![ss](/images/image307.png)
+   ![ss](/images/image307.png)
    
 1. Now pass the value `?q=<script>` at the end of your **Application Gateway** IP and try browsing it using browser. You can observe that the web application is accessible.
      >**Note**: Your browsing URL value should look like ```http://20.185.224.102/?q=<script>```
      
-       ![ss](/images1/attack.png)
+   ![ss](/images1/attack.png)
   
 1. To make your application more secure, select **ApplicationGateway** from the overview page of the resource group.
      
-     ![rp](/images1/rgappgateway.png)
+     ![](/images/FW-02.png)
     
 1. Under the **Application gateway** page, follow the below details:
      - Select **Web application firewall (1)** under **Settings**.    
      - Click on **firewallpolicy** under **Associated web application firewall policy (2)**.  
   
-         ![config](/images1/webappfirewall.png)
+       ![config](/images/FW-04.png)
  
 1. Under the **firewallpolicy** page, go to the **Overview (1)** tab and click on **Switch to prevention mode (2)**.
  
-    ![](/images1/switchtoprevention.png)
+    ![](/images/FW-3.png)
     
 1. Now, navigate back to the tab where you browsed the IP Address and refresh the page. You can observe the **403 Forbidden error**.
     
-    ![server error](/images1/403.png)
+   ![](images1/infra4.png)
 
 ## **Task 5: Rate Limiting using Azure Front Door**
   
@@ -225,7 +225,7 @@ In this task, you're setting up an Azure Front Door instance to improve applicat
      | **Setting**                 | **Value**                                                     |
      | ----------------------------| ------------------------------------------------------------  |
      | Subscription                | Select your subscription (1).                                     |
-     | Resource group              | Select the resource group **JumpVM-rg (2)**                       |
+     | Resource group              | Select the resource group **Firewall-rg (2)**                       |
      | Resource group location     | Default same as resource group                                |
      | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
      | Tier                        | Select **Premium (4)**                                            |
