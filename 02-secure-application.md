@@ -46,7 +46,7 @@ This exercise includes the following tasks:
 
  1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (2)**.
 
-      ![](images1/firewallpolicies.png)
+      ![](images/FW-05.png)
  
  1. Click on **firewallpolicy** under the Web Application Firewall page and click on **Associated application gateways** under the **Settings** tab from the Application Gateway WAF policy page.
 
@@ -99,7 +99,7 @@ In this task, you will block access from the Lab VM to the Firewall VM by config
  
  1. On Virtual machines page, select **labvm-<inject key="Deployment ID" enableCopy="false"/>**.
 
-      ![](images/CAF-lab2-8.png)
+      ![](images/VM-001.png)
 
  1. Copy the **Public IP address** and save it to Notepad for later use.
 
@@ -230,7 +230,7 @@ In this task, you're setting up an Azure Front Door instance to improve applicat
      | Name                        | Enter **Webapp-Contoso-AFD (3)**                                  |
      | Tier                        | Select **Premium (4)**                                            |
  
-      ![](images/a152.png)
+      ![](images/D-001.png)
   
 5. On the **Secrets**, Leave it default as same and click on **Next: Endpoint >**.
   
@@ -280,7 +280,7 @@ In this task, you're setting up an Azure Front Door instance to improve applicat
   
      ![](images/a61.png)
     
-     ![](images/a65.png)
+     ![](images/EDIT-01.png)
 
 17. Once deployment is succeeded click on **Go to resouce**.
      
