@@ -32,45 +32,56 @@ You will be able to complete the following tasks:
  
  1. From the Azure **Home** page, search for **Application gateways (1)** from the search bar and select **Application gateways (2)**.
  
-      ![](images/CAF-lab2-1.png)
+      ![](images/searchgateway.png "search gateway")
     
  1. Select your **Application Gateway**.
 
-      ![](images/CAF-lab2-2.png)
+      ![](images/E2T1S2.png "select gateway")
       
- 1. On the Application gateway blade click on the **Backend pools(1)** under setting and then select **AGBackendtarget(2)**.
+ 1. On the Application gateway page, click on the **Backend pools (1)** under **Settings** and then select **AGBackendtarget (2)**.
 
-     ![](images/CAF-lab2-3.png)
+     ![](images/E2T1S3.png)
      
- 1. On the **Edit backend pool** page, follow the below-mentioned instructions:
+ 1. On the **Edit backend pool** page, follow the instructions below:
 
-    - **Target type**: Select **Virtual Machine (1)** from the drop-down.
-    - **Target**: Select **JumpVM-<inject key="Deployment ID" enableCopy="false"/>-nic (2)** from drop-down.
+    - **Target type:** Select **Virtual Machine (1)** from the drop-down.
+
+    - **Target:** Select **FirewallVM-nic (2)** from drop-down.
+
     - Click on **Save (3)**.
 
-      ![](images/CAF-lab2-4.png)
+      ![](images/updateimg-12.png)
     
-1. Once the Backend pools are saved, you will see the notification that says **Deployment Succeeded**.
+1. Once the Backend pools are saved, you will see the notification that says **Deployment succeeded**.
 
- 1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (2)**.
+   ![](images/editbackendpool-succeeded.png)
 
-      ![](images1/firewallpolicies.png)
+1. Navigate back to the home page and search for **Application Firewall Policies (1)** from the search bar and select **Web Application Firewall Policies (WAF) (2)**.
+
+   ![](images1/firewallpolicies.png)
  
- 1. Click on **firewallpolicy** under the Web Application Firewall page and click on **Associated application gateways** under the **Settings** tab from the Application Gateway WAF policy page.
+1. On the Web Application Firewall page, click on **Firewall policy**, then navigate to the **Settings** section and select **Associated application gateways**.
 
-     ![](/images1/firewallpolicy.png)
+   ![](images/E2T1S7.png)
      
- 1. On the **Associated Application gateway** page, click on **+ Add association (1)** and select **Application Gateway(2)**
+1. On the **Associated application gateways** page, click on **+ Add association (1)** and select **Application Gateway (2)**
 
-    ![](images/CAF-lab2-5.png)
+    ![](images/E2T1S8.png)
     
- 1. Under the **Associate an application gateway** page, follow the below instructions:
+1. Under the **Associate an application gateway** page, follow the instructions below:
 
-    - **Application Gateway (WAF v2 SKU)**: Select **Application Gateway (1)** from the drop down. 
-    - **Check** the box next to **Apply the web Application Firewall policy configuration even if it's different from the current configuration (2)**.
+    - **Application Gateway (WAF v2 SKU):** Select **Application Gateway (1)** from the drop down. 
+    
+    - **Check** the box next to **Apply the Web Application Firewall policy configuration even if it's different from the current configuration (2)**.
+    
     - Click on **Add (3)**.
 
       ![](images1/associateappgateway.png)
+
+1. Once the Application Gateway are saved, you will see the notification that says **Updated the Application Gateway**.
+
+   ![](images1/appgateway-notification.png)
+
 
 ## Task 2: Add firewall diagnostics settings 
 
