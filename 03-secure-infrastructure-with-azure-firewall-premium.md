@@ -1,23 +1,30 @@
 # Exercise 1- Secure Infrastructure with Azure Firewall Premium
 
-Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best-of-breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
+### Estimated Duration: 120 Minutes
+
+## Overview: 
+
+Azure Firewall is a cloud-native and intelligent network firewall security service that provides the best-of-breed threat protection for your cloud workloads running in Azure. It's a fully stateful, firewall-as-a-service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection.
 
 Azure Firewall Premium is a next-generation firewall with capabilities that are required for highly sensitive and regulated environments. It includes the following features:
 
-- **TLS Inspection** - decrypts outbound traffic, processes the data, then encrypts the data and sends it to the destination.
-- **IDPS** - A network intrusion detection and prevention system (IDPS) allows you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.
-- **URL filtering** - extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
-- **Web categories** - Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
+- **TLS Inspection:** decrypts outbound traffic, processes the data, then encrypts the data and sends it to the destination.
+- **IDPS:** A network intrusion detection and prevention system (IDPS) allows you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.
+- **URL filtering:** extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
+- **Web categories:** Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.
 For more information, see `https://learn.microsoft.com/en-us/azure/firewall/premium-features`
  
-This exercise includes the following tasks:
-  - Configure WAF to protect your web application
-  - Add firewall diagnostics settings
-  - Test IDPS for HTTP traffic
-  - Web categories testing
-  - Implement and Test URL filtering
-  - IP Groups
-  - Azure Firewall Policies with Firewall Manager
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+- Task 1: Configure WAF to protect your web application
+- Task 2: Add firewall diagnostics settings
+- Task 3: Test IDPS for HTTP traffic
+- Task 4: Web categories testing
+- Task 5: Implement and Test URL filtering
+- Task 6: IP Groups
+- Task 7: Azure Firewall Policies with Firewall Manager
 
  ## **Task 1: Configure WAF to protect your web application**
  
@@ -65,7 +72,7 @@ This exercise includes the following tasks:
 
       ![](images1/associateappgateway.png)
 
-## Task 1: Add firewall diagnostics settings 
+## Task 2: Add firewall diagnostics settings 
 
 In this task, you will enable diagnostic settings in Azure Firewall to collect firewall logs.
 
@@ -119,7 +126,7 @@ In this task, you will enable diagnostic settings in Azure Firewall to collect f
 
    ![](images/upd-3.png "search gateway")
 
-## Task 2: Test IDPS for HTTP traffic
+## Task 3: Test IDPS for HTTP traffic
 
 Azure Firewall Premium provides signature-based IDPS to allow rapid detection of attacks by looking for specific patterns, such as byte sequences in network traffic, or known malicious instruction sequences used by malware.
 
@@ -260,7 +267,7 @@ In this task, you will test IDPS for HTTP traffic.
 
 
 
-## Task 3: Web categories testing
+## Task 4: Web categories testing
  
 In this task, you will create an application rule to allow access to sports websites.
  
@@ -419,7 +426,7 @@ In this task, you will create an application rule to allow access to sports webs
 
      ![](images/E3T3S21.png)
 
-## Task 4: Implement and Test URL filtering
+## Task 5: Implement and Test URL filtering
  
 1. Navigate back to the tab where you have opened Bastion VM and browse the below mentioned URL. You can see the error **Hmmm... can't reach this page**.
  
@@ -487,7 +494,7 @@ In this task, you will create an application rule to allow access to sports webs
 
      ![](images/E3T4S10.png)
 
-## Task 5: IP Groups
+## Task 6: IP Groups
 
 1. Navigate to the home page in the Azure portal, search for **IP groups (1)** and select **IP Groups (2)** from suggestions.
  
@@ -566,9 +573,9 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/a144.jpg "search gateway") 
  
-## Task 6: Azure Firewall Policies with Firewall Manager (Optional)
+## Task 7: Azure Firewall Policies with Firewall Manager (Optional)
 
-### Task 6.1: Create a Firewall Policy
+### Task 7.1: Create a Firewall Policy
 
 1. Navigate to the home page in the Azure portal, search for **Firewall Manager (1)** and select **Firewall Manager (2)** from suggestions.
  
@@ -639,7 +646,7 @@ In this task, you will create an application rule to allow access to sports webs
  
     ![](images/upd-05.png)
  
-### Task 6.2: Create the firewall hub virtual network
+### Task 7.2: Create the firewall hub virtual network
  
 1. Navigate to the home page in the Azure portal, search for **Firewall Manager (1)** and select **Firewall Manager (2)** from suggestions.
  
@@ -684,7 +691,7 @@ In this task, you will create an application rule to allow access to sports webs
 
     >**Note**: Deployment may take up to 30 minutes to complete.
  
-### Task 6.3: Associate the firewall policy with the virtual hub
+### Task 7.3: Associate the firewall policy with the virtual hub
 
 1. Navigate to the home page in the Azure portal, search for **Fireall Manager (1)** and select **Fireall Manager (2)** from suggestions.
  
@@ -716,6 +723,7 @@ In this task, you will create an application rule to allow access to sports webs
  
 In this exercise, you have covered the following:
   
+- Configured WAF to protect your web application
 - Added firewall diagnostics settings 
 - Tested IDPS for HTTP traffic
 - Performed Web category testing 
